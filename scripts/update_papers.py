@@ -269,12 +269,18 @@ def load_existing_papers(output: Path) -> list[dict[str, Any]]:
     return json.loads(output.read_text(encoding="utf-8")).get("papers", [])
 
 
-def write_data(papers: list[dict[str, Any]], output: Path, sources: list[str]) -> None:
+def write_data(
+    papers: list[dict[str, Any]],
+    output: Path,
+    sources: list[str],
+    update_status: dict[str, Any] | None = None,
+) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "sources": sources,
         "queries": SEARCH_QUERIES,
+        "update_status": update_status or {},
         "papers": papers,
     }
     json_text = json.dumps(payload, ensure_ascii=False, indent=2)
@@ -295,10 +301,13 @@ def main() -> None:
 
     output = Path(args.output)
     all_papers: list[dict[str, Any]] = []
+    fetch_error = ""
     try:
         all_papers.extend(fetch_semantic_scholar(args.retmax, args.email, args.semantic_api_key, args.query_limit))
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
-        print(f"Semantic Scholar fetch failed; keeping existing data if available. {error}")
+        fetch_error = f"{type(error).__name__}: {error}"
+        print(f"Semantic Scholar fetch failed; keeping existing data if available. {fetch_error}")
+    fresh_count = len(all_papers)
     if args.merge_existing:
         all_papers.extend(load_existing_papers(output))
 
@@ -307,7 +316,15 @@ def main() -> None:
         print("No fresh papers were fetched; keeping the existing data file.")
         return
     source_labels = ["Semantic Scholar"]
-    write_data(papers, output, source_labels)
+    update_status = {
+        "semantic_api_key_detected": bool(args.semantic_api_key),
+        "fresh_records_before_merge": fresh_count,
+        "total_records_after_merge": len(papers),
+        "query_limit": args.query_limit,
+        "retmax": args.retmax,
+        "error": fetch_error,
+    }
+    write_data(papers, output, source_labels, update_status)
     print(f"Updated {len(papers)} papers from {', '.join(source_labels)} at {output}")
 
 
