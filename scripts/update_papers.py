@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import time
 import urllib.error
 import urllib.parse
@@ -236,7 +237,7 @@ def main() -> None:
     parser.add_argument("--email", default=None)
     parser.add_argument("--output", default="data/papers.json")
     parser.add_argument("--sources", default="semantic", help="Only Semantic Scholar is supported; kept for CLI compatibility.")
-    parser.add_argument("--semantic-api-key", default=None)
+    parser.add_argument("--semantic-api-key", default=os.environ.get("SEMANTIC_SCHOLAR_API_KEY") or os.environ.get("S2_API_KEY"))
     parser.add_argument("--merge-existing", action="store_true")
     parser.add_argument("--query-limit", type=int, default=24)
     args = parser.parse_args()

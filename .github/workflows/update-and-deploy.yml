@@ -31,7 +31,10 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch latest papers from Semantic Scholar
-        run: python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 36 --email "${{ vars.CONTACT_EMAIL }}" --semantic-api-key "${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}"
+        env:
+          CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+        run: python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 36 --email "$CONTACT_EMAIL"
 
       - name: Commit updated data
         run: |
