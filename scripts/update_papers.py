@@ -244,7 +244,10 @@ def main() -> None:
 
     output = Path(args.output)
     all_papers: list[dict[str, Any]] = []
-    all_papers.extend(fetch_semantic_scholar(args.retmax, args.email, args.semantic_api_key, args.query_limit))
+    try:
+        all_papers.extend(fetch_semantic_scholar(args.retmax, args.email, args.semantic_api_key, args.query_limit))
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
+        print(f"Semantic Scholar fetch failed; keeping existing data if available. {error}")
     if args.merge_existing:
         all_papers.extend(load_existing_papers(output))
 
