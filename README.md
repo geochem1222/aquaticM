@@ -55,7 +55,12 @@ python scripts/enrich_semantic_scholar.py --limit 80 --edge-limit 12
 - 参考文献节点
 - 引用本文节点
 
-网页中点击表格里的论文，会在下方显示一个小型引用图谱。
+网页不会运行 Python。Python 只在本地或 GitHub Actions 更新阶段把增强结果写入 `data/papers.json` / `data/papers.js`；网页只读取这些静态 JSON 数据并渲染图谱。
+
+网页中点击表格里的论文，会在下方显示一个小型图谱：
+
+- 如果该论文已有 Semantic Scholar 增强数据，显示参考文献 / 引用本文图谱。
+- 如果暂时没有增强数据，显示同库论文的主题相似关系图。
 
 部署到 GitHub 后，把 API key 添加为仓库 Secret：
 

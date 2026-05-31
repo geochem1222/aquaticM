@@ -53,9 +53,6 @@ const els = {
   sourceSelect: document.querySelector("#source-filter"),
   chips: document.querySelectorAll(".chip"),
   sortButtons: document.querySelectorAll("[data-sort]"),
-  graphTitle: document.querySelector("#graph-title"),
-  graph: document.querySelector("#paper-graph"),
-  graphDetail: document.querySelector("#graph-detail"),
 };
 
 fetch("data/papers.json", { cache: "no-store" })
@@ -128,10 +125,6 @@ els.tbody.addEventListener("click", (event) => {
     state.expanded.delete(id);
   } else {
     state.expanded.add(id);
-  }
-  const paper = state.papers.find((item) => String(item.id || item.doi || item.pmid || item.title) === id);
-  if (paper) {
-    renderGraph(paper);
   }
   render();
 });
@@ -261,6 +254,7 @@ function renderPaperRow(paper) {
         <div class="detail-panel">
           ${renderSemanticSummary(paper)}
           <p>${escapeHtml(paper.abstract || "暂无摘要。")}</p>
+          ${renderInlineGraph(paper)}
           <dl>
             <div><dt>DOI</dt><dd>${renderDoi(paper.doi)}</dd></div>
             <div><dt>PMID</dt><dd>${escapeHtml(paper.pmid || "无")}</dd></div>
@@ -270,6 +264,22 @@ function renderPaperRow(paper) {
         </div>
       </td>
     </tr>
+  `;
+}
+
+function renderInlineGraph(paper) {
+  const graph = buildGraphMarkup(paper);
+  return `
+    <section class="inline-graph" aria-label="论文图谱">
+      <div class="inline-graph-head">
+        <h4>论文图谱</h4>
+        <p>${escapeHtml(graph.caption)}</p>
+      </div>
+      <div class="graph-layout">
+        <div class="paper-graph">${graph.svg}</div>
+        <aside class="graph-detail">${graph.detail}</aside>
+      </div>
+    </section>
   `;
 }
 
@@ -292,16 +302,13 @@ function renderSemanticSummary(paper) {
   `;
 }
 
-function renderGraph(paper) {
+function buildGraphMarkup(paper) {
   const s2 = paper.semantic_scholar || {};
   const references = (s2.references || paper.references || []).slice(0, 8);
   const citations = (s2.citations || []).slice(0, 8);
-  els.graphTitle.textContent = paper.title || "Semantic Scholar 论文图谱";
 
   if (!references.length && !citations.length) {
-    els.graph.innerHTML = '<div class="empty-state">这篇论文还没有增强图谱数据。运行 enrich_semantic_scholar.py 后可显示参考文献和引用网络。</div>';
-    els.graphDetail.innerHTML = renderGraphDetail(paper, null);
-    return;
+    return buildTopicGraphMarkup(paper);
   }
 
   const width = 760;
@@ -312,18 +319,64 @@ function renderGraph(paper) {
   const nodes = [center, ...refNodes, ...citeNodes];
   const edges = [...refNodes, ...citeNodes];
 
-  els.graph.innerHTML = `
-    <svg class="graph-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="引用关系图">
+  return {
+    caption: "Semantic Scholar 增强数据：参考文献与引用本文关系。",
+    svg: `
+      <svg class="graph-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="引用关系图">
       ${edges.map((node) => `<line class="graph-edge" x1="${center.x}" y1="${center.y}" x2="${node.x}" y2="${node.y}"></line>`).join("")}
       ${nodes.map(renderGraphNode).join("")}
-    </svg>
-  `;
-  els.graph.querySelectorAll("[data-node-index]").forEach((node) => {
-    node.addEventListener("click", () => {
-      els.graphDetail.innerHTML = renderGraphDetail(paper, nodes[Number(node.dataset.nodeIndex)]);
-    });
-  });
-  els.graphDetail.innerHTML = renderGraphDetail(paper, center);
+      </svg>
+    `,
+    detail: renderGraphDetail(paper, center),
+  };
+}
+
+function buildTopicGraphMarkup(paper) {
+  const related = state.papers
+    .filter((candidate) => candidate !== paper)
+    .map((candidate) => ({
+      paper: candidate,
+      score: sharedTagScore(paper, candidate),
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || Number(b.paper.citation_count || 0) - Number(a.paper.citation_count || 0))
+    .slice(0, 10);
+
+  if (!related.length) {
+    return {
+      caption: "暂无足够数据生成图谱。",
+      svg: '<div class="empty-state">当前论文暂未生成引用图谱，也没有足够的主题相似论文。</div>',
+      detail: renderGraphDetail(paper, null),
+    };
+  }
+
+  const width = 760;
+  const height = 390;
+  const center = { x: width / 2, y: height / 2, item: paper, type: "center" };
+  const nodes = [
+    center,
+    ...related.map((item, index) => polarNode(item.paper, "topic", index, related.length, 176, center, 0, 360)),
+  ];
+
+  return {
+    caption: "暂未带有 Semantic Scholar 引用增强数据，先显示同库论文主题相似关系。",
+    svg: `
+      <svg class="graph-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="主题关系图">
+        ${nodes.slice(1).map((node) => `<line class="graph-edge" x1="${center.x}" y1="${center.y}" x2="${node.x}" y2="${node.y}"></line>`).join("")}
+        ${nodes.map(renderGraphNode).join("")}
+      </svg>
+    `,
+    detail: `
+      <h3>主题关系图</h3>
+      <p>后台更新拿到增强 JSON 后，会自动切换为引用图谱。</p>
+      ${renderGraphDetail(paper, center)}
+    `,
+  };
+}
+
+function sharedTagScore(a, b) {
+  const left = new Set(a.tags || []);
+  return (b.tags || []).reduce((sum, tag) => sum + (left.has(tag) ? 1 : 0), 0);
 }
 
 function polarNode(item, type, index, total, radius, center, startDeg, endDeg) {
@@ -354,7 +407,7 @@ function renderGraphNode(node, index) {
 
 function renderGraphDetail(rootPaper, node) {
   const item = node?.item || rootPaper;
-  const typeLabel = node?.type === "reference" ? "参考文献" : node?.type === "citation" ? "引用本文" : "当前论文";
+  const typeLabel = node?.type === "reference" ? "参考文献" : node?.type === "citation" ? "引用本文" : node?.type === "topic" ? "主题相似论文" : "当前论文";
   const s2 = rootPaper.semantic_scholar || {};
   const tldr = node?.type === "center" && s2.tldr ? `<p><strong>TLDR</strong> ${escapeHtml(s2.tldr)}</p>` : "";
   const authors = item.authors?.map ? item.authors.map((author) => typeof author === "string" ? author : author.name).filter(Boolean).slice(0, 4).join(", ") : "";
