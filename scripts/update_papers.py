@@ -17,6 +17,20 @@ from typing import Any
 
 SEMANTIC_SCHOLAR_BASE = "https://api.semanticscholar.org/graph/v1/paper/search"
 
+def semantic_api_key_from_env() -> str | None:
+    for name in [
+        "SEMANTIC_SCHOLAR_API_KEY",
+        "S2_API_KEY",
+        "SEMANTIC_API_KEY",
+        "SEMANTIC_SCHOLAR_API",
+        "S2_API",
+    ]:
+        value = os.environ.get(name)
+        if value:
+            return value
+    return None
+
+
 SYSTEM_GROUPS = [
     "river rivers stream streams creek creeks",
     "lake lakes reservoir reservoirs",
@@ -237,7 +251,7 @@ def main() -> None:
     parser.add_argument("--email", default=None)
     parser.add_argument("--output", default="data/papers.json")
     parser.add_argument("--sources", default="semantic", help="Only Semantic Scholar is supported; kept for CLI compatibility.")
-    parser.add_argument("--semantic-api-key", default=os.environ.get("SEMANTIC_SCHOLAR_API_KEY") or os.environ.get("S2_API_KEY"))
+    parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())
     parser.add_argument("--merge-existing", action="store_true")
     parser.add_argument("--query-limit", type=int, default=24)
     args = parser.parse_args()

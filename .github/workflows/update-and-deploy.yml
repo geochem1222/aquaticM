@@ -35,14 +35,20 @@ jobs:
           CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY || vars.SEMANTIC_SCHOLAR_API_KEY }}
           S2_API_KEY: ${{ secrets.S2_API_KEY || vars.S2_API_KEY }}
+          SEMANTIC_API_KEY: ${{ secrets.SEMANTIC_API_KEY || vars.SEMANTIC_API_KEY }}
+          SEMANTIC_SCHOLAR_API: ${{ secrets.SEMANTIC_SCHOLAR_API || vars.SEMANTIC_SCHOLAR_API }}
+          S2_API: ${{ secrets.S2_API || vars.S2_API }}
         run: python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 36 --email "$CONTACT_EMAIL" || echo "Semantic Scholar update failed; continuing with existing data."
 
       - name: Enrich Semantic Scholar graph data
         env:
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY || vars.SEMANTIC_SCHOLAR_API_KEY }}
           S2_API_KEY: ${{ secrets.S2_API_KEY || vars.S2_API_KEY }}
+          SEMANTIC_API_KEY: ${{ secrets.SEMANTIC_API_KEY || vars.SEMANTIC_API_KEY }}
+          SEMANTIC_SCHOLAR_API: ${{ secrets.SEMANTIC_SCHOLAR_API || vars.SEMANTIC_SCHOLAR_API }}
+          S2_API: ${{ secrets.S2_API || vars.S2_API }}
         run: |
-          if [ -n "$SEMANTIC_SCHOLAR_API_KEY" ] || [ -n "$S2_API_KEY" ]; then
+          if [ -n "$SEMANTIC_SCHOLAR_API_KEY" ] || [ -n "$S2_API_KEY" ] || [ -n "$SEMANTIC_API_KEY" ] || [ -n "$SEMANTIC_SCHOLAR_API" ] || [ -n "$S2_API" ]; then
             echo "Semantic Scholar API key detected; running enrichment."
             python scripts/enrich_semantic_scholar.py --limit 80 --edge-limit 12 || echo "Semantic Scholar enrichment failed; continuing with basic metadata."
           else

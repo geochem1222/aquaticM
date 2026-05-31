@@ -18,11 +18,25 @@ from typing import Any
 BASE = "https://api.semanticscholar.org/graph/v1"
 
 
+def semantic_api_key_from_env() -> str | None:
+    for name in [
+        "SEMANTIC_SCHOLAR_API_KEY",
+        "S2_API_KEY",
+        "SEMANTIC_API_KEY",
+        "SEMANTIC_SCHOLAR_API",
+        "S2_API",
+    ]:
+        value = os.environ.get(name)
+        if value:
+            return value
+    return None
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="data/papers.json")
     parser.add_argument("--output", default="data/papers.json")
-    parser.add_argument("--semantic-api-key", default=os.environ.get("SEMANTIC_SCHOLAR_API_KEY") or os.environ.get("S2_API_KEY"))
+    parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())
     parser.add_argument("--limit", type=int, default=40, help="Maximum papers to enrich in one run.")
     parser.add_argument("--edge-limit", type=int, default=12, help="References and citations to keep per paper.")
     args = parser.parse_args()
