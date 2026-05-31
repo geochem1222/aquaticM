@@ -10,6 +10,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages
@@ -44,20 +46,20 @@ jobs:
           git diff --cached --quiet || git commit -m "Update paper data"
           git push
 
-      - name: Deploy static site to gh-pages branch
+      - name: Build Pages artifact
         run: |
           mkdir -p /tmp/tracker-site
-          cp -R assets data index.html README.md /tmp/tracker-site/
+          cp -R assets data tools index.html README.md /tmp/tracker-site/
           touch /tmp/tracker-site/.nojekyll
-          git fetch origin gh-pages || true
-          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
-            git switch gh-pages
-            git reset --hard origin/gh-pages
-          else
-            git switch --orphan gh-pages
-          fi
-          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
-          cp -R /tmp/tracker-site/. .
-          git add .
-          git diff --cached --quiet || git commit -m "Deploy static site"
-          git push origin gh-pages
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
+        with:
+          path: /tmp/tracker-site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d3c4a0c75b63c81d1e1bd100b75e81b512df22e3
