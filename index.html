@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>水生系统代谢论文追踪</title>
+    <meta
+      name="description"
+      content="自动追踪河、湖、库、塘、溪、沟、潮沟等水生系统中的生态系统代谢、碳氮磷循环、溶解氧和温室气体相关论文。"
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="页面导航">
+        <a class="brand" href="./" aria-label="回到首页">
+          <span class="brand-mark">W</span>
+          <span>Aquatic Metabolism Tracker</span>
+        </a>
+        <div class="nav-actions">
+          <a href="#papers">论文</a>
+          <a href="#about">方向</a>
+          <a href="data/papers.json">数据</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">自动更新的水生系统代谢文献表</p>
+          <h1>水如何呼吸、固碳、分解并释放温室气体？</h1>
+          <p class="lead">
+            聚焦 river、lake、reservoir、pond、stream、creek、ditch、tidal creek 等水体中的 ecosystem metabolism、dissolved oxygen、GPP/ER、carbon、nitrogen、phosphorus、methane 与 microbial processes。
+          </p>
+        </div>
+        <aside class="hero-panel" aria-label="追踪状态">
+          <span class="status-dot" aria-hidden="true"></span>
+          <div>
+            <p class="panel-label">最近更新</p>
+            <strong id="last-updated">读取中</strong>
+          </div>
+          <div>
+            <p class="panel-label">已收录论文</p>
+            <strong id="paper-count">0</strong>
+          </div>
+          <div>
+            <p class="panel-label">数据来源</p>
+            <strong id="source-count">Semantic Scholar</strong>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="focus-strip" id="about" aria-label="研究方向">
+        <article>
+          <span>01</span>
+          <h2>水体生态系统代谢</h2>
+          <p>追踪 GPP、ER、NEP、reaeration、dissolved oxygen 与昼夜氧曲线。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>碳氮磷与温室气体</h2>
+          <p>关注 carbon、nitrogen、phosphorus、methane、CO2、nutrient cycling 等过程。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>河湖库塘溪沟潮沟</h2>
+          <p>覆盖河流、湖泊、水库、塘、溪流、沟渠、潮沟、湿地和沉积物界面。</p>
+        </article>
+      </section>
+
+      <section class="toolbar" id="papers" aria-label="论文筛选">
+        <div class="search-box">
+          <label for="search">搜索论文</label>
+          <input id="search" type="search" placeholder="输入关键词、作者、期刊、DOI 或数据库 ID">
+        </div>
+        <div class="search-box">
+          <label for="source-filter">数据来源</label>
+          <select id="source-filter">
+            <option value="all">全部来源</option>
+          </select>
+        </div>
+        <div class="filter-row" aria-label="按主题筛选">
+          <button class="chip active" type="button" data-filter="all">全部</button>
+          <button class="chip" type="button" data-filter="river">河/溪</button>
+          <button class="chip" type="button" data-filter="lake">湖/库</button>
+          <button class="chip" type="button" data-filter="pond">塘</button>
+          <button class="chip" type="button" data-filter="ditch">沟/潮沟</button>
+          <button class="chip" type="button" data-filter="oxygen">溶解氧</button>
+          <button class="chip" type="button" data-filter="carbon">碳/甲烷</button>
+          <button class="chip" type="button" data-filter="nutrient">氮磷</button>
+          <button class="chip" type="button" data-filter="microbe">微生物</button>
+        </div>
+      </section>
+
+      <section class="summary-grid" aria-label="论文统计">
+        <div>
+          <p>近一周发表</p>
+          <strong id="week-count">0</strong>
+        </div>
+        <div>
+          <p>近一月发表</p>
+          <strong id="month-count">0</strong>
+        </div>
+        <div>
+          <p>近一年发表</p>
+          <strong id="year-count">0</strong>
+        </div>
+        <div>
+          <p>总引用数</p>
+          <strong id="citation-total">0</strong>
+        </div>
+        <div>
+          <p>开放 PDF</p>
+          <strong id="pdf-count">0</strong>
+        </div>
+        <div>
+          <p>代谢相关</p>
+          <strong id="metabolism-count">0</strong>
+        </div>
+      </section>
+
+      <section class="paper-list" aria-live="polite">
+        <div class="list-header">
+          <h2>最新论文表格</h2>
+          <p id="result-count">正在读取数据</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th><button type="button" data-sort="publication_date">日期 <span></span></button></th>
+                <th><button type="button" data-sort="title">题名 <span></span></button></th>
+                <th><button type="button" data-sort="authors">作者 <span></span></button></th>
+                <th><button type="button" data-sort="journal">期刊 <span></span></button></th>
+                <th><button type="button" data-sort="citation_count">引用 <span></span></button></th>
+                <th><button type="button" data-sort="reference_count">参考 <span></span></button></th>
+                <th><button type="button" data-sort="source">来源 <span></span></button></th>
+                <th>链接</th>
+              </tr>
+            </thead>
+            <tbody id="papers-body"></tbody>
+          </table>
+        </div>
+        <p id="empty-state" class="empty-state" hidden>没有匹配的论文，换一个关键词试试。</p>
+      </section>
+
+      <section class="graph-panel" aria-label="Semantic Scholar 引用图">
+        <div class="list-header">
+          <h2>Semantic Scholar 论文图谱</h2>
+          <p id="graph-title">点击表格中的论文后显示参考文献和被引关系。</p>
+        </div>
+        <div class="graph-layout">
+          <div id="paper-graph" class="paper-graph" aria-label="论文引用关系图"></div>
+          <aside id="graph-detail" class="graph-detail">
+            <p>增强数据可显示 TLDR、学科领域、开放 PDF、参考文献和引用论文。使用 API key 跑增强脚本后信息会更完整。</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>可部署到 GitHub Pages，并通过开放学术数据库定期更新。</p>
+      <a href="data/papers.json">下载 JSON 数据</a>
+    </footer>
+
+    <script src="data/papers.js"></script>
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

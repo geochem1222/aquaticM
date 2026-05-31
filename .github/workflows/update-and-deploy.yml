@@ -1,0 +1,60 @@
+name: Update papers and deploy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "18 21 * * *"
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+
+      - name: Fetch latest papers from Semantic Scholar
+        run: python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 36 --email "${{ vars.CONTACT_EMAIL }}" --semantic-api-key "${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/papers.json
+          git diff --cached --quiet || git commit -m "Update paper data"
+          git push
+
+      - name: Deploy static site to gh-pages branch
+        run: |
+          mkdir -p /tmp/tracker-site
+          cp -R assets data index.html README.md /tmp/tracker-site/
+          touch /tmp/tracker-site/.nojekyll
+          git fetch origin gh-pages || true
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git switch gh-pages
+            git reset --hard origin/gh-pages
+          else
+            git switch --orphan gh-pages
+          fi
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} +
+          cp -R /tmp/tracker-site/. .
+          git add .
+          git diff --cached --quiet || git commit -m "Deploy static site"
+          git push origin gh-pages

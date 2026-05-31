@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Scholar 当前页导出器</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #152428;
+        --muted: #64767a;
+        --line: #dce7e5;
+        --teal: #0a6d7e;
+        --soft: #eef7f5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
+        color: var(--ink);
+        background: #f7faf8;
+      }
+
+      main {
+        width: min(920px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: 60px 0;
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(34px, 6vw, 58px);
+        line-height: 1.05;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .card {
+        margin-top: 28px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      .bookmarklet {
+        display: inline-flex;
+        align-items: center;
+        min-height: 46px;
+        margin: 12px 0 18px;
+        padding: 0 18px;
+        border-radius: 8px;
+        color: #fff;
+        background: var(--teal);
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .bookmarklet + .bookmarklet {
+        margin-left: 8px;
+      }
+
+      .bookmarklet.secondary {
+        background: #2e7d62;
+      }
+
+      .bookmarklet.quiet {
+        color: var(--ink);
+        background: var(--soft);
+      }
+
+      ol {
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      code {
+        display: block;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--soft);
+        color: #17363d;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Google Scholar 当前页导出器</h1>
+      <p>
+        这个工具只读取你已经打开的 Google Scholar 搜索结果页，不自动翻页、不自动抓取。
+        点击书签后会下载当前页面可见结果的 CSV、RIS 和 JSON，之后可用本站脚本导入。
+      </p>
+
+      <section class="card">
+        <h2>使用方法</h2>
+        <a id="collect-bookmarklet" class="bookmarklet" href="#">拖到书签栏：收集 Scholar 当前页</a>
+        <a id="export-bookmarklet" class="bookmarklet secondary" href="#">拖到书签栏：导出已收集结果</a>
+        <a id="reset-bookmarklet" class="bookmarklet quiet" href="#">拖到书签栏：清空 Scholar 收集箱</a>
+        <ol>
+          <li>把上面三个按钮拖到浏览器书签栏。</li>
+          <li>打开 Google Scholar 搜索结果页。</li>
+          <li>每一页点击一次“收集 Scholar 当前页”。</li>
+          <li>手动翻到下一页，再继续点击“收集 Scholar 当前页”。</li>
+          <li>收集完后点击“导出已收集结果”。</li>
+          <li>浏览器会下载全部已收集结果的 `google-scholar-results.csv`、`.ris` 和 `.json`。</li>
+          <li>把 CSV 或 RIS 导入本站：`python scripts/import_google_scholar_export.py google-scholar-results.csv`。</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>如果不能拖拽</h2>
+        <p>新建书签，把对应代码复制到书签的网址里。</p>
+        <h3>收集当前页</h3>
+        <code id="collect-code"></code>
+        <h3>导出已收集结果</h3>
+        <code id="export-code"></code>
+        <h3>清空收集箱</h3>
+        <code id="reset-code"></code>
+      </section>
+    </main>
+
+    <script>
+      const shared = `const KEY = "aquatic_metabolism_google_scholar_results_v1";
+  const clean = (value) => (value || "").replace(/\\s+/g, " ").trim();
+  const load = () => JSON.parse(localStorage.getItem(KEY) || "[]");
+  const saveStore = (rows) => localStorage.setItem(KEY, JSON.stringify(rows));
+  const dedupe = (rows) => {
+    const seen = new Set();
+    return rows.filter((row) => {
+      const key = (row.url || row.title || "").toLowerCase();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  };
+  const extract = () => [...document.querySelectorAll(".gs_r.gs_or.gs_scl")]
+    .map((item, index) => {
+      const titleNode = item.querySelector(".gs_rt");
+      const linkNode = item.querySelector(".gs_rt a");
+      const meta = clean(item.querySelector(".gs_a")?.textContent || "");
+      const snippet = clean(item.querySelector(".gs_rs")?.textContent || "");
+      const citedLink = [...item.querySelectorAll(".gs_fl a")]
+        .find((node) => /Cited by|被引用|引用/.test(node.textContent || ""));
+      const citedMatch = (citedLink?.textContent || "").match(/\\d+/);
+      const yearMatch = meta.match(/(?:19|20)\\d{2}/);
+      const title = clean(titleNode?.textContent || "").replace(/^\\[[^\\]]+\\]\\s*/, "");
+      const parts = meta.split(" - ");
+      return {
+        index: index + 1,
+        title,
+        authors: parts[0] || "",
+        journal: parts[1] || "",
+        year: yearMatch ? yearMatch[0] : "",
+        url: linkNode?.href || "",
+        citation_count: citedMatch ? citedMatch[0] : "0",
+        abstract: snippet,
+        source: "Google Scholar manual export"
+      };
+    })
+    .filter((row) => row.title);
+  const downloadAll = (rows) => {
+    const stamp = new Date().toISOString().slice(0, 10);
+    const save = (name, text, type) => {
+      const blob = new Blob([text], { type });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = name;
+      document.body.append(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 800);
+    };
+    const csvCell = (value) => '"' + String(value ?? "").replace(/"/g, '""') + '"';
+    const headers = ["title", "authors", "journal", "year", "url", "citation_count", "abstract", "source"];
+    const csv = [
+      headers.join(","),
+      ...rows.map((row) => headers.map((key) => csvCell(row[key])).join(","))
+    ].join("\\n");
+    const ris = rows.map((row) => [
+      "TY  - JOUR",
+      \`TI  - \${row.title}\`,
+      ...String(row.authors || "").split(/;|,/).map((author) => clean(author)).filter(Boolean).map((author) => \`AU  - \${author}\`),
+      row.journal ? \`T2  - \${row.journal}\` : "",
+      row.year ? \`PY  - \${row.year}\` : "",
+      row.url ? \`UR  - \${row.url}\` : "",
+      row.abstract ? \`AB  - \${row.abstract}\` : "",
+      "ER  -"
+    ].filter(Boolean).join("\\n")).join("\\n\\n");
+    save(\`google-scholar-results-\${stamp}.csv\`, csv, "text/csv;charset=utf-8");
+    save(\`google-scholar-results-\${stamp}.ris\`, ris, "application/x-research-info-systems;charset=utf-8");
+    save(\`google-scholar-results-\${stamp}.json\`, JSON.stringify(rows, null, 2), "application/json;charset=utf-8");
+  };`;
+
+      const collectSource = `(() => {
+  ${shared}
+  const rows = extract();
+  if (!rows.length) {
+    alert("没有在当前页面找到 Google Scholar 搜索结果。");
+    return;
+  }
+  const before = load();
+  const merged = dedupe([...before, ...rows]);
+  saveStore(merged);
+  alert(\`本页收集 \${rows.length} 条；去重后收集箱共有 \${merged.length} 条。\\n需要更多结果，请手动翻页后再次点击“收集 Scholar 当前页”。\`);
+})();`;
+
+      const exportSource = `(() => {
+  ${shared}
+  const rows = load();
+  if (!rows.length) {
+    alert("收集箱是空的。请先在 Google Scholar 结果页点击“收集 Scholar 当前页”。");
+    return;
+  }
+  downloadAll(rows);
+  alert(\`已导出 \${rows.length} 条已收集结果。导出后如要重新开始，可点击“清空 Scholar 收集箱”。\`);
+})();`;
+
+      const resetSource = `(() => {
+  const KEY = "aquatic_metabolism_google_scholar_results_v1";
+  const count = JSON.parse(localStorage.getItem(KEY) || "[]").length;
+  localStorage.removeItem(KEY);
+  alert(\`已清空 Scholar 收集箱，原有 \${count} 条。\`);
+})();`;
+
+      const oldSinglePageSource = `(() => {
+  const clean = (value) => (value || "").replace(/\\s+/g, " ").trim();
+  const rows = [...document.querySelectorAll(".gs_r.gs_or.gs_scl")]
+    .map((item, index) => {
+      const titleNode = item.querySelector(".gs_rt");
+      const linkNode = item.querySelector(".gs_rt a");
+      const meta = clean(item.querySelector(".gs_a")?.textContent || "");
+      const snippet = clean(item.querySelector(".gs_rs")?.textContent || "");
+      const citedLink = [...item.querySelectorAll(".gs_fl a")]
+        .find((node) => /Cited by|被引用|引用/.test(node.textContent || ""));
+      const citedMatch = (citedLink?.textContent || "").match(/\\d+/);
+      const yearMatch = meta.match(/(?:19|20)\\d{2}/);
+      const title = clean(titleNode?.textContent || "").replace(/^\\[[^\\]]+\\]\\s*/, "");
+      const parts = meta.split(" - ");
+      return {
+        index: index + 1,
+        title,
+        authors: parts[0] || "",
+        journal: parts[1] || "",
+        year: yearMatch ? yearMatch[0] : "",
+        url: linkNode?.href || "",
+        citation_count: citedMatch ? citedMatch[0] : "0",
+        abstract: snippet,
+        source: "Google Scholar manual export"
+      };
+    })
+    .filter((row) => row.title);
+
+  if (!rows.length) {
+    alert("没有在当前页面找到 Google Scholar 搜索结果。");
+    return;
+  }
+
+  const stamp = new Date().toISOString().slice(0, 10);
+  const save = (name, text, type) => {
+    const blob = new Blob([text], { type });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 800);
+  };
+  const csvCell = (value) => '"' + String(value ?? "").replace(/"/g, '""') + '"';
+  const headers = ["title", "authors", "journal", "year", "url", "citation_count", "abstract", "source"];
+  const csv = [
+    headers.join(","),
+    ...rows.map((row) => headers.map((key) => csvCell(row[key])).join(","))
+  ].join("\\n");
+  const ris = rows.map((row) => [
+    "TY  - JOUR",
+    \`TI  - \${row.title}\`,
+    ...String(row.authors || "").split(/;|,/).map((author) => clean(author)).filter(Boolean).map((author) => \`AU  - \${author}\`),
+    row.journal ? \`T2  - \${row.journal}\` : "",
+    row.year ? \`PY  - \${row.year}\` : "",
+    row.url ? \`UR  - \${row.url}\` : "",
+    row.abstract ? \`AB  - \${row.abstract}\` : "",
+    "ER  -"
+  ].filter(Boolean).join("\\n")).join("\\n\\n");
+
+  save(\`google-scholar-results-\${stamp}.csv\`, csv, "text/csv;charset=utf-8");
+  save(\`google-scholar-results-\${stamp}.ris\`, ris, "application/x-research-info-systems;charset=utf-8");
+  save(\`google-scholar-results-\${stamp}.json\`, JSON.stringify(rows, null, 2), "application/json;charset=utf-8");
+  alert(\`已导出 \${rows.length} 条当前页结果。\\n如需更多结果，请手动翻到下一页后再次点击书签。\`);
+})();`;
+
+      const makeBookmarklet = (value) => `javascript:${encodeURIComponent(value)}`;
+      const collectBookmarklet = makeBookmarklet(collectSource);
+      const exportBookmarklet = makeBookmarklet(exportSource);
+      const resetBookmarklet = makeBookmarklet(resetSource);
+
+      document.querySelector("#collect-bookmarklet").href = collectBookmarklet;
+      document.querySelector("#export-bookmarklet").href = exportBookmarklet;
+      document.querySelector("#reset-bookmarklet").href = resetBookmarklet;
+      document.querySelector("#collect-code").textContent = collectBookmarklet;
+      document.querySelector("#export-code").textContent = exportBookmarklet;
+      document.querySelector("#reset-code").textContent = resetBookmarklet;
+    </script>
+  </body>
+</html>
