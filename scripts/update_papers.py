@@ -291,7 +291,7 @@ def write_data(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--retmax", type=int, default=160)
-    parser.add_argument("--email", default=None)
+    parser.add_argument("--email", default=os.environ.get("CONTACT_EMAIL"))
     parser.add_argument("--output", default="data/papers.json")
     parser.add_argument("--sources", default="semantic", help="Only Semantic Scholar is supported; kept for CLI compatibility.")
     parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())

@@ -38,7 +38,7 @@ jobs:
           SEMANTIC_API_KEY: ${{ secrets.SEMANTIC_API_KEY || vars.SEMANTIC_API_KEY }}
           SEMANTIC_SCHOLAR_API: ${{ secrets.SEMANTIC_SCHOLAR_API || vars.SEMANTIC_SCHOLAR_API }}
           S2_API: ${{ secrets.S2_API || vars.S2_API }}
-        run: python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 120 --email "$CONTACT_EMAIL"
+        run: python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 120
 
       - name: Enrich Semantic Scholar graph data
         env:
