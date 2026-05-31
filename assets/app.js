@@ -45,6 +45,7 @@ const els = {
   citationTotal: document.querySelector("#citation-total"),
   pdfCount: document.querySelector("#pdf-count"),
   metabolismCount: document.querySelector("#metabolism-count"),
+  semanticCount: document.querySelector("#semantic-count"),
   resultCount: document.querySelector("#result-count"),
   tbody: document.querySelector("#papers-body"),
   empty: document.querySelector("#empty-state"),
@@ -166,6 +167,7 @@ function updateStats() {
   );
   els.pdfCount.textContent = state.papers.filter((paper) => paper.pdf_url).length;
   els.metabolismCount.textContent = state.papers.filter((paper) => paper.tags.includes("metabolism")).length;
+  els.semanticCount.textContent = state.papers.filter((paper) => paper.semantic_scholar).length;
 }
 
 function countSince(date) {
