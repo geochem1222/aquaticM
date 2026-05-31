@@ -31,26 +31,63 @@ def semantic_api_key_from_env() -> str | None:
     return None
 
 
-SYSTEM_GROUPS = [
-    "river rivers stream streams creek creeks",
-    "lake lakes reservoir reservoirs",
-    "pond ponds small water bodies",
-    "ditch ditches canal canals drainage ditch tidal creek tidal creeks",
-    "wetland wetlands marsh mangrove saltmarsh estuary",
-    "sediment sediments benthic hyporheic",
+WATER_TERMS = [
+    "river",
+    "stream",
+    "creek",
+    "lake",
+    "reservoir",
+    "pond",
+    "ditch",
+    "canal",
+    "tidal creek",
+    "wetland",
+    "marsh",
+    "mangrove",
+    "estuary",
+    "sediment",
+    "hyporheic zone",
 ]
 
-PROCESS_GROUPS = [
-    "ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen",
-    "carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling",
-    "nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication",
-    "microbial metabolism microbial carbon use efficiency methanotrophy decomposition",
+METABOLISM_TERMS = [
+    "ecosystem metabolism",
+    "stream metabolism",
+    "lake metabolism",
+    "aquatic metabolism",
+    "gross primary production",
+    "ecosystem respiration",
+    "net ecosystem production",
+    "dissolved oxygen",
+    "oxygen dynamics",
+    "carbon cycling",
+    "methane emission",
+    "carbon dioxide flux",
+    "greenhouse gas",
+    "nutrient cycling",
+    "nitrogen cycling",
+    "phosphorus cycling",
+    "microbial metabolism",
+    "methanotrophy",
+    "hypoxia",
 ]
 
-SEARCH_QUERIES = [
-    f"{system} {process} aquatic freshwater biogeochemistry"
-    for system in SYSTEM_GROUPS
-    for process in PROCESS_GROUPS
+SEED_QUERIES = [
+    '"ecosystem metabolism" freshwater',
+    '"aquatic ecosystem metabolism"',
+    '"stream metabolism" "dissolved oxygen"',
+    '"lake metabolism" "dissolved oxygen"',
+    '"gross primary production" "ecosystem respiration" freshwater',
+    '"net ecosystem production" aquatic',
+    '"dissolved oxygen" "ecosystem respiration" stream',
+    '"methane emission" pond freshwater',
+    '"carbon dioxide flux" river lake',
+    '"nutrient cycling" freshwater metabolism',
+]
+
+SEARCH_QUERIES = SEED_QUERIES + [
+    f'"{water}" "{process}"'
+    for water in WATER_TERMS
+    for process in METABOLISM_TERMS
 ]
 
 TAG_RULES = {
@@ -118,7 +155,7 @@ def build_user_agent(email: str | None) -> str:
 
 def fetch_semantic_scholar(retmax: int, email: str | None, api_key: str | None, query_limit: int | None = None) -> list[dict[str, Any]]:
     queries = SEARCH_QUERIES[:query_limit] if query_limit else SEARCH_QUERIES
-    per_query = max(8, min(40, retmax // max(1, len(queries)) + 5))
+    per_query = max(15, min(80, retmax // max(1, len(queries)) + 12))
     fields = ",".join([
         "paperId",
         "title",
@@ -190,7 +227,7 @@ def is_relevant(paper: dict[str, Any]) -> bool:
     text_value = " ".join([paper.get("title", ""), paper.get("abstract", ""), paper.get("journal", "")]).lower()
     if any(term in text_value for term in NOISE_TERMS):
         return False
-    tags = set(classify(text_value))
+    tags = set(paper.get("tags") or classify(text_value))
     has_system = bool(tags & {"river", "lake", "pond", "ditch", "wetland", "sediment"})
     has_process = bool(tags & {"oxygen", "metabolism", "carbon", "nutrient", "microbe", "greenhouse"})
     return bool(paper.get("title")) and has_system and has_process
@@ -253,7 +290,7 @@ def main() -> None:
     parser.add_argument("--sources", default="semantic", help="Only Semantic Scholar is supported; kept for CLI compatibility.")
     parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())
     parser.add_argument("--merge-existing", action="store_true")
-    parser.add_argument("--query-limit", type=int, default=24)
+    parser.add_argument("--query-limit", type=int, default=120)
     args = parser.parse_args()
 
     output = Path(args.output)
