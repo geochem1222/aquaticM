@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-05-31T16:59:47.660083+00:00",
+  "updated_at": "2026-05-31T22:16:11.846368+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -302,7 +302,7 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 1975,
+    "fresh_records_before_merge": 1977,
     "total_records_after_merge": 800,
     "query_limit": 120,
     "retmax": 800,
@@ -4517,36 +4517,6 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
-      "id": "3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
-      "source": "Semantic Scholar",
-      "pmid": "40582610",
-      "doi": "10.1016/j.envpol.2025.126741",
-      "title": "Deciphering the roles of abundant and rare microbial taxa in the natural restoration of organically contaminated urban river sediments.",
-      "authors": [
-        "Bin Wang",
-        "Qian Chen",
-        "Wei Liang",
-        "Suyun Chang",
-        "Jingmei Sun"
-      ],
-      "journal": "Environmental Pollution",
-      "publication_date": "2025-06-01",
-      "abstract": "Understanding the distinct roles of rare (RT)and abundant taxa (AT) during the natural restoration of organic contaminated urban river sediments is crucial for optimizing bioremediation. This study investigated their distribution, assembly mechanisms, co-occurrence patterns, and functional traits across sediment pollution gradients. Results revealed that AT dominated in sequence abundance but comprised fewer OTUs, while RT exhibited higher α-diversity and broader niche width, underpinning community stability under pollution stress. Stochastic processes dominated community assembly, with dispersal limitation primarily shaping AT and ecological drift influencing RT. Functionally, AT drove pollutant transformation and energy metabolism, whereas RT displayed elevated metabolic activity supporting microbial growth. Critically, RT demonstrated superior xenobiotic biodegradation in severely polluted sediments, highlighting their specialized role in extreme conditions. Co-occurrence network emphasized RT's importance in maintaining complex microbial interactions, though network stability decreased with pollution. These findings demonstrate that AT and RT synergistically drive organic matter degradation, with RT uniquely contributing to pollutant breakdown and ecosystem stability under high pollution stress. This study provides insights into leveraging both taxa for optimized bioremediation strategies in contaminated sediments.",
-      "url": "https://www.semanticscholar.org/paper/3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
-      "pdf_url": "",
-      "citation_count": 4,
-      "influential_citation_count": 0,
-      "reference_count": 41,
-      "references": [],
-      "tags": [
-        "carbon",
-        "metabolism",
-        "microbe",
-        "river",
-        "sediment"
-      ]
-    },
-    {
       "id": "3288b3a6edf26ff97d4e5a111844b66cbe2ae270",
       "source": "Semantic Scholar",
       "pmid": "40580831",
@@ -4663,6 +4633,36 @@ window.PAPER_TRACKER_DATA = {
       "tags": [
         "lake",
         "metabolism"
+      ]
+    },
+    {
+      "id": "3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
+      "source": "Semantic Scholar",
+      "pmid": "40582610",
+      "doi": "10.1016/j.envpol.2025.126741",
+      "title": "Deciphering the roles of abundant and rare microbial taxa in the natural restoration of organically contaminated urban river sediments.",
+      "authors": [
+        "Bin Wang",
+        "Qian Chen",
+        "Wei Liang",
+        "Suyun Chang",
+        "Jingmei Sun"
+      ],
+      "journal": "Environmental Pollution",
+      "publication_date": "2025-06-01",
+      "abstract": "Understanding the distinct roles of rare (RT)and abundant taxa (AT) during the natural restoration of organic contaminated urban river sediments is crucial for optimizing bioremediation. This study investigated their distribution, assembly mechanisms, co-occurrence patterns, and functional traits across sediment pollution gradients. Results revealed that AT dominated in sequence abundance but comprised fewer OTUs, while RT exhibited higher α-diversity and broader niche width, underpinning community stability under pollution stress. Stochastic processes dominated community assembly, with dispersal limitation primarily shaping AT and ecological drift influencing RT. Functionally, AT drove pollutant transformation and energy metabolism, whereas RT displayed elevated metabolic activity supporting microbial growth. Critically, RT demonstrated superior xenobiotic biodegradation in severely polluted sediments, highlighting their specialized role in extreme conditions. Co-occurrence network emphasized RT's importance in maintaining complex microbial interactions, though network stability decreased with pollution. These findings demonstrate that AT and RT synergistically drive organic matter degradation, with RT uniquely contributing to pollutant breakdown and ecosystem stability under high pollution stress. This study provides insights into leveraging both taxa for optimized bioremediation strategies in contaminated sediments.",
+      "url": "https://www.semanticscholar.org/paper/3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
+      "pdf_url": "",
+      "citation_count": 4,
+      "influential_citation_count": 0,
+      "reference_count": 41,
+      "references": [],
+      "tags": [
+        "carbon",
+        "metabolism",
+        "microbe",
+        "river",
+        "sediment"
       ]
     },
     {
@@ -5024,6 +5024,33 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
+      "id": "caf3702aa62b8621523767984ac7f8bc3c7e1cad",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3390/su17094060",
+      "title": "Characteristics of the Water Environment and the Mechanism of Nitrogen Metabolism in the Xisha River",
+      "authors": [
+        "Shang Yang",
+        "Ran Wang",
+        "Wei Zhao"
+      ],
+      "journal": "Sustainability",
+      "publication_date": "2025-04-30",
+      "abstract": "The nitrogen cycle is the key to the healthy operation of river ecosystems and plays an important role in maintaining the ecological balance, purifying water quality, and promoting the circulation of material. The Xisha River was chosen as the research object to analyze the water quality condition from 2021 to 2023, and the microbial diversity of nitrogen metabolism, functional genes, and metabolic pathways in the water body were analyzed using macro-genomics technology. The results showed that total nitrogen (TN) was the main exceedance factor in the water body, and ammonia nitrogen (NH3-N), TN, and total phosphorus (TP) were the key factors affecting the water quality. The downstream station (W2) exhibited the most significant water quality changes, while the upstream station (W5) showed the highest biodiversity and abundance. The top five genera in abundance in the water body were unclassified__c__Actinomycetia, unclassified__p__Bacteroidota, Paenisporosarcina, Candidatus_Planktophila, and unclassified__c__Betaproteobacteria. The five most abundant nitrogen metabolism genes were K01915 (nitrate reductase), K00265 (nitrite reductase), K01673 (ammonium transporter), K00266 (nitrite reductase), and K02575 (nitrate reductase), each contributing to critical nitrogen cycling processes such as denitrification, nitrification, and nitrogen assimilation. The six major nitrogen metabolism pathways were denitrification (M00529), anisotropic nitrate reduction (M00528), anisotropic nitrate reduction (M00529). anisotropic nitrate reduction (M00530), complete nitrification (M00804), nitrate assimilation (M00615), methylaspartate cycling (M00740), and assimilatory nitrate reduction (M00531). TN was identified as the primary environmental factor influencing both microbial communities and nitrogen metabolism genes. Co-occurrence network analysis identified K01915 (nitrate reductase), K00459 (ammonium transporter), K01673 (ammonium transporter), and K00261 (nitrate reductase) as pivotal genes involved in nitrogen metabolism. This study reveals the microbial-driven nitrogen cycle and lays the foundation for mitigating nitrogen pollution in the Xisha River.",
+      "url": "https://www.semanticscholar.org/paper/caf3702aa62b8621523767984ac7f8bc3c7e1cad",
+      "pdf_url": "",
+      "citation_count": 4,
+      "influential_citation_count": 0,
+      "reference_count": 52,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "nutrient",
+        "river"
+      ]
+    },
+    {
       "id": "3487a11f32f2cedfa35f1365effd6e3e9a0075d7",
       "source": "Semantic Scholar",
       "pmid": "40431180",
@@ -5319,6 +5346,33 @@ window.PAPER_TRACKER_DATA = {
       "tags": [
         "lake",
         "metabolism"
+      ]
+    },
+    {
+      "id": "b11d5ff0b96758f2f42bf39954a7b407a3a12f20",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1080/09715010.2025.2485301",
+      "title": "Towards seasonal-based assessment of machine learning models in river dissolved oxygen simulations with different flow ranges",
+      "authors": [
+        "Naser Shiri",
+        "Ozgur Kisi",
+        "S. Karimi",
+        "J. Shiri"
+      ],
+      "journal": "ISH Journal of Hydraulic Engineering",
+      "publication_date": "2025-04-05",
+      "abstract": "ABSTRACT This study presents a two-phase simulation process that applies GEP, SVM, and RF methodologies. The process involves estimation and prediction and uses a “v-fold” testing data assignment. The definition of “v” is based on seasonal variations. The analysis uses data from six stations located in two rivers with different flow ranges in Florida and Oregon States, U.S.A. During the estimation phase, the influential inputs were identified using both the MIC analysis and literature review, and introduced to the models through seven different input combinations. The results demonstrated that these methods can be used to accurately estimate DO under different flow rates in different seasons. Selection of the best models was carried out using three error statistics and variance values interpretations. Correlation analysis was then applied for identifying the input parameters of the prediction models. For estimation procedure, RF (with the average Nash-Sutcliffe (NS) coefficient of 0.910) showed its superiority over the GEP and SVM models, while GEP (with average NS coefficient of 0.962) produced the most accurate results for prediction procedure. An additional uncertainty analysis confirmed the given statements. Water temperature was identified as the most influential parameter on DO estimation, followed by the specific conductance and river water discharge.",
+      "url": "https://www.semanticscholar.org/paper/b11d5ff0b96758f2f42bf39954a7b407a3a12f20",
+      "pdf_url": "",
+      "citation_count": 2,
+      "influential_citation_count": 0,
+      "reference_count": 47,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
       ]
     },
     {
@@ -5887,25 +5941,24 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
-      "id": "e8a01ea4c272f3f9b9c1909a153c436c2d78053b",
+      "id": "6bce231b2b954963e43f7843b4308a353fca8865",
       "source": "Semantic Scholar",
       "pmid": "",
-      "doi": "10.2118/223870-ms",
-      "title": "Diffusion Model-Based Multi-Fidelity Reservoir Simulation Surrogates for Upscaled Model Error Correction",
+      "doi": "10.2118/223888-ms",
+      "title": "A Physics-Based Coarsening Strategy in Multiscale Pressure Solver for Fractured Reservoir Simulation",
       "authors": [
-        "Yong Do Kim",
-        "Satomi Suzuki",
-        "Xiao-Hui Wu",
-        "G. Becker"
+        "Shingo Watanabe",
+        "Takuto Sakai",
+        "C. Jensen"
       ],
       "journal": "SPE Reservoir Simulation Conference",
       "publication_date": "2025-03-18",
-      "abstract": "\n Upscaled models have become integral tools for the rapid prediction of dynamic subsurface flow within reservoir simulations. Despite their ability to produce simulation results more swiftly than fine-scale models, upscaled models often suffer from inaccuracies in the output quantities of interest. In this work, we develop multi-fidelity surrogates based on diffusion models to correct errors in upscaled model simulation solutions. The multi-fidelity surrogates developed here accept pressure and saturation solutions from upscaled model simulation runs as conditional inputs and generate pressure and saturation at fine scale. To accommodate reservoir models of different sizes and enhance flexibility, we develop two different multi-fidelity surrogates: diffusion model- and latent diffusion model-based multi-fidelity surrogates (DM-MFS and LDM-MFS). The DM-MFS and LDM-MFS are tested using a 40 × 40 Gaussian model and a 60 × 220 SPE 10 top layer model, respectively. Both surrogates are trained using pressure and saturation solutions from a set of 80 fine-scale and upscaled simulation runs that involve different injection well rates and production well bottom-hole pressure (BHP) schedules. After the training, the multi-fidelity surrogates are shown to be capable of generating pressure and saturation at fine scale accurately for given upscaled model simulation pressure and saturation solutions.",
-      "url": "https://www.semanticscholar.org/paper/e8a01ea4c272f3f9b9c1909a153c436c2d78053b",
+      "abstract": "\n Multiscale reservoir simulation for fractured models involves considerable numerical complexity arising from the sharp contrasts between matrix and fracture rock properties and the need for refined grid resolutions to capture accurate flow dynamics. To tackle this challenge, we develop a physics-based coarsening strategy that combines strongly coupled interpolation between coarse-scale and fine-scale solutions across matrix and fracture grid connections. Specifically, we introduce novel physics-based coarsening strategies that adapt the sizes of the coarse grid blocks in the matrix and fracture domains separately. Additionally, we enforce decoupling multiscale basis function calculations across matrix and fracture grid connections for general fractured models, significantly improving linear solver computational efficiency.\n First, we observe that a discrete fracture model using unstructured grids exhibits slow linear solver convergence performance from the previous approach proposed by Watanabe et al. (2023). Numerical experiments reveal inaccurate basis function interpolation from coarse-scale to fine-scale pressure solutions along fracture networks due to insufficient support region overlapping across fracture coarse grid blocks for basis function calculations. Additionally, we visualize the matrix and fracture fully coupled coarse-scale pressure matrix sparsity pattern highlighting a lack of diagonal dominance. The developed strategies ensure smaller coarsening along fracture networks while allowing larger coarsening in matrix domains, effectively reducing the coarse-scale pressure matrix size. Consequently, this strategy accelerates overall linear solver convergence by minimizing the interpolation errors in the multiscale preconditioning stage.\n We rigorously evaluate the developed algorithm performance on both discrete fracture and embedded fracture models in terms of linear and nonlinear solver iterations and central processing unit (CPU) times. Additionally, we benchmark the new multiscale pressure algorithm performance against a standard fine-scale pressure solver. In summary, our approach demonstrates accurate and efficient field-scale fracture modeling in multiscale reservoir simulations.",
+      "url": "https://www.semanticscholar.org/paper/6bce231b2b954963e43f7843b4308a353fca8865",
       "pdf_url": "",
       "citation_count": 1,
       "influential_citation_count": 0,
-      "reference_count": 18,
+      "reference_count": 25,
       "references": [],
       "tags": [
         "lake",
@@ -5937,24 +5990,51 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
-      "id": "6bce231b2b954963e43f7843b4308a353fca8865",
+      "id": "e2a7bc019f7faff08d42c5a92d393bf8c2345e94",
       "source": "Semantic Scholar",
       "pmid": "",
-      "doi": "10.2118/223888-ms",
-      "title": "A Physics-Based Coarsening Strategy in Multiscale Pressure Solver for Fractured Reservoir Simulation",
+      "doi": "10.2118/223869-ms",
+      "title": "Development and Application of Unstructured Coarse Gridding and Upscaling of Geologic and Reservoir Models for Flow Simulation",
       "authors": [
-        "Shingo Watanabe",
-        "Takuto Sakai",
-        "C. Jensen"
+        "Turgut V. Ahmadov",
+        "Yaser M. Alghawi",
+        "M. King"
       ],
       "journal": "SPE Reservoir Simulation Conference",
       "publication_date": "2025-03-18",
-      "abstract": "\n Multiscale reservoir simulation for fractured models involves considerable numerical complexity arising from the sharp contrasts between matrix and fracture rock properties and the need for refined grid resolutions to capture accurate flow dynamics. To tackle this challenge, we develop a physics-based coarsening strategy that combines strongly coupled interpolation between coarse-scale and fine-scale solutions across matrix and fracture grid connections. Specifically, we introduce novel physics-based coarsening strategies that adapt the sizes of the coarse grid blocks in the matrix and fracture domains separately. Additionally, we enforce decoupling multiscale basis function calculations across matrix and fracture grid connections for general fractured models, significantly improving linear solver computational efficiency.\n First, we observe that a discrete fracture model using unstructured grids exhibits slow linear solver convergence performance from the previous approach proposed by Watanabe et al. (2023). Numerical experiments reveal inaccurate basis function interpolation from coarse-scale to fine-scale pressure solutions along fracture networks due to insufficient support region overlapping across fracture coarse grid blocks for basis function calculations. Additionally, we visualize the matrix and fracture fully coupled coarse-scale pressure matrix sparsity pattern highlighting a lack of diagonal dominance. The developed strategies ensure smaller coarsening along fracture networks while allowing larger coarsening in matrix domains, effectively reducing the coarse-scale pressure matrix size. Consequently, this strategy accelerates overall linear solver convergence by minimizing the interpolation errors in the multiscale preconditioning stage.\n We rigorously evaluate the developed algorithm performance on both discrete fracture and embedded fracture models in terms of linear and nonlinear solver iterations and central processing unit (CPU) times. Additionally, we benchmark the new multiscale pressure algorithm performance against a standard fine-scale pressure solver. In summary, our approach demonstrates accurate and efficient field-scale fracture modeling in multiscale reservoir simulations.",
-      "url": "https://www.semanticscholar.org/paper/6bce231b2b954963e43f7843b4308a353fca8865",
+      "abstract": "\n Scalable flow simulation, in which spatial resolution and simulation cost are chosen at run-time, is an extremely useful reservoir engineering capability with applications to model calibration, uncertainty estimation, field optimization and reservoir management. Recent examples have emphasized the formulation of simulation problems as pore volume / transmissibility networks to develop fast physics based proxy models (Khodabakhshi et al. 2015, Lie and Krogstad 2022, Wang et al. 2022, Lie and Krogstad 2023). In the current study we develop an adaptive grid coarsening approach based on constraints that honor reservoir structure and stratigraphy, preserve fluid volumes and contacts, and retain resolution near wells, and which may be implemented within commercial reservoir simulators. We include an extension based on a fast multi-source solution to the Eikonal equation for designing unstructured coarse simulation grids that also preserves local heterogeneity. Novel flow based upscaling algorithms that extend earlier work are utilized to determine the coarsened intercell transmissibility and well connections. We present the application of the workflow in several examples: the Brugge model (Chen and Oliver 2010, Peters et al. 2010, Guo and Reynolds 2019, Alghawi et al. 2024), the Norne model (Rwechungura et al. 2010, Rwechungura et al. 2012), selected layers from the SPE10 model (Christie and Blunt 2001), and the Coastal Bend carbon storage model (Fu et al. 2024). These examples feature structured and unstructured applications, and the results are analyzed in terms of well bottomhole pressures and flow rates using commercial simulators. A static comparison of pore volumes and oil initially in place is presented to demonstrate the impact of aggressive coarsening choices and material balance models on the accuracy of these parameters. Furthermore, we present an analysis of the impact of the number of active cells and the number of non-neighbor connections on the simulation processor time, and a comparison of simulation time for some of the popular commercial simulators is presented as well.",
+      "url": "https://www.semanticscholar.org/paper/e2a7bc019f7faff08d42c5a92d393bf8c2345e94",
       "pdf_url": "",
       "citation_count": 1,
       "influential_citation_count": 0,
-      "reference_count": 25,
+      "reference_count": 27,
+      "references": [],
+      "tags": [
+        "carbon",
+        "lake",
+        "metabolism"
+      ]
+    },
+    {
+      "id": "e8a01ea4c272f3f9b9c1909a153c436c2d78053b",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.2118/223870-ms",
+      "title": "Diffusion Model-Based Multi-Fidelity Reservoir Simulation Surrogates for Upscaled Model Error Correction",
+      "authors": [
+        "Yong Do Kim",
+        "Satomi Suzuki",
+        "Xiao-Hui Wu",
+        "G. Becker"
+      ],
+      "journal": "SPE Reservoir Simulation Conference",
+      "publication_date": "2025-03-18",
+      "abstract": "\n Upscaled models have become integral tools for the rapid prediction of dynamic subsurface flow within reservoir simulations. Despite their ability to produce simulation results more swiftly than fine-scale models, upscaled models often suffer from inaccuracies in the output quantities of interest. In this work, we develop multi-fidelity surrogates based on diffusion models to correct errors in upscaled model simulation solutions. The multi-fidelity surrogates developed here accept pressure and saturation solutions from upscaled model simulation runs as conditional inputs and generate pressure and saturation at fine scale. To accommodate reservoir models of different sizes and enhance flexibility, we develop two different multi-fidelity surrogates: diffusion model- and latent diffusion model-based multi-fidelity surrogates (DM-MFS and LDM-MFS). The DM-MFS and LDM-MFS are tested using a 40 × 40 Gaussian model and a 60 × 220 SPE 10 top layer model, respectively. Both surrogates are trained using pressure and saturation solutions from a set of 80 fine-scale and upscaled simulation runs that involve different injection well rates and production well bottom-hole pressure (BHP) schedules. After the training, the multi-fidelity surrogates are shown to be capable of generating pressure and saturation at fine scale accurately for given upscaled model simulation pressure and saturation solutions.",
+      "url": "https://www.semanticscholar.org/paper/e8a01ea4c272f3f9b9c1909a153c436c2d78053b",
+      "pdf_url": "",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 18,
       "references": [],
       "tags": [
         "lake",
@@ -10272,6 +10352,39 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
+      "id": "834e6492b63213052db49e39c12f54f02bc67afe",
+      "source": "Semantic Scholar",
+      "pmid": "39075044",
+      "doi": "10.1038/s41467-024-50578-5",
+      "title": "Cycling and persistence of iron-bound organic carbon in subseafloor sediments",
+      "authors": [
+        "Yunru Chen",
+        "Liang Dong",
+        "Weikang Sui",
+        "Mingyang Niu",
+        "X. Cui",
+        "K. Hinrichs",
+        "Fengping Wang"
+      ],
+      "journal": "Nature Communications",
+      "publication_date": "2024-07-29",
+      "abstract": "Reactive iron (FeR) serves as an important sink of organic carbon (OC) in marine surface sediments, which preserves approximately 20% of total OC (TOC) as reactive iron-bound OC (FeR-OC). However, the fate of FeR-OC in subseafloor sediments and its availability to microorganisms, remain undetermined. Here, we reconstructed continuous FeR-OC records in two sediment cores of the northern South China Sea encompassing the suboxic to methanic biogeochemical zones and reaching a maximum age of ~100 kyr. The downcore FeR-OC contributes a relatively stable proportion of 13.3 ± 3.2% to TOC. However, distinctly lower values of less than 5% of TOC, accompanied by notable 13C depletion of FeR-OC, are observed in the sulfate-methane transition zone (SMTZ). FeR-OC is suggested to be remobilized by microbially mediated reductive dissolution of FeR and subsequently remineralized, the flux of which is 18–30% of the methane consumption in the SMTZ. The global reservoir of FeR-OC in microbially active Quaternary marine sediments could be 19-46 times the size of the atmospheric carbon pool. Thus, the FeR-OC pool may support subseafloor microorganisms and contribute to regulating Earth’s carbon cycle. This study shows that iron-bound organic carbon (FeR-OC) is generally persistent but can be remobilized during iron reduction and utilized by microbes in subseafloor sediments. This sedimentary FeR-OC pool may contribute to regulating Earth’s carbon cycle.",
+      "url": "https://www.semanticscholar.org/paper/834e6492b63213052db49e39c12f54f02bc67afe",
+      "pdf_url": "https://www.nature.com/articles/s41467-024-50578-5.pdf",
+      "citation_count": 27,
+      "influential_citation_count": 2,
+      "reference_count": 77,
+      "references": [],
+      "tags": [
+        "carbon",
+        "greenhouse",
+        "lake",
+        "metabolism",
+        "microbe",
+        "sediment"
+      ]
+    },
+    {
       "id": "fa23141aa363e5f32b4e4cd89bf5960582c0a63e",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -12069,6 +12182,42 @@ window.PAPER_TRACKER_DATA = {
         "metabolism",
         "microbe",
         "nutrient",
+        "sediment"
+      ]
+    },
+    {
+      "id": "cd7a5f0a404121b7f49c583e587f00ada2967b83",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2023JG007659",
+      "title": "Spatial, Seasonal, and Diel Controls of Nitrogen‐Carbon‐Oxygen Cycling During Lake‐Water Infiltration to an Aquifer",
+      "authors": [
+        "Richard L. Smith",
+        "D. Repert",
+        "J. Underwood",
+        "J. Böhlke",
+        "D. LeBlanc",
+        "Robert B. Hull",
+        "Douglas B. Kent",
+        "A. P. Reed",
+        "Stanley J. Mroczkowski"
+      ],
+      "journal": "Journal of Geophysical Research: Biogeosciences",
+      "publication_date": "2024-04-01",
+      "abstract": "Many freshwater lakes are groundwater flow‐through systems. Although lakes commonly are considered to be sinks for nitrogen inputs, relatively little is known about carbon and nitrogen export from lakes to groundwater. The current study focused on lake‐bottom biogeochemical processes accompanying the transport of nitrogen, dissolved oxygen (O2), and dissolved organic carbon (DOC) during lake‐water recharge from a groundwater flow‐through lake. Lake‐water and porewater (15–100 cm below lakebed) samples were collected along transects within the lake downwelling zone. Infiltrating porewater O2 and DOC concentrations decreased with depth while nitrate (NO3−) concentrations increased, indicating nitrification of organic matter within the profiles. The depth of NO3− production and transport was seasonally dependent. In winter, NO3− and O2 were exported beyond 100‐cm depth; whereas in summer, shallow nitrification zones were underlain by deeper NO3− reduction zones, and diel patterns of O2 and NO3− penetration depths were observed. Microbial community compositions and stable isotope profiles (δ15N[NO3−], δ18O[NO3−], δ18O[O2]) were consistent with apparent C–N–O reaction stoichiometries indicating O2 reduction and nitrification in shallower porewater, followed by varying NO3− reduction at depth. Maximum porewater NO3− concentrations (∼10–20 μM) were limited by infiltrating O2 concentrations and C/N ratios of reacting organic matter. Lake‐water level variations caused changes in shoreline position and porewater velocities, while variations in lake‐water temperature, DOC, and O2 contributed to changes in reaction rates and depth of O2 and NO3− penetration into the lakebed. The quality of groundwater recharged by lake water reflected temporally and spatially varying physical and biogeochemical processes in the sediment porewater.",
+      "url": "https://www.semanticscholar.org/paper/cd7a5f0a404121b7f49c583e587f00ada2967b83",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023JG007659",
+      "citation_count": 7,
+      "influential_citation_count": 0,
+      "reference_count": 93,
+      "references": [],
+      "tags": [
+        "carbon",
+        "lake",
+        "metabolism",
+        "microbe",
+        "nutrient",
+        "oxygen",
         "sediment"
       ]
     },
@@ -15518,6 +15667,61 @@ window.PAPER_TRACKER_DATA = {
         "microbe",
         "nutrient",
         "river"
+      ]
+    },
+    {
+      "id": "07a002462435b88b2df2ef4992566aa296864997",
+      "source": "Semantic Scholar",
+      "pmid": "37667052",
+      "doi": "10.1038/s41590-023-01601-2",
+      "title": "SARS-CoV-2 reservoir in post-acute sequelae of COVID-19 (PASC)",
+      "authors": [
+        "Amy D. Proal",
+        "M. VanElzakker",
+        "S. Aleman",
+        "K. Bach",
+        "B. Boribong",
+        "M. Buggert",
+        "Sara Cherry",
+        "Daniel S. Chertow",
+        "Helen E. Davies",
+        "Christopher L. Dupont",
+        "S. Deeks",
+        "William A Eimer",
+        "E. W. Ely",
+        "A. Fasano",
+        "Marcelo Freire",
+        "L. Geng",
+        "Diane E. Griffin",
+        "T. Henrich",
+        "Akiko Iwasaki",
+        "David Izquierdo-Garcia",
+        "M. Locci",
+        "S. Mehandru",
+        "Mark M. Painter",
+        "M. Peluso",
+        "E. Pretorius",
+        "David A. Price",
+        "David Putrino",
+        "R. Scheuermann",
+        "Gene S. Tan",
+        "Rudolph E. Tanzi",
+        "H. VanBrocklin",
+        "L. Yonker",
+        "E. Wherry"
+      ],
+      "journal": "Nature Immunology",
+      "publication_date": "2023-09-04",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/07a002462435b88b2df2ef4992566aa296864997",
+      "pdf_url": "https://www.nature.com/articles/s41590-023-01601-2.pdf",
+      "citation_count": 217,
+      "influential_citation_count": 6,
+      "reference_count": 146,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
       ]
     },
     {
@@ -24818,188 +25022,6 @@ window.PAPER_TRACKER_DATA = {
         "microbe",
         "nutrient",
         "river"
-      ]
-    },
-    {
-      "id": "37411c9e71004428837a9ba7c544d2784b6ad448",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1016/j.agrformet.2020.108270",
-      "title": "Performance of the ecosystem demography model (EDv2.2) in simulating gross primary production capacity and activity in a dryland study area",
-      "authors": [
-        "H. Dashti",
-        "K. Pandit",
-        "N. Glenn",
-        "D. Shinneman",
-        "G. Flerchinger",
-        "A. Hudak",
-        "M. de Graaf",
-        "A. Flores",
-        "S. Ustin",
-        "N. Ilangakoon",
-        "A. Fellows"
-      ],
-      "journal": "Agricultural and Forest Meteorology",
-      "publication_date": "2021-02-15",
-      "abstract": "Abstract Dryland ecosystems play an important role in the global carbon cycle, including regulating the inter-annual global carbon sink. Dynamic global vegetation models (DGVMs) are essential tools that can help us better understand carbon cycling in different ecosystems. Currently, there is limited knowledge of the performance of these models in drylands partly due to characterizing the heterogeneity of the vegetation and hydrometeorological conditions. The aim of this study is to evaluate the performance of a DGVM for drylands to facilitate improved understanding of gross primary production (GPP) as one of the important components of the carbon cycle. We performed a sensitivity analysis and calibrated the Ecosystem Demography (EDv2.2) DGVM to simulate GPP in a dryland watershed (Reynolds Creek Experimental Watershed, Idaho) in the western US for the years 2000-2017. GPP capacity and activity were investigated by comparing model simulations with GPP estimated from eddy covariance data (available from 2015-2017) and remote sensing products (2000-2017). Our results show good performance of EDv2.2 at daily timesteps ( R M S E ≈ 0.38 [ kgC / m 2 / year ] ) between simulated and measured GPP in lower elevations of the watershed. Moreover, remote sensing analysis show that EDv2.2 captures the long-term trends in this ecosystem and performs relatively well in capturing phenometrics (start/end of the season). The performance of the model degrades in more productive sites with greater GPP (located at higher elevations in the watershed). To improve model performance, future studies will need to introduce additional plant functional types for drylands such as our study area, and modify plant processes (e.g., plant hydraulics and phenology) in the model.",
-      "url": "https://www.semanticscholar.org/paper/37411c9e71004428837a9ba7c544d2784b6ad448",
-      "pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S0168192320303725",
-      "citation_count": 7,
-      "influential_citation_count": 0,
-      "reference_count": 92,
-      "references": [],
-      "tags": [
-        "carbon",
-        "metabolism",
-        "river"
-      ]
-    },
-    {
-      "id": "750971a0aa91223df3ff1dabada953566be016bd",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1002/lno.11707",
-      "title": "Ecosystem metabolism in tropical streams and rivers: a review and synthesis",
-      "authors": [
-        "Nicholas S. Marzolf",
-        "M. Ardón"
-      ],
-      "journal": "Limnology and Oceanography",
-      "publication_date": "2021-02-10",
-      "abstract": "Ecosystem metabolism of freshwater ecosystems has been studied for several decades, with theory and synthesis largely derived from temperate streams and rivers in North America and Europe. Advances in sensor technology and modeling have opened a wider range of streams to be included to test theories beyond temperate streams. In this paper, we review and synthesize ecosystem metabolism data from tropical streams and rivers to determine to what extent the constraints of metabolism measured in temperate streams are similar in tropical streams. We compiled 202 measurements of gross primary productivity (GPP) and ecosystem respiration (ER) from 83 tropical streams spanning 22.2°S to 18.4°N. Overall, tropical streams were heterotrophic (ER > GPP), with GPP ranging from 0.01 to 11.7 g O2 m−2 d−1 and ER ranging from −0.2 to −42.1 g O2 m−2 d−1, similar on average to rates reviewed from temperate streams, but with higher maximum ER in tropical streams. Gross primary productivity increased with watershed area; a result also observed in temperate streams. ER decreased with elevated phosphorus and higher annual rainfall. We constructed a structural equation model that explained greater variation of ER (74%) than GPP (26%), and reflects similar drivers, such as land‐use and watershed area, as in temperate streams. We conclude that tropical stream ecosystem metabolism has similar drivers as temperate streams, and a warmer and wetter climate and human use of tropical lands will influence metabolic rates in streams.",
-      "url": "https://www.semanticscholar.org/paper/750971a0aa91223df3ff1dabada953566be016bd",
-      "pdf_url": "",
-      "citation_count": 31,
-      "influential_citation_count": 1,
-      "reference_count": 77,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "nutrient",
-        "river"
-      ]
-    },
-    {
-      "id": "615193c14439d958d6f02f1850dbf42eae773e98",
-      "source": "Semantic Scholar",
-      "pmid": "33742868",
-      "doi": "10.13227/j.hjkx.202006173",
-      "title": "[Water-air Carbon Dioxide Exchange and Nutritional Controls in a Typical Karst River].",
-      "authors": [
-        "Rui Liu",
-        "Jin Zhang",
-        "Zu-Sheng Chen",
-        "Maofei Ni",
-        "Wen-Sheng Liu"
-      ],
-      "journal": "Huan jing ke xue= Huanjing kexue",
-      "publication_date": "2021-02-08",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/615193c14439d958d6f02f1850dbf42eae773e98",
-      "pdf_url": "",
-      "citation_count": 6,
-      "influential_citation_count": 0,
-      "reference_count": 0,
-      "references": [],
-      "tags": [
-        "carbon",
-        "greenhouse",
-        "metabolism",
-        "river"
-      ]
-    },
-    {
-      "id": "6a2853810891ce0f0255a7dbbcea7a860915a4d8",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1080/20442041.2020.1843930",
-      "title": "Intense variability of dissolved oxygen and temperature in the internal swash zone of Hamilton Harbour, Lake Ontario",
-      "authors": [
-        "B. Flood",
-        "M. Wells",
-        "J. Midwood",
-        "J. Brooks",
-        "Yulong Kuai",
-        "Jingzhi Li"
-      ],
-      "journal": "Inland Waters",
-      "publication_date": "2021-02-08",
-      "abstract": "ABSTRACT The thermocline of large, stratified lakes is constantly sloshing along the sloping bed, creating a spatially variable internal swash zone. Temperature and dissolved oxygen vary rapidly here, potentially impacting fish habitat on timescales of hours. Large spatial differences in the time-dependent variance of temperature around Hamilton Harbour, Lake Ontario, Canada, were partly controlled by basin shape and bathymetry. The temporal variability was nearly twice as large at sites along the mildly sloping, narrow, upwind end of the basin relative to those at a similar depth at the steeper, broad, downwind end. Because the thermocline and oxycline were coincident, the same physical mechanisms resulted in a dissolved oxygen variance also twice as great at the mild slope compared to the steeper slope. Frequent hypoxic events occurred throughout the internal swash zone, drastically reducing the availability of fish habitat for anoxia-intolerant species. In the dynamic littoral zone, weekly measurements would overlook the acute temporal variability of temperature and dissolved oxygen. Here, we demonstrate that field observations and 3-dimensional (3D) hydrodynamic modelling can predict how basin morphometry affects internal seiche dynamics and spatial variability of internal swash zones.",
-      "url": "https://www.semanticscholar.org/paper/6a2853810891ce0f0255a7dbbcea7a860915a4d8",
-      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/20442041.2020.1843930?needAccess=true",
-      "citation_count": 30,
-      "influential_citation_count": 0,
-      "reference_count": 53,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism",
-        "oxygen"
-      ]
-    },
-    {
-      "id": "3988bdde69acb79d9c6f4ad95eaebb13ba1b2b2f",
-      "source": "Semantic Scholar",
-      "pmid": "33609840",
-      "doi": "10.1016/j.scitotenv.2021.145141",
-      "title": "Interaction between carbon cycling and phytoplankton community succession in hydropower reservoirs: Evidence from stable carbon isotope analysis.",
-      "authors": [
-        "Jing Xiao",
-        "Baoli Wang",
-        "Xiao-Long Qiu",
-        "Meiling Yang",
-        "Cong-Qiang Liu"
-      ],
-      "journal": "Science of the Total Environment",
-      "publication_date": "2021-02-06",
-      "abstract": "Carbon (C) cycling and phytoplankton community succession are very important for hydropower reservoir ecosystems; however, whether the former controls the latter or the reverse is still debated. To understand this process, we investigated phytoplankton species compositions, stable C isotope compositions of dissolved inorganic C and particulate organic C (δ13C-DIC and δ13C-POC), and related environmental factors in seven hydropower reservoirs on the Wujiang River, Southwest China. A total of 36 algal genera from seven phyla were identified, and phytoplankton community exhibited obvious temporal and spatial difference. The δ13C-DIC (from -9.96 to -3.73‰) and δ13C-POC (from -33.44 to -21.17‰) co-varied with the algal species succession and increased markedly during the shift of dominant species from Bacillariophyta to Pyrrophyta or Cyanophyta. In addition, the strong C fixation in the euphotic layer resulted in great δ13C-DIC and CO2 stratification in the reservoir profile. Statistical analyses and C isotope evidence demonstrate that an increase in water temperature triggers phytoplankton community succession, and that CO2 availability is a key to drive the succession direction, and in turn, C cycling is enhanced when phytoplankton are dominated by Pyrrophyta or Cyanophyta in hydropower reservoirs. This study confirms that C cycling and phytoplankton community succession interact with each other and evolve synchronously, and will be helpful to systematically evaluate the environmental consequences of river damming.",
-      "url": "https://www.semanticscholar.org/paper/3988bdde69acb79d9c6f4ad95eaebb13ba1b2b2f",
-      "pdf_url": "",
-      "citation_count": 25,
-      "influential_citation_count": 0,
-      "reference_count": 54,
-      "references": [],
-      "tags": [
-        "carbon",
-        "greenhouse",
-        "lake",
-        "metabolism",
-        "river"
-      ]
-    },
-    {
-      "id": "0ec6f8e10ff8517240a3946257bcb3e75b9afb68",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1002/lno.11700",
-      "title": "Contributions of external nutrient loading and internal cycling to cyanobacterial bloom dynamics in Lake Taihu, China: Implications for nutrient management",
-      "authors": [
-        "Hai Xu",
-        "M. J. McCarthy",
-        "H. Paerl",
-        "J. Brookes",
-        "G. Zhu",
-        "N. Hall",
-        "B. Qin",
-        "Yunlin Zhang",
-        "Mengyuan Zhu",
-        "Justyna J. Hampel",
-        "S. Newell",
-        "Wayne S Gardner"
-      ],
-      "journal": "Limnology and Oceanography",
-      "publication_date": "2021-02-04",
-      "abstract": "Harmful cyanobacterial blooms (CyanoHABs) are linked to increasing anthropogenic nitrogen (N) and phosphorus (P) inputs. However, CyanoHABs in many large lakes continue despite extensive abatement efforts, mostly focused on external P loading. Internal nutrient cycling can modify nutrient availability and limitation; thus, understanding the relative importance of external vs. internal nutrient loading is essential for developing effective mitigation strategies for CyanoHABs. We estimated long‐term nutrient budgets for Lake Taihu, China, from mass balance models using extensive monitoring of input and output nutrient data from 2005 to 2018 to quantify contributions from internal nutrient loading. The nutrient mass balance showed that 9% and 63% of annual external N and P inputs, respectively, were retained in the lake. Denitrification removed 54% of external N loading and can thus help explain rapid decreases in lake N concentrations and summer N limitation. Water column NH4+ regeneration can help sustain CyanoHABs over the short term and contributed 38–58% of potential NH4+ demand for summer‐fall, Microcystis‐dominated blooms. Internal P release contributed 23–90% of CyanoHABs P demand, although Taihu was a net P sink on an annual scale. Our results show that internal nutrient cycling helps sustain CyanoHABs in Taihu, despite reductions in external nutrient inputs. Furthermore, N is leaving the lake faster than P, thereby creating persistent N limitation. Therefore, parallel reductions in external N loading, along with P, will be most effective in reducing CyanoHABs and accelerate the recovery process in this and other large, shallow lakes.",
-      "url": "https://www.semanticscholar.org/paper/0ec6f8e10ff8517240a3946257bcb3e75b9afb68",
-      "pdf_url": "https://cdr.lib.unc.edu/downloads/02871602w",
-      "citation_count": 159,
-      "influential_citation_count": 0,
-      "reference_count": 107,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism",
-        "nutrient"
       ]
     }
   ]
