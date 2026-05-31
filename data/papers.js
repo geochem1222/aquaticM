@@ -1,0 +1,520 @@
+window.PAPER_TRACKER_DATA = {
+  "updated_at": "2026-05-31T13:37:19.713142+00:00",
+  "sources": [
+    "Semantic Scholar"
+  ],
+  "queries": [
+    "river rivers stream streams creek creeks ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen aquatic freshwater biogeochemistry",
+    "river rivers stream streams creek creeks carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling aquatic freshwater biogeochemistry",
+    "river rivers stream streams creek creeks nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication aquatic freshwater biogeochemistry",
+    "river rivers stream streams creek creeks microbial metabolism microbial carbon use efficiency methanotrophy decomposition aquatic freshwater biogeochemistry",
+    "lake lakes reservoir reservoirs ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen aquatic freshwater biogeochemistry",
+    "lake lakes reservoir reservoirs carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling aquatic freshwater biogeochemistry",
+    "lake lakes reservoir reservoirs nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication aquatic freshwater biogeochemistry",
+    "lake lakes reservoir reservoirs microbial metabolism microbial carbon use efficiency methanotrophy decomposition aquatic freshwater biogeochemistry",
+    "pond ponds small water bodies ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen aquatic freshwater biogeochemistry",
+    "pond ponds small water bodies carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling aquatic freshwater biogeochemistry",
+    "pond ponds small water bodies nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication aquatic freshwater biogeochemistry",
+    "pond ponds small water bodies microbial metabolism microbial carbon use efficiency methanotrophy decomposition aquatic freshwater biogeochemistry",
+    "ditch ditches canal canals drainage ditch tidal creek tidal creeks ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen aquatic freshwater biogeochemistry",
+    "ditch ditches canal canals drainage ditch tidal creek tidal creeks carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling aquatic freshwater biogeochemistry",
+    "ditch ditches canal canals drainage ditch tidal creek tidal creeks nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication aquatic freshwater biogeochemistry",
+    "ditch ditches canal canals drainage ditch tidal creek tidal creeks microbial metabolism microbial carbon use efficiency methanotrophy decomposition aquatic freshwater biogeochemistry",
+    "wetland wetlands marsh mangrove saltmarsh estuary ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen aquatic freshwater biogeochemistry",
+    "wetland wetlands marsh mangrove saltmarsh estuary carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling aquatic freshwater biogeochemistry",
+    "wetland wetlands marsh mangrove saltmarsh estuary nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication aquatic freshwater biogeochemistry",
+    "wetland wetlands marsh mangrove saltmarsh estuary microbial metabolism microbial carbon use efficiency methanotrophy decomposition aquatic freshwater biogeochemistry",
+    "sediment sediments benthic hyporheic ecosystem metabolism gross primary production ecosystem respiration net ecosystem production dissolved oxygen aquatic freshwater biogeochemistry",
+    "sediment sediments benthic hyporheic carbon dioxide CO2 methane CH4 greenhouse gas carbon cycling aquatic freshwater biogeochemistry",
+    "sediment sediments benthic hyporheic nitrogen phosphorus nutrients nitrate ammonium phosphate eutrophication aquatic freshwater biogeochemistry",
+    "sediment sediments benthic hyporheic microbial metabolism microbial carbon use efficiency methanotrophy decomposition aquatic freshwater biogeochemistry"
+  ],
+  "papers": [
+    {
+      "id": "e911ec7d2ff951b0867d8d63452cdd66a8abffa1",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2022WR034062",
+      "title": "A Network‐Scale Modeling Framework for Stream Metabolism, Ecosystem Efficiency, and Their Response to Climate Change",
+      "authors": [
+        "Pier Luigi Segatto",
+        "T. Battin",
+        "E. Bertuzzo"
+      ],
+      "journal": "Water Resources Research",
+      "publication_date": "2023-02-21",
+      "abstract": "Climate change and the predicted warmer temperatures and more extreme hydrological regimes could affect freshwater ecosystems and their energy pathways. To appreciate the complex spatial and temporal interactions of carbon cycling in flowing waters, ecosystem metabolism (gross primary production [GPP] and ecosystem respiration [ER]) must be resolved at the scale of an entire river network. Here, we propose a meta‐ecosystem framework that couples light and temperature regimes with a reach‐scale ecosystem model and integrates network structure, catchment land cover, and the hydrologic regime. The model simulates the distributed functioning of dissolved and particulate organic carbon, autotrophic biomass, and thus ecosystem metabolism, and reproduces fairly well the metabolic regimes observed in 12 reaches of the Ybbs River network, Austria. Results show that the annual network–scale metabolism was heterotrophic, yet with a clear peak of autotrophy in spring. Autochthonous energy sources contributed 43% of the total ER. We further investigated the effect of altered thermal and hydrologic regimes on metabolism and ecosystem efficiency. We predicted that an increase of 2.5°C in average stream water temperature could boost ER and GPP by 31% (24%–57%) and 28% (5%–57%), respectively. The effect of flashier hydrologic regimes is more complex and depends on autotrophic biomass density. The analysis shows the complex interactions between environmental conditions and biota in shaping stream metabolism and highlights the existing knowledge gaps for reliable predictions of the effects of climate change in these ecosystems.",
+      "url": "https://www.semanticscholar.org/paper/e911ec7d2ff951b0867d8d63452cdd66a8abffa1",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022WR034062",
+      "citation_count": 17,
+      "influential_citation_count": 2,
+      "reference_count": 89,
+      "references": [],
+      "tags": [
+        "carbon",
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "41033339577780593a4fd7858e45915b43ee5e21",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1002/lno.12182",
+      "title": "Prairie stream metabolism recovery varies based on antecedent hydrology across a stream network after a bank‐full flood",
+      "authors": [
+        "C. Ruffing",
+        "A. Veach",
+        "Anne E. Schechner",
+        "Janine Rüegg",
+        "Matt T. Trentman",
+        "W. Dodds"
+      ],
+      "journal": "Limnology and Oceanography",
+      "publication_date": "2022-07-14",
+      "abstract": "Intermittent streams are characterized by significant periods of low to no flow, yet are also frequently subjected to flashy, high floods. Floods alter ecosystem function and result in variable successional patterns across the stream network. Yet, the timing of restored function after floods in intermittent stream networks is relatively unexplored. We measured recovery of stream ecosystem function using rates of gross primary production (GPP), ecosystem respiration (ER), net ecosystem production (NEP), and the primary production to respiration ratio (P/R) across eight locations in the Kings Creek drainage basin with differing preflood conditions (previously dry [intermittent] or flowing [perennial]) over a 30‐d period following a 2‐yr return interval flood. We found that all metabolic rates (GPP, ER, NEP, P/R) varied primarily by time (days since flood) and antecedent flow, but not spatial network position (i.e., drainage area). Intermittent sites exhibited high rates of ER (0.17–3.33 g dissolved oxygen [DO] m−2 d−1) following rewetting compared to perennial sites (0.03–1.17 g DO m−2 d−1), while GPP, NEP, and P/R were slower to recover and varied less between sites of differing preflood conditions. Metabolic rates were not strongly influenced by other environmental conditions. A large proportion of variation was explained by the random effect of location. Our results suggest that metabolism is temporally asynchronous and highly heterogenous across intermittent watersheds and that antecedent hydrology (drying prior to rewetting) stimulates heterotrophic activity, likely dependent on terrestrially derived organic matter and nutrient subsidies.",
+      "url": "https://www.semanticscholar.org/paper/41033339577780593a4fd7858e45915b43ee5e21",
+      "pdf_url": "",
+      "citation_count": 8,
+      "influential_citation_count": 0,
+      "reference_count": 80,
+      "references": [],
+      "tags": [
+        "carbon",
+        "metabolism",
+        "nutrient",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "80ff25246a195e793a4a6d82bb80795914aabaf5",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2021JG006296",
+      "title": "Aquatic‐Terrestrial Linkages Control Metabolism and Carbon Dynamics in a Mid‐Sized, Urban Stream Influenced by Snowmelt",
+      "authors": [
+        "A. P. Reed",
+        "E. Stets",
+        "S. Murphy",
+        "E. Mullins"
+      ],
+      "journal": "Journal of Geophysical Research: Biogeosciences",
+      "publication_date": "2021-09-01",
+      "abstract": "Freshwater streams can exchange nutrients and carbon with the surrounding terrestrial environment through various mechanisms including physical erosion, flooding, leaf drop, and snowmelt. These aquatic‐terrestrial interactions are crucial in carbon mobilization, transformation, ecosystem productivity, and have important implications for the role of freshwater ecosystems in the global carbon budget. We utilized high‐frequency oxygen, temperature, and carbon dioxide (CO2) data to infer watershed connectivity in Boulder Creek, a mid‐sized (1160 km2) watershed located in Colorado, USA. Daily modeled gross primary production (GPP), ecosystem respiration (ER), net ecosystem production (NEP), and reaeration coefficients (K600) were paired with high‐frequency, in‐situ dissolved CO2 data to characterize changes in metabolic regime and carbon flux on a stream influenced by seasonal snowmelt. GPP and ER were correlated (ρ = −0.72, p ≪ 0.001) during the non‐snowmelt period and NEP was frequently negative. Mean FCO2 during the non‐snowmelt period was approximately 302 (±171) mmol C m−2 d−1 and was primarily supported by watershed CO2 inputs. During snowmelt, GPP and ER were not significantly correlated (ρ = −0.22, p = 0.05), and mean NEP was significantly more negative than during non‐snowmelt. Watershed connectivity was higher during snowmelt, as evidenced by significantly higher FCO2 (843 ± 338 mmol C m−2 d−1) and greater allochthonous CO2 inputs than during non‐snowmelt periods, emphasizing the effects of seasonal differences in aquatic‐terrestrial linkages in this stream. We suggest that our understanding of watershed carbon budgets is subject to temporal dynamics which control the degree of connectivity between terrestrial and aquatic ecosystems.",
+      "url": "https://www.semanticscholar.org/paper/80ff25246a195e793a4a6d82bb80795914aabaf5",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021JG006296",
+      "citation_count": 5,
+      "influential_citation_count": 0,
+      "reference_count": 50,
+      "references": [],
+      "tags": [
+        "carbon",
+        "greenhouse",
+        "metabolism",
+        "nutrient",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "5be318dab0630f2acff4c85cb402607eed850f82",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1111/1752-1688.12912",
+      "title": "Modeling Impacts of Nutrient Loading, Warming, and Boundary Exchanges on Hypoxia and Metabolism in a Shallow Estuarine Ecosystem",
+      "authors": [
+        "J. Testa",
+        "Nicole Basenback",
+        "Chunqi Shen",
+        "K. Cole",
+        "Amanda Moore",
+        "C. Hodgkins",
+        "D. Brady"
+      ],
+      "journal": "JAWRA Journal of the American Water Resources Association",
+      "publication_date": "2021-04-21",
+      "abstract": "We sought to investigate the impacts of nutrient loading, warming, and open‐water boundary exchanges on a shallow estuary through idealized numerical model experiments. We performed these simulations using a stand‐alone implementation of the Regional Ocean Modeling System‐Row‐Column AESOP biogeochemical model in the Chester River estuary, a tributary estuary within the Chesapeake Bay estuarine complex. We found that metabolic rates were elevated in the shallow tributary creeks of the estuary relative to open waters and that rates of gross primary production, respiration, and net ecosystem metabolism were a function of both water temperature and local phytoplankton biomass. Warming 0.75°C and 1.25°C led to reductions in dissolved oxygen concentrations throughout the estuary. Reductions (50%) in dissolved nitrogen and phosphorus loading did not substantially alter hypoxic volumes in this turbid, nutrient‐rich estuary, but warming increased hypoxic volumes by 20%–30%. Alterations of the open‐water boundary that represent improved oxygen concentrations in the adjacent Chesapeake Bay mainstem led to more substantial relief of hypoxia in model simulations than nutrient reductions (~50% reductions in hypoxia). These simulations reveal the complex interplay of watershed nutrient inputs and horizontal exchange in a small tributary estuary, including the finding that future warming and nutrient reduction effects on Chesapeake Bay hypoxia will be translated to some tributary estuaries like the Chester River.",
+      "url": "https://www.semanticscholar.org/paper/5be318dab0630f2acff4c85cb402607eed850f82",
+      "pdf_url": "https://repository.library.noaa.gov/view/noaa/47128/noaa_47128_DS1.pdf",
+      "citation_count": 16,
+      "influential_citation_count": 0,
+      "reference_count": 89,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "nutrient",
+        "oxygen",
+        "river",
+        "wetland"
+      ]
+    },
+    {
+      "id": "06a66c75cb5c53b13429f8708e6009da5b6086cb",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1002/lno.11407",
+      "title": "Modeling the coupled dynamics of stream metabolism and microbial biomass",
+      "authors": [
+        "Pier Luigi Segatto",
+        "T. Battin",
+        "E. Bertuzzo"
+      ],
+      "journal": "Limnology and Oceanography",
+      "publication_date": "2020-01-22",
+      "abstract": "Estimating and interpreting ecosystem metabolism remains an important challenge in stream ecology. Here, we propose a novel approach to model, estimate, and predict multiseasonal patterns of stream metabolism (gross primary production [GPP] and ecosystem respiration [ER]) at the reach scale leveraging on increasingly available long‐term, high‐frequency measurements of dissolved oxygen (DO). The model uses DO measurements to estimate the parameters of a simple ecosystem model describing the underlying dynamics of stream autotrophic and heterotrophic microbial biomass. The model has been applied to four reaches within the Ybbs river network, Austria. Even if microbial biomasses are not observed, that is, they are treated as latent variables, results show that by accounting for the temporal dynamics of biomass, the model reproduces variability in metabolic fluxes that is not explained by fluctuations of light, temperature, and resources. The model is particularly data‐demanding: to estimate the 11 parameters used in this formulation, it requires sufficiently long, for example, annual, time series, and significant scouring events. On the other hand, the approach has the potential to separate ER into its autotrophic and heterotrophic components, estimate a richer set of ecosystem carbon fluxes (i.e., carbon uptake, loss, and scouring), extrapolate metabolism estimates for periods when DO measurements are unavailable, and predict how ecosystem metabolism would respond to variations of the driving forces. The model is seen as a building block to develop tools to fully appreciate multiseasonal patterns of metabolic activity in river networks and to provide reliable estimations of carbon fluxes from land to ocean.",
+      "url": "https://www.semanticscholar.org/paper/06a66c75cb5c53b13429f8708e6009da5b6086cb",
+      "pdf_url": "https://aslopubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lno.11407",
+      "citation_count": 30,
+      "influential_citation_count": 0,
+      "reference_count": 76,
+      "references": [],
+      "tags": [
+        "carbon",
+        "metabolism",
+        "microbe",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "356f9e9c9b63a0740d56f6c9a7dede50ff0b90f1",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1051/limn/2020014",
+      "title": "Quantifying spatiotemporal rhythm of stream metabolism along human disturbance gradients",
+      "authors": [
+        "M. Eryiğit",
+        "F. Evrendilek",
+        "N. Karakaya"
+      ],
+      "journal": "Annales de Limnologie - International Journal of Limnology",
+      "publication_date": "2020-01-01",
+      "abstract": "This study aimed at investigating the effects of the urban wastewater treatment plant (WTP) discharges on the metabolism of Büyüksu Stream (Bolu, Turkey), and modelling the metabolism components as a function of measured environmental variables. Dissolved oxygen (DO) and water temperatures (Tw) were measured to estimate montly stream metabolism in the four reaches: Before and after discharges of the WTP, and the headwaters of Abant Creek and Mudurnu Creek feeding Büyüksu Stream. The DO and Tw measurements were performed for 17 months between August 2015 and December 2016. Metabolism components of community respiration (Rc), gross primary production (GPP) and net ecosystem metabolism (NEM) were estimated by using the two-station method. According to naturality gradient (reach disturbance gradients: before and after discharges, and headwaters of the creeks), mean metabolism components were compared by performing the one-way analysis of variance. The comparison results showed that the WTP discharges increased the average Rc from −30.6 g O2 m−2 day−1 to −130.9 g O2 m−2 day−1, and had no significant impact on the average GPP, statistically (15.6 and 9.1 g O2 m−2 day−1 before and after discharges, respectively). Validations of the multiple non-linear regression models of NEM and Rc gave coefficients of determination of 74.9% and 66.6%, respectively.",
+      "url": "https://www.semanticscholar.org/paper/356f9e9c9b63a0740d56f6c9a7dede50ff0b90f1",
+      "pdf_url": "https://www.limnology-journal.org/10.1051/limn/2020014/pdf",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 45,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "4751b19c62e80a1d3a2f087cc2b6525b1f7f7139",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1016/J.ECOLENG.2018.10.023",
+      "title": "Effects of shading on stream ecosystem metabolism and water temperature in an agriculturally influenced stream in central Wisconsin, USA",
+      "authors": [
+        "Elizabeth L. Nebgen",
+        "K. Herrman"
+      ],
+      "journal": "Ecological Engineering: The Journal of Ecotechnology",
+      "publication_date": "2019-01-01",
+      "abstract": "Abstract Headwater streams with a forested riparian zone and canopy cover have regulated stream temperatures and stream ecosystem metabolism because of shading. Agricultural practices have dramatically altered riparian corridors with the removal of mature vegetation, which consequently alters natural stream processes. The objective of this study was to investigate the effects of shading on stream temperature and ecosystem metabolism in an agriculturally influenced, low order stream. We examined three stream reaches; two in a recently restored stream (Lost Creek) and one in a nearby-unimpacted reference stream (Little Plover River). The two reaches in Lost Creek included a 100-m artificially-shaded stream reach and a control reach immediately upstream of the shaded reach. The Little Plover River included one reference reach with a fully forested canopy. Both streams are located in agricultural watersheds and based on phosphorus levels would be classified as meso-eutrophic. Each stream reach was assessed during stable flow conditions once each month between June and October of 2016. Rates of gross primary production (GPP), ecosystem respiration (ER), and net ecosystem production (NEP) were determined using the open system, two-station diel dissolved oxygen change method, and reaeration (k) was calculated using the nighttime regression method. Based on stream discharge data, we corrected metabolism values for groundwater when inputs exceeded 7% (Hall and Tank 2005). We also measured water temperature, PAR (photosynthetically active radiation), soluble reactive phosphorus (SRP), periphytic chlorophyll a content, and organic matter content at each site as potential controlling variables. Surprisingly, no significant differences were observed in daily maximum water temperatures among the three sites; however, GPP levels were significantly lower (ANOVA F2,14 = 45.45; p",
+      "url": "https://www.semanticscholar.org/paper/4751b19c62e80a1d3a2f087cc2b6525b1f7f7139",
+      "pdf_url": "",
+      "citation_count": 17,
+      "influential_citation_count": 1,
+      "reference_count": 72,
+      "references": [],
+      "tags": [
+        "carbon",
+        "metabolism",
+        "nutrient",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "b5037d5eccdac1fdff7c5a1fe377297ac61093a9",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "",
+      "title": "The Effect of Urbanization and Dam Removal on Stream Metabolism",
+      "authors": [
+        "Karoline Qasem"
+      ],
+      "journal": "",
+      "publication_date": "2018-11-27",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/b5037d5eccdac1fdff7c5a1fe377297ac61093a9",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "b195483771b6578c58013e147707d20b86d11959",
+      "source": "Semantic Scholar",
+      "pmid": "27913023",
+      "doi": "10.1016/j.scitotenv.2016.11.132",
+      "title": "In-stream metabolism and atmospheric carbon sequestration in a groundwater-fed karst stream.",
+      "authors": [
+        "Junbing Pu",
+        "Jianhong Li",
+        "M. B. Khadka",
+        "Jonathan B. Martin",
+        "Tao Zhang",
+        "Shi Yu",
+        "D. Yuan"
+      ],
+      "journal": "Science of the Total Environment",
+      "publication_date": "2017-02-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/b195483771b6578c58013e147707d20b86d11959",
+      "pdf_url": "",
+      "citation_count": 62,
+      "influential_citation_count": 4,
+      "reference_count": 61,
+      "references": [],
+      "tags": [
+        "carbon",
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "e49e2ad758ff21f21614fe5e0e1bdf3ee9d7a54e",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1111/FWB.12597",
+      "title": "Increases in benthic community production and metabolism in response to marine-derived nutrients from spawning Atlantic salmon (Salmo salar)",
+      "authors": [
+        "K. Samways",
+        "R. Cunjak"
+      ],
+      "journal": "Freshwater Biology",
+      "publication_date": "2015-08-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/e49e2ad758ff21f21614fe5e0e1bdf3ee9d7a54e",
+      "pdf_url": "",
+      "citation_count": 21,
+      "influential_citation_count": 1,
+      "reference_count": 33,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "nutrient",
+        "oxygen",
+        "river",
+        "sediment"
+      ]
+    },
+    {
+      "id": "b81fd0a1cdc690ad8ab074fea03abd1980641ccd",
+      "source": "Semantic Scholar",
+      "pmid": "25603247",
+      "doi": "10.2134/jeq2013.12.0481",
+      "title": "Nitrogen Retention in a Restored Tidal Stream (Kimages Creek, VA) Assessed by Mass Balance and Tracer Approaches.",
+      "authors": [
+        "P. Bukaveckas",
+        "Joseph D. Wood"
+      ],
+      "journal": "Journal of Environmental Quality",
+      "publication_date": "2014-09-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/b81fd0a1cdc690ad8ab074fea03abd1980641ccd",
+      "pdf_url": "",
+      "citation_count": 8,
+      "influential_citation_count": 1,
+      "reference_count": 54,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "nutrient",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "1fe73e84875d3f87bf0e421dc4d060dd73b53f73",
+      "source": "Semantic Scholar",
+      "pmid": "23967203",
+      "doi": "10.1371/journal.pone.0071395",
+      "title": "Patterns of Ecosystem Metabolism in the Tonle Sap Lake, Cambodia with Links to Capture Fisheries",
+      "authors": [
+        "G. Holtgrieve",
+        "M. Arias",
+        "K. Irvine",
+        "D. Lamberts",
+        "E. Ward",
+        "M. Kummu",
+        "J. Koponen",
+        "J. Sarkkula",
+        "J. Richey"
+      ],
+      "journal": "PLoS ONE",
+      "publication_date": "2013-08-13",
+      "abstract": "The Tonle Sap Lake in Cambodia is a dynamic flood-pulsed ecosystem that annually increases its surface area from roughly 2,500 km2 to over 12,500 km2 driven by seasonal flooding from the Mekong River. This flooding is thought to structure many of the critical ecological processes, including aquatic primary and secondary productivity. The lake also has a large fishery that supports the livelihoods of nearly 2 million people. We used a state-space oxygen mass balance model and continuous dissolved oxygen measurements from four locations to provide the first estimates of gross primary productivity (GPP) and ecosystem respiration (ER) for the Tonle Sap. GPP averaged 4.1±2.3 g O2 m−3 d−1 with minimal differences among sites. There was a negative correlation between monthly GPP and lake level (r = 0.45) and positive correlation with turbidity (r = 0.65). ER averaged 24.9±20.0 g O2 m−3 d−1 but had greater than six-fold variation among sites and minimal seasonal change. Repeated hypoxia was observed at most sampling sites along with persistent net heterotrophy (GPP<ER), indicating significant bacterial metabolism of organic matter that is likely incorporated into the larger food web. Using our measurements of GPP, we calibrated a hydrodynamic-productivity model and predicted aquatic net primary production (aNPP) of 2.0±0.2 g C m−2 d−1 (2.4±0.2 million tonnes C y−1). Considering a range of plausible values for the total fisheries catch, we estimate that fisheries harvest is an equivalent of 7–69% of total aNPP, which is substantially larger than global average for marine and freshwater systems. This is likely due to relatively efficient carbon transfer through the food web and support of fish production from terrestrial NPP. These analyses are an important first-step in quantifying the resource pathways that support this important ecosystem.",
+      "url": "https://www.semanticscholar.org/paper/1fe73e84875d3f87bf0e421dc4d060dd73b53f73",
+      "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0071395&type=printable",
+      "citation_count": 55,
+      "influential_citation_count": 1,
+      "reference_count": 62,
+      "references": [],
+      "tags": [
+        "carbon",
+        "lake",
+        "metabolism",
+        "microbe",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "4441897f43b63870f3f1e2a488b4464ad53fdd68",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1002/eco.1391",
+      "title": "Estimating and scaling stream ecosystem metabolism along channels with heterogeneous substrate",
+      "authors": [
+        "M. Hondzo",
+        "V. Voller",
+        "M. Morris",
+        "E. Foufoula‐Georgiou",
+        "J. Finlay",
+        "V. Ganti",
+        "M. Power"
+      ],
+      "journal": "Ecohydrology",
+      "publication_date": "2013-08-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/4441897f43b63870f3f1e2a488b4464ad53fdd68",
+      "pdf_url": "",
+      "citation_count": 21,
+      "influential_citation_count": 2,
+      "reference_count": 48,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "3bb3c7bc7643693c6bb4ab057e6ad18beb736efc",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1111/FWB.12072",
+      "title": "Multi‐scaled drivers of rural prairie stream metabolism along human activity gradients",
+      "authors": [
+        "A. Yates",
+        "R. Brua",
+        "J. Culp",
+        "P. Chambers"
+      ],
+      "journal": "Freshwater Biology",
+      "publication_date": "2013-04-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/3bb3c7bc7643693c6bb4ab057e6ad18beb736efc",
+      "pdf_url": "",
+      "citation_count": 32,
+      "influential_citation_count": 3,
+      "reference_count": 48,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
+      "id": "6ecba35db21129ec7cda44ccebbed4cdd2ce0387",
+      "source": "Semantic Scholar",
+      "pmid": "23083531",
+      "doi": "10.1186/2046-9063-8-26",
+      "title": "Physicochemical and biological factors controlling water column metabolism in Sundarbans estuary, India",
+      "authors": [
+        "K. Chaudhuri",
+        "Suman Manna",
+        "K. Sarma",
+        "P. Naskar",
+        "S. Bhattacharyya",
+        "M. Bhattacharyya"
+      ],
+      "journal": "Aquatic Biosystems",
+      "publication_date": "2012-10-19",
+      "abstract": "BackgroundSundarbans is the single largest deltaic mangrove forest in the world, formed at estuarine phase of the Ganges - Brahmaputra river system. Primary productivity of marine and coastal phytoplankton contributes to 15% of global oceanic production. But unfortunately estuarine dynamics of tropical and subtropical estuaries have not yet received proper attention in spite of the fact that they experience considerable anthropogenic interventions and a baseline data is required for any future comparison. This study is an endeavor to this end to estimate the primary productivity (gross and net), community respiration and nitrification rates in different rivers and tidal creeks around Jharkhali island, a part of Sundarbans estuary surrounded by the mangrove forest during a period of three years starting from November’08 to October’11.ResultsVarious physical and chemical parameters of water column like pH, temperature, conductivity, dissolved oxygen, turbidity, suspended particulate matter, secchi disc index, tidal fluctuation and tidal current velocity, standing crop and nutrients were measured along with water column productivity. Relationship of net water column productivity with algal biomass (standing crop), nutrient loading and turbidity were determined experimentally. Correlations of bacterial abundance with community respiration and nitrification rates were also explored. Annual integrated phytoplankton production rate of this tidal estuary was estimated to be 151.07 gC m-2 y-1. Gross primary productivity showed marked inter annual variation being lowest in monsoon and highest in postmonsoon period.ConclusionAverage primary production was a function of nutrient loading and light penetration in the water column. High aquatic turbidity, conductivity and suspended particulate matter were the limiting factors to attenuate light penetration with negative influence on primary production. Community respiration and nitrification rates of the estuary were influenced by the bacterial abundance. The estuary was phosphorus limited in postmonsoon whereas nitrogen-limited in premonsoon and monsoon period. High algal biomass and primary productivity indicated the estuary to be in eutrophic state in most of the time throughout the year. Our study also indicated a seasonal shifting between autotrophic and heterotrophic conditions in Sundarban estuarine ecosystem and it is a tropical, well mixed (high tidal influx) and marine dominated (no fresh water connection) system.",
+      "url": "https://www.semanticscholar.org/paper/6ecba35db21129ec7cda44ccebbed4cdd2ce0387",
+      "pdf_url": "https://aquaticbiosystems.biomedcentral.com/track/pdf/10.1186/2046-9063-8-26",
+      "citation_count": 41,
+      "influential_citation_count": 2,
+      "reference_count": 72,
+      "references": [],
+      "tags": [
+        "ditch",
+        "metabolism",
+        "microbe",
+        "nutrient",
+        "oxygen",
+        "river",
+        "wetland"
+      ]
+    },
+    {
+      "id": "987b4fc6a9a40dfa6e059fb0e5d60e00b9dcede2",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1016/J.ECOLENG.2011.06.018",
+      "title": "Assessing constructed wetland functional success using diel changes in dissolved oxygen, pH, and temperature in submerged, emergent, and open-water habitats in the Beaver Creek Wetlands Complex, Kentucky (USA)",
+      "authors": [
+        "B. Reeder"
+      ],
+      "journal": "Ecological Engineering",
+      "publication_date": "2011-11-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/987b4fc6a9a40dfa6e059fb0e5d60e00b9dcede2",
+      "pdf_url": "",
+      "citation_count": 47,
+      "influential_citation_count": 5,
+      "reference_count": 43,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river",
+        "wetland"
+      ]
+    },
+    {
+      "id": "f2f525df1fc47a0c0e120c2c3abec0ad5880c692",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "",
+      "title": "Direct measurement of the d 13 C signature of carbon respired by bacteria in lakes : Linkages to potential carbon sources , ecosystem baseline metabolism , and CO 2 fluxes",
+      "authors": [
+        "S. L. McCallister"
+      ],
+      "journal": "",
+      "publication_date": "2008-01-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/f2f525df1fc47a0c0e120c2c3abec0ad5880c692",
+      "pdf_url": "",
+      "citation_count": 40,
+      "influential_citation_count": 2,
+      "reference_count": 66,
+      "references": [],
+      "tags": [
+        "carbon",
+        "lake",
+        "metabolism",
+        "microbe",
+        "oxygen",
+        "river"
+      ]
+    }
+  ]
+};
