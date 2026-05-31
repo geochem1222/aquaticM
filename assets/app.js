@@ -15,8 +15,9 @@ const filterNames = {
   pond: "塘",
   ditch: "沟/潮沟",
   oxygen: "溶解氧",
-  carbon: "碳/甲烷",
-  nutrient: "氮磷",
+  isotope: "同位素",
+  model: "模型",
+  sensor: "高频监测",
   microbe: "微生物",
 };
 
@@ -29,10 +30,10 @@ const tagLabels = {
   sediment: "沉积物",
   oxygen: "溶解氧",
   metabolism: "代谢",
-  carbon: "碳/甲烷",
-  nutrient: "氮磷",
+  isotope: "同位素",
+  model: "模型",
+  sensor: "高频监测",
   microbe: "微生物",
-  greenhouse: "温室气体",
 };
 
 const els = {

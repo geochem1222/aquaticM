@@ -6,8 +6,8 @@
 
 - 水体类型：river、stream、creek、lake、reservoir、pond、ditch、canal、tidal creek、wetland、sediment、hyporheic zone
 - 代谢过程：ecosystem metabolism、gross primary production、ecosystem respiration、dissolved oxygen、reaeration
-- 元素与通量：carbon、CO2、methane、nitrogen、phosphorus、nutrient cycling、greenhouse gas
-- 微生物过程：microbial metabolism、methanotrophy、decomposition、carbon use efficiency
+- 方法与观测：oxygen time series、sensor monitoring、stable isotopes、isotope tracing、Bayesian models、reactive transport models
+- 微生物过程：microbial metabolism、biofilm metabolism、decomposition
 
 ## 本地预览
 

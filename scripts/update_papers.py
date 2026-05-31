@@ -59,15 +59,19 @@ METABOLISM_TERMS = [
     "net ecosystem production",
     "dissolved oxygen",
     "oxygen dynamics",
-    "carbon cycling",
-    "methane emission",
-    "carbon dioxide flux",
-    "greenhouse gas",
-    "nutrient cycling",
-    "nitrogen cycling",
-    "phosphorus cycling",
+    "reaeration",
+    "oxygen time series",
+    "high frequency oxygen",
+    "sensor monitoring",
+    "isotope tracing",
+    "stable isotopes",
+    "oxygen isotopes",
+    "bayesian model",
+    "metabolism model",
+    "inverse model",
+    "reactive transport model",
     "microbial metabolism",
-    "methanotrophy",
+    "biofilm metabolism",
     "hypoxia",
 ]
 
@@ -79,9 +83,11 @@ SEED_QUERIES = [
     '"gross primary production" "ecosystem respiration" freshwater',
     '"net ecosystem production" aquatic',
     '"dissolved oxygen" "ecosystem respiration" stream',
-    '"methane emission" pond freshwater',
-    '"carbon dioxide flux" river lake',
-    '"nutrient cycling" freshwater metabolism',
+    '"reaeration" "stream metabolism"',
+    '"stable isotopes" "aquatic metabolism"',
+    '"oxygen isotopes" "ecosystem metabolism"',
+    '"Bayesian" "stream metabolism"',
+    '"reactive transport model" "oxygen dynamics"',
 ]
 
 SEARCH_QUERIES = SEED_QUERIES + [
@@ -110,10 +116,10 @@ TAG_RULES = {
         " er ",
         " nep",
     ],
-    "carbon": [" carbon", " methane", " ch4", " co2", " carbon dioxide", " organic matter", " doc"],
-    "nutrient": [" nitrogen", " phosphorus", " nutrient", " nitrate", " ammonium", " phosphate", " eutrophication"],
-    "microbe": [" microbial", " bacteria", " bacterial", " methanotroph", " methanotrophy", " virus", " grazer"],
-    "greenhouse": [" methane", " ch4", " carbon dioxide", " co2", " greenhouse gas"],
+    "isotope": [" isotope", " isotopes", " isotopic", " 18o", " oxygen-18", " stable isotope", " isotope tracing"],
+    "model": [" model", " modeling", " modelling", " bayesian", " inverse model", " reactive transport", " odem"],
+    "sensor": [" sensor", " sensors", " high frequency", " high-frequency", " time series", " logger", " diel"],
+    "microbe": [" microbial", " bacteria", " bacterial", " biofilm", " periphyton", " decomposition"],
 }
 
 NOISE_TERMS = [
@@ -218,7 +224,7 @@ def parse_semantic_paper(item: dict[str, Any]) -> dict[str, Any]:
 def classify(text_value: str) -> list[str]:
     haystack = f" {text_value.lower()} "
     tags = [tag for tag, needles in TAG_RULES.items() if any(needle in haystack for needle in needles)]
-    if "carbon" in tags or "nutrient" in tags or "oxygen" in tags:
+    if any(tag in tags for tag in ["oxygen", "isotope", "model", "sensor", "microbe"]):
         tags.append("metabolism")
     return sorted(set(tags)) or ["metabolism"]
 
@@ -229,7 +235,7 @@ def is_relevant(paper: dict[str, Any]) -> bool:
         return False
     tags = set(paper.get("tags") or classify(text_value))
     has_system = bool(tags & {"river", "lake", "pond", "ditch", "wetland", "sediment"})
-    has_process = bool(tags & {"oxygen", "metabolism", "carbon", "nutrient", "microbe", "greenhouse"})
+    has_process = bool(tags & {"oxygen", "metabolism", "isotope", "model", "sensor", "microbe"})
     return bool(paper.get("title")) and has_system and has_process
 
 
