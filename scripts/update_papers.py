@@ -27,7 +27,7 @@ def semantic_api_key_from_env() -> str | None:
     ]:
         value = os.environ.get(name)
         if value:
-            return value
+            return value.strip()
     return None
 
 
@@ -130,7 +130,7 @@ NOISE_TERMS = [
 def request_json(url: str, params: dict[str, str | int], email: str | None = None, api_key: str | None = None) -> dict[str, Any]:
     headers = {"User-Agent": build_user_agent(email)}
     if api_key:
-        headers["x-api-key"] = api_key
+        headers["x-api-key"] = api_key.strip()
     request = urllib.request.Request(f"{url}?{urllib.parse.urlencode(params)}", headers=headers)
     for attempt in range(3):
         try:

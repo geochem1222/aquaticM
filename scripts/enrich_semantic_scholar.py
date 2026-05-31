@@ -28,7 +28,7 @@ def semantic_api_key_from_env() -> str | None:
     ]:
         value = os.environ.get(name)
         if value:
-            return value
+            return value.strip()
     return None
 
 
@@ -151,7 +151,7 @@ def normalize_edge(item: dict[str, Any]) -> dict[str, Any]:
 def request_json(url: str, params: dict[str, str | int], api_key: str) -> dict[str, Any]:
     request = urllib.request.Request(
         f"{url}?{urllib.parse.urlencode(params)}",
-        headers={"x-api-key": api_key, "User-Agent": "aquatic-metabolism-tracker/1.0"},
+        headers={"x-api-key": api_key.strip(), "User-Agent": "aquatic-metabolism-tracker/1.0"},
     )
     for attempt in range(3):
         try:

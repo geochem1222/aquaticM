@@ -65,7 +65,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/papers.json data/papers.js data/update-status.json data/update.log
+          git add data/papers.json data/papers.js data/update-status.json
           git diff --cached --quiet || git commit -m "Update paper data"
           git push
 

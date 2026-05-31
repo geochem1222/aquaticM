@@ -3,3 +3,4 @@ __pycache__/
 .DS_Store
 Thumbs.db
 tools/_check_google_scholar_exporter.js
+data/update.log
