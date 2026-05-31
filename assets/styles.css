@@ -337,6 +337,10 @@ select {
   stroke: var(--ochre);
 }
 
+.graph-node.topic circle {
+  stroke: var(--green);
+}
+
 .graph-node text {
   fill: var(--ink);
   font-size: 12px;
