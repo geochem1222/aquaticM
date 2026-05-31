@@ -57,6 +57,23 @@ python scripts/enrich_semantic_scholar.py --limit 80 --edge-limit 12
 
 网页中点击表格里的论文，会在下方显示一个小型引用图谱。
 
+部署到 GitHub 后，把 API key 添加为仓库 Secret：
+
+```text
+SEMANTIC_SCHOLAR_API_KEY
+```
+
+路径：
+
+```text
+Settings → Secrets and variables → Actions → New repository secret
+```
+
+之后 workflow 会自动执行两步：
+
+1. 更新 Semantic Scholar 题录。
+2. 用同一个 key 补充 TLDR、fields、authors、references、citations，并生成网页里的 citation graph 数据。
+
 ## 数据文件
 
 网页数据位于：
