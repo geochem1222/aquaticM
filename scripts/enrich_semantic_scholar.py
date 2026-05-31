@@ -16,6 +16,7 @@ from typing import Any
 
 
 BASE = "https://api.semanticscholar.org/graph/v1"
+RECOMMENDATIONS_BASE = "https://api.semanticscholar.org/recommendations/v1/papers"
 
 
 def semantic_api_key_from_env() -> str | None:
@@ -99,6 +100,7 @@ def enrich_paper(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
     )
     references = request_edge_list(paper_id, "references", api_key, edge_limit)
     citations = request_edge_list(paper_id, "citations", api_key, edge_limit)
+    recommendations = request_recommendations(paper_id, api_key, edge_limit)
 
     paper["semantic_scholar"] = {
         "paper_id": details.get("paperId") or paper_id,
@@ -110,6 +112,7 @@ def enrich_paper(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
         "authors": details.get("authors") or [],
         "references": references,
         "citations": citations,
+        "recommendations": recommendations,
     }
     paper["citation_count"] = details.get("citationCount", paper.get("citation_count", 0))
     paper["influential_citation_count"] = details.get(
@@ -135,6 +138,36 @@ def request_edge_list(paper_id: str, edge: str, api_key: str, limit: int) -> lis
     return [normalize_edge(item.get(key) or {}) for item in data.get("data", []) if item.get(key)]
 
 
+def request_recommendations(paper_id: str, api_key: str, limit: int) -> list[dict[str, Any]]:
+    params = {
+        "limit": limit,
+        "fields": "paperId,title,year,venue,authors,citationCount,influentialCitationCount,url,abstract,openAccessPdf",
+    }
+    body = json.dumps({"positivePaperIds": [paper_id], "negativePaperIds": []}).encode("utf-8")
+    request = urllib.request.Request(
+        f"{RECOMMENDATIONS_BASE}?{urllib.parse.urlencode(params)}",
+        data=body,
+        headers={
+            "x-api-key": api_key.strip(),
+            "User-Agent": "aquatic-metabolism-tracker/1.0",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                data = json.loads(response.read().decode("utf-8"))
+                return [normalize_edge(item) for item in data.get("recommendedPapers", [])]
+        except urllib.error.HTTPError as error:
+            if error.code == 429 and attempt < 2:
+                time.sleep(int(error.headers.get("Retry-After", "8")) + 2)
+                continue
+            print(f"Recommendation request failed for {paper_id}: {error}")
+            return []
+    return []
+
+
 def normalize_edge(item: dict[str, Any]) -> dict[str, Any]:
     return {
         "paper_id": item.get("paperId", ""),
@@ -145,6 +178,8 @@ def normalize_edge(item: dict[str, Any]) -> dict[str, Any]:
         "citation_count": item.get("citationCount", 0),
         "influential_citation_count": item.get("influentialCitationCount", 0),
         "url": item.get("url", ""),
+        "abstract": item.get("abstract", ""),
+        "pdf_url": (item.get("openAccessPdf") or {}).get("url", ""),
     }
 
 
