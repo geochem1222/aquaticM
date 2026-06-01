@@ -6,8 +6,8 @@
 
 - 水体类型：river、stream、creek、lake、reservoir、pond、ditch、canal、tidal creek、wetland、sediment、hyporheic zone
 - 代谢过程：ecosystem metabolism、gross primary production、ecosystem respiration、dissolved oxygen、reaeration
-- 元素与通量：carbon、CO2、methane、nitrogen、phosphorus、nutrient cycling、greenhouse gas
-- 微生物过程：microbial metabolism、methanotrophy、decomposition、carbon use efficiency
+- 方法与观测：oxygen time series、sensor monitoring、stable isotopes、isotope tracing、Bayesian models、reactive transport models
+- 微生物过程：microbial metabolism、biofilm metabolism、decomposition
 
 ## 本地预览
 
@@ -35,9 +35,9 @@ python scripts/update_papers.py --retmax 300 --merge-existing
 python scripts/update_papers.py --semantic-api-key YOUR_KEY --merge-existing
 ```
 
-## Semantic Scholar 增强信息与图谱
+## Semantic Scholar 增强信息与相似文章
 
-如果你有 Semantic Scholar API key，可以在本地把已有题录增强成“可点击详情 + citation graph”：
+如果你有 Semantic Scholar API key，可以在本地把已有题录增强成“可点击详情 + 相似文章推荐”：
 
 ```bash
 set SEMANTIC_SCHOLAR_API_KEY=你的key
@@ -55,12 +55,12 @@ python scripts/enrich_semantic_scholar.py --limit 80 --edge-limit 12
 - 参考文献节点
 - 引用本文节点
 
-网页不会运行 Python。Python 只在本地或 GitHub Actions 更新阶段把增强结果写入 `data/papers.json` / `data/papers.js`；网页只读取这些静态 JSON 数据并渲染图谱。
+网页不会运行 Python。Python 只在本地或 GitHub Actions 更新阶段把增强结果写入 `data/papers.json` / `data/papers.js`；网页只读取这些静态 JSON 数据并渲染。
 
-网页中点击表格里的论文，会在下方显示一个小型图谱：
+网页中点击表格里的论文，会在摘要下方显示 Semantic Scholar 信息和相似文章：
 
-- 如果该论文已有 Semantic Scholar 增强数据，显示参考文献 / 引用本文图谱。
-- 如果暂时没有增强数据，显示同库论文的主题相似关系图。
+- 如果该论文已有 Semantic Scholar 增强数据，显示 Recommendations API 返回的相似文章。
+- 如果暂时没有增强数据，显示同库论文的主题相似文章。
 
 部署到 GitHub 后，把 API key 添加为仓库 Secret：
 
@@ -77,7 +77,7 @@ Settings → Secrets and variables → Actions → New repository secret
 之后 workflow 会自动执行两步：
 
 1. 更新 Semantic Scholar 题录。
-2. 用同一个 key 补充 TLDR、fields、authors、references、citations，并生成网页里的 citation graph 数据。
+2. 用同一个 key 补充 TLDR、fields、authors、references、citations、Recommendations API 相似文章，并生成网页详情区所需的静态 JSON 数据。
 
 ## 数据文件
 

@@ -15,8 +15,9 @@ const filterNames = {
   pond: "塘",
   ditch: "沟/潮沟",
   oxygen: "溶解氧",
-  carbon: "碳/甲烷",
-  nutrient: "氮磷",
+  isotope: "同位素",
+  model: "模型",
+  sensor: "高频监测",
   microbe: "微生物",
 };
 
@@ -29,10 +30,10 @@ const tagLabels = {
   sediment: "沉积物",
   oxygen: "溶解氧",
   metabolism: "代谢",
-  carbon: "碳/甲烷",
-  nutrient: "氮磷",
+  isotope: "同位素",
+  model: "模型",
+  sensor: "高频监测",
   microbe: "微生物",
-  greenhouse: "温室气体",
 };
 
 const els = {
@@ -254,7 +255,7 @@ function renderPaperRow(paper) {
         <div class="detail-panel">
           ${renderSemanticSummary(paper)}
           <p>${escapeHtml(paper.abstract || "暂无摘要。")}</p>
-          ${renderInlineGraph(paper)}
+          ${renderRelatedSection(paper)}
           <dl>
             <div><dt>DOI</dt><dd>${renderDoi(paper.doi)}</dd></div>
             <div><dt>PMID</dt><dd>${escapeHtml(paper.pmid || "无")}</dd></div>
@@ -267,17 +268,28 @@ function renderPaperRow(paper) {
   `;
 }
 
-function renderInlineGraph(paper) {
-  const graph = buildGraphMarkup(paper);
+function renderRelatedSection(paper) {
+  const related = getRelatedPapers(paper);
+  const s2 = paper.semantic_scholar || {};
+  const externalIds = s2.external_ids || {};
+  const semanticUrl = paper.url || (s2.paper_id ? `https://www.semanticscholar.org/paper/${s2.paper_id}` : "");
   return `
-    <section class="inline-graph" aria-label="论文图谱">
+    <section class="related-panel" aria-label="相似文章和 Semantic Scholar 信息">
       <div class="inline-graph-head">
-        <h4>论文图谱</h4>
-        <p>${escapeHtml(graph.caption)}</p>
+        <h4>相似文章与 S2 信息</h4>
+        <p>${escapeHtml(related.caption)}</p>
       </div>
-      <div class="graph-layout">
-        <div class="paper-graph">${graph.svg}</div>
-        <aside class="graph-detail">${graph.detail}</aside>
+      <div class="s2-info-grid">
+        <div>
+          <span>Semantic Scholar</span>
+          ${semanticUrl ? `<a href="${escapeHtml(semanticUrl)}" target="_blank" rel="noreferrer">打开论文页</a>` : "<strong>暂无链接</strong>"}
+        </div>
+        <div><span>DOI</span><strong>${escapeHtml(paper.doi || externalIds.DOI || "暂无")}</strong></div>
+        <div><span>PMID</span><strong>${escapeHtml(paper.pmid || externalIds.PubMed || "暂无")}</strong></div>
+        <div><span>开放 PDF</span>${paper.pdf_url ? `<a href="${escapeHtml(paper.pdf_url)}" target="_blank" rel="noreferrer">打开 PDF</a>` : "<strong>暂无</strong>"}</div>
+      </div>
+      <div class="related-list">
+        ${related.items.length ? related.items.map(renderRelatedCard).join("") : '<p class="empty-state">暂时没有可显示的相似文章。</p>'}
       </div>
     </section>
   `;
@@ -302,37 +314,16 @@ function renderSemanticSummary(paper) {
   `;
 }
 
-function buildGraphMarkup(paper) {
+function getRelatedPapers(paper) {
   const s2 = paper.semantic_scholar || {};
-  const references = (s2.references || paper.references || []).slice(0, 8);
-  const citations = (s2.citations || []).slice(0, 8);
-
-  if (!references.length && !citations.length) {
-    return buildTopicGraphMarkup(paper);
+  const recommendations = (s2.recommendations || []).slice(0, 8);
+  if (recommendations.length) {
+    return {
+      caption: "来自 Semantic Scholar Recommendations API。",
+      items: recommendations,
+    };
   }
-
-  const width = 760;
-  const height = 390;
-  const center = { x: width / 2, y: height / 2, item: paper, type: "center" };
-  const refNodes = references.map((item, index) => polarNode(item, "reference", index, references.length, 180, center, -120, 120));
-  const citeNodes = citations.map((item, index) => polarNode(item, "citation", index, citations.length, 180, center, 60, 300));
-  const nodes = [center, ...refNodes, ...citeNodes];
-  const edges = [...refNodes, ...citeNodes];
-
-  return {
-    caption: "Semantic Scholar 增强数据：参考文献与引用本文关系。",
-    svg: `
-      <svg class="graph-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="引用关系图">
-      ${edges.map((node) => `<line class="graph-edge" x1="${center.x}" y1="${center.y}" x2="${node.x}" y2="${node.y}"></line>`).join("")}
-      ${nodes.map(renderGraphNode).join("")}
-      </svg>
-    `,
-    detail: renderGraphDetail(paper, center),
-  };
-}
-
-function buildTopicGraphMarkup(paper) {
-  const related = state.papers
+  const items = state.papers
     .filter((candidate) => candidate !== paper)
     .map((candidate) => ({
       paper: candidate,
@@ -340,37 +331,11 @@ function buildTopicGraphMarkup(paper) {
     }))
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || Number(b.paper.citation_count || 0) - Number(a.paper.citation_count || 0))
-    .slice(0, 10);
-
-  if (!related.length) {
-    return {
-      caption: "暂无足够数据生成图谱。",
-      svg: '<div class="empty-state">当前论文暂未生成引用图谱，也没有足够的主题相似论文。</div>',
-      detail: renderGraphDetail(paper, null),
-    };
-  }
-
-  const width = 760;
-  const height = 390;
-  const center = { x: width / 2, y: height / 2, item: paper, type: "center" };
-  const nodes = [
-    center,
-    ...related.map((item, index) => polarNode(item.paper, "topic", index, related.length, 176, center, 0, 360)),
-  ];
-
+    .slice(0, 8)
+    .map((item) => item.paper);
   return {
-    caption: "暂未带有 Semantic Scholar 引用增强数据，先显示同库论文主题相似关系。",
-    svg: `
-      <svg class="graph-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="主题关系图">
-        ${nodes.slice(1).map((node) => `<line class="graph-edge" x1="${center.x}" y1="${center.y}" x2="${node.x}" y2="${node.y}"></line>`).join("")}
-        ${nodes.map(renderGraphNode).join("")}
-      </svg>
-    `,
-    detail: `
-      <h3>主题关系图</h3>
-      <p>后台更新拿到增强 JSON 后，会自动切换为引用图谱。</p>
-      ${renderGraphDetail(paper, center)}
-    `,
+    caption: "暂未带有 S2 Recommendations 数据，先按本库标签相似度排序。",
+    items,
   };
 }
 
@@ -379,52 +344,24 @@ function sharedTagScore(a, b) {
   return (b.tags || []).reduce((sum, tag) => sum + (left.has(tag) ? 1 : 0), 0);
 }
 
-function polarNode(item, type, index, total, radius, center, startDeg, endDeg) {
-  const span = total <= 1 ? 0 : (endDeg - startDeg) / (total - 1);
-  const deg = startDeg + span * index;
-  const rad = (deg * Math.PI) / 180;
-  return {
-    x: center.x + Math.cos(rad) * radius,
-    y: center.y + Math.sin(rad) * radius,
-    item,
-    type,
-  };
-}
-
-function renderGraphNode(node, index) {
-  const title = node.item.title || "Untitled";
-  const shortTitle = title.length > 34 ? `${title.slice(0, 34)}...` : title;
-  const cls = `graph-node ${node.type}`;
-  const radius = node.type === "center" ? 18 : 12;
-  const labelY = node.type === "center" ? node.y + 36 : node.y + 27;
+function renderRelatedCard(item) {
+  const authors = item.authors?.map ? item.authors.map((author) => typeof author === "string" ? author : author.name).filter(Boolean).slice(0, 3).join(", ") : "";
+  const url = item.url || (item.paper_id ? `https://www.semanticscholar.org/paper/${item.paper_id}` : "");
   return `
-    <g class="${cls}" data-node-index="${index}">
-      <circle cx="${node.x}" cy="${node.y}" r="${radius}"></circle>
-      <text x="${node.x}" y="${labelY}" text-anchor="middle">${escapeHtml(shortTitle)}</text>
-    </g>
-  `;
-}
-
-function renderGraphDetail(rootPaper, node) {
-  const item = node?.item || rootPaper;
-  const typeLabel = node?.type === "reference" ? "参考文献" : node?.type === "citation" ? "引用本文" : node?.type === "topic" ? "主题相似论文" : "当前论文";
-  const s2 = rootPaper.semantic_scholar || {};
-  const tldr = node?.type === "center" && s2.tldr ? `<p><strong>TLDR</strong> ${escapeHtml(s2.tldr)}</p>` : "";
-  const authors = item.authors?.map ? item.authors.map((author) => typeof author === "string" ? author : author.name).filter(Boolean).slice(0, 4).join(", ") : "";
-  const fields = [
-    ...(s2.fields_of_study || []),
-    ...(s2.s2_fields_of_study || []).map((field) => field.category).filter(Boolean),
-  ];
-  return `
-    <h3>${escapeHtml(typeLabel)}</h3>
-    <p><strong>${escapeHtml(item.title || "Untitled")}</strong></p>
+    <article class="related-card">
+      <h5>${escapeHtml(item.title || "Untitled")}</h5>
     ${authors ? `<p>${escapeHtml(authors)}</p>` : ""}
-    ${item.year || item.publication_date ? `<p>年份：${escapeHtml(item.year || item.publication_date)}</p>` : ""}
-    ${item.venue || item.journal ? `<p>来源：${escapeHtml(item.venue || item.journal)}</p>` : ""}
-    ${typeof item.citation_count !== "undefined" ? `<p>引用：${escapeHtml(formatNumber(item.citation_count))}</p>` : ""}
-    ${tldr}
-    ${node?.type === "center" && fields.length ? `<p>领域：${escapeHtml([...new Set(fields)].slice(0, 6).join(" · "))}</p>` : ""}
-    ${item.url ? `<p><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">打开 Semantic Scholar</a></p>` : ""}
+      <div class="related-meta">
+        ${item.year || item.publication_date ? `<span>${escapeHtml(item.year || item.publication_date)}</span>` : ""}
+        ${item.venue || item.journal ? `<span>${escapeHtml(item.venue || item.journal)}</span>` : ""}
+        <span>引用 ${escapeHtml(formatNumber(item.citation_count || 0))}</span>
+      </div>
+      ${item.abstract ? `<p class="related-abstract">${escapeHtml(item.abstract.slice(0, 220))}${item.abstract.length > 220 ? "..." : ""}</p>` : ""}
+      <div class="related-links">
+        ${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">Semantic Scholar</a>` : ""}
+        ${item.pdf_url ? `<a href="${escapeHtml(item.pdf_url)}" target="_blank" rel="noreferrer">PDF</a>` : ""}
+      </div>
+    </article>
   `;
 }
 
