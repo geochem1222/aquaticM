@@ -26,10 +26,10 @@ http://localhost:8000
 默认更新脚本：
 
 ```bash
-python scripts/update_papers.py --retmax 300 --merge-existing
+python scripts/update_papers.py --retmax 5000 --merge-existing
 ```
 
-数据源只使用 Semantic Scholar。如果有 Semantic Scholar API key，可以通过环境或 GitHub Actions secret 传入：
+数据源只使用 Semantic Scholar。默认使用 Semantic Scholar `paper/search/bulk`，并用 `paper/batch` 批量回填 TLDR、fields、引用数、参考文献数、开放 PDF 等详情；这样比 ranked search 更容易覆盖老文献和高被引文献。如果有 Semantic Scholar API key，可以通过环境或 GitHub Actions secret 传入：
 
 ```bash
 python scripts/update_papers.py --semantic-api-key YOUR_KEY --merge-existing
@@ -41,7 +41,7 @@ python scripts/update_papers.py --semantic-api-key YOUR_KEY --merge-existing
 
 ```bash
 set SEMANTIC_SCHOLAR_API_KEY=你的key
-python scripts/enrich_semantic_scholar.py --limit 80 --edge-limit 12
+python scripts/enrich_semantic_scholar.py --limit 5000 --edge-detail-limit 300 --edge-limit 12
 ```
 
 增强后，每条论文会尽量补充：
@@ -76,8 +76,8 @@ Settings → Secrets and variables → Actions → New repository secret
 
 之后 workflow 会自动执行两步：
 
-1. 更新 Semantic Scholar 题录。
-2. 用同一个 key 补充 TLDR、fields、authors、references、citations、Recommendations API 相似文章，并生成网页详情区所需的静态 JSON 数据。
+1. 用 Semantic Scholar bulk search 更新最多 5000 条题录。
+2. 用同一个 key 通过 batch API 补充 TLDR、fields、authors、citation/reference counts，并为前 300 条重点论文补充 references、citations、Recommendations API 相似文章，生成网页详情区所需的静态 JSON 数据。
 
 ## 数据文件
 
