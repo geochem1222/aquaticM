@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T09:27:01.022206+00:00",
+  "updated_at": "2026-06-01T23:11:55.272104+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -364,7 +364,7 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 1906,
+    "fresh_records_before_merge": 1908,
     "total_records_after_merge": 800,
     "query_limit": 120,
     "retmax": 800,
@@ -1312,33 +1312,6 @@
       ]
     },
     {
-      "id": "9baa1ca0336851292247741abc2334e4095a0b4b",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1002/zamm.70341",
-      "title": "Aspects of irreversibility analysis in the reactive dynamics of a peristaltic non‐Newtonian nanofluid inside an irregular vertical stream under convective conditions",
-      "authors": [
-        "J. U. Viharika",
-        "Umair Khan",
-        "S. M. Hussain",
-        "Dalia H. Elkamchouchi"
-      ],
-      "journal": "ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik",
-      "publication_date": "2026-02-01",
-      "abstract": "This study presents a novel thermodynamic analysis of reactive peristaltic nanofluid flow within an irregular vertical conduit under convective conditions, emphasizing the behavior of a non‐Newtonian Casson nanofluid. The investigation integrates irreversibility analysis to explore entropy generation and energy dissipation mechanisms relevant to biomedical processes such as targeted drug delivery and hyperthermia therapy. The governing nonlinear partial differential equations were solved using MATHEMATICA‐13 software to evaluate the effects of key parameters on physiological quantities. Comparative analysis between Casson and Newtonian fluids reveals that the Casson model offers superior control over energy loss and heat transfer, making it more favorable for efficient thermal regulation in biomedical applications. The study further identifies the influence of flow parameters on trapping phenomena, providing insights into optimizing peristaltic transport for therapeutic fluid delivery.",
-      "url": "https://www.semanticscholar.org/paper/9baa1ca0336851292247741abc2334e4095a0b4b",
-      "pdf_url": "",
-      "citation_count": 0,
-      "influential_citation_count": 0,
-      "reference_count": 62,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "model",
-        "river"
-      ]
-    },
-    {
       "id": "7ad68dcecab0a69517a2c91d1c8abc458852403c",
       "source": "Semantic Scholar",
       "pmid": "41687531",
@@ -1389,6 +1362,33 @@
         "lake",
         "metabolism",
         "microbe"
+      ]
+    },
+    {
+      "id": "9baa1ca0336851292247741abc2334e4095a0b4b",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1002/zamm.70341",
+      "title": "Aspects of irreversibility analysis in the reactive dynamics of a peristaltic non‐Newtonian nanofluid inside an irregular vertical stream under convective conditions",
+      "authors": [
+        "J. U. Viharika",
+        "Umair Khan",
+        "S. M. Hussain",
+        "Dalia H. Elkamchouchi"
+      ],
+      "journal": "ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik",
+      "publication_date": "2026-02-01",
+      "abstract": "This study presents a novel thermodynamic analysis of reactive peristaltic nanofluid flow within an irregular vertical conduit under convective conditions, emphasizing the behavior of a non‐Newtonian Casson nanofluid. The investigation integrates irreversibility analysis to explore entropy generation and energy dissipation mechanisms relevant to biomedical processes such as targeted drug delivery and hyperthermia therapy. The governing nonlinear partial differential equations were solved using MATHEMATICA‐13 software to evaluate the effects of key parameters on physiological quantities. Comparative analysis between Casson and Newtonian fluids reveals that the Casson model offers superior control over energy loss and heat transfer, making it more favorable for efficient thermal regulation in biomedical applications. The study further identifies the influence of flow parameters on trapping phenomena, providing insights into optimizing peristaltic transport for therapeutic fluid delivery.",
+      "url": "https://www.semanticscholar.org/paper/9baa1ca0336851292247741abc2334e4095a0b4b",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 62,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river"
       ]
     },
     {
@@ -2870,7 +2870,7 @@
       "title": "Seasonal Dynamics of Trace Metals in Marine Sediment Influenced Bioaccumulation in Giant Tiger Prawn (Penaeus monodon) from Rivers State, Nigeria",
       "authors": [
         "D. Davies",
-        "Ibienebo Chris",
+        "I. Chris",
         "Dienye Dienye",
         "Henry Eyina",
         "Nwachuwku Divinefavour"
@@ -5135,7 +5135,7 @@
       "abstract": "Lake biofilms play pivotal roles in nitrogen cycling; however, the influence of carrier type on their nitrogen transformation processes remains inadequately understood. In this study, we employed 15N isotope tracing, selective inhibition experiments, and microbial community analysis to investigate nitrous oxide (N2O) emission patterns in biofilms formed on biotic (hydrophyte) and abiotic (rocks and plastics) carriers. Our results revealed that biotic carrier biofilms predominantly generated NO2- via denitrification, contributing 99.39 % of nitrogen transformation, whereas abiotic carrier biofilms primarily produced NO2- through nitrification. Moreover, nitrogen loss in biotic carrier biofilms was mainly attributed to denitrification, while in abiotic carrier biofilms, anaerobic ammonium oxidation (anammox) accounted for 70.5 % of nitrogen loss. Environmental parameters, particularly temperature and oxidation-reduction potential, significantly modulated nitrogen transformation processes in both biofilm types. Nitrification-related N2O production showed no significant difference between the two biofilm types, denitrification-related N₂O potentials were substantially higher in biotic carrier biofilms, with greater N₂O production (157.78 vs 84.94 μg N/h/gMLVSS) and reduction rates (150.70 vs 83.36 μg N/h/gMLVSS), resulting in increased net N₂O emissions. Microbial community analysis indicated that abiotic carrier biofilms harbored higher relative abundances of Chloroflexi and Dadabacteria, whereas abiotic carrier biofilms could show enhanced nitrite oxidation and nitrate reduction activities. These findings offer novel insights into carrier-dependent nitrogen cycling mechanisms and bear significant implications for managing N2O emissions from lake ecosystems.",
       "url": "https://www.semanticscholar.org/paper/097fea110f3f8f3b0acb2bb558ebcf62b46653f6",
       "pdf_url": "",
-      "citation_count": 5,
+      "citation_count": 6,
       "influential_citation_count": 0,
       "reference_count": 59,
       "references": [],
@@ -6264,6 +6264,32 @@
         "metabolism",
         "model",
         "river"
+      ]
+    },
+    {
+      "id": "f9b5f303a80c69bf52d28665dcf1db9e11368b50",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.70102/ijares/v5i1/5-1-48",
+      "title": "Ocean acidification on carbonate chemical disruption and its implications for marine calcifiers and shellfish farming",
+      "authors": [
+        "Priya Vij",
+        "Pooja Sharmav",
+        "Rashmi Chauhan"
+      ],
+      "journal": "International Journal of Aquatic Research and Environmental Studies",
+      "publication_date": "2025-05-20",
+      "abstract": "Mollusc aquaculture is a lucrative business experiencing tremendous output growth in\nEurope and beyond. In recent years, there has been discourse over the extensive\nenvironmental advantages of this method of food production. An area of concern in\nMollusk Aquaculture (MA) is the generation of calcareous shells (CaCO3). The\nformation of mollusc shells has occasionally been characterized as a reservoir for\natmospheric CO2, as it sequesters carbon in a solid crystalline state. More\ncomprehensive carbonate chemistry modeling, incorporating simultaneous variations in\nseawater CO2, pH, soluble inorganic carbon, and overall alkalinity, indicates that\ncalcification is a net CO2 supply to the atmosphere. The discourse surrounding the\ninclusion of MA respiration in carbon footprint modeling suggests that more\ncomprehensive knowledge is necessary before incorporating shellfish farming into\ncarbon trading systems and footprint assessments. This study demonstrates that regional\nvariations in the marine carbonate ecosystem can influence the quantity of CO2 emitted\nper unit of CaCO production. The carbonate chemistry modeling indicates that a coastal\nmussels farm in southern Portugal emits approximately 0.3 g of CO2 per gram of CaCO3\nshell produced. In contrast, a similar farm on the coastline of the Baltic Ocean would\ngenerate up to 34% more CO2 per gram of CaCO3: CaCO3 g-CO2. This regional\nheterogeneity must be considered if MA is incorporated into future carbon pricing\nsystems and the manufacturing expansion strategy.",
+      "url": "https://www.semanticscholar.org/paper/f9b5f303a80c69bf52d28665dcf1db9e11368b50",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model"
       ]
     },
     {
@@ -10295,7 +10321,7 @@
       "abstract": "Many municipalities around the world place their production wells in shallow alluvial aquifers that are adjacent to streams. Pumping these wells then induces the infiltration of surface water into the aquifer, allowing the greater extraction of water without significantly depleting the aquifer. However, induced infiltration poses a risk of introducing contamination from surface water into groundwater systems. The goal of this study was to quantify the amount of induced infiltration due to municipal pumping at the Four Mile Creek well field in Oxford, Ohio, using stable isotopes of water oxygen (δ18O) and deuterium (δ2H). In areas of municipal pumping, we sampled water from the production wells, Four Mile Creek, and from monitoring wells that we hypothesized to be both influenced and not influenced by induced infiltration. Samples were collected over 10 months in 2012 and over 12 months in 2021. In 2012, surface water δ18O values ranged from −3.89 to −8.04‰, and δ2H ranged from −26.55 to −55.65‰ at sampling sites. PW1 δ18O values ranged from −4.71 to −7.39‰ with a mean of −6.61 and −32.01 to −47.86‰ with a mean of −42.74‰ for δ2H. PW2 δ18O values ranged from −5.74 to −7.34‰, with a mean of −6.45‰, and δ2H ranged from −36.29 to −47.82‰ with a mean of −42.43‰. PW3 had lower values of both δ18O and δ2H, ranging from −6.36 to −8.02‰ and −47.7 to −40.35‰, and with means of −7.08 and −45.11, respectively. In 2021/2022, surface water δ18O values ranged from −5.32 to −7.93‰, and the δ2H ranged from −36.14 to −50.56‰. PW1 δ18O values ranged from −6.15 to −7.54‰ with a mean of −7.13‰, and δ2H ranged from −43.52 to −49.01‰ with a mean of −45.99‰. PW2 δ18O values ranged from −5.72 to −7.34‰, with a mean of −6.70‰, and δ2H ranged from −36.69 to −46.14‰, with a mean of −43.61‰. Using the time averaged values of δ18O of groundwater, production wells and surface water, the percentages of surface water resulting from induced infiltration in 2012 were 57%, 59% and 15% at the three wells, respectively, while in 2021, PW1 had 35% and PW2 91%. The amount of induced infiltration was apparently related to the pumping rates of the production wells, the length of time of pumping and the distance between Four Mile Creek and production wells. Our results indicate that stable isotopes of water provide a reliable method of quantifying groundwater/surface water interaction in alluvial aquifers.",
       "url": "https://www.semanticscholar.org/paper/87c7748e629e3771b52e470334440760b88f62f0",
       "pdf_url": "https://doi.org/10.3390/hydrology11120208",
-      "citation_count": 0,
+      "citation_count": 1,
       "influential_citation_count": 0,
       "reference_count": 26,
       "references": [],
@@ -11995,7 +12021,7 @@
       "abstract": "Abstract. Unearthing the effects of surface water and groundwater interactions on subsurface biogeochemical reactions is crucial for developing a more mechanistic understanding of carbon and energy flow in aquifer ecosystems. To examine physiological characteristics across groundwater microbial communities that experience varying degrees of interaction with surface waters, we investigated 10 springs and a river sink and rise system in north central Florida that discharge from and/or mix with the karstic upper Floridan aquifer (UFA). Groundwater with longer residence times in the aquifer had lower concentrations of dissolved oxygen, dissolved and particulate organic carbon, and microbial biomass, as well as the lowest rates of respiration (0.102 to 0.189 mgO2L-1d-1) and heterotrophic production (198 to 576 µgCL-1d-1). Despite these features, oligotrophic UFA groundwater (< 0.5 mg C L−1) contained bioavailable organic matter that supported doubling times (14 to 62 h) and cell-specific production rates (0.0485 to 0.261 pmol C per cell per hour) comparable to those observed for surface waters (17 to 20 h; 0.105 to 0.124 pmol C per cell per hour). The relatively high specific rates of dissimilatory and assimilatory metabolism indicate a subsurface source of labile carbon to the groundwater (e.g., secondary production and/or chemoautotrophy). Our results link variations in UFA hydrobiogeochemistry to the physiology of its groundwater communities, providing a basis to develop new hypotheses related to microbial carbon cycling, trophic hierarchy, and processes generating bioavailable organic matter in karstic aquifer ecosystems.\n",
       "url": "https://www.semanticscholar.org/paper/54415846a5a55cb3cbcab4394f9f5f5ff8e2f98a",
       "pdf_url": "",
-      "citation_count": 7,
+      "citation_count": 8,
       "influential_citation_count": 0,
       "reference_count": 86,
       "references": [],
@@ -12776,7 +12802,7 @@
       "abstract": "Nitrogen (N) pollution is a major threat to river ecosystems worldwide. Elucidating the community structure of N-cycling microorganisms in rivers is essential to understanding how ecosystem processes and functions will respond to increasing N inputs. However, previous studies generally focus on limited functional genes through amplicon sequencing or quantitative PCR techniques and cannot cover all N-cycling microorganisms. Here, metagenomic sequencing and genome binning were used to determine N-cycling genes in water, channel sediments, and riparian soils of the Yangtze River, which has been heavily polluted by N. Additionally, the denitrification and anaerobic ammonium oxidation (anammox) rates that reflect N removal potential were measured using 15N isotope pairing technique. Results showed that functional genes involved in organic N metabolism (i.e., organic degradation and synthesis) and nitrate reduction pathways (i.e., dissimilatory and assimilatory nitrate reduction to ammonium and denitrification) were more abundant and diverse than other N-cycling genes. A total of 121 metagenome-assembled genomes (MAGs) were identified to be involved in N-cycling processes, and the key MAGs were mainly taxonomically classified as Alphaproteobacteria and Gammaproteobacteria. The abundance and diversity of most N-cycling genes were higher in soils and sediments than in water, as well as higher in downstream and midstream than in upstream sites. These spatial variations were explained not only by local environment and vegetation but also by geographical and climatic factors. N removal process (i.e., denitrification and anammox) rates were significantly related to the abundance or diversity of several N-cycling genes, and climate and edaphic factors could regulate denitrification and anammox rates directly and indirectly through their effects on functional genes. Overall, these results provide a new avenue for further understanding the biogeographic patterns and environmental drivers of N-cycling microorganisms in rivers from the metagenomic perspective.",
       "url": "https://www.semanticscholar.org/paper/4c1a1cc8f6cded71d10519932fd4ace4c3883ff7",
       "pdf_url": "",
-      "citation_count": 51,
+      "citation_count": 52,
       "influential_citation_count": 0,
       "reference_count": 61,
       "references": [],
@@ -13198,7 +13224,7 @@
       "abstract": "Microbial communities are crucial for water quality and biogeochemical cycling in freshwaters. Microbes secrete extracellular enzymes to decompose organic matter for their needs of nutrients and scarce elements. Yet, there is a lack of knowledge on microbial metabolic limitations in freshwaters, especially in lake sediments. Here, we examined the carbon, nitrogen, and phosphorus-acquiring extracellular enzyme activities and the bacterial and fungal communities of 30 sediments across Xingkai Lake, the largest freshwater lake in Northeast Asia. We further analyzed the microbial metabolic limitations via extracellular enzyme stoichiometry and explored the direct and indirect effects of abiotic and biotic factors on the limitations. We found that microbial metabolisms were primarily limited by phosphorus in Xingkai Lake. For instance, microbial carbon and phosphorus limitations were closely correlated to abiotic factors like water depth, total dissolved solids, sediment total carbon, and conductivity. The metabolic limitations were also affected by biotic factors, such as showing positive relationships with the alpha and beta diversity of bacteria, and with the beta diversity of fungi. In addition, community compositions of bacteria and fungi were mainly correlated to abiotic factors such as total carbon and dissolved organic carbon, respectively. Collectively, microbial metabolic limitations were affected directly or indirectly by abiotic factors and microbial communities. Our findings indicate that microbial metabolic limitations are not only driven by bacteria and fungi but also by abiotic factors such as water depth and total nitrogen, and thus provide empirical evidence for effective management of freshwater lakes under climate warming and intensified human activities.",
       "url": "https://www.semanticscholar.org/paper/b024e23ba006e86342f617274d8de87eeef4482e",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00248-024-02412-0.pdf",
-      "citation_count": 5,
+      "citation_count": 6,
       "influential_citation_count": 0,
       "reference_count": 60,
       "references": [],
@@ -13695,7 +13721,7 @@
       "abstract": "Depletion of dissolved oxygen (DO) is a significant incentive for biological catastrophic events in freshwater lakes. Although predicting the DO concentrations in lakes with high-frequency real-time data to prevent hypoxic events is effective, few related experimental studies were made. In this study, a short-term predicting model was developed for DO concentrations in three problematic areas in China's Chaohu Lake. To predict the DO concentrations at these representative sites, which coincide with biological abnormal death areas, water quality indicators at the three sampling sites and hydrometeorological features were adopted as input variables. The monitoring data were collected every 4 h between 2020 and 2023 and applied separately to train and test the model at a ratio of 8:2. A new AC-BiLSTM coupling model of the convolution neural network (CNN) and the bidirectional long short-term memory (BiLSTM) with the attention mechanism (AM) was proposed to tackle characteristics of discontinuous dynamic change of DO concentrations in long time series. Compared with the BiLSTM and CNN-BiLSTM models, the AC-BiLSTM showed better performance in the evaluation criteria of MSE, MAE, and R2 and a stronger ability to capture global dependency relationships. Although the prediction accuracy of hypoxic events was slightly worse, the general time series characteristics of abrupt DO depletion were captured. Water temperature regularly affects DO concentrations due to its periodic variations. The high correlation and the universal importance of total nitrogen (TN) and total phosphorus (TP) with DO reveals that point source pollution are critical cause of DO depletion in the freshwater lake. The importance of NTU at the Zhong Miao Station indicates the self-purification capacity of the lake is affected by the flow rate changes brought by the tributaries. Calculating linear correlations of variables in conjunction with a permutation variable importance analysis enhanced the interpretability of the proposed model results. This study demonstrates that the AC-BiLSTM model can complete the task of short-term prediction of DO concentration of lakes and reveal its response features of timing and magnitude of abrupt DO depletion.",
       "url": "https://www.semanticscholar.org/paper/8fa1df4d3d1548a6b0e413b733af35fcc6444f8f",
       "pdf_url": "",
-      "citation_count": 37,
+      "citation_count": 38,
       "influential_citation_count": 1,
       "reference_count": 41,
       "references": [],
@@ -14254,7 +14280,7 @@
       "abstract": "",
       "url": "https://www.semanticscholar.org/paper/642e8e3c91e324c206ea78c637d1df28af7c7b9f",
       "pdf_url": "",
-      "citation_count": 29,
+      "citation_count": 30,
       "influential_citation_count": 1,
       "reference_count": 71,
       "references": [],
@@ -15375,7 +15401,7 @@
       "abstract": "Coastal terrestrial-aquatic interfaces (TAIs) are crucial contributors to global biogeochemical cycles and carbon exchange. The soil carbon dioxide (CO2) efflux in these transition zones is however poorly understood due to the high spatiotemporal dynamics of TAIs, as various sub-ecosystems in this region are compressed and expanded by complex influences of tides, changes in river levels, climate, and land use. We focus on the Chesapeake Bay region to (i) investigate the spatial heterogeneity of the coastal ecosystem and identify spatial zones with similar environmental characteristics based on the spatial data layers, including vegetation phenology, climate, landcover, diversity, topography, soil property, and relative tidal elevation; (ii) understand the primary driving factors affecting soil respiration within sub-ecosystems of the coastal ecosystem. Specifically, we employed hierarchical clustering analysis to identify spatial regions with distinct environmental characteristics, followed by the determination of main driving factors using Random Forest regression and SHapley Additive exPlanations. Maximum and minimum temperature are the main drivers common to all sub-ecosystems, while each region also has additional unique major drivers that differentiate them from one another. Precipitation exerts an influence on vegetated lands, while soil pH value holds importance specifically in forested lands. In croplands characterized by high clay content and low sand content, the significant role is attributed to bulk density. Wetlands demonstrate the importance of both elevation and sand content, with clay content being more relevant in non-inundated wetlands than in inundated wetlands. The topographic wetness index significantly contributes to the mixed vegetation areas, including shrub, grass, pasture, and forest. Additionally, our research reveals that dense vegetation land covers and urban/developed areas exhibit distinct soil property drivers. Overall, our research demonstrates an efficient method of employing various open-source remote sensing and GIS datasets to comprehend the spatial variability and soil respiration mechanisms in coastal TAI. There is no one-size-fits-all approach to modeling carbon fluxes released by soil respiration in coastal TAIs, and our study highlights the importance of further research and monitoring practices to improve our understanding of carbon dynamics and promote the sustainable management of coastal TAIs.",
       "url": "https://www.semanticscholar.org/paper/248ba0070d459e07f2d6dba0b85f222cba5d6a3e",
       "pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11079102",
-      "citation_count": 12,
+      "citation_count": 13,
       "influential_citation_count": 0,
       "reference_count": 141,
       "references": [],
@@ -20988,7 +21014,7 @@
       "abstract": "The rapid advancements in wearable technologies are allowing for personal and tailored monitoring systems for core bodily metrics. Modern smartwatches accurately and frequently stream physical signals such as heart rate and respiratory rate. However, smartwatches have yet to track a multitude of physiological parameters, including sweat rate. This work presents a new wearable device that tracks sweat rate, the body's most important thermoregulatory function. The device is tape‐free and utilizes an off‐the‐shelf humidity sensor, with the potential to be integrated with existing smartwatch bands. It features a 3D‐printed chamber with a humidity sensor and microheater, and it interfaces the skin with a malleable and concave sweat collector. Through various experiments and trials, the authors seek to understand the relationship between sweat‐induced humidity within the chamber and the amount of sweat secreted when worn. Compared to existing sweat rate sensing devices, this hygrometer‐based device can be worn for extensive periods of time without overfilling. The device's reusability and compactness make it a good candidate for use alongside modern, microfluidic‐based sweat rate devices.",
       "url": "https://www.semanticscholar.org/paper/bee3b8bc156afe29bb1bb2bb653e11310f95cf7b",
       "pdf_url": "",
-      "citation_count": 25,
+      "citation_count": 26,
       "influential_citation_count": 0,
       "reference_count": 30,
       "references": [],
@@ -23651,7 +23677,7 @@
       "abstract": "ABSTRACT High-frequency water quality monitoring is rapidly growing in freshwater research and management. Sensor deployments at fixed depths in naturally formed lakes dominate the current understanding of ecosystem dynamics, with comparatively few studies focusing on reservoirs. Here we examined how environmental parameters affect the water column stability and dissolved oxygen (DO) dynamics in a North Texas eutrophic reservoir. We used an autonomous water quality monitoring profiler that recorded temperature, DO, and pH as well as wind speed, wind direction, and air temperature from an on-platform mounted weather station. Data were collected every 2 h from 25 April to 29 October 2019, with each profile spanning from the surface to 10 m depth at 0.5 m steps. Throughout most of the sampling period, the lake had no distinct thermocline, but we observed an oxycline throughout most of the monitoring period, with multiple mixing events. Near the sediments, periods of anoxia lasting hours to days were first observed in May, and July through September were chronically anoxic. In August and September, DO was frequently <2.0 mg L−1 throughout the entire water column, with 2 periods of total water column anoxia. Surface DO measurements for each 2 h interval were highly synchronous with Schmidt stability. During decreasing and low Schmidt stability or Lake Number, the oxycline destabilized in association with changes in wind direction and speed. Our results indicate that DO can be highly dynamic in polymictic reservoirs, with strong implications for carbon and nitrogen biogeochemical cycles.",
       "url": "https://www.semanticscholar.org/paper/cdf3635cf3beeb9d1a28566f0937399fc3b231ec",
       "pdf_url": "",
-      "citation_count": 9,
+      "citation_count": 10,
       "influential_citation_count": 1,
       "reference_count": 55,
       "references": [],
@@ -24861,37 +24887,6 @@
         "metabolism",
         "model",
         "oxygen"
-      ]
-    },
-    {
-      "id": "5104ce45451daba515b02a427129c622219cac51",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1038/s43247-022-00607-2",
-      "title": "High rates of daytime river metabolism are an underestimated component of carbon cycling",
-      "authors": [
-        "Flavia Tromboni",
-        "E. Hotchkiss",
-        "Anne E. Schechner",
-        "W. Dodds",
-        "S. Poulson",
-        "S. Chandra"
-      ],
-      "journal": "Communications Earth & Environment",
-      "publication_date": "2022-11-07",
-      "abstract": "River metabolism and, thus, carbon cycling are governed by gross primary production and ecosystem respiration. Traditionally river metabolism is derived from diel dissolved oxygen concentrations, which cannot resolve diel changes in ecosystem respiration. Here, we compare river metabolism derived from oxygen concentrations with estimates from stable oxygen isotope signatures (δ18O2) from 14 sites in rivers across three biomes using Bayesian inverse modeling. We find isotopically derived ecosystem respiration was greater in the day than night for all rivers (maximum change of 113 g O2 m−2 d−1, minimum of 1 g O2 m−2 d−1). Temperature (20 °C) normalized rates of ecosystem respiration and gross primary production were 1.1 to 87 and 1.5 to 22-fold higher when derived from oxygen isotope data compared to concentration data. Through accounting for diel variation in ecosystem respiration, our isotopically-derived rates suggest that ecosystem respiration and microbial carbon cycling in rivers is more rapid than predicted by traditional methods. Diel variations in the isotopic composition of dissolved oxygen in river water reveal high rates of gross primary production and respiration rates in 14 rivers across three biomes, suggesting that the microbial loop in rivers may cycle carbon more rapidly than thought.",
-      "url": "https://www.semanticscholar.org/paper/5104ce45451daba515b02a427129c622219cac51",
-      "pdf_url": "https://www.nature.com/articles/s43247-022-00607-2.pdf",
-      "citation_count": 16,
-      "influential_citation_count": 1,
-      "reference_count": 64,
-      "references": [],
-      "tags": [
-        "carbon",
-        "metabolism",
-        "microbe",
-        "oxygen",
-        "river"
       ]
     }
   ]
