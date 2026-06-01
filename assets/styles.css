@@ -272,20 +272,20 @@ select {
   margin: 18px 0;
 }
 
-.inline-graph-head {
+.related-panel-head {
   display: flex;
   align-items: end;
   justify-content: space-between;
   gap: 16px;
 }
 
-.inline-graph-head h4 {
+.related-panel-head h4 {
   margin: 0;
   color: var(--ink);
   font-size: 16px;
 }
 
-.inline-graph-head p {
+.related-panel-head p {
   margin: 0;
   font-size: 13px;
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enrich existing tracker records with Semantic Scholar detail and graph data."""
+"""Enrich existing tracker records with Semantic Scholar detail and recommendations."""
 
 from __future__ import annotations
 
@@ -65,7 +65,7 @@ def main() -> None:
     json_text = json.dumps(payload, ensure_ascii=False, indent=2)
     output_path.write_text(json_text, encoding="utf-8")
     output_path.with_suffix(".js").write_text(f"window.PAPER_TRACKER_DATA = {json_text};\n", encoding="utf-8")
-    print(f"Enriched {enriched} papers with Semantic Scholar detail and graph data.")
+    print(f"Enriched {enriched} papers with Semantic Scholar detail and recommendations.")
 
 
 def enrich_paper(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
