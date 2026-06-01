@@ -275,7 +275,7 @@ function renderRelatedSection(paper) {
   const semanticUrl = paper.url || (s2.paper_id ? `https://www.semanticscholar.org/paper/${s2.paper_id}` : "");
   return `
     <section class="related-panel" aria-label="相似文章和 Semantic Scholar 信息">
-      <div class="inline-graph-head">
+      <div class="related-panel-head">
         <h4>相似文章与 S2 信息</h4>
         <p>${escapeHtml(related.caption)}</p>
       </div>
