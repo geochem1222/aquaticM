@@ -15,7 +15,37 @@ from pathlib import Path
 from typing import Any
 
 
-SEMANTIC_SCHOLAR_BASE = "https://api.semanticscholar.org/graph/v1/paper/search"
+SEMANTIC_SCHOLAR_BULK_SEARCH_BASE = "https://api.semanticscholar.org/graph/v1/paper/search/bulk"
+SEMANTIC_SCHOLAR_BATCH_BASE = "https://api.semanticscholar.org/graph/v1/paper/batch"
+
+BULK_FIELDS = ",".join(
+    [
+        "paperId",
+        "title",
+        "abstract",
+        "year",
+        "publicationDate",
+        "venue",
+        "journal",
+        "authors",
+        "externalIds",
+        "url",
+        "citationCount",
+        "influentialCitationCount",
+        "referenceCount",
+        "openAccessPdf",
+    ]
+)
+
+BATCH_FIELDS = ",".join(
+    [
+        BULK_FIELDS,
+        "publicationTypes",
+        "fieldsOfStudy",
+        "s2FieldsOfStudy",
+        "tldr",
+    ]
+)
 
 def semantic_api_key_from_env() -> str | None:
     for name in [
@@ -76,6 +106,12 @@ METABOLISM_TERMS = [
 ]
 
 SEED_QUERIES = [
+    "stream metabolism dissolved oxygen",
+    "lake metabolism dissolved oxygen",
+    "whole lake metabolism",
+    "river ecosystem metabolism",
+    "freshwater ecosystem metabolism oxygen",
+    "aquatic ecosystem metabolism oxygen",
     '"ecosystem metabolism" freshwater',
     '"aquatic ecosystem metabolism"',
     '"stream metabolism" "dissolved oxygen"',
@@ -95,6 +131,8 @@ SEARCH_QUERIES = SEED_QUERIES + [
     for water in WATER_TERMS
     for process in METABOLISM_TERMS
 ]
+
+BULK_SORTS = ["citationCount:desc", "publicationDate:desc"]
 
 TAG_RULES = {
     "river": [" river", " rivers", " stream", " streams", " creek", " creeks", " hyporheic"],
@@ -154,6 +192,38 @@ def request_json(url: str, params: dict[str, str | int], email: str | None = Non
             raise
 
 
+def post_json(
+    url: str,
+    params: dict[str, str | int],
+    payload: dict[str, Any],
+    email: str | None = None,
+    api_key: str | None = None,
+) -> dict[str, Any]:
+    headers = {"User-Agent": build_user_agent(email), "Content-Type": "application/json"}
+    if api_key:
+        headers["x-api-key"] = api_key.strip()
+    request = urllib.request.Request(
+        f"{url}?{urllib.parse.urlencode(params)}",
+        data=json.dumps(payload).encode("utf-8"),
+        headers=headers,
+        method="POST",
+    )
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=70) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as error:
+            if error.code == 429 and attempt < 2:
+                time.sleep(int(error.headers.get("Retry-After", "8")) + attempt * 4)
+                continue
+            raise
+        except urllib.error.URLError:
+            if attempt < 2:
+                time.sleep(3 + attempt * 4)
+                continue
+            raise
+
+
 def build_user_agent(email: str | None) -> str:
     contact = f" mailto:{email}" if email else ""
     return f"aquatic-metabolism-tracker/1.0{contact}"
@@ -161,36 +231,78 @@ def build_user_agent(email: str | None) -> str:
 
 def fetch_semantic_scholar(retmax: int, email: str | None, api_key: str | None, query_limit: int | None = None) -> list[dict[str, Any]]:
     queries = SEARCH_QUERIES[:query_limit] if query_limit else SEARCH_QUERIES
-    per_query = max(15, min(80, retmax // max(1, len(queries)) + 12))
-    fields = ",".join([
-        "paperId",
-        "title",
-        "abstract",
-        "year",
-        "publicationDate",
-        "venue",
-        "journal",
-        "authors",
-        "externalIds",
-        "url",
-        "citationCount",
-        "influentialCitationCount",
-        "referenceCount",
-        "openAccessPdf",
-    ])
+    per_query = 1000
     papers: list[dict[str, Any]] = []
+    seen_ids: set[str] = set()
     for query in queries:
-        params: dict[str, str | int] = {"query": query, "limit": per_query, "fields": fields}
-        try:
-            data = request_json(SEMANTIC_SCHOLAR_BASE, params, email, api_key)
-        except urllib.error.HTTPError as error:
-            if error.code == 429:
-                break
-            raise
+        for sort in BULK_SORTS:
+            token = ""
+            while len(papers) < retmax * 3:
+                params: dict[str, str | int] = {"query": query, "limit": per_query, "fields": BULK_FIELDS, "sort": sort}
+                if token:
+                    params["token"] = token
+                try:
+                    data = request_json(SEMANTIC_SCHOLAR_BULK_SEARCH_BASE, params, email, api_key)
+                except urllib.error.HTTPError as error:
+                    if error.code == 400 and "sort" in params:
+                        params.pop("sort", None)
+                        data = request_json(SEMANTIC_SCHOLAR_BULK_SEARCH_BASE, params, email, api_key)
+                    elif error.code == 429:
+                        return [paper for paper in papers if paper and is_relevant(paper)]
+                    else:
+                        raise
+                query_tags = classify(query)
+                for item in data.get("data", []):
+                    paper_id = item.get("paperId", "")
+                    if paper_id and paper_id in seen_ids:
+                        continue
+                    if paper_id:
+                        seen_ids.add(paper_id)
+                    paper = enrich_query_tags(parse_semantic_paper(item), query_tags)
+                    if paper and is_relevant(paper):
+                        papers.append(paper)
+                token = data.get("token") or ""
+                if not token or len(papers) >= retmax * 3:
+                    break
+                time.sleep(0.25 if api_key else 1.0)
         query_tags = classify(query)
-        papers.extend(enrich_query_tags(parse_semantic_paper(item), query_tags) for item in data.get("data", []))
         time.sleep(0.35 if api_key else 1.05)
-    return [paper for paper in papers if paper and is_relevant(paper)]
+    return batch_fill_semantic_details(papers, email, api_key)
+
+
+def batch_fill_semantic_details(papers: list[dict[str, Any]], email: str | None, api_key: str | None) -> list[dict[str, Any]]:
+    id_to_paper = {paper.get("id"): paper for paper in papers if paper.get("id")}
+    ids = list(id_to_paper)
+    for start in range(0, len(ids), 500):
+        chunk = ids[start : start + 500]
+        data = post_json(SEMANTIC_SCHOLAR_BATCH_BASE, {"fields": BATCH_FIELDS}, {"ids": chunk}, email, api_key)
+        for item in data:
+            if not item:
+                continue
+            paper = id_to_paper.get(item.get("paperId"))
+            if paper:
+                merge_semantic_detail(paper, item)
+        time.sleep(0.25 if api_key else 1.0)
+    return papers
+
+
+def merge_semantic_detail(paper: dict[str, Any], item: dict[str, Any]) -> None:
+    updated = parse_semantic_paper(item)
+    for key, value in updated.items():
+        if value not in ("", [], None):
+            paper[key] = value
+    s2 = paper.setdefault("semantic_scholar", {})
+    s2.update(
+        {
+            "paper_id": item.get("paperId") or paper.get("id", ""),
+            "tldr": (item.get("tldr") or {}).get("text", ""),
+            "fields_of_study": item.get("fieldsOfStudy") or [],
+            "s2_fields_of_study": item.get("s2FieldsOfStudy") or [],
+            "publication_types": item.get("publicationTypes") or [],
+            "external_ids": item.get("externalIds") or {},
+        }
+    )
+    paper["tags"] = sorted(set((paper.get("tags") or []) + classify(" ".join([paper.get("title", ""), paper.get("abstract", ""), paper.get("journal", "")]))))
 
 
 def parse_semantic_paper(item: dict[str, Any]) -> dict[str, Any]:
@@ -247,13 +359,22 @@ def enrich_query_tags(paper: dict[str, Any], query_tags: list[str]) -> dict[str,
 def deduplicate(papers: list[dict[str, Any]]) -> list[dict[str, Any]]:
     seen: set[str] = set()
     unique: list[dict[str, Any]] = []
-    for paper in sorted(papers, key=lambda item: item.get("publication_date", ""), reverse=True):
+    for paper in sorted(papers, key=paper_selection_score, reverse=True):
         key = paper_key(paper)
         if key in seen:
             continue
         seen.add(key)
         unique.append(paper)
     return unique
+
+
+def paper_selection_score(paper: dict[str, Any]) -> tuple[int, int, str]:
+    tags = set(paper.get("tags") or [])
+    method_bonus = 150 * len(tags & {"oxygen", "isotope", "model", "sensor", "microbe"})
+    system_bonus = 100 * len(tags & {"river", "lake", "pond", "ditch", "wetland", "sediment"})
+    citation_score = min(int(paper.get("citation_count") or 0), 20000)
+    influential_score = 5 * min(int(paper.get("influential_citation_count") or 0), 5000)
+    return (citation_score + influential_score + method_bonus + system_bonus, len(tags), paper.get("publication_date", ""))
 
 
 def paper_key(paper: dict[str, Any]) -> str:
@@ -296,13 +417,13 @@ def write_data(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--retmax", type=int, default=160)
+    parser.add_argument("--retmax", type=int, default=5000)
     parser.add_argument("--email", default=os.environ.get("CONTACT_EMAIL"))
     parser.add_argument("--output", default="data/papers.json")
     parser.add_argument("--sources", default="semantic", help="Only Semantic Scholar is supported; kept for CLI compatibility.")
     parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())
     parser.add_argument("--merge-existing", action="store_true")
-    parser.add_argument("--query-limit", type=int, default=120)
+    parser.add_argument("--query-limit", type=int, default=None)
     args = parser.parse_args()
 
     output = Path(args.output)
@@ -328,6 +449,8 @@ def main() -> None:
         "total_records_after_merge": len(papers),
         "query_limit": args.query_limit,
         "retmax": args.retmax,
+        "search_mode": "Semantic Scholar paper/search/bulk",
+        "batch_detail_fill": True,
         "error": fetch_error,
     }
     write_data(papers, output, source_labels, update_status)

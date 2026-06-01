@@ -16,7 +16,30 @@ from typing import Any
 
 
 BASE = "https://api.semanticscholar.org/graph/v1"
+BATCH_BASE = "https://api.semanticscholar.org/graph/v1/paper/batch"
 RECOMMENDATIONS_BASE = "https://api.semanticscholar.org/recommendations/v1/papers"
+
+BATCH_FIELDS = ",".join(
+    [
+        "paperId",
+        "abstract",
+        "year",
+        "venue",
+        "publicationDate",
+        "publicationTypes",
+        "fieldsOfStudy",
+        "s2FieldsOfStudy",
+        "tldr",
+        "externalIds",
+        "openAccessPdf",
+        "citationCount",
+        "influentialCitationCount",
+        "referenceCount",
+        "authors.authorId",
+        "authors.name",
+        "authors.url",
+    ]
+)
 
 
 def semantic_api_key_from_env() -> str | None:
@@ -38,8 +61,14 @@ def main() -> None:
     parser.add_argument("--input", default="data/papers.json")
     parser.add_argument("--output", default="data/papers.json")
     parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())
-    parser.add_argument("--limit", type=int, default=40, help="Maximum papers to enrich in one run.")
+    parser.add_argument("--limit", type=int, default=5000, help="Maximum papers to enrich in one run.")
     parser.add_argument("--edge-limit", type=int, default=12, help="References and citations to keep per paper.")
+    parser.add_argument(
+        "--edge-detail-limit",
+        type=int,
+        default=300,
+        help="Maximum papers to enrich with reference, citation, and recommendation lists.",
+    )
     args = parser.parse_args()
 
     if not args.semantic_api_key:
@@ -49,71 +78,65 @@ def main() -> None:
     output_path = Path(args.output)
     payload = json.loads(input_path.read_text(encoding="utf-8"))
 
-    enriched = 0
-    for paper in payload.get("papers", []):
-        if enriched >= args.limit:
-            break
-        if paper.get("source") != "Semantic Scholar" or not paper.get("id"):
-            continue
-        enrich_paper(paper, args.semantic_api_key, args.edge_limit)
-        enriched += 1
+    candidates = [
+        paper
+        for paper in payload.get("papers", [])
+        if paper.get("source") == "Semantic Scholar" and paper.get("id")
+    ][: args.limit]
+    batch_enrich_papers(candidates, args.semantic_api_key)
+
+    edge_enriched = 0
+    for paper in candidates[: args.edge_detail_limit]:
+        enrich_paper_edges(paper, args.semantic_api_key, args.edge_limit)
+        edge_enriched += 1
         time.sleep(0.12)
 
     payload["updated_at"] = datetime.now(timezone.utc).isoformat()
     payload["sources"] = ["Semantic Scholar"]
     payload["semantic_scholar_enriched"] = True
+    payload["semantic_scholar_enrichment"] = {
+        "batch_detail_count": len(candidates),
+        "edge_recommendation_count": edge_enriched,
+    }
     json_text = json.dumps(payload, ensure_ascii=False, indent=2)
     output_path.write_text(json_text, encoding="utf-8")
     output_path.with_suffix(".js").write_text(f"window.PAPER_TRACKER_DATA = {json_text};\n", encoding="utf-8")
-    print(f"Enriched {enriched} papers with Semantic Scholar detail and recommendations.")
-
-
-def enrich_paper(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
-    paper_id = paper["id"]
-    details = request_json(
-        f"{BASE}/paper/{urllib.parse.quote(paper_id)}",
-        {
-            "fields": ",".join(
-                [
-                    "paperId",
-                    "title",
-                    "abstract",
-                    "year",
-                    "venue",
-                    "publicationDate",
-                    "publicationTypes",
-                    "fieldsOfStudy",
-                    "s2FieldsOfStudy",
-                    "tldr",
-                    "externalIds",
-                    "openAccessPdf",
-                    "citationCount",
-                    "influentialCitationCount",
-                    "referenceCount",
-                    "authors.authorId",
-                    "authors.name",
-                    "authors.url",
-                ]
-            )
-        },
-        api_key,
+    print(
+        "Enriched "
+        f"{len(candidates)} papers with Semantic Scholar batch detail and "
+        f"{edge_enriched} papers with references, citations, and recommendations."
     )
-    references = request_edge_list(paper_id, "references", api_key, edge_limit)
-    citations = request_edge_list(paper_id, "citations", api_key, edge_limit)
-    recommendations = request_recommendations(paper_id, api_key, edge_limit)
 
-    paper["semantic_scholar"] = {
-        "paper_id": details.get("paperId") or paper_id,
-        "tldr": (details.get("tldr") or {}).get("text", ""),
-        "fields_of_study": details.get("fieldsOfStudy") or [],
-        "s2_fields_of_study": details.get("s2FieldsOfStudy") or [],
-        "publication_types": details.get("publicationTypes") or [],
-        "external_ids": details.get("externalIds") or {},
-        "authors": details.get("authors") or [],
-        "references": references,
-        "citations": citations,
-        "recommendations": recommendations,
-    }
+
+def batch_enrich_papers(papers: list[dict[str, Any]], api_key: str) -> None:
+    id_to_paper = {paper["id"]: paper for paper in papers if paper.get("id")}
+    ids = list(id_to_paper)
+    for start in range(0, len(ids), 500):
+        chunk = ids[start : start + 500]
+        details = request_batch(chunk, api_key)
+        for item in details:
+            if not item:
+                continue
+            paper = id_to_paper.get(item.get("paperId"))
+            if paper:
+                merge_detail(paper, item)
+        time.sleep(0.12)
+
+
+def merge_detail(paper: dict[str, Any], details: dict[str, Any]) -> None:
+    paper_id = details.get("paperId") or paper["id"]
+    semantic = paper.setdefault("semantic_scholar", {})
+    semantic.update(
+        {
+            "paper_id": paper_id,
+            "tldr": (details.get("tldr") or {}).get("text", ""),
+            "fields_of_study": details.get("fieldsOfStudy") or [],
+            "s2_fields_of_study": details.get("s2FieldsOfStudy") or [],
+            "publication_types": details.get("publicationTypes") or [],
+            "external_ids": details.get("externalIds") or {},
+            "authors": details.get("authors") or [],
+        }
+    )
     paper["citation_count"] = details.get("citationCount", paper.get("citation_count", 0))
     paper["influential_citation_count"] = details.get(
         "influentialCitationCount", paper.get("influential_citation_count", 0)
@@ -123,6 +146,18 @@ def enrich_paper(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
         paper["pdf_url"] = details["openAccessPdf"]["url"]
     if details.get("abstract"):
         paper["abstract"] = details["abstract"]
+
+
+def enrich_paper_edges(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
+    paper_id = paper["id"]
+    references = request_edge_list(paper_id, "references", api_key, edge_limit)
+    citations = request_edge_list(paper_id, "citations", api_key, edge_limit)
+    recommendations = request_recommendations(paper_id, api_key, edge_limit)
+
+    semantic = paper.setdefault("semantic_scholar", {})
+    semantic["references"] = references
+    semantic["citations"] = citations
+    semantic["recommendations"] = recommendations
 
 
 def request_edge_list(paper_id: str, edge: str, api_key: str, limit: int) -> list[dict[str, Any]]:
@@ -165,6 +200,29 @@ def request_recommendations(paper_id: str, api_key: str, limit: int) -> list[dic
                 continue
             print(f"Recommendation request failed for {paper_id}: {error}")
             return []
+    return []
+
+
+def request_batch(paper_ids: list[str], api_key: str) -> list[dict[str, Any]]:
+    request = urllib.request.Request(
+        f"{BATCH_BASE}?{urllib.parse.urlencode({'fields': BATCH_FIELDS})}",
+        data=json.dumps({"ids": paper_ids}).encode("utf-8"),
+        headers={
+            "x-api-key": api_key.strip(),
+            "User-Agent": "aquatic-metabolism-tracker/1.0",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=90) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as error:
+            if error.code == 429 and attempt < 2:
+                time.sleep(int(error.headers.get("Retry-After", "8")) + 2)
+                continue
+            raise
     return []
 
 

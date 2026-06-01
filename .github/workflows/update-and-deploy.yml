@@ -40,13 +40,13 @@ jobs:
           S2_API: ${{ secrets.S2_API || vars.S2_API }}
         run: |
           set +e
-          python scripts/update_papers.py --retmax 800 --merge-existing --query-limit 120 > data/update.log 2>&1
+          python scripts/update_papers.py --retmax 5000 --merge-existing > data/update.log 2>&1
           status=$?
           cat data/update.log
           python scripts/write_update_status.py --log data/update.log --status-code "$status"
           exit 0
 
-      - name: Enrich Semantic Scholar graph data
+      - name: Enrich Semantic Scholar details and recommendations
         env:
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY || vars.SEMANTIC_SCHOLAR_API_KEY }}
           S2_API_KEY: ${{ secrets.S2_API_KEY || vars.S2_API_KEY }}
@@ -56,7 +56,7 @@ jobs:
         run: |
           if [ -n "$SEMANTIC_SCHOLAR_API_KEY" ] || [ -n "$S2_API_KEY" ] || [ -n "$SEMANTIC_API_KEY" ] || [ -n "$SEMANTIC_SCHOLAR_API" ] || [ -n "$S2_API" ]; then
             echo "Semantic Scholar API key detected; running enrichment."
-            python scripts/enrich_semantic_scholar.py --limit 80 --edge-limit 12 || echo "Semantic Scholar enrichment failed; continuing with basic metadata."
+            python scripts/enrich_semantic_scholar.py --limit 5000 --edge-detail-limit 300 --edge-limit 12 || echo "Semantic Scholar enrichment failed; continuing with basic metadata."
           else
             echo "Semantic Scholar API key is not configured; skipping enrichment."
           fi
