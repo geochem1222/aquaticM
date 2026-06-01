@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-06-01T00:16:16.962175+00:00",
+  "updated_at": "2026-06-01T09:27:01.022206+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -364,7 +364,7 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 1904,
+    "fresh_records_before_merge": 1906,
     "total_records_after_merge": 800,
     "query_limit": 120,
     "retmax": 800,
@@ -5866,6 +5866,35 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
+      "id": "3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
+      "source": "Semantic Scholar",
+      "pmid": "40582610",
+      "doi": "10.1016/j.envpol.2025.126741",
+      "title": "Deciphering the roles of abundant and rare microbial taxa in the natural restoration of organically contaminated urban river sediments.",
+      "authors": [
+        "Bin Wang",
+        "Qian Chen",
+        "Wei Liang",
+        "Suyun Chang",
+        "Jingmei Sun"
+      ],
+      "journal": "Environmental Pollution",
+      "publication_date": "2025-06-01",
+      "abstract": "Understanding the distinct roles of rare (RT)and abundant taxa (AT) during the natural restoration of organic contaminated urban river sediments is crucial for optimizing bioremediation. This study investigated their distribution, assembly mechanisms, co-occurrence patterns, and functional traits across sediment pollution gradients. Results revealed that AT dominated in sequence abundance but comprised fewer OTUs, while RT exhibited higher α-diversity and broader niche width, underpinning community stability under pollution stress. Stochastic processes dominated community assembly, with dispersal limitation primarily shaping AT and ecological drift influencing RT. Functionally, AT drove pollutant transformation and energy metabolism, whereas RT displayed elevated metabolic activity supporting microbial growth. Critically, RT demonstrated superior xenobiotic biodegradation in severely polluted sediments, highlighting their specialized role in extreme conditions. Co-occurrence network emphasized RT's importance in maintaining complex microbial interactions, though network stability decreased with pollution. These findings demonstrate that AT and RT synergistically drive organic matter degradation, with RT uniquely contributing to pollutant breakdown and ecosystem stability under high pollution stress. This study provides insights into leveraging both taxa for optimized bioremediation strategies in contaminated sediments.",
+      "url": "https://www.semanticscholar.org/paper/3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
+      "pdf_url": "",
+      "citation_count": 4,
+      "influential_citation_count": 0,
+      "reference_count": 41,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river",
+        "sediment"
+      ]
+    },
+    {
       "id": "3288b3a6edf26ff97d4e5a111844b66cbe2ae270",
       "source": "Semantic Scholar",
       "pmid": "40580831",
@@ -6040,36 +6069,6 @@ window.PAPER_TRACKER_DATA = {
         "microbe",
         "river",
         "wetland"
-      ]
-    },
-    {
-      "id": "3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
-      "source": "Semantic Scholar",
-      "pmid": "40582610",
-      "doi": "10.1016/j.envpol.2025.126741",
-      "title": "Deciphering the roles of abundant and rare microbial taxa in the natural restoration of organically contaminated urban river sediments.",
-      "authors": [
-        "Bin Wang",
-        "Qian Chen",
-        "Wei Liang",
-        "Suyun Chang",
-        "Jingmei Sun"
-      ],
-      "journal": "Environmental Pollution",
-      "publication_date": "2025-06-01",
-      "abstract": "Understanding the distinct roles of rare (RT)and abundant taxa (AT) during the natural restoration of organic contaminated urban river sediments is crucial for optimizing bioremediation. This study investigated their distribution, assembly mechanisms, co-occurrence patterns, and functional traits across sediment pollution gradients. Results revealed that AT dominated in sequence abundance but comprised fewer OTUs, while RT exhibited higher α-diversity and broader niche width, underpinning community stability under pollution stress. Stochastic processes dominated community assembly, with dispersal limitation primarily shaping AT and ecological drift influencing RT. Functionally, AT drove pollutant transformation and energy metabolism, whereas RT displayed elevated metabolic activity supporting microbial growth. Critically, RT demonstrated superior xenobiotic biodegradation in severely polluted sediments, highlighting their specialized role in extreme conditions. Co-occurrence network emphasized RT's importance in maintaining complex microbial interactions, though network stability decreased with pollution. These findings demonstrate that AT and RT synergistically drive organic matter degradation, with RT uniquely contributing to pollutant breakdown and ecosystem stability under high pollution stress. This study provides insights into leveraging both taxa for optimized bioremediation strategies in contaminated sediments.",
-      "url": "https://www.semanticscholar.org/paper/3c5a1e12cd76b1bd1ef6c73c58c077c16293b195",
-      "pdf_url": "",
-      "citation_count": 4,
-      "influential_citation_count": 0,
-      "reference_count": 41,
-      "references": [],
-      "tags": [
-        "carbon",
-        "metabolism",
-        "microbe",
-        "river",
-        "sediment"
       ]
     },
     {
@@ -6883,6 +6882,7 @@ window.PAPER_TRACKER_DATA = {
       "references": [],
       "tags": [
         "metabolism",
+        "model",
         "oxygen",
         "river"
       ]
@@ -13649,38 +13649,6 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
-      "id": "3e1b18352669114c36d125b537389e27c6fe95e4",
-      "source": "Semantic Scholar",
-      "pmid": "39059662",
-      "doi": "10.1016/j.scitotenv.2024.174926",
-      "title": "Transferability of a Bayesian Belief Network across diverse agricultural catchments using high-frequency hydrochemistry and land management data.",
-      "authors": [
-        "C. Negri",
-        "N. Schurch",
-        "A.J. Wade",
-        "P. Mellander",
-        "M. Stutter",
-        "M. J. Bowes",
-        "C. C. Mzyece",
-        "M. Glendell"
-      ],
-      "journal": "Science of the Total Environment",
-      "publication_date": "2024-07-01",
-      "abstract": "Biogeochemical catchment models are often developed for a single catchment and, as a result, often generalize poorly beyond this. Evaluating their transferability is an important step in improving their predictive power and application range. We assess the transferability of a recently developed Bayesian Belief Network (BBN) that simulated monthly stream phosphorus (P) concentrations in a poorly-drained grassland catchment through application to three further catchments with different hydrological regimes and agricultural land uses. In all catchments, flow and turbidity were measured sub-hourly from 2009 to 2016 and supplemented with 400-500 soil P test measurements. In addition to a previously parameterized BBN, five further model structures were implemented to incorporate in a stepwise way: in-stream P removal using expert elicitation, additional groundwater P stores and delivery, and the presence or absence of septic tank treatment, and, in one case, Sewage Treatment Works. Model performance was tested through comparison of predicted and observed total reactive P (TRP) concentrations and percentage bias (PBIAS). The original BBN accurately simulated the absolute values of observed flow and TRP concentrations in the poorly and moderately drained catchments (albeit with poor apparent percentage bias scores; 76 % ≤ PBIAS≤94 %) irrespective of the dominant land use, but performed less well in the groundwater-dominated catchments. However, including groundwater total dissolved P (TDP) and Sewage Treatment Works (STWs) inputs, and in-stream P uptake improved model performance (-5 % ≤ PBIAS≤18 %). A sensitivity analysis identified redundant variables further helping to streamline the model applications. An enhanced BBN model capable for wider application and generalisation resulted.",
-      "url": "https://www.semanticscholar.org/paper/3e1b18352669114c36d125b537389e27c6fe95e4",
-      "pdf_url": "",
-      "citation_count": 6,
-      "influential_citation_count": 0,
-      "reference_count": 0,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "model",
-        "river",
-        "sensor"
-      ]
-    },
-    {
       "id": "027c9c069562140648d62953202072e5207039e0",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -13793,6 +13761,38 @@ window.PAPER_TRACKER_DATA = {
         "lake",
         "metabolism",
         "oxygen"
+      ]
+    },
+    {
+      "id": "3e1b18352669114c36d125b537389e27c6fe95e4",
+      "source": "Semantic Scholar",
+      "pmid": "39059662",
+      "doi": "10.1016/j.scitotenv.2024.174926",
+      "title": "Transferability of a Bayesian Belief Network across diverse agricultural catchments using high-frequency hydrochemistry and land management data.",
+      "authors": [
+        "C. Negri",
+        "N. Schurch",
+        "A.J. Wade",
+        "P. Mellander",
+        "M. Stutter",
+        "M. J. Bowes",
+        "C. C. Mzyece",
+        "M. Glendell"
+      ],
+      "journal": "Science of the Total Environment",
+      "publication_date": "2024-07-01",
+      "abstract": "Biogeochemical catchment models are often developed for a single catchment and, as a result, often generalize poorly beyond this. Evaluating their transferability is an important step in improving their predictive power and application range. We assess the transferability of a recently developed Bayesian Belief Network (BBN) that simulated monthly stream phosphorus (P) concentrations in a poorly-drained grassland catchment through application to three further catchments with different hydrological regimes and agricultural land uses. In all catchments, flow and turbidity were measured sub-hourly from 2009 to 2016 and supplemented with 400-500 soil P test measurements. In addition to a previously parameterized BBN, five further model structures were implemented to incorporate in a stepwise way: in-stream P removal using expert elicitation, additional groundwater P stores and delivery, and the presence or absence of septic tank treatment, and, in one case, Sewage Treatment Works. Model performance was tested through comparison of predicted and observed total reactive P (TRP) concentrations and percentage bias (PBIAS). The original BBN accurately simulated the absolute values of observed flow and TRP concentrations in the poorly and moderately drained catchments (albeit with poor apparent percentage bias scores; 76 % ≤ PBIAS≤94 %) irrespective of the dominant land use, but performed less well in the groundwater-dominated catchments. However, including groundwater total dissolved P (TDP) and Sewage Treatment Works (STWs) inputs, and in-stream P uptake improved model performance (-5 % ≤ PBIAS≤18 %). A sensitivity analysis identified redundant variables further helping to streamline the model applications. An enhanced BBN model capable for wider application and generalisation resulted.",
+      "url": "https://www.semanticscholar.org/paper/3e1b18352669114c36d125b537389e27c6fe95e4",
+      "pdf_url": "",
+      "citation_count": 6,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river",
+        "sensor"
       ]
     },
     {
@@ -22774,6 +22774,37 @@ window.PAPER_TRACKER_DATA = {
       ]
     },
     {
+      "id": "2d0c53b84592cf96bdfdb9a6b14a0ee1e02bc240",
+      "source": "Semantic Scholar",
+      "pmid": "36779792",
+      "doi": "10.1080/10256016.2023.2176850",
+      "title": "Determination of nitrate sources in a karst plateau reservoir based on nitrogen and oxygen isotopes",
+      "authors": [
+        "Jie Kong",
+        "Zhongfa Zhou",
+        "Yongliu Li",
+        "Xianmei Liu",
+        "Chaocheng Wen",
+        "Jiangting Xie"
+      ],
+      "journal": "Isotopes in environmental and health studies",
+      "publication_date": "2023-02-13",
+      "abstract": "ABSTRACT Investigating the sources, migration and proportional contribution of nitrate is essential to effectively protect water quality. δ 15N-NO3 –, δ 18O-NO3 – and Stable Isotope Analysis in R (SIAR) were used to qualitatively and quantitatively analyse nitrate sources in the Pingzhai Reservoir water body. The values of δ 15N-NO3 – and δ 18O-NO3 – in water vary with season. Soil organic nitrogen and chemical fertilisers are the main sources of nitrate in autumn, while domestic sewage and livestock manure are the primary sources of nitrate in winter and spring. The SIAR results showed that chemical fertilisers, livestock manure, sewage, and soil organic nitrogen had the highest proportional contribution. In autumn, the proportional contribution of chemical fertilisers to river and reservoir were 47 and 51 %. During winter, the proportional contributions of livestock manure and sewage to river and reservoir were 53 and 68 %, respectively, and in spring 49 and 68 %, respectively. Considering the fragility of karst ecosystems, strict measures should be formulated for the use of chemical fertilisers and standards for sewage discharge should be raised. Control nitrogen input from agricultural activities and prevent water quality deterioration.",
+      "url": "https://www.semanticscholar.org/paper/2d0c53b84592cf96bdfdb9a6b14a0ee1e02bc240",
+      "pdf_url": "",
+      "citation_count": 4,
+      "influential_citation_count": 0,
+      "reference_count": 61,
+      "references": [],
+      "tags": [
+        "isotope",
+        "lake",
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
       "id": "48fb72fc2a009393e6afa0e6ba186102a49bd436",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -24861,33 +24892,6 @@ window.PAPER_TRACKER_DATA = {
         "microbe",
         "oxygen",
         "river"
-      ]
-    },
-    {
-      "id": "b6c7e27f6ea2bec6223244d8aa7428c3eef4af81",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s40899-022-00776-0",
-      "title": "Decision tree models in predicting water quality parameters of dissolved oxygen and phosphorus in lake water",
-      "authors": [
-        "Faezeh Gorgan-Mohammadi",
-        "T. Rajaee",
-        "Mohammad Zounemat‐Kermani"
-      ],
-      "journal": "Sustainable Water Resources Management",
-      "publication_date": "2022-11-06",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/b6c7e27f6ea2bec6223244d8aa7428c3eef4af81",
-      "pdf_url": "",
-      "citation_count": 41,
-      "influential_citation_count": 2,
-      "reference_count": 26,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism",
-        "model",
-        "oxygen"
       ]
     }
   ]
