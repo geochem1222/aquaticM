@@ -621,7 +621,10 @@ def main() -> None:
         print(f"Semantic Scholar fetch failed; keeping existing data if available. {fetch_error}")
     fresh_count = len(all_papers)
     if args.merge_existing:
-        all_papers.extend(existing_papers)
+        filtered_existing_papers = [paper for paper in existing_papers if is_relevant(paper)]
+        all_papers.extend(filtered_existing_papers)
+    else:
+        filtered_existing_papers = []
 
     papers = deduplicate(all_papers)[: args.retmax]
     if not papers and output.exists():
@@ -631,6 +634,7 @@ def main() -> None:
     update_status = {
         "semantic_api_key_detected": bool(args.semantic_api_key),
         "fresh_records_before_merge": fresh_count,
+        "existing_records_after_filter": len(filtered_existing_papers),
         "total_records_after_merge": len(papers),
         "query_limit": args.query_limit,
         "retmax": args.retmax,
