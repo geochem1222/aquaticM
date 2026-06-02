@@ -71,11 +71,7 @@ WATER_TERMS = [
     "ditch",
     "canal",
     "tidal creek",
-    "wetland",
-    "marsh",
-    "mangrove",
     "estuary",
-    "sediment",
     "hyporheic zone",
 ]
 
@@ -102,7 +98,6 @@ METABOLISM_TERMS = [
     "reactive transport model",
     "microbial metabolism",
     "biofilm metabolism",
-    "hypoxia",
 ]
 
 SEED_QUERIES = [
@@ -141,7 +136,7 @@ TAG_RULES = {
     "ditch": [" ditch", " ditches", " canal", " canals", " tidal creek", " tidal creeks"],
     "wetland": [" wetland", " wetlands", " marsh", " mangrove", " saltmarsh", " estuary"],
     "sediment": [" sediment", " sediments", " benthic", " hyporheic"],
-    "oxygen": [" dissolved oxygen", " oxygen", " reaeration", " reaeration", " hypoxia", " anoxia"],
+    "oxygen": [" dissolved oxygen", " oxygen dynamics", " reaeration", " reaeration", "oxygen time series"],
     "metabolism": [
         " ecosystem metabolism",
         " metabolism",
@@ -168,6 +163,62 @@ NOISE_TERMS = [
     "tumor",
     "mouse",
     "mice",
+]
+
+GREENHOUSE_GAS_TERMS = [
+    "greenhouse gas",
+    "greenhouse gases",
+    "ghg",
+    "methane emission",
+    "methane emissions",
+    "ch4 emission",
+    "ch4 emissions",
+    "carbon dioxide emission",
+    "carbon dioxide emissions",
+    "co2 emission",
+    "co2 emissions",
+    "nitrous oxide",
+    "n2o emission",
+    "n2o emissions",
+    "gas emission",
+    "gas emissions",
+    "carbon flux",
+    "carbon fluxes",
+]
+
+CORE_METABOLISM_TERMS = [
+    "ecosystem metabolism",
+    "whole-stream metabolism",
+    "whole stream metabolism",
+    "whole-lake metabolism",
+    "whole lake metabolism",
+    "aquatic metabolism",
+    "stream metabolism",
+    "lake metabolism",
+    "gross primary production",
+    "ecosystem respiration",
+    "net ecosystem production",
+    "net ecosystem metabolism",
+    "gpp",
+    " er ",
+    " nep",
+    "reaeration",
+    "oxygen time series",
+    "diel oxygen",
+    "dissolved oxygen time series",
+]
+
+METHOD_TERMS = [
+    "stable isotope",
+    "oxygen isotope",
+    "isotope tracing",
+    "bayesian",
+    "inverse model",
+    "metabolism model",
+    "reactive transport model",
+    "high frequency oxygen",
+    "high-frequency oxygen",
+    "sensor monitoring",
 ]
 
 
@@ -258,9 +309,9 @@ def fetch_semantic_scholar(retmax: int, email: str | None, api_key: str | None, 
                         continue
                     if paper_id:
                         seen_ids.add(paper_id)
-                    paper = enrich_query_tags(parse_semantic_paper(item), query_tags)
+                    paper = parse_semantic_paper(item)
                     if paper and is_relevant(paper):
-                        papers.append(paper)
+                        papers.append(enrich_query_tags(paper, query_tags))
                 token = data.get("token") or ""
                 if not token or len(papers) >= retmax * 3:
                     break
@@ -345,10 +396,23 @@ def is_relevant(paper: dict[str, Any]) -> bool:
     text_value = " ".join([paper.get("title", ""), paper.get("abstract", ""), paper.get("journal", "")]).lower()
     if any(term in text_value for term in NOISE_TERMS):
         return False
-    tags = set(paper.get("tags") or classify(text_value))
+    if is_greenhouse_gas_only(text_value):
+        return False
+    tags = set(classify(text_value))
     has_system = bool(tags & {"river", "lake", "pond", "ditch", "wetland", "sediment"})
-    has_process = bool(tags & {"oxygen", "metabolism", "isotope", "model", "sensor", "microbe"})
+    has_core_metabolism = any(term in f" {text_value} " for term in CORE_METABOLISM_TERMS)
+    has_method = any(term in text_value for term in METHOD_TERMS)
+    has_process = has_core_metabolism or has_method
     return bool(paper.get("title")) and has_system and has_process
+
+
+def is_greenhouse_gas_only(text_value: str) -> bool:
+    has_greenhouse_focus = any(term in text_value for term in GREENHOUSE_GAS_TERMS)
+    if not has_greenhouse_focus:
+        return False
+    has_metabolism_focus = any(term in f" {text_value} " for term in CORE_METABOLISM_TERMS)
+    has_method_focus = any(term in text_value for term in METHOD_TERMS)
+    return not (has_metabolism_focus or has_method_focus)
 
 
 def enrich_query_tags(paper: dict[str, Any], query_tags: list[str]) -> dict[str, Any]:
