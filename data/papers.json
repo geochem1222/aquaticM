@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T13:28:31.887590+00:00",
+  "updated_at": "2026-06-02T13:52:04.939368+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,18 +134,18 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 689,
-    "existing_records_after_filter": 354,
+    "fresh_records_before_merge": 0,
+    "existing_records_after_filter": 1011,
     "total_records_after_merge": 1011,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 5000,
-    "fresh_fetch_target": 800,
-    "fetch_mode": "date-first daily refresh",
+    "existing_records_before_update": 1011,
+    "fresh_fetch_target": 5000,
+    "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": ""
+    "error": "HTTPError: HTTP Error 504: Gateway Timeout"
   },
   "papers": [
     {
