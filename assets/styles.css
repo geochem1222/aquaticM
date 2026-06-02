@@ -146,6 +146,16 @@ h1 {
   font-size: 21px;
 }
 
+.contact-panel {
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.contact-panel strong {
+  overflow-wrap: anywhere;
+  font-size: 18px;
+}
+
 main {
   padding: 34px 0 50px;
 }
