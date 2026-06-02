@@ -7,13 +7,17 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "data/papers.json"
+      - "data/papers.js"
+      - "data/update-status.json"
 
 permissions:
   contents: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: aquatic-metabolism-${{ github.ref }}
+  cancel-in-progress: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true

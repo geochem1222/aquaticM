@@ -83,19 +83,7 @@ METABOLISM_TERMS = [
     "gross primary production",
     "ecosystem respiration",
     "net ecosystem production",
-    "dissolved oxygen",
-    "oxygen dynamics",
-    "reaeration",
-    "oxygen time series",
-    "high frequency oxygen",
-    "sensor monitoring",
-    "isotope tracing",
-    "stable isotopes",
-    "oxygen isotopes",
-    "bayesian model",
     "metabolism model",
-    "inverse model",
-    "reactive transport model",
     "microbial metabolism",
     "biofilm metabolism",
 ]
@@ -118,7 +106,6 @@ SEED_QUERIES = [
     '"stable isotopes" "aquatic metabolism"',
     '"oxygen isotopes" "ecosystem metabolism"',
     '"Bayesian" "stream metabolism"',
-    '"reactive transport model" "oxygen dynamics"',
 ]
 
 SEARCH_QUERIES = SEED_QUERIES + [
@@ -163,6 +150,40 @@ NOISE_TERMS = [
     "tumor",
     "mouse",
     "mice",
+    "drinking water",
+    "water quality index",
+    "water quality prediction",
+    "permissible limits",
+    "heavy metal",
+    "heavy metals",
+    "pharmaceutical",
+    "pesticide",
+    "wastewater treatment",
+    "treatment plant",
+    "remote sensing",
+    "spectral indices",
+    "machine learning",
+    "decision tree",
+    "random forest",
+    "support vector",
+    "deep learning",
+    "climate reconstruction",
+    "late pleistocene",
+    "south china sea",
+    "gulf of mexico",
+    "mediterranean",
+    "black sea",
+    "ocean",
+    "marine",
+    "seawater",
+    "greenhouse gas",
+    "greenhouse gases",
+    "methane emission",
+    "methane emissions",
+    "co2 emission",
+    "co2 emissions",
+    "n2o emission",
+    "n2o emissions",
 ]
 
 GREENHOUSE_GAS_TERMS = [
@@ -208,6 +229,31 @@ CORE_METABOLISM_TERMS = [
     "dissolved oxygen time series",
 ]
 
+CORE_ENTRY_TERMS = [
+    "ecosystem metabolism",
+    "whole-stream metabolism",
+    "whole stream metabolism",
+    "whole-lake metabolism",
+    "whole lake metabolism",
+    "aquatic metabolism",
+    "stream metabolism",
+    "river metabolism",
+    "lake metabolism",
+    "pond metabolism",
+    "reservoir metabolism",
+    "metabolism estimates",
+    "metabolism estimate",
+    "metabolism model",
+    "metabolic regime",
+    "gross primary production",
+    "ecosystem respiration",
+    "net ecosystem production",
+    "net ecosystem metabolism",
+    "daily metabolism",
+    "diel metabolism",
+    "metabolic balance",
+]
+
 METHOD_TERMS = [
     "stable isotope",
     "oxygen isotope",
@@ -219,6 +265,13 @@ METHOD_TERMS = [
     "high frequency oxygen",
     "high-frequency oxygen",
     "sensor monitoring",
+    "diel",
+    "high-frequency",
+    "high frequency",
+    "logger",
+    "open-channel",
+    "single-station",
+    "two-station",
 ]
 
 
@@ -397,7 +450,7 @@ def parse_semantic_paper(item: dict[str, Any]) -> dict[str, Any]:
 def classify(text_value: str) -> list[str]:
     haystack = f" {text_value.lower()} "
     tags = [tag for tag, needles in TAG_RULES.items() if any(needle in haystack for needle in needles)]
-    if any(tag in tags for tag in ["oxygen", "isotope", "model", "sensor", "microbe"]):
+    if has_core_entry(haystack):
         tags.append("metabolism")
     return sorted(set(tags)) or ["metabolism"]
 
@@ -410,10 +463,11 @@ def is_relevant(paper: dict[str, Any]) -> bool:
         return False
     tags = set(classify(text_value))
     has_system = bool(tags & {"river", "lake", "pond", "ditch", "wetland", "sediment"})
-    has_core_metabolism = any(term in f" {text_value} " for term in CORE_METABOLISM_TERMS)
-    has_method = any(term in text_value for term in METHOD_TERMS)
-    has_process = has_core_metabolism or has_method
-    return bool(paper.get("title")) and has_system and has_process
+    return bool(paper.get("title")) and has_system and has_core_entry(f" {text_value} ")
+
+
+def has_core_entry(text_value: str) -> bool:
+    return any(term in text_value for term in CORE_ENTRY_TERMS)
 
 
 def is_greenhouse_gas_only(text_value: str) -> bool:
