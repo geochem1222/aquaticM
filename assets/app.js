@@ -6,6 +6,8 @@ const state = {
   sortKey: "publication_date",
   sortDirection: "desc",
   expanded: new Set(),
+  page: 1,
+  pageSize: 50,
 };
 
 const filterNames = {
@@ -54,6 +56,10 @@ const els = {
   sourceSelect: document.querySelector("#source-filter"),
   chips: document.querySelectorAll(".chip"),
   sortButtons: document.querySelectorAll("[data-sort]"),
+  prevPage: document.querySelector("#prev-page"),
+  nextPage: document.querySelector("#next-page"),
+  pageStatus: document.querySelector("#page-status"),
+  pageSize: document.querySelector("#page-size"),
 };
 
 fetch("data/papers.json", { cache: "no-store" })
@@ -87,17 +93,20 @@ function loadData(data) {
 
 els.search.addEventListener("input", (event) => {
   state.query = event.target.value.trim().toLowerCase();
+  state.page = 1;
   render();
 });
 
 els.sourceSelect.addEventListener("change", (event) => {
   state.source = event.target.value;
+  state.page = 1;
   render();
 });
 
 els.chips.forEach((chip) => {
   chip.addEventListener("click", () => {
     state.filter = chip.dataset.filter;
+    state.page = 1;
     els.chips.forEach((item) => item.classList.toggle("active", item === chip));
     render();
   });
@@ -112,8 +121,25 @@ els.sortButtons.forEach((button) => {
       state.sortKey = key;
       state.sortDirection = key === "title" ? "asc" : "desc";
     }
+    state.page = 1;
     render();
   });
+});
+
+els.prevPage.addEventListener("click", () => {
+  state.page = Math.max(1, state.page - 1);
+  render();
+});
+
+els.nextPage.addEventListener("click", () => {
+  state.page += 1;
+  render();
+});
+
+els.pageSize.addEventListener("change", (event) => {
+  state.pageSize = Number(event.target.value) || 50;
+  state.page = 1;
+  render();
 });
 
 els.tbody.addEventListener("click", (event) => {
@@ -173,9 +199,16 @@ function countSince(date) {
 
 function render() {
   const filtered = sortPapers(state.papers.filter(matchesFilters));
+  const totalPages = Math.max(1, Math.ceil(filtered.length / state.pageSize));
+  state.page = Math.min(state.page, totalPages);
+  const start = (state.page - 1) * state.pageSize;
+  const pageItems = filtered.slice(start, start + state.pageSize);
   els.resultCount.textContent = `${filterNames[state.filter]} · ${filtered.length} 篇`;
   els.empty.hidden = filtered.length > 0;
-  els.tbody.innerHTML = filtered.map(renderPaperRow).join("");
+  els.tbody.innerHTML = pageItems.map(renderPaperRow).join("");
+  els.pageStatus.textContent = `第 ${state.page} / ${totalPages} 页`;
+  els.prevPage.disabled = state.page <= 1;
+  els.nextPage.disabled = state.page >= totalPages;
   updateSortIndicators();
 }
 

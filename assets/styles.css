@@ -146,6 +146,16 @@ h1 {
   font-size: 21px;
 }
 
+.contact-panel {
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.contact-panel strong {
+  overflow-wrap: anywhere;
+  font-size: 18px;
+}
+
 main {
   padding: 34px 0 50px;
 }
@@ -553,6 +563,47 @@ th button {
   border-radius: 8px;
   color: var(--muted);
   background: #fff;
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.pager button,
+.pager select {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+  font-weight: 800;
+}
+
+.pager button {
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.pager button:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.pager label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.pager select {
+  width: auto;
+  padding: 0 10px;
 }
 
 .site-footer {

@@ -46,6 +46,10 @@
             <p class="panel-label">数据来源</p>
             <strong id="source-count">Semantic Scholar</strong>
           </div>
+          <div class="contact-panel">
+            <p class="panel-label">联系我们</p>
+            <strong>dinghu#tju.edu.cn</strong>
+          </div>
         </aside>
       </section>
     </header>
@@ -148,6 +152,19 @@
           </table>
         </div>
         <p id="empty-state" class="empty-state" hidden>没有匹配的论文，换一个关键词试试。</p>
+        <div class="pager" aria-label="论文分页">
+          <button id="prev-page" type="button">上一页</button>
+          <span id="page-status">第 1 页</span>
+          <button id="next-page" type="button">下一页</button>
+          <label>
+            每页
+            <select id="page-size">
+              <option value="25">25</option>
+              <option value="50" selected>50</option>
+              <option value="100">100</option>
+            </select>
+          </label>
+        </div>
       </section>
 
     </main>
