@@ -26,10 +26,12 @@ http://localhost:8000
 默认更新脚本：
 
 ```bash
-python scripts/update_papers.py --retmax 5000 --merge-existing
+python scripts/update_papers.py --retmax 5000 --refresh-limit 800 --merge-existing
 ```
 
-数据源只使用 Semantic Scholar。默认使用 Semantic Scholar `paper/search/bulk`，并用 `paper/batch` 批量回填 TLDR、fields、引用数、参考文献数、开放 PDF 等详情；这样比 ranked search 更容易覆盖老文献和高被引文献。如果有 Semantic Scholar API key，可以通过环境或 GitHub Actions secret 传入：
+数据源只使用 Semantic Scholar。默认使用 Semantic Scholar `paper/search/bulk`，并用 `paper/batch` 批量回填 TLDR、fields、引用数、参考文献数、开放 PDF 等详情；这样比 ranked search 更容易覆盖老文献和高被引文献。脚本会复用已有 `data/papers.json` 作为缓存：库还没满 5000 条时继续补库，库已经较完整时每次只抓取默认 800 条新候选再与旧库合并，避免每天全量请求。
+
+如果有 Semantic Scholar API key，可以通过环境或 GitHub Actions secret 传入：
 
 ```bash
 python scripts/update_papers.py --semantic-api-key YOUR_KEY --merge-existing
@@ -41,7 +43,7 @@ python scripts/update_papers.py --semantic-api-key YOUR_KEY --merge-existing
 
 ```bash
 set SEMANTIC_SCHOLAR_API_KEY=你的key
-python scripts/enrich_semantic_scholar.py --limit 5000 --edge-detail-limit 300 --edge-limit 12
+python scripts/enrich_semantic_scholar.py --limit 5000 --edge-detail-limit 300 --edge-limit 12 --stale-days 30
 ```
 
 增强后，每条论文会尽量补充：
@@ -62,6 +64,8 @@ python scripts/enrich_semantic_scholar.py --limit 5000 --edge-detail-limit 300 -
 - 如果该论文已有 Semantic Scholar 增强数据，显示 Recommendations API 返回的相似文章。
 - 如果暂时没有增强数据，显示同库论文的主题相似文章。
 
+增强脚本也带缓存：每条论文会记录 `detail_enriched_at` 和 `edges_enriched_at`，默认 30 天内不会重复请求同一批详情、引用关系和相似文章。
+
 部署到 GitHub 后，把 API key 添加为仓库 Secret：
 
 ```text
@@ -76,8 +80,8 @@ Settings → Secrets and variables → Actions → New repository secret
 
 之后 workflow 会自动执行两步：
 
-1. 用 Semantic Scholar bulk search 更新最多 5000 条题录。
-2. 用同一个 key 通过 batch API 补充 TLDR、fields、authors、citation/reference counts，并为前 300 条重点论文补充 references、citations、Recommendations API 相似文章，生成网页详情区所需的静态 JSON 数据。
+1. 用 Semantic Scholar bulk search 维护最多 5000 条题录，缓存已存在题录，每次默认只补 800 条新候选。
+2. 用同一个 key 通过 batch API 补充 TLDR、fields、authors、citation/reference counts，并为前 300 条需要刷新或缺失数据的重点论文补充 references、citations、Recommendations API 相似文章，生成网页详情区所需的静态 JSON 数据。
 
 ## 数据文件
 

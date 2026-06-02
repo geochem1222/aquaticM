@@ -10,7 +10,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -69,6 +69,12 @@ def main() -> None:
         default=300,
         help="Maximum papers to enrich with reference, citation, and recommendation lists.",
     )
+    parser.add_argument(
+        "--stale-days",
+        type=int,
+        default=30,
+        help="Refresh Semantic Scholar cached detail after this many days.",
+    )
     args = parser.parse_args()
 
     if not args.semantic_api_key:
@@ -78,37 +84,42 @@ def main() -> None:
     output_path = Path(args.output)
     payload = json.loads(input_path.read_text(encoding="utf-8"))
 
+    now = datetime.now(timezone.utc)
     candidates = [
         paper
         for paper in payload.get("papers", [])
         if paper.get("source") == "Semantic Scholar" and paper.get("id")
     ][: args.limit]
-    batch_enrich_papers(candidates, args.semantic_api_key)
+    batch_candidates = [paper for paper in candidates if needs_batch_refresh(paper, now, args.stale_days)]
+    batch_enrich_papers(batch_candidates, args.semantic_api_key, now)
 
     edge_enriched = 0
-    for paper in candidates[: args.edge_detail_limit]:
-        enrich_paper_edges(paper, args.semantic_api_key, args.edge_limit)
+    edge_candidates = [paper for paper in candidates if needs_edge_refresh(paper, now, args.stale_days)]
+    for paper in edge_candidates[: args.edge_detail_limit]:
+        enrich_paper_edges(paper, args.semantic_api_key, args.edge_limit, now)
         edge_enriched += 1
         time.sleep(0.12)
 
-    payload["updated_at"] = datetime.now(timezone.utc).isoformat()
+    payload["updated_at"] = now.isoformat()
     payload["sources"] = ["Semantic Scholar"]
     payload["semantic_scholar_enriched"] = True
     payload["semantic_scholar_enrichment"] = {
-        "batch_detail_count": len(candidates),
+        "candidate_count": len(candidates),
+        "batch_detail_count": len(batch_candidates),
         "edge_recommendation_count": edge_enriched,
+        "stale_days": args.stale_days,
     }
     json_text = json.dumps(payload, ensure_ascii=False, indent=2)
     output_path.write_text(json_text, encoding="utf-8")
     output_path.with_suffix(".js").write_text(f"window.PAPER_TRACKER_DATA = {json_text};\n", encoding="utf-8")
     print(
         "Enriched "
-        f"{len(candidates)} papers with Semantic Scholar batch detail and "
+        f"{len(batch_candidates)} papers with Semantic Scholar batch detail and "
         f"{edge_enriched} papers with references, citations, and recommendations."
     )
 
 
-def batch_enrich_papers(papers: list[dict[str, Any]], api_key: str) -> None:
+def batch_enrich_papers(papers: list[dict[str, Any]], api_key: str, now: datetime) -> None:
     id_to_paper = {paper["id"]: paper for paper in papers if paper.get("id")}
     ids = list(id_to_paper)
     for start in range(0, len(ids), 500):
@@ -119,11 +130,11 @@ def batch_enrich_papers(papers: list[dict[str, Any]], api_key: str) -> None:
                 continue
             paper = id_to_paper.get(item.get("paperId"))
             if paper:
-                merge_detail(paper, item)
+                merge_detail(paper, item, now)
         time.sleep(0.12)
 
 
-def merge_detail(paper: dict[str, Any], details: dict[str, Any]) -> None:
+def merge_detail(paper: dict[str, Any], details: dict[str, Any], now: datetime) -> None:
     paper_id = details.get("paperId") or paper["id"]
     semantic = paper.setdefault("semantic_scholar", {})
     semantic.update(
@@ -135,6 +146,7 @@ def merge_detail(paper: dict[str, Any], details: dict[str, Any]) -> None:
             "publication_types": details.get("publicationTypes") or [],
             "external_ids": details.get("externalIds") or {},
             "authors": details.get("authors") or [],
+            "detail_enriched_at": now.isoformat(),
         }
     )
     paper["citation_count"] = details.get("citationCount", paper.get("citation_count", 0))
@@ -148,7 +160,7 @@ def merge_detail(paper: dict[str, Any], details: dict[str, Any]) -> None:
         paper["abstract"] = details["abstract"]
 
 
-def enrich_paper_edges(paper: dict[str, Any], api_key: str, edge_limit: int) -> None:
+def enrich_paper_edges(paper: dict[str, Any], api_key: str, edge_limit: int, now: datetime) -> None:
     paper_id = paper["id"]
     references = request_edge_list(paper_id, "references", api_key, edge_limit)
     citations = request_edge_list(paper_id, "citations", api_key, edge_limit)
@@ -158,6 +170,34 @@ def enrich_paper_edges(paper: dict[str, Any], api_key: str, edge_limit: int) -> 
     semantic["references"] = references
     semantic["citations"] = citations
     semantic["recommendations"] = recommendations
+    semantic["edges_enriched_at"] = now.isoformat()
+
+
+def needs_batch_refresh(paper: dict[str, Any], now: datetime, stale_days: int) -> bool:
+    semantic = paper.get("semantic_scholar") or {}
+    if not semantic.get("paper_id") or not semantic.get("detail_enriched_at"):
+        return True
+    return is_stale(semantic.get("detail_enriched_at"), now, stale_days)
+
+
+def needs_edge_refresh(paper: dict[str, Any], now: datetime, stale_days: int) -> bool:
+    semantic = paper.get("semantic_scholar") or {}
+    has_edges = any(semantic.get(key) for key in ["references", "citations", "recommendations"])
+    if not has_edges or not semantic.get("edges_enriched_at"):
+        return True
+    return is_stale(semantic.get("edges_enriched_at"), now, stale_days)
+
+
+def is_stale(value: str | None, now: datetime, stale_days: int) -> bool:
+    if not value:
+        return True
+    try:
+        timestamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return True
+    if timestamp.tzinfo is None:
+        timestamp = timestamp.replace(tzinfo=timezone.utc)
+    return now - timestamp > timedelta(days=stale_days)
 
 
 def request_edge_list(paper_id: str, edge: str, api_key: str, limit: int) -> list[dict[str, Any]]:

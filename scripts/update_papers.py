@@ -280,15 +280,23 @@ def build_user_agent(email: str | None) -> str:
     return f"aquatic-metabolism-tracker/1.0{contact}"
 
 
-def fetch_semantic_scholar(retmax: int, email: str | None, api_key: str | None, query_limit: int | None = None) -> list[dict[str, Any]]:
+def fetch_semantic_scholar(
+    retmax: int,
+    email: str | None,
+    api_key: str | None,
+    query_limit: int | None = None,
+    target_records: int | None = None,
+    existing_ids: set[str] | None = None,
+) -> list[dict[str, Any]]:
     queries = SEARCH_QUERIES[:query_limit] if query_limit else SEARCH_QUERIES
     per_query = 1000
+    target = target_records or retmax
     papers: list[dict[str, Any]] = []
-    seen_ids: set[str] = set()
+    seen_ids: set[str] = set(existing_ids or set())
     for query in queries:
         for sort in BULK_SORTS:
             token = ""
-            while len(papers) < retmax * 3:
+            while len(papers) < target:
                 params: dict[str, str | int] = {"query": query, "limit": per_query, "fields": BULK_FIELDS, "sort": sort}
                 if token:
                     params["token"] = token
@@ -313,10 +321,12 @@ def fetch_semantic_scholar(retmax: int, email: str | None, api_key: str | None, 
                     if paper and is_relevant(paper):
                         papers.append(enrich_query_tags(paper, query_tags))
                 token = data.get("token") or ""
-                if not token or len(papers) >= retmax * 3:
+                if not token or len(papers) >= target:
                     break
                 time.sleep(0.25 if api_key else 1.0)
         query_tags = classify(query)
+        if len(papers) >= target:
+            break
         time.sleep(0.35 if api_key else 1.05)
     return batch_fill_semantic_details(papers, email, api_key)
 
@@ -460,6 +470,10 @@ def load_existing_papers(output: Path) -> list[dict[str, Any]]:
     return json.loads(output.read_text(encoding="utf-8")).get("papers", [])
 
 
+def existing_paper_ids(papers: list[dict[str, Any]]) -> set[str]:
+    return {paper["id"] for paper in papers if paper.get("id")}
+
+
 def write_data(
     papers: list[dict[str, Any]],
     output: Path,
@@ -488,19 +502,37 @@ def main() -> None:
     parser.add_argument("--semantic-api-key", default=semantic_api_key_from_env())
     parser.add_argument("--merge-existing", action="store_true")
     parser.add_argument("--query-limit", type=int, default=None)
+    parser.add_argument(
+        "--refresh-limit",
+        type=int,
+        default=800,
+        help="Maximum fresh Semantic Scholar records to fetch when an existing cache is already present.",
+    )
     args = parser.parse_args()
 
     output = Path(args.output)
+    existing_papers = load_existing_papers(output) if args.merge_existing else []
+    existing_count = len(existing_papers)
+    fetch_target = args.retmax if existing_count < args.retmax else args.refresh_limit
     all_papers: list[dict[str, Any]] = []
     fetch_error = ""
     try:
-        all_papers.extend(fetch_semantic_scholar(args.retmax, args.email, args.semantic_api_key, args.query_limit))
+        all_papers.extend(
+            fetch_semantic_scholar(
+                args.retmax,
+                args.email,
+                args.semantic_api_key,
+                args.query_limit,
+                target_records=fetch_target,
+                existing_ids=existing_paper_ids(existing_papers),
+            )
+        )
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
         fetch_error = f"{type(error).__name__}: {error}"
         print(f"Semantic Scholar fetch failed; keeping existing data if available. {fetch_error}")
     fresh_count = len(all_papers)
     if args.merge_existing:
-        all_papers.extend(load_existing_papers(output))
+        all_papers.extend(existing_papers)
 
     papers = deduplicate(all_papers)[: args.retmax]
     if not papers and output.exists():
@@ -513,6 +545,9 @@ def main() -> None:
         "total_records_after_merge": len(papers),
         "query_limit": args.query_limit,
         "retmax": args.retmax,
+        "existing_records_before_update": existing_count,
+        "fresh_fetch_target": fetch_target,
+        "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
         "search_mode": "Semantic Scholar paper/search/bulk",
         "batch_detail_fill": True,
         "error": fetch_error,
