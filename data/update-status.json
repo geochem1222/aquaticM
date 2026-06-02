@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T13:10:50.427364+00:00",
+  "updated_at": "2026-06-02T13:15:23.345054+00:00",
   "status_code": "0",
-  "log_tail": "Semantic Scholar fetch failed; keeping existing data if available. HTTPError: HTTP Error 504: Gateway Timeout\nUpdated 5000 papers from Semantic Scholar at data/papers.json\n"
+  "log_tail": "Updated 5000 papers from Semantic Scholar at data/papers.json\n"
 }
