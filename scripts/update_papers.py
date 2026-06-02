@@ -114,7 +114,8 @@ SEARCH_QUERIES = SEED_QUERIES + [
     for process in METABOLISM_TERMS
 ]
 
-BULK_SORTS = ["citationCount:desc", "publicationDate:desc"]
+BULK_BACKFILL_SORTS = ["citationCount:desc", "publicationDate:desc"]
+BULK_REFRESH_SORTS = ["publicationDate:desc", "citationCount:desc"]
 
 TAG_RULES = {
     "river": [" river", " rivers", " stream", " streams", " creek", " creeks", " hyporheic"],
@@ -369,15 +370,19 @@ def fetch_semantic_scholar(
     existing_ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     queries = SEARCH_QUERIES[:query_limit] if query_limit else SEARCH_QUERIES
-    per_query = 1000
     target = target_records or retmax
+    warm_cache = bool(existing_ids)
+    per_query = 160 if warm_cache else 1000
+    sorts = BULK_REFRESH_SORTS if warm_cache else BULK_BACKFILL_SORTS
     papers: list[dict[str, Any]] = []
     seen_ids: set[str] = set(existing_ids or set())
     for query in queries:
-        for sort in BULK_SORTS:
+        for sort in sorts:
             token = ""
-            while len(papers) < target:
-                params: dict[str, str | int] = {"query": query, "limit": per_query, "fields": BULK_FIELDS, "sort": sort}
+            query_sort_seen = 0
+            while len(papers) < target and query_sort_seen < per_query:
+                limit = min(1000, per_query - query_sort_seen)
+                params: dict[str, str | int] = {"query": query, "limit": limit, "fields": BULK_FIELDS, "sort": sort}
                 if token:
                     params["token"] = token
                 try:
@@ -391,7 +396,9 @@ def fetch_semantic_scholar(
                     else:
                         raise
                 query_tags = classify(query)
-                for item in data.get("data", []):
+                items = data.get("data", [])
+                query_sort_seen += len(items)
+                for item in items:
                     paper_id = item.get("paperId", "")
                     if paper_id and paper_id in seen_ids:
                         continue
@@ -401,7 +408,7 @@ def fetch_semantic_scholar(
                     if paper and is_relevant(paper):
                         papers.append(enrich_query_tags(paper, query_tags))
                 token = data.get("token") or ""
-                if not token or len(papers) >= target:
+                if not token or not items or len(papers) >= target:
                     break
                 time.sleep(0.25 if api_key else 1.0)
         query_tags = classify(query)
@@ -595,6 +602,7 @@ def main() -> None:
     existing_papers = load_existing_papers(output) if args.merge_existing else []
     existing_count = len(existing_papers)
     fetch_target = args.retmax if existing_count < args.retmax else args.refresh_limit
+    fetch_mode = "bulk backfill" if existing_count < args.retmax else "date-first daily refresh"
     all_papers: list[dict[str, Any]] = []
     fetch_error = ""
     try:
@@ -628,6 +636,7 @@ def main() -> None:
         "retmax": args.retmax,
         "existing_records_before_update": existing_count,
         "fresh_fetch_target": fetch_target,
+        "fetch_mode": fetch_mode,
         "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
         "search_mode": "Semantic Scholar paper/search/bulk",
         "batch_detail_fill": True,
