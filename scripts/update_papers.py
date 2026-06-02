@@ -159,7 +159,10 @@ NOISE_TERMS = [
     "pharmaceutical",
     "pesticide",
     "wastewater treatment",
+    "wastewater",
     "treatment plant",
+    "ozone",
+    "dielectric barrier discharge",
     "remote sensing",
     "spectral indices",
     "machine learning",
@@ -252,6 +255,30 @@ CORE_ENTRY_TERMS = [
     "daily metabolism",
     "diel metabolism",
     "metabolic balance",
+    "free-water metabolism",
+    "free water metabolism",
+]
+
+SUPPORT_ENTRY_TERMS = [
+    "gpp",
+    " er ",
+    " nep",
+    "gross production",
+    "primary production",
+    "community respiration",
+    "benthic respiration",
+    "aerobic respiration",
+    "oxygen budget",
+    "oxygen budgets",
+    "diel oxygen",
+    "diel dissolved oxygen",
+    "oxygen time series",
+    "dissolved oxygen time series",
+    "free-water oxygen",
+    "free water oxygen",
+    "open-channel oxygen",
+    "open channel oxygen",
+    "reaeration",
 ]
 
 METHOD_TERMS = [
@@ -467,7 +494,7 @@ def is_relevant(paper: dict[str, Any]) -> bool:
 
 
 def has_core_entry(text_value: str) -> bool:
-    return any(term in text_value for term in CORE_ENTRY_TERMS)
+    return any(term in text_value for term in CORE_ENTRY_TERMS) or any(term in text_value for term in SUPPORT_ENTRY_TERMS)
 
 
 def is_greenhouse_gas_only(text_value: str) -> bool:
