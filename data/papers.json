@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T22:35:32.628982+00:00",
+  "updated_at": "2026-06-06T22:18:30.267235+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,7 +134,7 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 32,
     "existing_records_after_filter": 1011,
     "total_records_after_merge": 1011,
     "query_limit": null,
@@ -145,7 +145,7 @@
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    "error": ""
   },
   "papers": [
     {
