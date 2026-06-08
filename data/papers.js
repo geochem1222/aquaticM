@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-06-07T22:22:58.548328+00:00",
+  "updated_at": "2026-06-08T22:53:25.939497+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,7 +134,7 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 32,
+    "fresh_records_before_merge": 22,
     "existing_records_after_filter": 1011,
     "total_records_after_merge": 1011,
     "query_limit": null,
@@ -30478,6 +30478,35 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
+      "id": "0c25d1d3f720cff18772a47ec0496b80fb48c07f",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10021-021-00664-2",
+      "title": "Watershed-scale Land Use Change Increases Ecosystem Metabolism in an Agricultural Stream",
+      "authors": [
+        "Matt T. Trentman",
+        "J. Tank",
+        "Robert T. Davis",
+        "B. Hanrahan",
+        "Ursula H. Mahl",
+        "Sarah S. Roley"
+      ],
+      "journal": "Ecosystems",
+      "publication_date": "2021-06-18",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/0c25d1d3f720cff18772a47ec0496b80fb48c07f",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 66,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
+    },
+    {
       "id": "00575ba59464a9849a1296e027df2d0c2ea3cfe5",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -30974,6 +31003,34 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
+      "id": "1ab1529b9e668466d6b8ed57f9eb9fa7a124d518",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s00027-019-0622-7",
+      "title": "The carbon pump supports high primary production in a shallow lake",
+      "authors": [
+        "M. Andersen",
+        "Theis Kragh",
+        "K. T. Martinsen",
+        "Emil Kristensen",
+        "K. Sand‐Jensen"
+      ],
+      "journal": "Aquatic Sciences",
+      "publication_date": "2019-01-12",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/1ab1529b9e668466d6b8ed57f9eb9fa7a124d518",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "oxygen"
+      ]
+    },
+    {
       "id": "69d63f0792b329ae8c6b67d3d6e64f6e63eddc00",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -31022,6 +31079,36 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 202200163
         }
       }
+    },
+    {
+      "id": "7cd316a6e327cfc2a942e49f15380d80dade461a",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s00027-018-0606-z",
+      "title": "Stream metabolism increases with drainage area and peaks asynchronously across a stream network",
+      "authors": [
+        "Francine H. Mejia",
+        "A. Fremier",
+        "Joseph R. Benjamin",
+        "J. Bellmore",
+        "Adrianne Z. Grimm",
+        "G. Watson",
+        "Michael Newsom"
+      ],
+      "journal": "Aquatic Sciences",
+      "publication_date": "2018-12-06",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/7cd316a6e327cfc2a942e49f15380d80dade461a",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ]
     },
     {
       "id": "4c5d9f13dce4a62c82747c714abaac871876eb0a",
@@ -31518,6 +31605,33 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 132543061
         }
       }
+    },
+    {
+      "id": "1356badb338a30e7b0eeb1f3c7f97018583e8b72",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10750-012-1212-z",
+      "title": "The importance of transport processes and spatial gradients on in situ estimates of lake metabolism",
+      "authors": [
+        "J. Antenucci",
+        "K. Tan",
+        "H. Eikaas",
+        "J. Imberger"
+      ],
+      "journal": "Hydrobiologia",
+      "publication_date": "2012-06-17",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/1356badb338a30e7b0eeb1f3c7f97018583e8b72",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "oxygen"
+      ]
     },
     {
       "id": "5795e447a9892ef5ac0f13e6742d27f098e38cd0",
@@ -35856,6 +35970,34 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
+      "id": "058c08d29be837cd5e482e06643ea5dc4b5bd3b5",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s00027-012-0284-1",
+      "title": "Is net ecosystem production higher in natural relative to constructed wetlands?",
+      "authors": [
+        "C. Español",
+        "B. Gallardo",
+        "M. R. Pino",
+        "Ana Martín",
+        "F. Comín"
+      ],
+      "journal": "Aquatic Sciences",
+      "publication_date": "2012-11-27",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/058c08d29be837cd5e482e06643ea5dc4b5bd3b5",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "wetland"
+      ]
+    },
+    {
       "id": "5123feb348c3d1cf96ef3fae753bbff337d3c7b4",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -38628,56 +38770,6 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
-      "id": "8723812320df61bbf558329634cf2e82ed3217d0",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s10750-012-1212-z",
-      "title": "The importance of transport processes and spatial gradients on in situ estimates of lake metabolism",
-      "authors": [
-        "J. Antenucci",
-        "J. Antenucci",
-        "K. Tan",
-        "H. Eikaas",
-        "J. Imberger"
-      ],
-      "journal": "Hydrobiologia",
-      "publication_date": "2012-01-01",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/8723812320df61bbf558329634cf2e82ed3217d0",
-      "pdf_url": "",
-      "citation_count": 25,
-      "influential_citation_count": 3,
-      "reference_count": 41,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism"
-      ],
-      "semantic_scholar": {
-        "paper_id": "8723812320df61bbf558329634cf2e82ed3217d0",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "1979187177",
-          "DOI": "10.1007/s10750-012-1212-z",
-          "CorpusId": 18087422
-        }
-      }
-    },
-    {
       "id": "07f68abfa28b5749b80a1d255fbd060fa4afc2a5",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -38817,58 +38909,6 @@ window.PAPER_TRACKER_DATA = {
           "MAG": "3023693656",
           "DOI": "10.1007/s10021-020-00505-8",
           "CorpusId": 216559711
-        }
-      }
-    },
-    {
-      "id": "c13d9a8507677d5240513f21a3266647c44ac4f6",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s00027-018-0606-z",
-      "title": "Stream metabolism increases with drainage area and peaks asynchronously across a stream network",
-      "authors": [
-        "Francine H. Mejia",
-        "A. Fremier",
-        "Joseph R. Benjamin",
-        "J. Bellmore",
-        "Adrianne Z. Grimm",
-        "G. Watson",
-        "Michael Newsom"
-      ],
-      "journal": "Aquatic Sciences",
-      "publication_date": "2018-12-06",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/c13d9a8507677d5240513f21a3266647c44ac4f6",
-      "pdf_url": "",
-      "citation_count": 33,
-      "influential_citation_count": 1,
-      "reference_count": 75,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "river"
-      ],
-      "semantic_scholar": {
-        "paper_id": "c13d9a8507677d5240513f21a3266647c44ac4f6",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "2903784096",
-          "DOI": "10.1007/s00027-018-0606-z",
-          "CorpusId": 54448311
         }
       }
     },
@@ -39241,56 +39281,6 @@ window.PAPER_TRACKER_DATA = {
           "MAG": "2293312533",
           "DOI": "10.1086/683241",
           "CorpusId": 87460183
-        }
-      }
-    },
-    {
-      "id": "2284305205ace0fed6e7a603df1346145368fd25",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s00027-019-0622-7",
-      "title": "The carbon pump supports high primary production in a shallow lake",
-      "authors": [
-        "M. Andersen",
-        "Theis Kragh",
-        "K. T. Martinsen",
-        "Emil Kristensen",
-        "K. Sand‐Jensen"
-      ],
-      "journal": "Aquatic Sciences",
-      "publication_date": "2019-01-12",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/2284305205ace0fed6e7a603df1346145368fd25",
-      "pdf_url": "",
-      "citation_count": 29,
-      "influential_citation_count": 1,
-      "reference_count": 51,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism"
-      ],
-      "semantic_scholar": {
-        "paper_id": "2284305205ace0fed6e7a603df1346145368fd25",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "2909866812",
-          "DOI": "10.1007/s00027-019-0622-7",
-          "CorpusId": 57772012
         }
       }
     },
@@ -41991,61 +41981,6 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
-      "id": "0f6e9a1560830a4b3b36b1d57ce134a87b205292",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s10021-021-00664-2",
-      "title": "Watershed-scale Land Use Change Increases Ecosystem Metabolism in an Agricultural Stream",
-      "authors": [
-        "Matt T. Trentman",
-        "J. Tank",
-        "Robert T. Davis",
-        "B. Hanrahan",
-        "Ursula H. Mahl",
-        "Sarah S. Roley"
-      ],
-      "journal": "Ecosystems",
-      "publication_date": "2021-06-18",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/0f6e9a1560830a4b3b36b1d57ce134a87b205292",
-      "pdf_url": "",
-      "citation_count": 10,
-      "influential_citation_count": 1,
-      "reference_count": 64,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "river"
-      ],
-      "semantic_scholar": {
-        "paper_id": "0f6e9a1560830a4b3b36b1d57ce134a87b205292",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          },
-          {
-            "category": "Agricultural and Food Sciences",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "3175757943",
-          "DOI": "10.1007/s10021-021-00664-2",
-          "CorpusId": 237933221
-        }
-      }
-    },
-    {
       "id": "50c003ed3763a590f1f40dcccf21e2cf1207dd8c",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -42458,58 +42393,6 @@ window.PAPER_TRACKER_DATA = {
           "MAG": "2170321012",
           "DOI": "10.3390/F6082762",
           "CorpusId": 15083927
-        }
-      }
-    },
-    {
-      "id": "62d0e222aff1a92e464b2cff59eaac69c7ec7043",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s00027-012-0284-1",
-      "title": "Is net ecosystem production higher in natural relative to constructed wetlands?",
-      "authors": [
-        "Cecilia Españ",
-        "Belinda bullet",
-        "bullet M Gallardo",
-        "Pino Rosa",
-        "Anand bullet",
-        "F. A. Martin",
-        "Comín"
-      ],
-      "journal": "Aquatic Sciences",
-      "publication_date": "2013-07-01",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/62d0e222aff1a92e464b2cff59eaac69c7ec7043",
-      "pdf_url": "",
-      "citation_count": 9,
-      "influential_citation_count": 1,
-      "reference_count": 70,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "wetland"
-      ],
-      "semantic_scholar": {
-        "paper_id": "62d0e222aff1a92e464b2cff59eaac69c7ec7043",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "2036923254",
-          "DOI": "10.1007/s00027-012-0284-1",
-          "CorpusId": 17439239
         }
       }
     },
