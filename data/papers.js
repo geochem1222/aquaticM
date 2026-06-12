@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-06-11T22:59:53.288625+00:00",
+  "updated_at": "2026-06-12T22:49:20.209762+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 5,
+    "fresh_records_before_merge": 33,
     "existing_records_after_filter": 1012,
-    "total_records_after_merge": 1012,
+    "total_records_after_merge": 1013,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1012,
@@ -29846,6 +29846,59 @@ window.PAPER_TRACKER_DATA = {
         "external_ids": {
           "DOI": "10.51249/jid.v7i02.2944",
           "CorpusId": 287538128
+        }
+      }
+    },
+    {
+      "id": "1d2ad03775f045bdfd16a76ca15194b362af80e6",
+      "source": "Semantic Scholar",
+      "pmid": "41955999",
+      "doi": "10.1016/j.jenvman.2026.129603",
+      "title": "Agglomeration- and city-level resilience of the nitrogen metabolism network.",
+      "authors": [
+        "Mengyuan Hao",
+        "Zhicong Su",
+        "Yafei Wang",
+        "Yuanchao Hu",
+        "Meirong Su"
+      ],
+      "journal": "Journal of Environmental Management",
+      "publication_date": "2026-04-01",
+      "abstract": "Urban agglomerations face a dual challenge of nutrient accumulation and vulnerable industrial networks. Yet resilience assessment from a nitrogen metabolism perspective remains limited. Here, we developed an inter-city nutrient metabolism model to investigate how in- and transboundary nitrogen flow networks shape resilience at both city and agglomeration levels, using the Guangdong-Hong Kong-Macao Greater Bay Area (GBA) as a case study. Results reveal highly uneven nitrogen output: upstream cities along the Pearl River bear disproportionate environmental burdens to supply food and material for the urban agglomeration; midstream cities act as regional consumption and distribution hubs; and downstream cities function as major consumption and emission centers. Such differentiated metabolic roles give rise to distinct resilience profiles across cities, with industrial diversity emerging as a key factor strongly correlated with overall resilience. Moreover, the urban agglomeration as a whole retains substantially higher stability (reflecting structural resilience) than any individual city. However, the functional resilience of the urban agglomeration is largely hindered by a few cities with weaker internal nitrogen cycling.",
+      "url": "https://www.semanticscholar.org/paper/1d2ad03775f045bdfd16a76ca15194b362af80e6",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 73,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "1d2ad03775f045bdfd16a76ca15194b362af80e6",
+        "tldr": "",
+        "fields_of_study": [
+          "Medicine"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Medicine",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1016/j.jenvman.2026.129603",
+          "CorpusId": 287296458,
+          "PubMed": "41955999"
         }
       }
     },
