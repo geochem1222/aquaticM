@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-06-19T22:14:33.664290+00:00",
+  "updated_at": "2026-06-20T22:35:34.392481+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 2,
+    "fresh_records_before_merge": 17,
     "existing_records_after_filter": 1013,
-    "total_records_after_merge": 1013,
+    "total_records_after_merge": 1014,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1013,
@@ -19884,6 +19884,34 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 3500533
         }
       }
+    },
+    {
+      "id": "1b7815e63893162d263230058d29af496553451f",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2026gl122846",
+      "title": "Debris Flows Suppressed Riverine Productivity and Respiration Following High‐Severity Wildfire on the Klamath River, California",
+      "authors": [
+        "L. Genzoli",
+        "John R. Oberholzer Dent",
+        "Robert O. Hall",
+        "Grant Johnson"
+      ],
+      "journal": "Geophysical Research Letters",
+      "publication_date": "2026-06-18",
+      "abstract": "\n Wildfires alter terrestrial material and energy inputs to rivers, but impacts to ecosystem metabolism and dissolved oxygen (DO) are not well known due to few river ecosystem response studies during and after wildfires. In summer 2022, wildfire and heavy rains triggered debris flows into the Klamath River, where we compared immediate (days) and mid‐term (1.5 y) post‐debris flow metabolism (gross primary production; GPP and ecosystem respiration; ER) to pre‐debris flow magnitudes (2018–2023). The sediment pulse temporarily spiked ER, leading to anoxia that lasted <1 d. Following the debris flows, turbidity remained elevated for the duration of the study, limiting riverbed light and suppressing GPP. ER magnitude decreased, but less than GPP, reducing net ecosystem production. Despite more heterotrophic days after the debris flows, average DO minima increased due to lower metabolic fluxes. While postfire debris flows can cause catastrophic effects to water quality, small increases in turbidity may improve DO in eutrophic rivers.",
+      "url": "https://www.semanticscholar.org/paper/1b7815e63893162d263230058d29af496553451f",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 43,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river",
+        "sediment"
+      ]
     },
     {
       "id": "26dc58016960d03b672b2fd66500c014b4cde7f6",
