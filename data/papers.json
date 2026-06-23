@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T22:56:47.103153+00:00",
+  "updated_at": "2026-06-23T22:42:05.436002+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 35,
     "existing_records_after_filter": 1014,
-    "total_records_after_merge": 1014,
+    "total_records_after_merge": 1017,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1014,
@@ -145,7 +145,7 @@
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    "error": ""
   },
   "papers": [
     {
@@ -6882,6 +6882,60 @@
           "MAG": "2177491312",
           "DOI": "10.1890/1051-0761(1999)009[1359:EOLUOS]2.0.CO;2",
           "CorpusId": 85926955
+        }
+      }
+    },
+    {
+      "id": "2b097ae5928e00dd9710b24acf0b046b8b10e67c",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/bg-23-3981-2026",
+      "title": "Point-scale organic-matter decomposition in streambeds is weakly associated with reach-scale respiration",
+      "authors": [
+        "J. Stegen",
+        "Morgan Barnes",
+        "D. Delgado",
+        "Brieanne Forbes",
+        "V. Garayburu‐Caruso",
+        "A. Goldman",
+        "Maggi Laan",
+        "Sophia A. McKever",
+        "P. Regier",
+        "Lupita Renteria",
+        "S. Tiegs"
+      ],
+      "journal": "Biogeosciences",
+      "publication_date": "2026-06-17",
+      "abstract": "Abstract. Stream and river ecosystems play a central role in the movement and decomposition of particulate organic matter, serving as a conduit between terrestrial hillslopes and coastal environments. Microbe-catalyzed decomposition generates simpler organic molecules that fuel respiration, often in the sediments of these ecosystems. However, the degree of connection between sediment-associated respiration (ERsed) and organic-matter-decomposition potential remains poorly understood. It is also unclear whether organic-matter-decomposition potential is more closely associated with ERsed, whole-ecosystem respiration (ERtot), or water-column respiration (ERwc). We examined the link between particulate organic-matter-decomposition potential – using cellulose-based cotton strips as a standardized substrate – and all three components of respiration across 48 sites in the environmentally diverse Yakima River Basin (Washington State, USA). We hypothesized that decomposition within sediments would be most strongly related to ERsed, but decomposition rates were more closely associated with ERtot, less so with ERsed and not at all with ERwc. This suggests that point-scale particulate organic-matter-decomposition potential within stream/river sediments is more closely associated with integrated system respiration rather than with processes confined to sediments or the water column alone though these relationships were weak overall. Further, across the basin, decomposition rates nearly spanned the previously reported global range for streams and rivers and were best explained by total dissolved nitrogen (TDN), sediment grain size, and aridity of the upstream drainage area. These results highlight the strong influence of land cover and basin-scale biophysical variation on sediment-associated decomposition processes and indicate that mechanistic models of organic-matter decomposition in streams and rivers should account for coupled sediment–water–land interactions.",
+      "url": "https://www.semanticscholar.org/paper/2b097ae5928e00dd9710b24acf0b046b8b10e67c",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 56,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "model",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "2b097ae5928e00dd9710b24acf0b046b8b10e67c",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.5194/bg-23-3981-2026",
+          "CorpusId": 289404570
         }
       }
     },
@@ -19912,6 +19966,57 @@
         "river",
         "sediment"
       ]
+    },
+    {
+      "id": "ab53f32ef2b1dee25223a6ea1f7c6f129fafad5f",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2025jg009444",
+      "title": "Small‐Scale Spatial Variability in Carbon Fluxes Driven by Soil and Vegetation Characteristics in Wetlands of Trail Valley Creek, Canada",
+      "authors": [
+        "K. Ivanova",
+        "Anna‐Maria Virkkala",
+        "Judith Vogt",
+        "A. Bieniada",
+        "Annelen Küchenmeister",
+        "O. Kolle",
+        "O. Sonnentag",
+        "Bruno Lecavalier",
+        "Mathias Göckede"
+      ],
+      "journal": "Journal of Geophysical Research: Biogeosciences",
+      "publication_date": "2026-06-01",
+      "abstract": "\n \n The microtopography of the Arctic tundra and the associated soil moisture (SM) gradient influence the net ecosystem‐atmosphere exchange of methane (CH\n 4\n ) and carbon dioxide (CO\n 2\n ). To quantify fine‐scale variability in a permafrost ecosystem, we measured growing‐season carbon fluxes with closed chambers at Trail Valley Creek, Canada from 2022 to 2024. A total of six landforms were sampled, spanning a wetness gradient from dry (upland tundra, gully) over intermediate (polygons, degraded wetland centers) to wet (transitional zones, trenches) microsites. All landforms were net sources of CH\n 4\n ; only trenches had high (0.58 mg CH\n 4\n m\n −2\n  h\n −1\n ) fluxes, while the other landforms had fluxes close to zero. Drier elements (upland tundra, polygons) were net CO\n 2\n sinks, while wetter depressions (gully, degraded centers, transitional zones) were net sources; trenches were a wet exception that still acted as a sink. All fluxes were strongly influenced by air temperature (\n T\n air\n ), peaking during the hot summer of 2023. CH\n 4\n flux variability was dominated by belowground variables (SM and temperature). For CO\n 2\n fluxes, aboveground (\n T\n air\n , and photosynthetically active radiation (PAR)) and belowground controls contributed equally. For CH\n 4\n , ecosystem respiration, and gross primary production, fitting separate models per landform reduced absolute prediction error (despite lower\n R\n 2\n ), making it preferable when minimizing error. For net ecosystem exchange, a single model fit to all landforms was sufficient. These results show that field studies focusing on small‐scale variability in carbon fluxes should prioritize detailed soil‐layer measurements,\n T\n air\n , and PAR, while vegetation metrics are optional.\n",
+      "url": "https://www.semanticscholar.org/paper/ab53f32ef2b1dee25223a6ea1f7c6f129fafad5f",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 23,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "ab53f32ef2b1dee25223a6ea1f7c6f129fafad5f",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1029/2025jg009444",
+          "CorpusId": 289455600
+        }
+      }
     },
     {
       "id": "26dc58016960d03b672b2fd66500c014b4cde7f6",
@@ -47350,6 +47455,58 @@
         "publication_types": [],
         "external_ids": {
           "CorpusId": 268290466
+        }
+      }
+    },
+    {
+      "id": "0818cce9662e361180be7d52a374cd612621dd6e",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1086/742742",
+      "title": "Light and temperature regimes interact to shape thermal performance of whole stream metabolism across biomes",
+      "authors": [
+        "F. Ballantyne",
+        "Chaoyi Song",
+        "Erica Garcia",
+        "Ashley Helton",
+        "B. Mcdowell",
+        "Samuel Parker",
+        "Matt T. Trentman",
+        "Walter K. Dodds"
+      ],
+      "journal": "Freshwater Science",
+      "publication_date": "2026-06-16",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/0818cce9662e361180be7d52a374cd612621dd6e",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 3,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "0818cce9662e361180be7d52a374cd612621dd6e",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1086/742742",
+          "CorpusId": 289336966
         }
       }
     },
