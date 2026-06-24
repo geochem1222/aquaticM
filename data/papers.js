@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-06-23T22:42:05.436002+00:00",
+  "updated_at": "2026-06-24T22:40:06.479447+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,18 +134,18 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 35,
-    "existing_records_after_filter": 1014,
+    "fresh_records_before_merge": 0,
+    "existing_records_after_filter": 1017,
     "total_records_after_merge": 1017,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1014,
+    "existing_records_before_update": 1017,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": ""
+    "error": "HTTPError: HTTP Error 500: Internal Server Error"
   },
   "papers": [
     {
