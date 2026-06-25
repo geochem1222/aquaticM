@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T22:40:06.582471+00:00",
+  "updated_at": "2026-06-25T22:47:41.760226+00:00",
   "status_code": "0",
-  "log_tail": "Semantic Scholar fetch failed; keeping existing data if available. HTTPError: HTTP Error 500: Internal Server Error\nUpdated 1017 papers from Semantic Scholar at data/papers.json\n"
+  "log_tail": "Updated 1017 papers from Semantic Scholar at data/papers.json\n"
 }
