@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T22:38:56.062503+00:00",
+  "updated_at": "2026-06-27T22:18:00.991693+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 34,
     "existing_records_after_filter": 1017,
-    "total_records_after_merge": 1017,
+    "total_records_after_merge": 1019,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1017,
@@ -145,7 +145,7 @@
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    "error": ""
   },
   "papers": [
     {
@@ -47459,6 +47459,49 @@
       }
     },
     {
+      "id": "86f1c76d8cde614b93793a42b84e0998793cc961",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1111/rec.70478",
+      "title": "Limited effects of structural restoration on ecosystem functioning in an urban tropical stream",
+      "authors": [
+        "João Miguel Merces Bega",
+        "B. Gücker",
+        "D. F. Cunha"
+      ],
+      "journal": "Restoration Ecology",
+      "publication_date": "2026-06-25",
+      "abstract": "\n \n \n Hydromorphological restoration through structural interventions is commonly used to mitigate urbanization impacts on lotic freshwater systems, but their effects on ecosystem functioning in urban tropical streams remain unexplored.\n \n \n \n Here, we aimed at evaluating the short‐term effects of the deployment of cross‐vanes and riffles in a third‐order urban tropical stream on indicators of ecosystem structure (e.g. water quality, hydrodynamics, and substrate diversity) and functioning, including ammonium–nitrogen () and soluble reactive phosphorus (SRP) uptake, as well as whole‐stream metabolism.\n \n \n \n The assessed indicators were compared before (March–December 2022) and after (October 2023–April 2024) restoration, as well as against reference conditions.\n \n \n \n Post‐restoration, the stream became significantly wider and shallower, with increased sand and gravel content and enhanced transient storage zone effectiveness. However, gross primary production was reduced, while ecosystem respiration and and SRP uptake efficiencies remained unchanged. Despite some notable improvements, all ecosystem functions still differed from those observed in reference streams.\n \n \n \n Our results point to challenges in effective structural restoration of larger streams and suggest that reach‐scale restoration measures in urban areas should be integrated with upland best management practices to enhance their effectiveness. These insights are critical for informing future structural in‐situ restoration projects.\n",
+      "url": "https://www.semanticscholar.org/paper/86f1c76d8cde614b93793a42b84e0998793cc961",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 65,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "86f1c76d8cde614b93793a42b84e0998793cc961",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1111/rec.70478",
+          "CorpusId": 289586769
+        }
+      }
+    },
+    {
       "id": "0818cce9662e361180be7d52a374cd612621dd6e",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -47507,6 +47550,58 @@
         "external_ids": {
           "DOI": "10.1086/742742",
           "CorpusId": 289336966
+        }
+      }
+    },
+    {
+      "id": "ee1d2a08279413fbf58db2c0286d9bf428cb4001",
+      "source": "Semantic Scholar",
+      "pmid": "42338318",
+      "doi": "10.1111/ele.70437",
+      "title": "Temperature and Resource Supply Drive Continental Variation in Size Structure of Freshwater Food Webs",
+      "authors": [
+        "V. Gjoni",
+        "J. Pomeranz",
+        "James R. Junker",
+        "J. Wesner"
+      ],
+      "journal": "Ecology Letters",
+      "publication_date": "2026-06-01",
+      "abstract": "ABSTRACT Biological communities follow a remarkably consistent negative relationship between individual mass (M) and abundance (N), represented by a power law (N ~ Mλ). The parameter λ denotes the rate of decline in relative abundance from small to large individuals and serves as a proxy for energy transfer efficiency in food webs. Although warming is expected to affect λ, its influence remains uncertain, possibly due to interactions with resource supply. Using ~670,000 individual body sizes from stream food webs, we tested how temperature and resources shape λ. Temperature effects depended on resource supply (gross primary production [GPP] and organic matter standing stock [OM]) but contradicted expectations that λ becomes more negative with warming. At medium and high resources, λ becomes less negative under warming while no change occurred at low resources. Variation in OM, not GPP, drove these patterns, highlighting the role of external energy inputs and challenging the idea that large organisms are rarer at higher temperatures.",
+      "url": "https://www.semanticscholar.org/paper/ee1d2a08279413fbf58db2c0286d9bf428cb4001",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 46,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "ee1d2a08279413fbf58db2c0286d9bf428cb4001",
+        "tldr": "",
+        "fields_of_study": [
+          "Medicine"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Medicine",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "PubMedCentral": "13291765",
+          "DOI": "10.1111/ele.70437",
+          "CorpusId": 289486405,
+          "PubMed": "42338318"
         }
       }
     },
