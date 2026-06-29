@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-06-28T22:17:02.063345+00:00",
+  "updated_at": "2026-06-29T22:28:53.719474+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 32,
+    "fresh_records_before_merge": 33,
     "existing_records_after_filter": 1019,
-    "total_records_after_merge": 1019,
+    "total_records_after_merge": 1020,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1019,
@@ -35679,6 +35679,59 @@ window.PAPER_TRACKER_DATA = {
         "external_ids": {
           "MAG": "82211457",
           "CorpusId": 126530345
+        }
+      }
+    },
+    {
+      "id": "67a965217d582156aac42cfe44b518d6e4fddb13",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1038/s43247-026-03613-w",
+      "title": "Sediment‑associated processes dominate spatial variation in stream ecosystem respiration",
+      "authors": [
+        "V. Garayburu‐Caruso",
+        "Matthew Kaufman",
+        "Brieanne Forbes",
+        "Robert O. Hall",
+        "Maggi Laan",
+        "Xingyuan Chen",
+        "Xinming Lin",
+        "Stephanie G. Fulton",
+        "Lupita Renteria",
+        "Yilin Fang",
+        "K. Son",
+        "J. Stegen"
+      ],
+      "journal": "Communications Earth &amp; Environment",
+      "publication_date": "2026-06-27",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/67a965217d582156aac42cfe44b518d6e4fddb13",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "67a965217d582156aac42cfe44b518d6e4fddb13",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1038/s43247-026-03613-w",
+          "CorpusId": 289649061
         }
       }
     },
