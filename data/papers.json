@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T22:14:15.861538+00:00",
+  "updated_at": "2026-07-06T22:42:51.248493+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 68,
     "existing_records_after_filter": 1020,
-    "total_records_after_merge": 1020,
+    "total_records_after_merge": 1054,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1020,
@@ -145,7 +145,7 @@
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    "error": ""
   },
   "papers": [
     {
@@ -247,6 +247,81 @@
           "MAG": "1969358666",
           "DOI": "10.2307/1942301",
           "CorpusId": 83626801
+        }
+      }
+    },
+    {
+      "id": "39ab14370f70355162f95da6959c2812cd84e08c",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10021-005-0105-7",
+      "title": "Reconciling Carbon-cycle Concepts, Terminology, and Methods",
+      "authors": [
+        "F. Chapin",
+        "G. Woodwell",
+        "J. Randerson",
+        "E. Rastetter",
+        "G. Lovett",
+        "D. Baldocchi",
+        "D. Clark",
+        "M. Harmon",
+        "D. Schimel",
+        "R. Valentini",
+        "C. Wirth",
+        "J. Aber",
+        "J. Cole",
+        "M. Goulden",
+        "J. Harden",
+        "M. Heimann",
+        "R. Howarth",
+        "P. Matson",
+        "A. McGuire",
+        "J. Melillo",
+        "H. Mooney",
+        "J. Neff",
+        "R. Houghton",
+        "M. Pace",
+        "M. G. Ryan",
+        "S. Running",
+        "O. Sala",
+        "W. Schlesinger",
+        "E. Schulze"
+      ],
+      "journal": "Ecosystems",
+      "publication_date": "2006-11-17",
+      "abstract": "Recent projections of climatic change have focused a great deal of scientific and public attention on patterns of carbon (C) cycling as well as its controls, particularly the factors that determine whether an ecosystem is a net source or sink of atmospheric carbon dioxide (CO2). Net ecosystem production (NEP), a central concept in C-cycling research, has been used by scientists to represent two different concepts. We propose that NEP be restricted to just one of its two original definitions—the imbalance between gross primary production (GPP) and ecosystem respiration (ER). We further propose that a new term—net ecosystem carbon balance (NECB)—be applied to the net rate of C accumulation in (or loss from [negative sign]) ecosystems. Net ecosystem carbon balance differs from NEP when C fluxes other than C fixation and respiration occur, or when inorganic C enters or leaves in dissolved form. These fluxes include the leaching loss or lateral transfer of C from the ecosystem; the emission of volatile organic C, methane, and carbon monoxide; and the release of soot and CO2 from fire. Carbon fluxes in addition to NEP are particularly important determinants of NECB over long time scales. However, even over short time scales, they are important in ecosystems such as streams, estuaries, wetlands, and cities. Recent technological advances have led to a diversity of approaches to the measurement of C fluxes at different temporal and spatial scales. These approaches frequently capture different components of NEP or NECB and can therefore be compared across scales only by carefully specifying the fluxes included in the measurements. By explicitly identifying the fluxes that comprise NECB and other components of the C cycle, such as net ecosystem exchange (NEE) and net biome production (NBP), we can provide a less ambiguous framework for understanding and communicating recent changes in the global C cycle.",
+      "url": "https://www.semanticscholar.org/paper/39ab14370f70355162f95da6959c2812cd84e08c",
+      "pdf_url": "https://scholarworks.umt.edu/ntsg_pubs/159",
+      "citation_count": 1156,
+      "influential_citation_count": 31,
+      "reference_count": 68,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "39ab14370f70355162f95da6959c2812cd84e08c",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2148341336",
+          "DOI": "10.1007/s10021-005-0105-7",
+          "CorpusId": 18139640
         }
       }
     },
@@ -861,6 +936,64 @@
           "MAG": "2291518040",
           "DOI": "10.18174/334360",
           "CorpusId": 131755002
+        }
+      }
+    },
+    {
+      "id": "e51b9168996e9e1b64ceef05ebfb878ebc37f06d",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.2521/JSWTB.49.109",
+      "title": "A New Ecosystem Model Describing the Effects of pH on Gross Primary Production, Community Respiration, and Feeding by Heterotrophic Microorganisms",
+      "authors": [
+        "Daisuke Sutani",
+        "M. Utsumi",
+        "Yoshimori Kato",
+        "N. Sugiura"
+      ],
+      "journal": "Japanese Journal of Water Treatment Biology",
+      "publication_date": "2013-01-01",
+      "abstract": "A new ecosystem model was developed to predict the effects of pH variation on the microbial community in freshwater lakes by using the features of three existing models: an ecosystem model, a pH simulation model, and a cardinal temperature and pH model. Data for validation were obtained by conducting the following experiment. Circumneutral lake water, collected from Lake Inawashiro in Fukushima Prefecture, Japan, was mixed with acidic river water to prepare water samples with three pH values: 6.5, 5.5, and 4.5. Transparent acrylic tanks were filled with prepared water and placed in a sunny place for 24 days, during which time pH and dissolved oxygen content were continuously measured. The biomass of phytoplankton, zooplankton, and bacteria was measured on the first and last day. Hourly calculated values of pH and DO were in excellent agreement with observed values in the tanks. The simulation of the change in biomass of alkaliphilous, circumneutral, and acidophilous phytoplankton species for three different levels of pH over the course of 24 days also agreed with observations. The examination of fundamental model response also showed that the new ecosystem model is applicable to actual lake environments, where acidification or alkalization in pH is observed, by continuously changing the total alkalinity and incorporating sediment respiration.",
+      "url": "https://www.semanticscholar.org/paper/e51b9168996e9e1b64ceef05ebfb878ebc37f06d",
+      "pdf_url": "https://www.jstage.jst.go.jp/article/jswtb/49/4/49_109/_pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 48,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "model",
+        "oxygen",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "e51b9168996e9e1b64ceef05ebfb878ebc37f06d",
+        "tldr": "The examination of fundamental model response showed that the new ecosystem model is applicable to actual lake environments, where acidification or alkalization in pH is observed, by continuously changing the total alkalinity and incorporating sediment respiration.",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "382837261",
+          "DOI": "10.2521/JSWTB.49.109",
+          "CorpusId": 126697895
         }
       }
     },
@@ -3939,6 +4072,57 @@
           "DOI": "10.1016/j.scitotenv.2022.153292",
           "CorpusId": 246175060,
           "PubMed": "35066036"
+        }
+      }
+    },
+    {
+      "id": "5850e4d36ec18ea1cffbae215b3fdb4ecca2855a",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1139/F08-006",
+      "title": "Depth-integrated, continuous estimates of metabolism in a clear-water lake",
+      "authors": [
+        "J. Coloso",
+        "J. Cole",
+        "P. Hanson",
+        "M. Pace"
+      ],
+      "journal": "Canadian Journal of Fisheries and Aquatic Sciences",
+      "publication_date": "2008-04-01",
+      "abstract": "High-frequency dissolved oxygen (DO) measurements have been used for estimating gross primary production (GPP) and respiration (R) in lake ecosystems. Most researchers have determined GPP and R only in surface waters, a practice that may underestimate R in general and GPP in clear-water lakes in particular. We deployed oxygen sondes at multiple sites and depths in a clear-water lake. Rates of GPP or R were similar horizontally over the surface waters of the lake. Diel DO signals weakened with depth; however, removing noise from the data, by either wavelet transforms or moving averages, enhanced our ability to resolve diel metabolic signals. While GPP declined sharply with depth, R was unrelated to depth. The majority of GPP and R occurred in the upper mixed layer, but deeper water accounted for 14%–28% of GPP and 20%–43% of R, depending on the statistical filtering technique used. GPP and R were nearly in balance in the surface waters, but for the entire lake R exceeded GPP, and net ecosystem production w...",
+      "url": "https://www.semanticscholar.org/paper/5850e4d36ec18ea1cffbae215b3fdb4ecca2855a",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Depth-integrated_continuous_estimates_of_metabolism_in_a_clear-water_lake/24818559",
+      "citation_count": 97,
+      "influential_citation_count": 11,
+      "reference_count": 45,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "oxygen",
+        "sensor"
+      ],
+      "semantic_scholar": {
+        "paper_id": "5850e4d36ec18ea1cffbae215b3fdb4ecca2855a",
+        "tldr": "High-frequency dissolved oxygen measurements have been used for estimating gross primary production (GPP) and respiration (R) in lake ecosystems, but for the entire lake R exceeded GPP, and net ecosystem production w...",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "1982814331",
+          "DOI": "10.1139/F08-006",
+          "CorpusId": 7034668
         }
       }
     },
@@ -7384,6 +7568,57 @@
       }
     },
     {
+      "id": "16aaa72354103e4b7909d3d4be38bfc7449ffb0a",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1002/rra.3145",
+      "title": "Ecological Assessment of a Sediment By‐pass Tunnel on a Receiving Stream in Switzerland",
+      "authors": [
+        "E. Martín",
+        "M. Doering",
+        "C. Robinson"
+      ],
+      "journal": "River Research and Applications",
+      "publication_date": "2017-07-01",
+      "abstract": "Reservoir siltation is a major problem worldwide, decreasing reservoir storage capacity, trapping entrained sediment, and altering the natural sediment regime. Sediment By‐pass Tunnels (SBTs) are used to connect reservoirs with downstream receiving waters during high flows to reduce sediment accumulation in the reservoir. When operating, large volumes of sediment‐laden waters are released into the receiving river for short periods of time (h). The aim of this study was to assess the impact of SBT events on the downstream riverine ecosystem. We measured physico‐chemical properties, sediment respiration, periphyton biomass and chlorophyll‐a, and macroinvertebrate assemblages along a 5‐km stretch of river during the first two years of SBT operation. During the study, five major SBT events occurred. Few changes were found in physico‐chemical properties, mainly due to the input of tributaries entering the system. Results showed a clear reduction in sediment respiration, an indicator of ecosystem metabolism, especially after large SBT events. Periphyton levels and macroinvertebrate density/richness also decreased after SBT events. A non‐metric multidimensional scaling distinguished both temporal and spatial shifts in macroinvertebrate assemblages after SBT events, being related to downstream distance and SBT event magnitude. In summary, SBT events acted as a pulse disturbance, similarly to natural floods, followed by recovery of measured ecosystem indicators. Sediment By‐pass Tunnel events can enhance sediment and flow connectivity, although the magnitude and frequency of operations should be controlled to prevent catastrophic disturbances. Copyright © 2017 John Wiley & Sons, Ltd.",
+      "url": "https://www.semanticscholar.org/paper/16aaa72354103e4b7909d3d4be38bfc7449ffb0a",
+      "pdf_url": "https://digitalcollection.zhaw.ch/handle/11475/7126",
+      "citation_count": 20,
+      "influential_citation_count": 2,
+      "reference_count": 44,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "16aaa72354103e4b7909d3d4be38bfc7449ffb0a",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2602992235",
+          "DOI": "10.1002/rra.3145",
+          "CorpusId": 131952555
+        }
+      }
+    },
+    {
       "id": "cc80997e66b410ca1305b9f3010068eb06e1651d",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -8157,6 +8392,51 @@
       }
     },
     {
+      "id": "6fc57e102e8e1ec122757334d3aeb93e461976c9",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s12237-024-01405-z",
+      "title": "Carbon Dioxide Fluxes from Peri-urban Tidal Flats in South China",
+      "authors": [
+        "Z. Chen",
+        "Shing Yip Lee"
+      ],
+      "journal": "Estuaries and Coasts",
+      "publication_date": "2024-07-31",
+      "abstract": "Coastal ecosystems are recognized as important carbon reservoirs. However, assessments of coastal carbon dioxide (CO2) fluxes often neglect unvegetated tidal flats, particularly in peri-urban areas. This study investigated the gross primary production (GPP), net primary production (NPP), and total respiration (TR) of three tidal flats in Hong Kong, one of the largest cities in South China, during both summer and winter seasons to understand their CO2 fluxes. Results showed that GPP of three tidal flats was significantly higher in winter than in summer. However, no significant seasonal variations in TR were observed among the tidal flats. Structural equation modelling was used to examine the drivers of CO2 fluxes in the three tidal flats. The model showed that temperature and microphytobenthos abundance were identified as positive drivers of GPP, while sediment mud content had a positive effect on TR. The estimated daily NPP of these tidal flats ranged from -0.853 to 0.112 g C m−2 d−1, which is lower than the mean value reported for global vegetated coastal wetlands. Despite some seasonal and spatial variations, those peri-urban tidal flats may be considered as weak CO2 sources rather than CO2 sinks.",
+      "url": "https://www.semanticscholar.org/paper/6fc57e102e8e1ec122757334d3aeb93e461976c9",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12237-024-01405-z.pdf",
+      "citation_count": 3,
+      "influential_citation_count": 0,
+      "reference_count": 61,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model",
+        "sediment",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "6fc57e102e8e1ec122757334d3aeb93e461976c9",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1007/s12237-024-01405-z",
+          "CorpusId": 271626317
+        }
+      }
+    },
+    {
       "id": "284d4fec4a1138e4904af7c726339b9ef73ab654",
       "source": "Semantic Scholar",
       "pmid": "39116072",
@@ -8309,6 +8589,53 @@
         "external_ids": {
           "DOI": "10.24002/jts.v16i2.4775",
           "CorpusId": 249138940
+        }
+      }
+    },
+    {
+      "id": "22af60dab74cdc644b018fa936c78a6276734731",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s00027-015-0463-y",
+      "title": "Do warming and humic river runoff alter the metabolic balance of lake ecosystems?",
+      "authors": [
+        "P. Rodríguez",
+        "P. Byström",
+        "Erik Geibrink",
+        "Per Hedström",
+        "F. R. Vasconcelos",
+        "J. Karlsson"
+      ],
+      "journal": "Aquatic Sciences",
+      "publication_date": "2015-12-24",
+      "abstract": "Global warming is expected to influence lake gross primary production (GPP) and ecosystem respiration (R) by increasing water temperature and terrestrial export of organic material and inorganic nutrients from the catchment. We experimentally tested the effects of warming (3 °C) and natural humic river runoff, separately and in combination, on habitat-specific and whole ecosystem net ecosystem production (NEP = GPP − R) in replicated large scale (136 m3) experimental pond ecosystems over one open water season. Pelagic NEP was reduced by warming and increased with humic river water addition. Littoral NEP (benthos, macrophytes, periphyton) showed an opposite pattern with increasing NEP following warming and decreasing NEP following humic river water addition. These changes were a result of changes in GPP with warming (negative in pelagic, positive in littoral) and with humic water addition (positive in pelagic, negative in littoral), while no effects were observed on pelagic respiration. As a result of the counteracting effects on NEP in pelagic and littoral habitats, whole ecosystem NEP was not affected by the treatments. The study suggests that climate mediated changes in temperature and river runoff have relatively small effects on the overall metabolic balance of shallow aquatic ecosystems but there may be large habitat-specific effects.",
+      "url": "https://www.semanticscholar.org/paper/22af60dab74cdc644b018fa936c78a6276734731",
+      "pdf_url": "http://hdl.handle.net/11336/86863",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "pond",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "22af60dab74cdc644b018fa936c78a6276734731",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.1007/s00027-015-0463-y",
+          "CorpusId": 253588277
         }
       }
     },
@@ -8595,6 +8922,115 @@
           "MAG": "2500297065",
           "DOI": "10.1007/s00027-016-0499-7",
           "CorpusId": 23148901
+        }
+      }
+    },
+    {
+      "id": "aebef9377bfb1227bf79ef8d6b0c902f36e39523",
+      "source": "Semantic Scholar",
+      "pmid": "26849329",
+      "doi": "10.1016/j.scitotenv.2016.01.082",
+      "title": "Carbon cycling and exports over diel and flood-recovery timescales in a subtropical rainforest headwater stream.",
+      "authors": [
+        "Arun Looman",
+        "I. Santos",
+        "D. Tait",
+        "J. Webb",
+        "C. Sullivan",
+        "D. Maher"
+      ],
+      "journal": "Science of the Total Environment",
+      "publication_date": "2016-04-15",
+      "abstract": "Catchment headwaters comprise the majority of all stream length globally, however, carbon (C) dynamics in these systems remains poorly understood. We combined continuous measurements of pCO2 and radon ((222)Rn, a natural groundwater tracer) with discrete sampling for particulate organic, dissolved organic and inorganic carbon (POC, DOC, and DIC) to assess the short-term carbon dynamics of a pristine subtropical headwater stream in Australia, over contrasting hydrologic regimes of drought, flash-flooding and recovery. Observations over 23days revealed a shift from carbon losses dominated by CO2 outgassing under conditions of low flow (66.4±0.4% of carbon export) to downstream exports of carbon during the flood (87.8±9.7% of carbon export). DOC was the dominant form of downstream exports throughout the study (DOC:DIC:POC=0.82:0.05:0.13). The broadest diel variability among variables occurred during the drought phase, with diel variability up to 662μatmd(-1) (or 27μM[CO2*]d(-1)), 17μMd(-1) and 268Bqm(-3)d(-1) for pCO2, dissolved oxygen and (222)Rn, respectively. Diel dynamics indicated multiple interrelated drivers of stream water chemistry including groundwater seepage and in-stream metabolism. The catchment exported terrestrial carbon throughout the field campaign, with a mean net stream flux of 4.7±7.8mmolCm(-2)(catchment area)d(-1) which is equivalent to 1.4±2.3% of the estimated local terrestrial net primary production. Our observations highlight the importance of accounting for hydrological extremes when assessing the carbon budgets and ecosystem metabolism of headwater streams, and provide a first estimate of aquatic carbon exports from a pristine Australian subtropical rainforest.",
+      "url": "https://www.semanticscholar.org/paper/aebef9377bfb1227bf79ef8d6b0c902f36e39523",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Carbon_cycling_and_exports_over_diel_and_flood-recovery_timescales_in_a_subtropical_rainforest_headwater_stream/20687089",
+      "citation_count": 36,
+      "influential_citation_count": 2,
+      "reference_count": 127,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river",
+        "sensor"
+      ],
+      "semantic_scholar": {
+        "paper_id": "aebef9377bfb1227bf79ef8d6b0c902f36e39523",
+        "tldr": "These observations highlight the importance of accounting for hydrological extremes when assessing the carbon budgets and ecosystem metabolism of headwater streams, and provide a first estimate of aquatic carbon exports from a pristine Australian subtropical rainforest.",
+        "fields_of_study": [
+          "Environmental Science",
+          "Medicine"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Medicine",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "MAG": "2260501791",
+          "DOI": "10.1016/j.scitotenv.2016.01.082",
+          "CorpusId": 12654149,
+          "PubMed": "26849329"
+        }
+      }
+    },
+    {
+      "id": "0d7666266f14cfd26e0f122b9511ce1cb639834b",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.2307/1353282",
+      "title": "Spatial and temporal patterns of factors influencing phytoplankton in a salt wedge estuary, the Swan River, Western Australia",
+      "authors": [
+        "P. Thompson"
+      ],
+      "journal": "Estuaries",
+      "publication_date": "1998-12-01",
+      "abstract": "During 1995 the phytoplankton in the Swan River were intensively sampled to assess biomass and species composition. Continuous measurements of fluorescence, salinity, and temperature were made weekly during 40 km sampling trips along the estuary and used to map the seasonal progression of the algal biomass. Weekly measurements of primary production were made and used to model net primary production from the vertical distribution of biomass, irradiance, and phytoplankton species composition. Potential nutrient limitation was assessed with “all but one” nutrient bioassays. The results indicate a complex mixture of potentially limiting factors, which vary in time and space. Although the data sequence is short, it suggests a annual succession pattern of diatoms, chlorophytes, diatoms, and finally dinoflagellates and cryptophytes in late summer-autumn. Peak seasonal biomass was observed during January to April. Mean annual chlorophylla biomass was greatest in upstream stations (5–9), where estimates of net primary production rates averaged 1.55 g C m−2 d−1 and gross primary production was 800–1000 g C m−2 yr−1. Potential nutrient limitation was most severe from November to May, although not during January 1995. Based on bioassay results, during the period of greatest potential for nutrient limitation, nitrogen was 15 to 30 times more limiting to biomass development than phosphate. Runoff due to consistent rainfall during winter eventually breaks down stratification and flushes the estuary with low-salinity, nutrient-rich water, producing, a light-limited, nutrient-rich aquatic ecosystem. Timing and magnitude of physical forcing events, mainly rainfall, appear critical in determining the susceptibility of this ecosystem to summer and autumn algal blooms.",
+      "url": "https://www.semanticscholar.org/paper/0d7666266f14cfd26e0f122b9511ce1cb639834b",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Spatial_and_temporal_patterns_of_factors_influencing_phytoplankton_in_a_salt_wedge_estuary_the_Swan_River_Western_Australia/22835639",
+      "citation_count": 56,
+      "influential_citation_count": 8,
+      "reference_count": 20,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "0d7666266f14cfd26e0f122b9511ce1cb639834b",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "1988108340",
+          "DOI": "10.2307/1353282",
+          "CorpusId": 83874576
         }
       }
     },
@@ -9184,6 +9620,56 @@
       }
     },
     {
+      "id": "8fa7469e0c833fc02481edfd189f6c34f8461009",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s12237-016-0117-x",
+      "title": "Decadal Changes in Water Quality and Net Productivity of a Shallow Danish Estuary Following Significant Nutrient Reductions",
+      "authors": [
+        "P. Staehr",
+        "J. Testa",
+        "J. Carstensen"
+      ],
+      "journal": "Estuaries and Coasts",
+      "publication_date": "2016-01-01",
+      "abstract": "We utilized an extensive data set (1977–2013) from a water quality monitoring program to investigate the recovery of a Danish estuary following large reductions in total phosphorus (TP) and total nitrogen (TN) loading. Monthly rates of net transport and biogeochemical transformation of dissolved inorganic nitrogen (DIN) and phosphorus (DIP) were computed in two basins of the estuary using a box model approach, and oxygen-based rates of net ecosystem production (NEP) were determined. Since 1990, nutrient loading was reduced by 58 % for nitrogen and 80 % for phosphorus, causing significant decreases in DIN (60 %) and DIP (85 %) concentrations. Reductions in nutrient loadings and concentrations reduced annual chlorophyll levels by 50 % in the inner estuary and improved Secchi depth by approximately 1 m during the same period, particularly in the summer period. In the outer, deeper region of the estuary trends in water quality was less evident. Improvements in the inner estuary were strongly coupled to declines in DIN. Thresholds of DIN and DIP concentrations limiting phytoplankton growth indicated that both regions of the estuary were nitrogen limited. NEP rates indicated the development of more net autotrophic conditions over time that were likely associated with higher benthic primary production stimulated by improved light conditions. Box model computations revealed a modest reduction in summer net production of DIP over time, despite the persistence of elevated fluxes for several years after external loads were reduced. Since the mid-1990s, nutrient loading and transformation were stable while nutrient concentrations continued to decline and water quality improved in the inner estuary. The oligotrophication trajectory involved an initial fast transformation and modest retention of nutrients followed by a gradual decline in the rate of improvement towards a new stable condition.",
+      "url": "https://www.semanticscholar.org/paper/8fa7469e0c833fc02481edfd189f6c34f8461009",
+      "pdf_url": "https://pure.au.dk/portal/en/publications/8ed4577a-5646-4be1-bd44-0a05611b7ba6",
+      "citation_count": 65,
+      "influential_citation_count": 3,
+      "reference_count": 82,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "sediment",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "8fa7469e0c833fc02481edfd189f6c34f8461009",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2419379869",
+          "DOI": "10.1007/s12237-016-0117-x",
+          "CorpusId": 89547168
+        }
+      }
+    },
+    {
       "id": "88cce55af2cd4a2104b30defd40261d0750c005d",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -9441,6 +9927,61 @@
           "MAG": "2969882519",
           "DOI": "10.1029/2019JG005028",
           "CorpusId": 202175349
+        }
+      }
+    },
+    {
+      "id": "7a2e26b5e4c9dd9064a8b4e832611e8c274612d2",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10533-018-0485-3",
+      "title": "Stream response to an extreme drought-induced defoliation event",
+      "authors": [
+        "K. Addy",
+        "A. Gold",
+        "Joseph A. Loffredo",
+        "A. Schroth",
+        "S. Inamdar",
+        "W. Bowden",
+        "D. Q. Kellogg",
+        "F. Birgand"
+      ],
+      "journal": "Biogeochemistry",
+      "publication_date": "2018-08-25",
+      "abstract": "We assessed stream ecosystem-level response to a drought-induced defoliation event by gypsy moth caterpillars (Lymantria dispar) with high-frequency water quality sensors. The defoliation event was compared to the prior year of data. Based on long-term records of precipitation and drought indices, the drought of 2015–2016 in Rhode Island, USA was an extreme climatic event that preceded and likely precipitated the defoliation from insect infestation. Canopy cover in the riparian area was reduced by over 50% increasing light availability which warmed the stream and stimulated autotrophic activity. Frass and leaf detritus contributed particulate carbon and organic nutrients to the stream. Based on locally calibrated s::can spectro::lyser data, nitrate concentration and flux did not significantly increase during defoliation while orthophosphate concentration and flux did significantly increase during part of the defoliation period. Lower mean daily dissolved oxygen (DO) levels and wider diel cycles of DO indicated higher biological activity during the defoliation event. Stream metabolism metrics were also significantly higher during defoliation and pointed to heterotrophic activity dominating in the stream. The increases in stream metabolism were low compared to other studies; in streams with higher nutrient levels (e.g., in agricultural or urban watersheds) the increase in light and temperature could have a stronger influence on stream metabolism. The in-stream metabolic processes and nutrient fluxes observed in response to the drought-driven defoliation event resulted from the long-term deployment of high-frequency water sensors. The proliferation of these water sensors now enable studies that assess ecosystem responses to stochastic, unusual disturbances.",
+      "url": "https://www.semanticscholar.org/paper/7a2e26b5e4c9dd9064a8b4e832611e8c274612d2",
+      "pdf_url": "https://digitalcommons.uri.edu/nrs_facpubs/408",
+      "citation_count": 16,
+      "influential_citation_count": 2,
+      "reference_count": 87,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river",
+        "sensor"
+      ],
+      "semantic_scholar": {
+        "paper_id": "7a2e26b5e4c9dd9064a8b4e832611e8c274612d2",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2888541773",
+          "DOI": "10.1007/s10533-018-0485-3",
+          "CorpusId": 104565445
         }
       }
     },
@@ -12814,6 +13355,58 @@
       }
     },
     {
+      "id": "c7a0760c3b9b6959a62444aee19bbbae1889197f",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1111/FWB.12407",
+      "title": "The ecology of rivers with contrasting flow regimes: identifying indicators for setting environmental flows",
+      "authors": [
+        "D. M. Warfe",
+        "S. Hardie",
+        "Adam R. Uytendaal",
+        "C. Bobbi",
+        "L. Barmuta"
+      ],
+      "journal": "Freshwater Biology",
+      "publication_date": "2014-10-01",
+      "abstract": "The scientific basis for setting environmental flows is still hampered by our incomplete understanding of flow–ecology relationships and how river ecology varies with flow regime. We conducted a study of six rivers in Tasmania (Australia), three perennial and three intermittent, measuring a range of abiotic, biotic and ecosystem process attributes over 2 years. Our intentions were to identify: (i) whether they had an ecology characteristic of their flow regime and (ii) whether certain ecological attributes were more responsive to flow regime than others, and therefore represented candidate indicators (for environmental flows or flow alteration) specific to each flow regime. Only a few abiotic variables showed any relationship with flow regime: banks were higher, pools shallower and sediments finer in perennial rivers, and water temperature was generally lower in perennial rivers. Although rarely measured, we found that productivity and net ecosystem metabolism were strongly related to flow regime, whereas food chain length did not vary between perennial and intermittent rivers. Multivariate, rather than univariate, metrics of biotic assemblages were more effective at distinguishing perennial and intermittent flow regimes, and this was consistent among riparian and instream vegetation, biofilm and macroinvertebrate assemblages. In contrast to expectations from the literature, fish assemblages were not strong indicators of flow regime, largely due to the relatively low diversity and abundance of the Tasmanian fish fauna. Our findings demonstrate that rivers with different flow regimes can support a distinctive ecology, and conventional metrics of ecological character may not be the most sensitive to flow regime. We provide a set of ecological attributes that can: (i) support extrapolation of flow–ecology relationships across rivers to regional scales, (ii) provide benchmarks for environmental flow and flow restoration objectives, (iii) indicate alterations to natural or existing flow regimes and (iv) be used to monitor and evaluate flow management actions.",
+      "url": "https://www.semanticscholar.org/paper/c7a0760c3b9b6959a62444aee19bbbae1889197f",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/The_ecology_of_rivers_with_contrasting_flow_regimes_identifying_indicators_for_setting_environmental_flows/22913264",
+      "citation_count": 33,
+      "influential_citation_count": 4,
+      "reference_count": 47,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "c7a0760c3b9b6959a62444aee19bbbae1889197f",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2027895588",
+          "DOI": "10.1111/FWB.12407",
+          "CorpusId": 84749239
+        }
+      }
+    },
+    {
       "id": "da6eb9d31830317bd7e281a0b0974e0eab485241",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -12861,6 +13454,55 @@
           "MAG": "1706784987",
           "DOI": "10.3233/AJW-2013-10_1_07",
           "CorpusId": 129215557
+        }
+      }
+    },
+    {
+      "id": "9d4ce36ecf36308579c9334445af6f007f00ec20",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3739/RIKUSUI.44.81",
+      "title": "Serological Study on Seasonal and Vertical Distribution of Specific Denitrifying Bacteria in Lake Kizaki",
+      "authors": [
+        "H. Terai",
+        "T. Yoshioka"
+      ],
+      "journal": "Japanese Journal of Limnology (rikusuigaku Zasshi)",
+      "publication_date": "1983-04-30",
+      "abstract": "Six antisera were prepared against 6 denitrifying bacteria isolated from Lake Kizaki (classified into 2 strains of the Pseudomonas fluorescent group, 2 of the Pseudomonas achromogenic group, 1 of the Pseudomonas group producing no acid and 1 of the Alcaligenes-Achromobacter group).Using both serological agglutinate reaction and immunofluorescent staining method, 60 isolates and 194 enrichment culture tubes for the MPN estimate of denitrifiers were tested for serological identity with each of the antigen denitrifiers. Fifteen strains among 60 isolates and denitrifiers in 25 tubes among 194 MPN counting tubes were identical to one or another of the 6 antigen denitrifiers. Seasonal and vertical distributions of these 40 identified denitrifying bacteria in the lake were described.Homologues of two strains of denitrifiers were most frequently found in L. Kizaki (68% or 27/40). One of them (Strain B-8, belonging to Pseudomonas fluorescent group) was found only in the circulation period or in the water layer where the dissolved oxygen concentration was about 10 mg·l-1. The other (Strain B-3, belonging to Pseudomonas achromogenic group) was found only in the stratification period or in the water layer where the dissolved oxygen concentration was above 5 mg·l-1.The fact that both homologues identical to B-3 or B-8 were found in oxic layers suggests that these denitrifiers might grow by aerobic respiration rather than denitrification because of the oxidative nature of their metabolism. However, from the standpoint of denitrifying activity, it is noteworthy that the only exception to the known distribution of these denitrifiers was found in the anoxic hypolimnion in November where many different denitrifiers were found.",
+      "url": "https://www.semanticscholar.org/paper/9d4ce36ecf36308579c9334445af6f007f00ec20",
+      "pdf_url": "https://www.jstage.jst.go.jp/article/rikusui1931/44/2/44_2_81/_pdf",
+      "citation_count": 3,
+      "influential_citation_count": 0,
+      "reference_count": 16,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "oxygen"
+      ],
+      "semantic_scholar": {
+        "paper_id": "9d4ce36ecf36308579c9334445af6f007f00ec20",
+        "tldr": "The fact that both homologues identical to B-3 or B-8 were found in oxic layers suggests that these denitrifiers might grow by aerobic respiration rather than denitrification because of the oxidative nature of their metabolism.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2322311586",
+          "DOI": "10.3739/RIKUSUI.44.81",
+          "CorpusId": 86895105
         }
       }
     },
@@ -15369,6 +16011,55 @@
           "MAG": "2101945601",
           "DOI": "10.4081/JLIMNOL.2010.225",
           "CorpusId": 86828279
+        }
+      }
+    },
+    {
+      "id": "c5ec80fded1ce5e73aceb86496f15964c7b50e99",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1899/09-040.1",
+      "title": "Forest clearance increases metabolism and organic matter processes in small headwater streams",
+      "authors": [
+        "J. Clapcott",
+        "L. Barmuta"
+      ],
+      "journal": "Journal of The North American Benthological Society",
+      "publication_date": "2010-03-09",
+      "abstract": "Abstract Small headwater streams are abundant components of the riverine landscape where critical biochemical processes occur that provide clean water, energy, and nutrients to downstream reaches. Disturbance to these systems as a result of human land use has the potential to affect downstream health. Rates of metabolism and organic matter processing were measured in 22 small forested headwater streams in 2 regions of Tasmania, Australia, to evaluate the effects of forestry disturbance. Twelve of these streams had been subjected to recent clearfell-burn-and-sow (CBS) harvest. Benthic metabolism was measured in small in situ chambers (production ranged from <0.001 to 21.845 mg C m−2 h−1 and respiration from <0.001 to 4.976 mg C m−2 h−1), whole-system metabolism was estimated based on relative habitat abundance (gross primary production ranged from <0.001 to 0.297 g C m−2 d−1 and daily respiration from 0.003 to 0.072 g C m−2 d−1). Algal growth potential was measured on nutrient diffusing pots (chlorophyll a ranged from <1.0 to 40.1 mg/m2), and cellulose decomposition potential was assessed with a cotton-strip assay (cotton tensile strength loss ranged from 17.8% to 38.3% in 28 d). Sometimes an increase in the variability of response is a consequence of disturbance, but in our study, the difference between forested streams and clearcut streams was a significant increase in the mean values of all functional variables. The degree of response depended on the underlying geology (broad-scale spatial variability) of the streams. Current management practices for small headwater streams in Tasmania do not protect instream processes from forestry disturbance in the short-term (i.e., 2–5 y), and we suggest that an investigation of long-term response is warranted.",
+      "url": "https://www.semanticscholar.org/paper/c5ec80fded1ce5e73aceb86496f15964c7b50e99",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Forest_clearance_increases_metabolism_and_organic_matter_processes_in_small_headwater_streams/22879559",
+      "citation_count": 40,
+      "influential_citation_count": 2,
+      "reference_count": 78,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "c5ec80fded1ce5e73aceb86496f15964c7b50e99",
+        "tldr": "Current management practices for small headwater streams in Tasmania do not protect instream processes from forestry disturbance in the short-term (i.e., 2–5 y), and it is suggested that an investigation of long-term response is warranted.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2150671404",
+          "DOI": "10.1899/09-040.1",
+          "CorpusId": 86306191
         }
       }
     },
@@ -20729,6 +21420,55 @@
       }
     },
     {
+      "id": "1d03edc56934ec096bf7f482510fcbd7efa02211",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/S10533-004-1717-2",
+      "title": "Fluxes of dissolved carbon dioxide and inorganic carbon from an upland peat catchment: implications for soil respiration",
+      "authors": [
+        "F. Worrall",
+        "T. Burt",
+        "J. Adamson"
+      ],
+      "journal": "Biogeochemistry",
+      "publication_date": "2005-04-01",
+      "abstract": "Abstract.This study uses long-term water chemistry records for a circum-neutral peat stream to reconstruct a 7-year record of dissolved CO2 and DIC flux from the catchment. Combining catchment flux with a knowledge of in-stream metabolism and gas evasion from the stream surface enables an estimate of the dissolved CO2 content of water emerging from the peat profile to be made; furthermore, these can be used to estimate soil CO2 respiration. In this way multi-annual records of CO2 production can be reconstructed, and therefore inter-annual controls on production examined. The results suggest that:(i)\nStream evasion of CO2 within the catchment varied between 80 and 220 g C/m of stream/yr, while in-stream metabolism produces between 1.0 and 2.9 g C/m of stream/yr;Export of dissolved CO2 emerging from the soil profile, above that expected at equilibrium with the atmosphere, varies between 9.6 and 25.6 tonnes,C/km2/yr; andThe export of dissolved CO2 implies a soil respiration rate of between 64.2 and 94.9 tonnes C/km2/yr.The inter-annual variation in both dissolved CO2 flux and soil CO2 respiration suggests that severe drought has no long-term effect on CO2 production and that temperature-based models of soil CO2 respiration will be adequate in all but the severest of summer droughts. The inter-annual variation in CO2 flux shows that CO2 production is decoupled from dissolved organic carbon (DOC) production. The decoupling of DOC and dissolved CO2 production shows that enzymatic-latch production of DOC is an anaerobic process and will not increase soil CO2 respiration.",
+      "url": "https://www.semanticscholar.org/paper/1d03edc56934ec096bf7f482510fcbd7efa02211",
+      "pdf_url": "https://durham-repository.worktribe.com/output/1608433",
+      "citation_count": 71,
+      "influential_citation_count": 4,
+      "reference_count": 45,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "1d03edc56934ec096bf7f482510fcbd7efa02211",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2019690923",
+          "DOI": "10.1007/S10533-004-1717-2",
+          "CorpusId": 95232824
+        }
+      }
+    },
+    {
       "id": "22811e7822987fe0e6c258c58fd59d282010d3ee",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -25598,6 +26338,55 @@
       }
     },
     {
+      "id": "3571e870e84cac22c5a760712f582ac10c69925e",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1086/687842",
+      "title": "Comparison of metabolic rates among macrophyte and nonmacrophyte habitats in streams",
+      "authors": [
+        "A. B. Alnoee",
+        "T. Riis",
+        "A. Baattrup‐Pedersen"
+      ],
+      "journal": "Freshwater Science",
+      "publication_date": "2016-07-12",
+      "abstract": "Little is known about the relative contribution of different stream habitats to reach-scale metabolism. We measured in situ metabolism in sand, gravel, stone, and macrophyte habitats to compare metabolic rates among these habitat types and to compare habitat-weighted measurements with reach-scale measurements. We used open-bottom chambers in sand, gravel, and macrophyte habitats and closed-bottom chambers in stones, and we estimated reach-scale metabolism from 2-station O2 budgets. Macrophyte habitats had a significantly higher gross primary production (GPP) and community respiration (CR) than stone, gravel, and sand habitats. A large part of this difference was associated with epiphytic biofilm: 28% of net ecosystem production (NEP), 20% of CR, and 24% of GPP. Macrophyte habitats contributed proportionally more to reach-scale metabolism than did the other habitat types. Forty-one percent of reach-scale NEP, 60% of ecosystem respiration (ER), and 50% of GPP were associated with this habitat type even though only 14% of the reach was covered by macrophytes. We found significant linear relationships between GPP and CR and the amount of autotrophic biomass in the streams. The rates reported in 11 literature studies fit into our observed relationships, showing the generality of our findings. The rates we obtained expand the range of reported metabolic values in relation to autotrophic biomass for both low and high biomass. The importance of macrophyte habitat can be ascribed to the macrophytes themselves, the associated epiphytic biofilm, and the fine organic material trapped in the dense stands. We conclude that besides having an effect on the structural elements in streams, macrophytes contribute significantly to stream ecosystem functions.",
+      "url": "https://www.semanticscholar.org/paper/3571e870e84cac22c5a760712f582ac10c69925e",
+      "pdf_url": "https://pure.au.dk/portal/en/publications/4edf8a3d-48e3-4f49-bcbb-18d1a4c1d1cf",
+      "citation_count": 19,
+      "influential_citation_count": 0,
+      "reference_count": 43,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "3571e870e84cac22c5a760712f582ac10c69925e",
+        "tldr": "It is concluded that besides having an effect on the structural elements in streams, macrophytes contribute significantly to stream ecosystem functions.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2462752952",
+          "DOI": "10.1086/687842",
+          "CorpusId": 89101836
+        }
+      }
+    },
+    {
       "id": "64b678526926e80c9d9d99b769ce2182bda878a6",
       "source": "Semantic Scholar",
       "pmid": "26903963",
@@ -26391,6 +27180,59 @@
       }
     },
     {
+      "id": "3203316712c90875079a6112c33d00bc78484e3b",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2018JG004506",
+      "title": "Generalized Additive Models of Climatic and Metabolic Controls of Subannual Variation in pCO2 in Productive Hardwater Lakes",
+      "authors": [
+        "E. Wiik",
+        "H. Haig",
+        "N. M. Hayes",
+        "K. Finlay",
+        "Gavin L. Simpson",
+        "R. Vogt",
+        "Peter R. Leavitt"
+      ],
+      "journal": "Journal of Geophysical Research - Biogeosciences",
+      "publication_date": "2018-06-01",
+      "abstract": "Spatiotemporal variation in climate and weather, allochthonous carbon loads, and autochthonous factors such as lake metabolism (photosynthesis and respiration) interacts to regulate atmospheric CO2 exchange of lakes. Understanding this interplay in diverse basin types at different timescales is required to adequately place lakes into the global carbon cycle and predict CO2 flux through space and time. We analyzed 18 years of data from seven moderately hard lakes in an agricultural prairie landscape in central Canada. We applied generalized additive models and sensitivity analyses to evaluate the roles of metabolic and climatic drivers in regulating CO2 flux at the intra‐annual scale. At mean conditions with respect to other predictors, metabolic controls resulted in uptake of atmospheric CO2 when surface waters exhibited moderate primary production but released CO2 only when primary production was very low (<8 μg/L or when dissolved nitrogen was elevated (>2,000 μg/L), implying that respiratory controls offset photosynthetic CO2 uptake under these conditions. Climatically, dry conditions increased the likelihood of in‐gassing, likely due to evaporative concentration of base cations and/or reduced allochthonous carbon loads. While more research is required to establish the relative importance of climate and metabolism at other timescales (diel, autumn/winter), we conclude that these hard fresh waters characteristic of continental interiors are mainly affected by metabolic drivers of pCO2 at daily‐monthly timescales, are climatically controlled at interannual intervals, and are more likely to in‐gas CO2 for a given level of algal abundance than are soft water, boreal ecosystems.",
+      "url": "https://www.semanticscholar.org/paper/3203316712c90875079a6112c33d00bc78484e3b",
+      "pdf_url": "https://pure.qub.ac.uk/files/154550457/Wiik_et_al_2018_Journal_of_Geophysical_Research_3A_Biogeosciences.pdf",
+      "citation_count": 10,
+      "influential_citation_count": 1,
+      "reference_count": 91,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model"
+      ],
+      "semantic_scholar": {
+        "paper_id": "3203316712c90875079a6112c33d00bc78484e3b",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2804236350",
+          "DOI": "10.1029/2018JG004506",
+          "CorpusId": 135071235
+        }
+      }
+    },
+    {
       "id": "e83abe3b5809bb1b07145b56e11c5c8555bb3e7f",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -26536,6 +27378,59 @@
           "MAG": "3182845716",
           "DOI": "10.1016/j.ejrh.2021.100864",
           "CorpusId": 237650980
+        }
+      }
+    },
+    {
+      "id": "5769aef62245ef4aa1866263d598b3ae94f7098e",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10750-020-04202-4",
+      "title": "Goose and hare faeces as a source of nutrients and dissolved organic matter for bacterial communities in the newly formed proglacial lake Ventisquero Negro (Patagonia, Argentina)",
+      "authors": [
+        "Evelyn N. Vega",
+        "Marcela Bastidas Navarro",
+        "B. Modenutti"
+      ],
+      "journal": "Hydrobiologia",
+      "publication_date": "2020-02-15",
+      "abstract": "Dissolved organic matter (DOM) input is a key factor for freshwater ecology, since it regulates many aspects of aquatic ecosystem metabolism. Aquatic and terrestrial animals that inhabit or frequent aquatic environments also influence the DOM inputs via their faeces, supplying nutrients such as carbon (C), nitrogen (N), and phosphorus (P). Here, we analyse the response of a bacterial community in the newly formed proglacial Lake Ventisquero Negro (Mount Tronador) to the addition of dissolved nutrients from faeces leachate of the native goose ( Chloephaga poliocephala Sclater, 1857; locally called “cauquén”) and the European hare ( Lepus europaeus Pallas, 1778). A laboratory incubation experiment was carried out with unenriched lake water and lake water enriched with leachate from hare or goose faeces. The results showed that faeces and leachates of geese were richer in nutrients than those of hares. Spectrofluorometric analysis of the DOM also showed differences between the two sources. Nutrient enrichment positively affected bacterial respiration and short-term carbon consumption. Thus, the faeces of these two animals may play an important ecological role by supplying allochthonous DOM and nutrients to this new ecosystem.",
+      "url": "https://www.semanticscholar.org/paper/5769aef62245ef4aa1866263d598b3ae94f7098e",
+      "pdf_url": "http://hdl.handle.net/11336/108628",
+      "citation_count": 9,
+      "influential_citation_count": 1,
+      "reference_count": 57,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe"
+      ],
+      "semantic_scholar": {
+        "paper_id": "5769aef62245ef4aa1866263d598b3ae94f7098e",
+        "tldr": "The faeces of the native goose and the European hare may play an important ecological role by supplying allochthonous DOM and nutrients to this newly formed proglacial Lake Ventisquero Negro.",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "3006278684",
+          "DOI": "10.1007/s10750-020-04202-4",
+          "CorpusId": 211128009
         }
       }
     },
@@ -27282,6 +28177,58 @@
       }
     },
     {
+      "id": "6edc6c9e0fc6d6e1e6271ac4f3e6203d09af0f66",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s12237-016-0113-1",
+      "title": "Comparing Measures of Estuarine Ecosystem Production in a Temperate New England Estuary",
+      "authors": [
+        "A. Oczkowski",
+        "C. Hunt",
+        "K. Miller",
+        "C. Oviatt",
+        "S. Nixon",
+        "L. Smith"
+      ],
+      "journal": "Estuaries and Coasts",
+      "publication_date": "2016-06-01",
+      "abstract": "Anthropogenic nutrient enrichments and concerted efforts at nutrient reductions, compounded with the influences of climate change, are likely changing the net ecosystem production (NEP) of our coastal systems. To quantify these changes, scientists monitor a range of physical, chemical, and biological parameters sampled at various frequencies. Water column chlorophyll concentrations are arguably the most commonly used indicator of net phytoplankton production, as well as a coarse indicator of NEP. We compared parameters that estimate production, including chlorophyll, across an experimental nutrient gradient and in situ in both well-mixed and stratified estuarine environments. Data from an experiment conducted in the early 1980s in mesocosms designed to replicate a well-mixed mid-Narragansett Bay (Rhode Island) water column were used to correlate changes in chlorophyll concentrations, pH, dissolved oxygen (O2), dissolved inorganic nitrogen, phosphate, and silicate concentrations, cell counts, and 14C carbon uptake measurements across a range of nutrient enrichments. The pH, O2, nutrient, and cell count measurements reflected seasonal cycles of spring blooms followed by late summer/early fall respiration periods across nutrient enrichments. Chlorophyll concentrations were more variable and rates of 14C productivity were inconsistent with observed trends in nutrient concentrations, pH, and O2 concentrations. Similar comparisons were made using data from a well-mixed lower Narragansett Bay station and a more stratified upper Narragansett Bay station in 2007 and 2008. Trends among pH, O2, and nutrient concentration parameters were similar to those observed in the mesocosm dataset, suggesting that continuous free water measurements of pH and O2 seem to reliably reflect ecosystem metabolism and, while not perfect measures, may be underused indicators of NEP.",
+      "url": "https://www.semanticscholar.org/paper/6edc6c9e0fc6d6e1e6271ac4f3e6203d09af0f66",
+      "pdf_url": "https://digitalcommons.uri.edu/gsofacpubs/1984",
+      "citation_count": 10,
+      "influential_citation_count": 0,
+      "reference_count": 100,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "6edc6c9e0fc6d6e1e6271ac4f3e6203d09af0f66",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2469809292",
+          "DOI": "10.1007/s12237-016-0113-1",
+          "CorpusId": 88980033
+        }
+      }
+    },
+    {
       "id": "ed3513b2459d589dd97c921517f283e32562e0c6",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -27427,6 +28374,63 @@
           "MAG": "2128499729",
           "DOI": "10.1007/s10021-008-9181-9",
           "CorpusId": 45120284
+        }
+      }
+    },
+    {
+      "id": "4ee8868ba354d3f4c1ee07d0364ebac980108695",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s12237-020-00774-5",
+      "title": "Does the Size Structure of Venerid Clam Populations Affect Ecosystem Functions on Intertidal Sandflats?",
+      "authors": [
+        "Samuel Thomas",
+        "C. Pilditch",
+        "S. Thrush",
+        "F. Baltar",
+        "J. Crawshaw",
+        "Blair Thomson",
+        "C. Savage"
+      ],
+      "journal": "Estuaries and Coasts",
+      "publication_date": "2020-06-17",
+      "abstract": "Estuaries are hotspots for biogeochemical cycling, with bivalves integral to many ecosystem functions. Anthropogenic activities often cause reductions in biomass and abundance of key bivalve species in estuaries worldwide. Large bivalves are particularly vulnerable due to their slow growth, low replacement rates and propensity for being overharvested; however, there is a paucity of studies on how declines in bivalve size and density affect ecosystem functions. An in situ manipulative experiment was conducted on a New Zealand intertidal sandflat in late summer (March to May 2017) to investigate changes in ecosystem functions (sediment nutrient regeneration, primary production, community metabolism and microbial activity) across a biomass gradient (0–4 kg wet weight m −2 ) of small (shell length (SL) < 25 mm) and large (SL > 30 mm) venerid clams ( Austrovenus stutchburyi ). Bird predation reduced the biomass of small clams, so ecosystem functions were normalised to per kilogramme of wet weight. Small clams significantly increased gross primary production by ~ 3× and net primary production by ~ 7× compared with large clams. Small clams also doubled activity rates of microbial enzymes associated with nutrient cycling and organic matter breakdown (leucine aminopeptidase and alkaline phosphatase). By contrast, nitrate/nitrite flux was significantly greater with large clams. Macrofaunal species diversity and mud content also influenced benthic nutrient cycling, possibly due to increased sediment reworking that alters solute flux rates. Results demonstrate how different size classes of venerid clams influence complementary ecosystem functions. Accordingly, a skewed size class distribution of bivalves will reduce the productivity and functioning of intertidal sandflats.",
+      "url": "https://www.semanticscholar.org/paper/4ee8868ba354d3f4c1ee07d0364ebac980108695",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Does_the_Size_Structure_of_Venerid_Clam_Populations_Affect_Ecosystem_Functions_on_Intertidal_Sandflats_/25905538",
+      "citation_count": 9,
+      "influential_citation_count": 0,
+      "reference_count": 76,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "4ee8868ba354d3f4c1ee07d0364ebac980108695",
+        "tldr": "Results demonstrate how different size classes of venerid clams influence complementary ecosystem functions, and suggest a skewed size class distribution of bivalves will reduce the productivity and functioning of intertidal sandflats.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "3036392364",
+          "DOI": "10.1007/s12237-020-00774-5",
+          "CorpusId": 219730437
         }
       }
     },
@@ -28963,6 +29967,59 @@
       }
     },
     {
+      "id": "0157eaf8af394b92f7f6158da65783931faf5d97",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/BG-2017-530",
+      "title": "Carbon accumulation in a drained boreal bog was decreased but not stopped by seasonal drought",
+      "authors": [
+        "K. Minkkinen",
+        "P. Ojanen",
+        "T. Penttilä",
+        "M. Aurela",
+        "T. Laurila",
+        "J. Tuovinen",
+        "A. Lohila"
+      ],
+      "journal": "Biogeosciences Discussions",
+      "publication_date": "2018-01-02",
+      "abstract": "Drainage of peatlands is expected to turn these ecosystems to carbon sources to the atmosphere. We measured carbon dynamics of a drained forested peatland in southern Finland over four years, including one with severe drought during growing season. Net ecosystem exchange (NEE) of carbon dioxide (CO 2 ) was measured with eddy covariance method from a mast above the forest. Soil and forest floor CO 2 and methane (CH 4 ) fluxes were measured from the strips and from ditches with closed chambers. Biomasses and litter production were sampled, and soil subsidence was measured by repeated levellings of the soil surface. The drained peatland ecosystem was a strong sink of carbon dioxide in all studied years. Soil CO 2 balance was estimated by subtracting the carbon sink of the growing tree stand from NEE, and it showed that also the soil was a sink of carbon. A drought period in one summer significantly decreased the sink through decreased gross primary production. Drought also decreased ecosystem respiration. The site was a small sink for CH 4 , even when emissions from ditches were taken into account. Despite the continuous carbon sink, peat surface subsided slightly during the 10-year measurement period, which was probably mainly due to compaction of peat. It is concluded that even fifty years after drainage this peatland site acted as a soil C sink due to relatively small changes in water table and in plant community structure compared to similar undrained sites, and the significantly increased tree stand growth and litter production. Although the site is currently a soil C sink, simulation studies with process models are needed to test whether such sites could remain C sinks when managed for forestry over several tree-stand rotations.",
+      "url": "https://www.semanticscholar.org/paper/0157eaf8af394b92f7f6158da65783931faf5d97",
+      "pdf_url": "https://doi.org/10.5194/bg-2017-530",
+      "citation_count": 3,
+      "influential_citation_count": 0,
+      "reference_count": 61,
+      "references": [],
+      "tags": [
+        "ditch",
+        "metabolism",
+        "model"
+      ],
+      "semantic_scholar": {
+        "paper_id": "0157eaf8af394b92f7f6158da65783931faf5d97",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2782417046",
+          "DOI": "10.5194/BG-2017-530",
+          "CorpusId": 56080403
+        }
+      }
+    },
+    {
       "id": "14e52193e882b12e545c29bf22af4a3463c2befb",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -29886,6 +30943,53 @@
       }
     },
     {
+      "id": "838f5cf049206323d3e99185fc9239e8c0d40f08",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10533-026-01327-x",
+      "title": "Hydrologic connectivity with peatland soils drives very high carbon fluxes in a tropical, mountain stream",
+      "authors": [
+        "Keridwen M. Whitmore",
+        "A. Delvecchia",
+        "Ricardo Jaramillo",
+        "Segundo Chimbolema",
+        "Esteban Suárez",
+        "D. Riveros‐Iregui"
+      ],
+      "journal": "Biogeochemistry",
+      "publication_date": "2026-05-27",
+      "abstract": "Inland waters receive large quantities of carbon from the surrounding landscape and are active sites of carbon transport, transformation, and emission. Global carbon emission estimates are limited by sparse and unevenly distributed carbon flux observations, particularly in the tropics. We evaluated hydrological and metabolic controls on carbon export variability from a large peatland in a tropical ecosystem typical of the Northern Andes mountains. We recorded dissolved CO2 (pCO2), dissolved oxygen (DO), and discharge at 15-min intervals 5 m downstream of a peatland outlet (Station 1) and at 3 additional locations downstream (Stations 2, 3 and 4) from July 2019 until Jan 2020 and from June 2021 until March 2023. Continuous measurements of DO and discharge were also measured 2 km away in a stream draining an adjoining catchment (Station 5). Discrete measurements of dissolved organic carbon (DOC) and dissolved methane (pCH4) were collected in June-July of 2021 and 2022. Stream discharge was a primary control on pCO2 and DOC in the stream network at both seasonal and event scales. DOC concentration increased with discharge and while pCO2 decreased during higher flows, CO2 loading increased. Pronounced seasonal changes were observed with lowest pCO2 recorded at the peatland outlet in wet months (June–August: 5845 ± 2325 ppm, mean ± standard deviation), and the highest in dry months (Nov-Feb, 16,677 ± 3685 ppm). Anoxic or hypoxic conditions persisted for over half of our study and measurements of pCH4 at the peatland outlet were very high (982 ± 797 ppm), underscoring the importance of anaerobic activity in this system. Aerobic processes also influenced pCO2 dynamics. Aquatic metabolism at Station 5 (29 July–19 Oct 2021) was net heterotrophic, with ER exceeding GPP and net pCO2 production (mean ER: − 6.5 g O2 m−2 d−1, GPP: 0.44 g O m−2 d−1). Our study highlights the role of hydrologic connectivity and diverse biogeochemical processes in shaping carbon export and cycling in páramo streams, which results in pCO2 and pCH4 levels among the highest reported in streams and rivers worldwide.",
+      "url": "https://www.semanticscholar.org/paper/838f5cf049206323d3e99185fc9239e8c0d40f08",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10533-026-01327-x.pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 67,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "838f5cf049206323d3e99185fc9239e8c0d40f08",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1007/s10533-026-01327-x",
+          "CorpusId": 288753828
+        }
+      }
+    },
+    {
       "id": "e1c42d443279e30dcc2afcd5039621bb8851ae74",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -30532,6 +31636,57 @@
         "external_ids": {
           "DOI": "10.1002/ecm.70028",
           "CorpusId": 280752796
+        }
+      }
+    },
+    {
+      "id": "c5e15cb814720594a4aed789bee31203a93e8138",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1101/2025.06.30.659355",
+      "title": "Interannual surface water CO2 and O2 dynamics during fall in a small headwater lake",
+      "authors": [
+        "Brandon Blanchette",
+        "M. Botrel",
+        "R. Couture",
+        "Paul A. del Giorgio",
+        "A. Parkes",
+        "R. Maranger"
+      ],
+      "journal": "bioRxiv",
+      "publication_date": "2025-07-04",
+      "abstract": "Lake metabolism is often quantified using continuous measures of dissolved oxygen (O2), where a 1: -1 stoichiometry with carbon dioxide (CO2) is assumed because of their roles in photosynthesis and respiration, respectively. However, many other physical, chemical, and biological processes decouple dissolved O2 and CO2 concentrations in lakes. Tracking departures from 1:-1 stoichiometry may provide insights into larger scale ecosystem functioning, particularly during fall when temperatures change and destratification occurs. Using continuous measures of both dissolved O2 and CO2 in a small temperate headwater lake, we looked at the interannual gas departure signals during fall over seven years. The beginning of fall, defined here as the start of leaf colour change, differed among years but coincided well with the onset of lake destratification and a shift in surface gas concentrations. Fall surface CO2 accumulation rates varied considerably, whereas O2 depletion rates were rather similar among years. Departure signals were broadly related to interannual differences in climate: more CO2 accumulated in the surface during the hottest-wettest fall compared to the coldest-driest one (0.81 and 0.37 µmol L-1 d-1, respectively), presumably from more catchment than hypolimnetic inputs. Lower CO2 accumulation occurred during years with prolonged hypolimnetic hypoxia potentially through enhanced CO2 consumption by methanogenesis. Other internal biological phenomena influenced fall departure signals, including a large metalimnetic oxygen peak, and higher fall surface primary production. We suggest gas departures during fall provide an integrative metabolic fingerprint for temperate stratified lakes, as well as insights into winter-priming conditions. Highlights Annual fall surface water CO2 accumulation rates vary more than O2 depletion rates. External fall inputs and internal processes influence gas departures differently. Fall gas departures may act as an integrative metabolic signal in temperate lakes.",
+      "url": "https://www.semanticscholar.org/paper/c5e15cb814720594a4aed789bee31203a93e8138",
+      "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2025/07/04/2025.06.30.659355.full.pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 53,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "oxygen"
+      ],
+      "semantic_scholar": {
+        "paper_id": "c5e15cb814720594a4aed789bee31203a93e8138",
+        "tldr": "",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.1101/2025.06.30.659355",
+          "CorpusId": 279967145
         }
       }
     },
@@ -31553,6 +32708,54 @@
       }
     },
     {
+      "id": "61b96f7d5c63d8eec1629f7778d70c28ccc3605f",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.13001/uwnpsrc.2017.5575",
+      "title": "Nitrogen fluxes in Western streams",
+      "authors": [
+        "H. Madinger",
+        "R. Hall"
+      ],
+      "journal": "",
+      "publication_date": "2017-12-15",
+      "abstract": "Nitrogen pollution to streams is altering the nitrogen cycling in unknown ways, causing challenges for predicting nitrogen fixation fluxes within aquatic ecosystems. Increasing nitrate pollution decreases the amount of nitrogen fixation occurring in streams. However, the relationship between stream nitrate concentration and the rate of nitrogen fixation is unknown. We predict that lower nitrate streams will have the highest rates of nitrogen fixation. Additionally, there will be much more energy produced in streams with nitrogen fixation compared to the amount required to fix the nitrogen. We estimated whole-stream gross primary production and nitrogen fixation fluxes using the diel change in dissolved nitrogen and oxygen gases compared to the expected dissolved gas saturation. Our whole-stream method is preferable to chamber estimates to understand the relationship between energy requirements for nitrogen fixation and gross primary production, but additional data is needed to distinguish between relationship types and make our measurements generalizable. \n  \nFeatured photo by Intermountain Forest Service, USDA Region 4 Photography on Flickr. https://flic.kr/p/jbTRUj",
+      "url": "https://www.semanticscholar.org/paper/61b96f7d5c63d8eec1629f7778d70c28ccc3605f",
+      "pdf_url": "https://journals.uwyo.edu/index.php/uwnpsrc/article/download/5575/5103",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 18,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "sensor"
+      ],
+      "semantic_scholar": {
+        "paper_id": "61b96f7d5c63d8eec1629f7778d70c28ccc3605f",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "3104765950",
+          "DOI": "10.13001/uwnpsrc.2017.5575",
+          "CorpusId": 229299693
+        }
+      }
+    },
+    {
       "id": "d2682f06f2d5c63a02b1308d1fa0720c5160d40c",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -32389,6 +33592,51 @@
       }
     },
     {
+      "id": "94acc5c2ddde533cf44a5afc3cec4122c8c84fcc",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10533-021-00768-w",
+      "title": "Water column contributions to the metabolism and nutrient dynamics of mid-sized rivers",
+      "authors": [
+        "A. J. Reisinger",
+        "J. Tank",
+        "R. Hall",
+        "E. Rosi",
+        "M. Baker",
+        "L. Genzoli"
+      ],
+      "journal": "Biogeochemistry",
+      "publication_date": "2021-03-01",
+      "abstract": "Lotic and lentic ecosystems are traditionally viewed as dominated by either benthic or water column processes. However, mid-sized rivers represent a transition zone where both benthic and water column processes may both contribute substantially to ecosystem dynamics. Ecosystem processes such as gross primary production (GPP), ecosystem respiration (ER), or nutrient uptake, and the relative contribution of the water column to these processes at the reach scale, are poorly understood in non-wadeable, mid-sized rivers. To clarify the role of the water column at the reach-scale, and to quantify controls on water column processes, we measured GPP, ER, and uptake of nitrate (NO3−), ammonium (NH4+), and soluble reactive phosphorus (SRP) in the water columns of 15 mid-sized rivers (discharge: 13.5–83.3 m3 s−1) spanning nutrient and total suspended solids gradients. We compared water column metabolic and nutrient uptake rates to reach-scale rates to estimate the contribution of the water column to the entire river. Water column metabolism was autotrophic on the day when measured, GPP increased with nutrient availability, and the water column contributed more to whole river GPP than to ER. Water column nutrient uptake increased with GPP across solutes, and there was a positive relationship between human land use and water column uptake of NO3−–N and SRP. The water column accounted for a substantial proportion of reach-scale metabolism and nutrient uptake, but this contribution depended on suspended material and nutrient availability. Integrating the water column into theory describing lotic ecosystem function should clarify mechanisms controlling metabolism and nutrient processing and enhance management of non-wadeable rivers.",
+      "url": "https://www.semanticscholar.org/paper/94acc5c2ddde533cf44a5afc3cec4122c8c84fcc",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Water_column_contributions_to_the_metabolism_and_nutrient_dynamics_of_mid-sized_rivers/24781395",
+      "citation_count": 18,
+      "influential_citation_count": 3,
+      "reference_count": 63,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "94acc5c2ddde533cf44a5afc3cec4122c8c84fcc",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.1007/s10533-021-00768-w",
+          "CorpusId": 232095448
+        }
+      }
+    },
+    {
       "id": "d9943e0cdc24e80522354aee07a38fc3404ef91a",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -32911,6 +34159,57 @@
           "MAG": "2104177150",
           "DOI": "10.1899/13-018.1",
           "CorpusId": 55536106
+        }
+      }
+    },
+    {
+      "id": "21083e1b8c3c58be7734a51c88bea7799c6d0101",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10750-013-1543-4",
+      "title": "Seasonal weather effects on hydrology drive the metabolism of non-forest lowland streams",
+      "authors": [
+        "L. Leggieri",
+        "C. Feijoó",
+        "A. Giorgi",
+        "N. Ferreiro",
+        "V. Acuña"
+      ],
+      "journal": "Hydrobiologia",
+      "publication_date": "2013-05-18",
+      "abstract": "Weather variations change stream hydrological conditions, affecting the stream function. A seasonal study in three well-conserved first-order Pampean streams was carried out to test the hypothesis that rainfalls are the main drivers of whole-stream metabolism, through their effects on hydrology. We estimated the stream metabolism and metabolic contribution of six relevant communities (angiosperms, macroalgae, seston, epiphyton, epipelon, and hyporheos) during late spring, summer, and winter and examined the relation between gross primary production (GPP) and photosynthetic active radiation (PAR). Our results showed that the decrease in available streambed light due to the dissolved organic carbon after rainfalls was the main factor related to the decrease in the ecosystem and community metabolisms. For instance, GPP oscillated from ~10 gO2 m−2 d−1 in early spring (low flows) to ~3 gO2 m−2 d−1 in summer (high flows). Ecosystem respiration (ER) was less sensitive than GPP to rainfalls due to the increase of hyporheic respiration. Rainfalls also caused a significant loss of downstream macroalgal biomass. At a day scale, the high PAR of late spring and summer saturated GPP during the afternoon, and the low temperature of winter mornings constrained GPP. Hence, the knowledge of weather changes is key to understanding the main hydrological drivers of stream function.",
+      "url": "https://www.semanticscholar.org/paper/21083e1b8c3c58be7734a51c88bea7799c6d0101",
+      "pdf_url": "http://hdl.handle.net/11336/6818",
+      "citation_count": 15,
+      "influential_citation_count": 2,
+      "reference_count": 51,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "21083e1b8c3c58be7734a51c88bea7799c6d0101",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "1983933472",
+          "DOI": "10.1007/s10750-013-1543-4",
+          "CorpusId": 18928857
         }
       }
     },
@@ -33694,58 +34993,6 @@
           "DOI": "10.1093/pnasnexus/pgac094",
           "CorpusId": 250061705,
           "PubMed": "36741441"
-        }
-      }
-    },
-    {
-      "id": "7acf70dbd464f8b2f40f0de1b017a1a902562b65",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s00027-015-0463-y",
-      "title": "Do warming and humic river runoff alter the metabolic balance of lake ecosystems?",
-      "authors": [
-        "P. Rodríguez",
-        "P. Byström",
-        "Erik Geibrink",
-        "Per Hedström",
-        "F. R. Vasconcelos",
-        "J. Karlsson"
-      ],
-      "journal": "Aquatic Sciences",
-      "publication_date": "2016-10-01",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/7acf70dbd464f8b2f40f0de1b017a1a902562b65",
-      "pdf_url": "",
-      "citation_count": 16,
-      "influential_citation_count": 0,
-      "reference_count": 40,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism",
-        "river"
-      ],
-      "semantic_scholar": {
-        "paper_id": "7acf70dbd464f8b2f40f0de1b017a1a902562b65",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "2234032838",
-          "DOI": "10.1007/s00027-015-0463-y",
-          "CorpusId": 11215080
         }
       }
     },
@@ -35365,6 +36612,59 @@
       }
     },
     {
+      "id": "36f4f274bc32c6a4ba252826b396bf953c4b8892",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.13001/UWNPSRC.2005.3623",
+      "title": "Grazing Effects of the New Zealand Mud Snail Across a Productivity Gradient in the Greater Yellowstone Ecosystem",
+      "authors": [
+        "L. A. Riley",
+        "M. Dybdahl",
+        "R. Hall"
+      ],
+      "journal": "University of Wyoming National Park Service Research Center Annual Report",
+      "publication_date": "2005-01-01",
+      "abstract": "Accurately predicting the effects of introduced species on native commumtles and ecosystems is a challenge. Utilizing methods of food web ecology, we measured grazing effects of the invasive freshwater New Zealand mud snail, Potamopyrgus antipodarum, in streams within the Greater Yellowstone Ecosystem. Previous results indicate that P. antipodarum can significantly reduce algal standing stocks in less than one week, but it is not yet known if grazing effects vary across streams differing in benthic algae production. In this study, we measured the strength of P. antipodarum grazing on algal resources across six streams varying widely in ambient primary production. In field enclosure experiments within each stream, we estimated direct grazing effects of snails on algae by measuring chlorophyll a, gross primary production and chlorophyll a-specific primary production. In most streams, P. antipodarum decreased overall algal standing stocks, as measured by chlorophyll a, even though gross primary production was not affected. As a result, chlorophyll-a specific primary production increased in productive streams. Finally, standardized comparisons of P. antipodarum-algae interactions indicated that grazing effects were largest in the most productive streams. The overall impact of P. antipodarum on native stream communities will be greatest in the most productive streams if these assemblages are also capable of supporting dense P. antipodarum populations.",
+      "url": "https://www.semanticscholar.org/paper/36f4f274bc32c6a4ba252826b396bf953c4b8892",
+      "pdf_url": "https://journals.uwyo.edu/index.php/uwnpsrc/article/download/3623/3623",
+      "citation_count": 4,
+      "influential_citation_count": 0,
+      "reference_count": 37,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "36f4f274bc32c6a4ba252826b396bf953c4b8892",
+        "tldr": "The overall impact of P. antipodarum on native stream communities will be greatest in the most productive streams if these assemblages are also capable of supporting dense P. anti-apartheid populations.",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "1604527252",
+          "DOI": "10.13001/UWNPSRC.2005.3623",
+          "CorpusId": 2439603
+        }
+      }
+    },
+    {
       "id": "84d8f75d4894d3ddc00e124898f4f7e8492f61fe",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -35732,6 +37032,58 @@
         "external_ids": {
           "DOI": "10.1038/s43247-026-03613-w",
           "CorpusId": 289649061
+        }
+      }
+    },
+    {
+      "id": "377ca346d98b2124890bac2b230e99f312c4c227",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.64898/2026.04.23.720454",
+      "title": "Shifts in consumer assemblages are linked to nutrient availability and ecosystem metabolism",
+      "authors": [
+        "Isabella G. Sadler",
+        "Adrienne Stanley",
+        "Charlotte F. Narr"
+      ],
+      "journal": "bioRxiv",
+      "publication_date": "2026-04-27",
+      "abstract": "Nutrient availability, ecosystem productivity, and consumer assemblages are intricately linked through complex interactions and feedbacks. Nutrients influence the diversity and functional roles of consumers via shifts in resource quality and quantity, and consumers can alter ecosystem production and nutrient availability. However, our understanding of how characteristics of consumers respond to and influence concomitant shifts in nutrient availability and production is limited. We quantified the response of well-studied consumer assemblages (benthic invertebrates and zooplankton) to realistic nutrient loads that altered gross primary production (GPP) and ecosystem respiration (ER). We fertilized 14 outdoor experimental ponds for 2 months and monitored total water column carbon (TC), nitrogen (TN), and phosphorus (TP), GPP, ER, and net ecosystem production (NEP) weekly. Then, we evaluated how fertilization and the variation in nutrients and metabolism caused by fertilization were related to shifts in consumer assemblages. Fertilization increased water column TN and TP and reduced TC:TP ratios, TN:TP ratios, and rates of GPP and ER. However, consumer assemblages were more tightly linked to variation in nutrient availability and production across ponds than to fertilization. Greater declines in benthic diversity occurred in ponds with higher average TN:TP ratios during the experiment. Consistent with predicted effects of cladocerans on nutrient availability, shifts in cladoceran abundances were positively associated with average water column TN:TP ratios during the experiment. Finally, elevated GPP and ER were associated with greater increases in the abundance of benthic invertebrate predators, suggesting the possibility of top-down control. Our study highlights the critical role of consumer-mediated processes in the interaction between nutrient availability and production. Manuscript Highlights Fertilization reduced pond gross primary production and ecosystem respiration rates. Invertebrate predator abundance was inversely related to gross primary production. Shifts in consumer assemblages were tightly linked to nutrients and production.",
+      "url": "https://www.semanticscholar.org/paper/377ca346d98b2124890bac2b230e99f312c4c227",
+      "pdf_url": "https://doi.org/10.64898/2026.04.23.720454",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 51,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "pond",
+        "sediment"
+      ],
+      "semantic_scholar": {
+        "paper_id": "377ca346d98b2124890bac2b230e99f312c4c227",
+        "tldr": "This study highlights the critical role of consumer-mediated processes in the interaction between nutrient availability and production and evaluated how fertilization and the variation in nutrients and metabolism caused by fertilization were related to shifts in consumer assemblages.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.64898/2026.04.23.720454",
+          "CorpusId": 287875212
         }
       }
     },
@@ -36172,6 +37524,49 @@
         "external_ids": {
           "DOI": "10.1101/2021.01.12.426336",
           "CorpusId": 231614584
+        }
+      }
+    },
+    {
+      "id": "0b1dd2fa1328cde3f002f7c4176eb484323bf4af",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s11273-020-09745-w",
+      "title": "Soil carbon dynamics and aquatic metabolism of a wet–dry tropics wetland system",
+      "authors": [
+        "Danelle Agnew",
+        "K. Fryirs",
+        "T. Ralph",
+        "Tsuyoshi Kobayashi"
+      ],
+      "journal": "Wetlands Ecology and Management",
+      "publication_date": "2021-01-08",
+      "abstract": "Freshwater wetlands are a key component of the global carbon cycle. Wet–dry tropics wetlands function as wet-season carbon sinks and dry-season carbon sources with low aquatic metabolism controlled by predictably seasonal, yet magnitude-variable flow regimes and inundation patterns. However, these dynamics have not been adequately quantified in Australia’s relatively unmodified wet–dry tropics freshwater wetlands. A baseline understanding is required before analysis of land-use or climate change impacts on these aquatic ecosystems can occur. This study characterises geomorphology and sedimentology within a seasonally connected wet–dry tropics freshwater wetland system at Kings Plains, Queensland, Australia, and quantifies soil carbon stocks and wet- and dry-season aquatic metabolism. Soil carbon stocks derived from loss-on-ignition on samples to 1 m depth were 51.5 ± 7.8 kg C m−2, higher than other wet–dry tropics wetlands globally, with potential for long-term retention at greater depths. Gross primary productivity of phytoplankton (GPP) and planktonic respiration (PR) measured through biological oxygen demand bottle experiments in the water column of sediment inundated under laboratory conditions show overall low GPP and PR in both wet- and dry-season samples (all wetland samples were heterotrophic with GPP/PR < 1). Despite the short-term dominance of aquatic respiration processes leading to net release of carbon in the water column under these conditions, there is appreciable long-term storage of carbon in sediment in the Kings Plains wetlands. This demonstrates the importance of wet–dry-tropics wetland systems as hotspots of carbon sequestration, locally, regionally and globally, and consideration should be given to their conservation and management in this context.",
+      "url": "https://www.semanticscholar.org/paper/0b1dd2fa1328cde3f002f7c4176eb484323bf4af",
+      "pdf_url": "https://figshare.com/articles/thesis/Soil_carbon_dynamics_and_aquatic_metabolism_of_a_wet-dry_tropics_wetland_system/19443572",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 94,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "sediment",
+        "wetland"
+      ],
+      "semantic_scholar": {
+        "paper_id": "0b1dd2fa1328cde3f002f7c4176eb484323bf4af",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.1007/s11273-020-09745-w",
+          "CorpusId": 255139162
         }
       }
     },
@@ -43357,6 +44752,59 @@
       }
     },
     {
+      "id": "b230f4cf1c6eeab0fa7aa75b0e01e6525d51dcf2",
+      "source": "Semantic Scholar",
+      "pmid": "35655020",
+      "doi": "10.1007/s11356-022-21098-w",
+      "title": "Responses of grassland ecosystem carbon fluxes to precipitation and their environmental factors in the Badain Jaran Desert",
+      "authors": [
+        "Ping Yang",
+        "Nai’ang Wang",
+        "Liqiang Zhao",
+        "Bingjie Su",
+        "Zhenmin Niu",
+        "Hang Zhao"
+      ],
+      "journal": "Environmental science and pollution research international",
+      "publication_date": "2022-06-03",
+      "abstract": "Studying the effects of precipitation on carbon exchange in grassland ecosystems is critical for revealing the mechanisms of the carbon cycle. In this study, the eddy covariance (EC) technique was used to monitor the carbon fluxes in a grassland ecosystem in the Badain Jaran Desert (BJD) during the growing season from 2018 to 2020. The responses of net ecosystem CO2 exchange (NEE), ecosystem respiration (Reco), and gross primary productivity (GPP) to precipitation were analysed, as well as the effects of environmental factors on carbon fluxes at half-hour and daily scales. The results showed that (1) during the growing seasons in 2019 and 2020, the grassland ecosystem in a lake basin in the BJD was a net CO2 sink, and the cumulative NEE was − 91.9 and − 79.2 g C m−2, respectively. The greater the total precipitation in the growing season, the stronger the carbon sequestration capacity of a grassland ecosystem. (2) The precipitation intensity, frequency, and timing significantly affected the carbon fluxes in the ecosystem. Isolated minor precipitation events did not trigger obvious NEE, GPP, and Reco pulses. However, large precipitation events or continuous minor precipitation events over several days caused delayed high assimilation; in addition, the greater the precipitation intensity, the greater the carbon flux pulse and carbon assimilation. The timing and frequency of precipitation events had more important effects on carbon exchange than total precipitation. Droughts create a shift in grasslands, causing them to move from being a carbon sink to a carbon source. (3) Correlation analysis showed that NEE was significantly negatively correlated with photosynthetically active radiation (PAR). On the half-hour scale, Reco and GPP were significantly positively correlated with soil temperature at 5 cm deep (Ts5) and PAR, respectively. However, they were strongly correlated with air temperature (Ta), soil surface temperature (Ts) and (Ts5) on the daily scale. The correlations between daily NEE, Reco, GPP, and precipitation varied across years and seasons. Due to warming and humidification in northwest China, precipitation events will have a greater impact on the carbon sequestration capacity of the BJD. The results are vital for predicting the possible effects of climate change on the carbon cycle.",
+      "url": "https://www.semanticscholar.org/paper/b230f4cf1c6eeab0fa7aa75b0e01e6525d51dcf2",
+      "pdf_url": "https://ir.lzu.edu.cn/handle/262010/483316",
+      "citation_count": 11,
+      "influential_citation_count": 0,
+      "reference_count": 70,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ],
+      "semantic_scholar": {
+        "paper_id": "b230f4cf1c6eeab0fa7aa75b0e01e6525d51dcf2",
+        "tldr": "",
+        "fields_of_study": [
+          "Medicine"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Medicine",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1007/s11356-022-21098-w",
+          "CorpusId": 249285551,
+          "PubMed": "35655020"
+        }
+      }
+    },
+    {
       "id": "c73e76cf6e34abf5ebf0525b68d94838eab8e7bb",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -44373,6 +45821,102 @@
       }
     },
     {
+      "id": "1d3f2a78e470d5f0a29c5d03bf380287658921bc",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3739/RIKUSUI.52.173",
+      "title": "霞ヶ浦(1986-1989)で観察された主要植物プランクトン種の変化に伴う一次生産量の変化",
+      "authors": [
+        "典子 高村",
+        "守弘 相崎"
+      ],
+      "journal": "Japanese Journal of Limnology (rikusuigaku Zasshi)",
+      "publication_date": "1991-07-27",
+      "abstract": "Seasonal changes in phytoplankton species and primary production were inves-tigated from 1986 to 1989 in Lake Kasumigaura. The large bloom of Microcystis, which had occurred every summer up to 1986, was not observed from 1987 to 1989, and Planktothrix (Oscillatoria) agardhii, Phormidium tenue and Gomphosphaeria lacustris var. compacta co-dominated in addition to Microcystis. In particular, Planktothrix became the most abundant from September 1987 to January 1988 and in the summer and autumn of 1988 and 1989.The values for Pmex and the initial slope of the P-I curve in summer during this period did not differ from those observed from 1981 to 1985. However, the chlorophyll a concentrations and primary production in the summer and autumn from 1987 to 1989 were apparently lower than those of the previous 7 years. This phenomenon was closely related to the low abundance of Microcystis during this period. Use of multiple stepwise regression suggested that gross primary production was determined mostly by solar radiation, water temperature and/or chlorophyll a concentration, results similar to those obtained for 1981-1985.The annual means of total nitrogen (TN) concentrations in the lake water have increased since 1986, although those of total phosphorus (TP) have scarcely changed (AIZAKI et al. 1990). The present study showed an interesting phenomenon: the primary production decreased because of the species shift from Microcystis to Plan-ktothrix, in spite of the increase of TN concentrations.",
+      "url": "https://www.semanticscholar.org/paper/1d3f2a78e470d5f0a29c5d03bf380287658921bc",
+      "pdf_url": "https://www.jstage.jst.go.jp/article/rikusui1931/52/3/52_3_173/_pdf",
+      "citation_count": 7,
+      "influential_citation_count": 0,
+      "reference_count": 15,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ],
+      "semantic_scholar": {
+        "paper_id": "1d3f2a78e470d5f0a29c5d03bf380287658921bc",
+        "tldr": "The present study showed an interesting phenomenon: the primary production decreased because of the species shift from Microcystis to Plan-ktothrix, in spite of the increase of TN concentrations.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2508780972",
+          "DOI": "10.3739/RIKUSUI.52.173",
+          "CorpusId": 209550148
+        }
+      }
+    },
+    {
+      "id": "2c27a626ab485b504a654959a645514b698ecfcb",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3739/RIKUSUI.49.175",
+      "title": "Assimilation Number and Primary Productivity of Phytoplankton in the South Basin of Lake Biwa",
+      "authors": [
+        "M. Nakanishi",
+        "T. Narita",
+        "N. Suzuki",
+        "O. Mitamura"
+      ],
+      "journal": "Japanese Journal of Limnology (rikusuigaku Zasshi)",
+      "publication_date": "1988-07-30",
+      "abstract": "Seasonal changes in assimilation numbers and daily primary production rates of total phytoplankton and nannoplankton were studied in connection with some environmental variables at littoral and pelagic sites in the south basin of Lake Biwa. The assimilation number was not so different with seasonal variation between both sites and within the range of 0.2 5.8 mg C •E mg Chl. a-1 •E hr-1. As a result of multiple regression analysis, water temperature proved to be the most significant contributor in the variation of assimilation numbers of the total and nannoplankton at any site, accounting for 59-73%, while DIN and DIP were not significant. The daily gross primary production rate of the total phytoplankton also was not so very different with seasonal change between both sites, ranging from 0.07 in January to 1.93-2.74 g C •E m-2 •E d-' in late August or early September. Nannoplankton contribution to the total daily production rate was very high, averaging 77% during January July with relatively high DIN stock, against a low 39% of the total during August December, with low DIN stock mostly below 1 ƒÊg at. N •E 1 -1.",
+      "url": "https://www.semanticscholar.org/paper/2c27a626ab485b504a654959a645514b698ecfcb",
+      "pdf_url": "https://www.jstage.jst.go.jp/article/rikusui1931/49/3/49_3_175/_pdf",
+      "citation_count": 7,
+      "influential_citation_count": 0,
+      "reference_count": 25,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ],
+      "semantic_scholar": {
+        "paper_id": "2c27a626ab485b504a654959a645514b698ecfcb",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2313203246",
+          "DOI": "10.3739/RIKUSUI.49.175",
+          "CorpusId": 59496302
+        }
+      }
+    },
+    {
       "id": "eac34dd4cfced6e12310002e66217ab06a70f367",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -44951,6 +46495,56 @@
           "MAG": "2139774860",
           "DOI": "10.1002/rra.2932",
           "CorpusId": 131000053
+        }
+      }
+    },
+    {
+      "id": "16b5de30b269d96ae2483c67c2c031496d9b2fea",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5026/JGEOGRAPHY.122.733",
+      "title": "CO2 Flux Responses in a Cool-temperate Grassland to an In Situ Warming Experiment Using Infrared Heaters",
+      "authors": [
+        "Y. Sekine",
+        "S. Yoshitake",
+        "M. Tomotsune",
+        "R. Masuda",
+        "H. Koizumi"
+      ],
+      "journal": "Journal of Geography",
+      "publication_date": "2013-01-01",
+      "abstract": "The aim of this study is to clarify changes in the ecosystem carbon cycle in response to predicted global warming in various ecosystems including semi-natural grassland. To clarify responses of the whole ecosystem to warming in a semi-natural cool-temperate grassland, we conducted an in situ warming experiment and examined plant growth and CO2 flux responses. Five pairs (control and warmed plots) of Zoysia japonica plots were established. Warmed plots were warmed using infrared heaters from June to November 2009. Once a month, aboveground biomass (AGB) of Z. japonica was estimated using the point frame method. Net ecosystem production (NEP) and ecosystem respiration (Re) were determined from CO2 flux measured using the closed chamber method. Each month, relationships were obtained between photosynthetic photon flux density (PPFD) and NEP (PPFD-NEP curve) and soil temperature (ST) and Re (ST-Re curve). Monthly cumulative NEP, Re, and gross primary production (GPP, sum of NEP and Re) were calculated using these relationships and continuously recorded PPFD and ST data. Although there were some mechanical problems when using infrared heaters, the soil temperature in the warmed plots where infrared heaters worked well was an average of 2.3°C higher than the control plots. This suggests the heating method using infrared heaters is applicable to grassland ecosystems. AGB in the warmed plots tended to be higher (by a maximum of 70%) than in the control plots throughout the experimental period, suggesting that experimental warming affected the phenology and extended the growth period of Z. japonica. Initial slope and light compensation point of PPFD-NEP curve were significantly affected by the warming. Monthly cumulative GPP in the warmed plots tended to be higher (by a maximum of 32%) than in the control plots. This is partly explained by the increased biomass and changed photosynthetic characteristics in the warmed plots. Although not all parameters of the ST-Re curve were affected by warm* 早稲田大学先進理工学研究科 ** 早稲田大学教育・総合科学学術院 + 現所属:岐阜大学流域圏科学研究センター高山試験地 * Faculty of Science and Engineering, Waseda University, Tokyo, 162-8480, Japan ** Faculty of Education and Integrated Arts and Sciences, Waseda University, Tokyo, 162-8480, Japan + Present address: Takayama Experimental Field Station, River Basin Research Center, Gifu University, Takayama, 506-0815, Japan 733 —  — 地学雑誌 Journal of Geography(Chigaku Zasshi) 122(4)733—744 2013 doi:10.5026/jgeography.122.733",
+      "url": "https://www.semanticscholar.org/paper/16b5de30b269d96ae2483c67c2c031496d9b2fea",
+      "pdf_url": "https://www.jstage.jst.go.jp/article/jgeography/122/4/122_122.733/_pdf",
+      "citation_count": 5,
+      "influential_citation_count": 0,
+      "reference_count": 40,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "16b5de30b269d96ae2483c67c2c031496d9b2fea",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2331260744",
+          "DOI": "10.5026/JGEOGRAPHY.122.733",
+          "CorpusId": 131231458
         }
       }
     },
@@ -45675,6 +47269,48 @@
       }
     },
     {
+      "id": "4bcaed0dd7442dbc50a66a09e8bfdfdd1cfad87d",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s00027-025-01219-6",
+      "title": "Cascading effects of land use on ecosystem function in Afrotropical headwater streams",
+      "authors": [
+        "Florence Nansumbi",
+        "G. Weigelhofer",
+        "Robinson Odong",
+        "Thomas Hein"
+      ],
+      "journal": "Aquatic Sciences",
+      "publication_date": "2025-08-10",
+      "abstract": "Anthropogenic activities in catchments, such as urban and agricultural land use, negatively impact the biogeochemical cycles of carbon, nitrogen and phosphorus in streams by increasing concentrations of these nutrients and altering the composition of dissolved organic matter (DOM). In tropical climates with high temperatures and intense precipitation, streams are particularly vulnerable to high loading from the catchment. The combination of high nutrient loading from the catchment and high processing rates at high temperatures can lead to even higher concentrations and more severe impacts on biogeochemical cycles. However, studies linking human activity to changes in nutrient and DOM composition, and the resulting impacts on stream functions, are still scarce in tropical streams. This study addressed this gap by examining the relationships between land use and water column chromophoric DOM (CDOM), nitrogen and phosphorus across seasons in an Afrotropical watershed. In addition, the effects of nutrient enrichment and changes in DOM composition on stream metabolism were investigated. The results showed that urban land use had the most substantial influence on nutrient concentrations and DOM composition in the studied streams. Streams with a high proportion of urban land use in their riparian zone had high nutrient concentrations and a pronounced autochthonous DOM signal. In contrast, streams with more forest cover in their riparian zone had lower nutrient concentrations and a more allochthonous DOM signal in their water column. Stream metabolism increased with nutrient concentrations and autochthonous organic matter contribution, and these changes were more pronounced in the dry season, pointing to the combined effects of high nutrient loading and processing rates on carbon biogeochemistry. These results confirm that changes in nutrient loading and organic matter composition caused by human activities and seasonal changes will likely impact river ecosystem processes, with implications for food webs and tropical biogeochemical cycles.",
+      "url": "https://www.semanticscholar.org/paper/4bcaed0dd7442dbc50a66a09e8bfdfdd1cfad87d",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00027-025-01219-6.pdf",
+      "citation_count": 2,
+      "influential_citation_count": 0,
+      "reference_count": 147,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "4bcaed0dd7442dbc50a66a09e8bfdfdd1cfad87d",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.1007/s00027-025-01219-6",
+          "CorpusId": 282486754
+        }
+      }
+    },
+    {
       "id": "b9a6323d66e48b3e57e715146cdb18aab7756b78",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -45810,55 +47446,6 @@
         "external_ids": {
           "DOI": "10.1016/j.jglr.2024.102337",
           "CorpusId": 268747403
-        }
-      }
-    },
-    {
-      "id": "c2e6bd0aed0ac6014c0d1e7bbdee81f58d8484f3",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s11273-020-09745-w",
-      "title": "Soil carbon dynamics and aquatic metabolism of a wet–dry tropics wetland system",
-      "authors": [
-        "Danelle Agnew",
-        "K. Fryirs",
-        "T. Ralph",
-        "Tsuyoshi Kobayashi"
-      ],
-      "journal": "Wetlands Ecology and Management",
-      "publication_date": "2021-01-08",
-      "abstract": "",
-      "url": "https://www.semanticscholar.org/paper/c2e6bd0aed0ac6014c0d1e7bbdee81f58d8484f3",
-      "pdf_url": "",
-      "citation_count": 2,
-      "influential_citation_count": 0,
-      "reference_count": 83,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "wetland"
-      ],
-      "semantic_scholar": {
-        "paper_id": "c2e6bd0aed0ac6014c0d1e7bbdee81f58d8484f3",
-        "tldr": "There is appreciable long-term storage of carbon in sediment in the Kings Plains wetlands, demonstrating the importance of wet–dry-tropics wetland systems as hotspots of carbon sequestration, locally, regionally and globally.",
-        "fields_of_study": [
-          "Biology"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Biology",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "2904145830",
-          "DOI": "10.1007/s11273-020-09745-w",
-          "CorpusId": 134388915
         }
       }
     },
@@ -47206,6 +48793,54 @@
       }
     },
     {
+      "id": "9d6d2d7519b87f6c95cae68c5b8748a111e35c67",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.15373/22778179/NOV2013/170",
+      "title": "Studies on primary productivity with special Reference to their physico-chemical status of Govindgarh Lake Rewa (M.P.), India",
+      "authors": [
+        "V. Patel",
+        "S. Shukla",
+        "U. Pandey"
+      ],
+      "journal": "International journal of scientific research",
+      "publication_date": "2012-06-01",
+      "abstract": "The present investigation has been carried out in Govindgarh Lake located in Rewa district, Madhya Pradesh. Primary productivity and physico-chemical parameters were estimated from July 2011 to June 2012. Gross primary production values ranged between 450 to 3950 mg C/m 3 /d, Net primary production ranged between 275 to 3200 mg C/m 3 /d, and Community respiration ranged from100 to 1000 mg C/m 3 /d. GPP, NPP and CR was higher in summer season due to fa- vourable water temperature leading towards higher photosynthetic activity as well as metabolic rate. The primary productivity was influenced by various physico-chemical factors.",
+      "url": "https://www.semanticscholar.org/paper/9d6d2d7519b87f6c95cae68c5b8748a111e35c67",
+      "pdf_url": "https://doi.org/10.15373/22778179/nov2013/170",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 1,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ],
+      "semantic_scholar": {
+        "paper_id": "9d6d2d7519b87f6c95cae68c5b8748a111e35c67",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2129356249",
+          "DOI": "10.15373/22778179/NOV2013/170",
+          "CorpusId": 129872358
+        }
+      }
+    },
+    {
       "id": "196b2a34d896bf0c3f4926e4ff7cbdd038de59e8",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -47655,6 +49290,61 @@
           "DOI": "10.1111/ele.70437",
           "CorpusId": 289486405,
           "PubMed": "42338318"
+        }
+      }
+    },
+    {
+      "id": "d333e50ef5cb102abd968c5dc899ab66ef8b179f",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.64898/2026.04.16.718977",
+      "title": "Biological invasion drives ecosystem state and metabolism across tipping points",
+      "authors": [
+        "Emilien Gaigné",
+        "O. Dézerald",
+        "C. Gorzerino",
+        "J. Coudreuse",
+        "Yoann Bennevault",
+        "Alexandrine Pannard",
+        "Eric Edeline"
+      ],
+      "journal": "bioRxiv",
+      "publication_date": "2026-04-21",
+      "abstract": "Abrupt regime shifts of complex ecosystems between alternative stable states are widespread in nature. Yet, our mechanistic understanding of disturbance-shift-ecosystem functioning relationships remains poor, and it is further unclear whether biotic disturbances can drive such shifts. Using a 5-year pond experiment, we demonstrate that invasion by the red swamp crayfish (Procambarus clarkii) drove a regime shift from a clear-water, macrophyte-dominated, to a turbid, phytoplankton-dominated state. The regime shift was associated with increased water temperature due to increased water turbidity enhanced light absorption, and with a seasonal switch of ecosystem metabolism from hetero-to autotrophy due to decreased respiration in summer, despite constant gross primary production. Reducing crayfish population densities by 44 % failed to move ecosystems back towards their initial state and functioning. Our results stress that biotic disturbances may have hardly-reversible consequences on the biophysical and biogeochemical processes that support ecosystem functioning.",
+      "url": "https://www.semanticscholar.org/paper/d333e50ef5cb102abd968c5dc899ab66ef8b179f",
+      "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2026/04/21/2026.04.16.718977.full.pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 49,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "pond"
+      ],
+      "semantic_scholar": {
+        "paper_id": "d333e50ef5cb102abd968c5dc899ab66ef8b179f",
+        "tldr": null,
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.64898/2026.04.16.718977",
+          "CorpusId": 287735115
         }
       }
     },
@@ -50417,6 +52107,56 @@
         "external_ids": {
           "MAG": "2580534467",
           "CorpusId": 132131239
+        }
+      }
+    },
+    {
+      "id": "a701d1a179438cc281ca54ce2c21372d79654d5e",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.13001/UWNPSRC.2015.4085",
+      "title": "Testing Field Methods to Assess Interactions Between Native Caddisflies and the Invasive New Zealand Mudsnail (Potamopyrgus Antipodarum)",
+      "authors": [
+        "Daniel J. Greenwood"
+      ],
+      "journal": "University of Wyoming National Park Service Research Center Annual Report",
+      "publication_date": "2015-01-01",
+      "abstract": "In Polecat Creek, WY, located in the Greater Yellowstone Ecosystem, the invasive New Zealand mudsnail (Potamopyrgus antipodarum) has been found to reach densities exceeding 500,000 individuals/mÂ². At this extremely high density, P. antipodarum has been observed to consume most of the gross primary production and have a negative impact on native macroinvertebrates such as the Hydropsyche caddisfly. The current population of P. antipodarum in Polecat Creek has declined suggesting the population âboomed and bustedâ; the population was booming in 2000-2001, but in 2011 the population had decreased substantially suggesting a âbustâ period for P. antipodarum. Native Hydropsyche caddisflies have increased dramatically in biomass during the 10-year span of data, which may indicate that some native macroinvertebrates have increased in biomass due to release of suppression by P. antipodarum. Consequently, during my research this summer I assessed several possible methods to test suppression of Hydropsyche by P. antipodarum. I devised a method to collect Hydropsyche and determined whether Hydropsyche can survive in experimental chambers for use in a future field experiment. I built wooden tiles to colonize Hydropsyche out of 4x4x2 inch wood blocks with 1/2 inch grooves along the length of the tile. Colonization was successful with approximately two Hydropsyche collected per tile in a 24-hour period. Based on low survival of Hydropsyche within experimental chambers, the use of different experimental chambers will be necessary. Specifically, chambers that are open on the upstream side should be used to better allow a fast flow of water, which is a requirement for Hydropsyche to collect food.",
+      "url": "https://www.semanticscholar.org/paper/a701d1a179438cc281ca54ce2c21372d79654d5e",
+      "pdf_url": "https://journals.uwyo.edu/index.php/uwnpsrc/article/download/4085/4085",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 12,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "a701d1a179438cc281ca54ce2c21372d79654d5e",
+        "tldr": "A method to collect Hydropsyche was devised and whether hydropsyche can survive in experimental chambers for use in a future field experiment was determined, which may indicate that some native macroinvertebrates have increased in biomass due to release of suppression by P. antipodarum.",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2783994270",
+          "DOI": "10.13001/UWNPSRC.2015.4085",
+          "CorpusId": 90019799
         }
       }
     },
