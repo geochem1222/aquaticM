@@ -1,1 +1,2 @@
+Semantic Scholar fetch failed; keeping existing data if available. HTTPError: HTTP Error 500: Internal Server Error
 Updated 1054 papers from Semantic Scholar at data/papers.json
