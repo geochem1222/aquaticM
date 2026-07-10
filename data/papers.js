@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-07-09T22:49:13.853809+00:00",
+  "updated_at": "2026-07-10T22:15:59.931874+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 18,
     "existing_records_after_filter": 1054,
-    "total_records_after_merge": 1054,
+    "total_records_after_merge": 1055,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1054,
@@ -145,7 +145,7 @@ window.PAPER_TRACKER_DATA = {
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    "error": ""
   },
   "papers": [
     {
@@ -7068,6 +7068,35 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 85926955
         }
       }
+    },
+    {
+      "id": "f7cbe80efa0bfac0d0e520b0cdfaf9ecc724a12b",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3390/w18131618",
+      "title": "Short-Term Dissolved Oxygen Forecasting in Aquaculture Systems Using a Process-Based Mass-Balance Model",
+      "authors": [
+        "Sonny Martin",
+        "Joe Dvorak",
+        "K. Semmens",
+        "B. Ford"
+      ],
+      "journal": "Water",
+      "publication_date": "2026-07-03",
+      "abstract": "Dissolved oxygen (DO) is a critical water quality parameter in aquaculture systems. Low DO events can stress, limit the growth of, or even cause mortality of aquatic life in aquaculture systems and require rapid management decisions. This study presents a process-based approach for short-term DO forecasting that is intended to support rapid deployment and transferability across various aquaculture systems. Future DO is computed using a mass-balance equation driven by daily stream metabolism and reaeration coefficients estimated from the previous 24 h of weather and water observations. These coefficients are combined with the next day’s observed water temperature, atmospheric pressure, photosynthetically active radiation, and salinity to predict DO 24 h ahead under idealized measured-input conditions with a ten-minute resolution. Model performance was evaluated across multiple aquaculture ponds with varying aeration techniques by assessing prediction accuracy of daily DO minimums using a safety-based metric and full-day DO trajectories using root mean square error. The model successfully predicted 91.77% of DO drops below 6 mg/L within 1 mg/L in a consistently aerated artificial pond and achieved high success in a natural watershed system. Performance was reduced in systems with highly variable aeration. Prediction accuracy was the highest in surface locations away from aerators. These results indicate that a minimal-history process-based framework can identify low DO risk under idealized measured-input conditions, particularly in surface locations away from aerators and in systems with constant or natural aeration.",
+      "url": "https://www.semanticscholar.org/paper/f7cbe80efa0bfac0d0e520b0cdfaf9ecc724a12b",
+      "pdf_url": "https://www.mdpi.com/2073-4441/18/13/1618/pdf?version=1783066388",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 40,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "oxygen",
+        "pond",
+        "river"
+      ]
     },
     {
       "id": "2b097ae5928e00dd9710b24acf0b046b8b10e67c",
@@ -36883,6 +36912,33 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
+      "id": "c2e6bd0aed0ac6014c0d1e7bbdee81f58d8484f3",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s11273-020-09745-w",
+      "title": "Soil carbon dynamics and aquatic metabolism of a wet–dry tropics wetland system",
+      "authors": [
+        "Danelle Agnew",
+        "K. Fryirs",
+        "T. Ralph",
+        "Tsuyoshi Kobayashi"
+      ],
+      "journal": "Wetlands Ecology and Management",
+      "publication_date": "2021-01-08",
+      "abstract": "Freshwater wetlands are a key component of the global carbon cycle. Wet–dry tropics wetlands function as wet-season carbon sinks and dry-season carbon sources with low aquatic metabolism controlled by predictably seasonal, yet magnitude-variable flow regimes and inundation patterns. However, these dynamics have not been adequately quantified in Australia’s relatively unmodified wet–dry tropics freshwater wetlands. A baseline understanding is required before analysis of land-use or climate change impacts on these aquatic ecosystems can occur. This study characterises geomorphology and sedimentology within a seasonally connected wet–dry tropics freshwater wetland system at Kings Plains, Queensland, Australia, and quantifies soil carbon stocks and wet- and dry-season aquatic metabolism. Soil carbon stocks derived from loss-on-ignition on samples to 1 m depth were 51.5 ± 7.8 kg C m −2 , higher than other wet–dry tropics wetlands globally, with potential for long-term retention at greater depths. Gross primary productivity of phytoplankton (GPP) and planktonic respiration (PR) measured through biological oxygen demand bottle experiments in the water column of sediment inundated under laboratory conditions show overall low GPP and PR in both wet- and dry-season samples (all wetland samples were heterotrophic with GPP/PR < 1). Despite the short-term dominance of aquatic respiration processes leading to net release of carbon in the water column under these conditions, there is appreciable long-term storage of carbon in sediment in the Kings Plains wetlands. This demonstrates the importance of wet–dry-tropics wetland systems as hotspots of carbon sequestration, locally, regionally and globally, and consideration should be given to their conservation and management in this context.",
+      "url": "https://www.semanticscholar.org/paper/c2e6bd0aed0ac6014c0d1e7bbdee81f58d8484f3",
+      "pdf_url": "https://figshare.com/articles/thesis/Soil_carbon_dynamics_and_aquatic_metabolism_of_a_wet-dry_tropics_wetland_system/19443572",
+      "citation_count": 2,
+      "influential_citation_count": 0,
+      "reference_count": 83,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "sediment",
+        "wetland"
+      ]
+    },
+    {
       "id": "e2567bd30e7f94d8eecf7a0e5901ba5051358272",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -37524,49 +37580,6 @@ window.PAPER_TRACKER_DATA = {
         "external_ids": {
           "DOI": "10.1101/2021.01.12.426336",
           "CorpusId": 231614584
-        }
-      }
-    },
-    {
-      "id": "0b1dd2fa1328cde3f002f7c4176eb484323bf4af",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s11273-020-09745-w",
-      "title": "Soil carbon dynamics and aquatic metabolism of a wet–dry tropics wetland system",
-      "authors": [
-        "Danelle Agnew",
-        "K. Fryirs",
-        "T. Ralph",
-        "Tsuyoshi Kobayashi"
-      ],
-      "journal": "Wetlands Ecology and Management",
-      "publication_date": "2021-01-08",
-      "abstract": "Freshwater wetlands are a key component of the global carbon cycle. Wet–dry tropics wetlands function as wet-season carbon sinks and dry-season carbon sources with low aquatic metabolism controlled by predictably seasonal, yet magnitude-variable flow regimes and inundation patterns. However, these dynamics have not been adequately quantified in Australia’s relatively unmodified wet–dry tropics freshwater wetlands. A baseline understanding is required before analysis of land-use or climate change impacts on these aquatic ecosystems can occur. This study characterises geomorphology and sedimentology within a seasonally connected wet–dry tropics freshwater wetland system at Kings Plains, Queensland, Australia, and quantifies soil carbon stocks and wet- and dry-season aquatic metabolism. Soil carbon stocks derived from loss-on-ignition on samples to 1 m depth were 51.5 ± 7.8 kg C m−2, higher than other wet–dry tropics wetlands globally, with potential for long-term retention at greater depths. Gross primary productivity of phytoplankton (GPP) and planktonic respiration (PR) measured through biological oxygen demand bottle experiments in the water column of sediment inundated under laboratory conditions show overall low GPP and PR in both wet- and dry-season samples (all wetland samples were heterotrophic with GPP/PR < 1). Despite the short-term dominance of aquatic respiration processes leading to net release of carbon in the water column under these conditions, there is appreciable long-term storage of carbon in sediment in the Kings Plains wetlands. This demonstrates the importance of wet–dry-tropics wetland systems as hotspots of carbon sequestration, locally, regionally and globally, and consideration should be given to their conservation and management in this context.",
-      "url": "https://www.semanticscholar.org/paper/0b1dd2fa1328cde3f002f7c4176eb484323bf4af",
-      "pdf_url": "https://figshare.com/articles/thesis/Soil_carbon_dynamics_and_aquatic_metabolism_of_a_wet-dry_tropics_wetland_system/19443572",
-      "citation_count": 0,
-      "influential_citation_count": 0,
-      "reference_count": 94,
-      "references": [],
-      "tags": [
-        "metabolism",
-        "sediment",
-        "wetland"
-      ],
-      "semantic_scholar": {
-        "paper_id": "0b1dd2fa1328cde3f002f7c4176eb484323bf4af",
-        "tldr": "",
-        "fields_of_study": [],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "DOI": "10.1007/s11273-020-09745-w",
-          "CorpusId": 255139162
         }
       }
     },
