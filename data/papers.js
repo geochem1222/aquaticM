@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-07-10T22:15:59.931874+00:00",
+  "updated_at": "2026-07-11T22:11:46.248167+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 18,
-    "existing_records_after_filter": 1054,
-    "total_records_after_merge": 1055,
+    "fresh_records_before_merge": 32,
+    "existing_records_after_filter": 1055,
+    "total_records_after_merge": 1056,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1054,
+    "existing_records_before_update": 1055,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
@@ -7802,6 +7802,37 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
+      "id": "7acf70dbd464f8b2f40f0de1b017a1a902562b65",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s00027-015-0463-y",
+      "title": "Do warming and humic river runoff alter the metabolic balance of lake ecosystems?",
+      "authors": [
+        "P. Rodríguez",
+        "P. Byström",
+        "Erik Geibrink",
+        "Per Hedström",
+        "F. R. Vasconcelos",
+        "J. Karlsson"
+      ],
+      "journal": "Aquatic Sciences",
+      "publication_date": "2016-10-01",
+      "abstract": "Global warming is expected to influence lake gross primary production (GPP) and ecosystem respiration (R) by increasing water temperature and terrestrial export of organic material and inorganic nutrients from the catchment. We experimentally tested the effects of warming (3 °C) and natural humic river runoff, separately and in combination, on habitat-specific and whole ecosystem net ecosystem production (NEP = GPP − R) in replicated large scale (136 m3) experimental pond ecosystems over one open water season. Pelagic NEP was reduced by warming and increased with humic river water addition. Littoral NEP (benthos, macrophytes, periphyton) showed an opposite pattern with increasing NEP following warming and decreasing NEP following humic river water addition. These changes were a result of changes in GPP with warming (negative in pelagic, positive in littoral) and with humic water addition (positive in pelagic, negative in littoral), while no effects were observed on pelagic respiration. As a result of the counteracting effects on NEP in pelagic and littoral habitats, whole ecosystem NEP was not affected by the treatments. The study suggests that climate mediated changes in temperature and river runoff have relatively small effects on the overall metabolic balance of shallow aquatic ecosystems but there may be large habitat-specific effects.",
+      "url": "https://www.semanticscholar.org/paper/7acf70dbd464f8b2f40f0de1b017a1a902562b65",
+      "pdf_url": "http://hdl.handle.net/11336/86863",
+      "citation_count": 16,
+      "influential_citation_count": 0,
+      "reference_count": 40,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "pond",
+        "river"
+      ]
+    },
+    {
       "id": "cc841aead28371e31de266efaa38834b900e1511",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -8618,53 +8649,6 @@ window.PAPER_TRACKER_DATA = {
         "external_ids": {
           "DOI": "10.24002/jts.v16i2.4775",
           "CorpusId": 249138940
-        }
-      }
-    },
-    {
-      "id": "22af60dab74cdc644b018fa936c78a6276734731",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.1007/s00027-015-0463-y",
-      "title": "Do warming and humic river runoff alter the metabolic balance of lake ecosystems?",
-      "authors": [
-        "P. Rodríguez",
-        "P. Byström",
-        "Erik Geibrink",
-        "Per Hedström",
-        "F. R. Vasconcelos",
-        "J. Karlsson"
-      ],
-      "journal": "Aquatic Sciences",
-      "publication_date": "2015-12-24",
-      "abstract": "Global warming is expected to influence lake gross primary production (GPP) and ecosystem respiration (R) by increasing water temperature and terrestrial export of organic material and inorganic nutrients from the catchment. We experimentally tested the effects of warming (3 °C) and natural humic river runoff, separately and in combination, on habitat-specific and whole ecosystem net ecosystem production (NEP = GPP − R) in replicated large scale (136 m3) experimental pond ecosystems over one open water season. Pelagic NEP was reduced by warming and increased with humic river water addition. Littoral NEP (benthos, macrophytes, periphyton) showed an opposite pattern with increasing NEP following warming and decreasing NEP following humic river water addition. These changes were a result of changes in GPP with warming (negative in pelagic, positive in littoral) and with humic water addition (positive in pelagic, negative in littoral), while no effects were observed on pelagic respiration. As a result of the counteracting effects on NEP in pelagic and littoral habitats, whole ecosystem NEP was not affected by the treatments. The study suggests that climate mediated changes in temperature and river runoff have relatively small effects on the overall metabolic balance of shallow aquatic ecosystems but there may be large habitat-specific effects.",
-      "url": "https://www.semanticscholar.org/paper/22af60dab74cdc644b018fa936c78a6276734731",
-      "pdf_url": "http://hdl.handle.net/11336/86863",
-      "citation_count": 1,
-      "influential_citation_count": 0,
-      "reference_count": 0,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism",
-        "microbe",
-        "pond",
-        "river"
-      ],
-      "semantic_scholar": {
-        "paper_id": "22af60dab74cdc644b018fa936c78a6276734731",
-        "tldr": "",
-        "fields_of_study": [],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "DOI": "10.1007/s00027-015-0463-y",
-          "CorpusId": 253588277
         }
       }
     },
@@ -20658,6 +20642,34 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 3500533
         }
       }
+    },
+    {
+      "id": "c4c286290588da0a45753d93c58f34985811ddc1",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1016/j.jhydrol.2026.135973",
+      "title": "Time-series decomposition and stream metabolism reveal benthic control on particulate organic carbon transport from mixed-use Appalachian watersheds",
+      "authors": [
+        "W. Ford",
+        "J. Fox",
+        "Mindy Armstead",
+        "A. Erhardt"
+      ],
+      "journal": "Journal of Hydrology",
+      "publication_date": "2026-09-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/c4c286290588da0a45753d93c58f34985811ddc1",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 50,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river",
+        "sediment"
+      ]
     },
     {
       "id": "1b7815e63893162d263230058d29af496553451f",
