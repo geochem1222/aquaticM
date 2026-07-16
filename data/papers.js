@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-07-15T22:13:53.287368+00:00",
+  "updated_at": "2026-07-16T22:20:07.285158+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 34,
+    "fresh_records_before_merge": 35,
     "existing_records_after_filter": 1056,
-    "total_records_after_merge": 1056,
+    "total_records_after_merge": 1057,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1056,
@@ -30980,6 +30980,53 @@ window.PAPER_TRACKER_DATA = {
           "MAG": "3017321342",
           "DOI": "10.3410/f.1043023.492920",
           "CorpusId": 222874062
+        }
+      }
+    },
+    {
+      "id": "d17042a2cedf286ebd84caac2b686cb6ba385c90",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2025jg009370",
+      "title": "Riparian Processing of Upland Groundwaters Strongly Influences Downstream Transport and Channel Emission of Dissolved Inorganic Carbon Along Agricultural Stream Corridors",
+      "authors": [
+        "Qipei Shangguan",
+        "Robert A. Payn",
+        "Madison J. Foster",
+        "Caitlin M. Mayernik",
+        "Stephanie A. Ewing",
+        "Michael D. DeGrandpre"
+      ],
+      "journal": "Journal of Geophysical Research - Biogeosciences",
+      "publication_date": "2026-07-01",
+      "abstract": "\n Headwater streams gain groundwater carrying dissolved inorganic carbon (DIC) from terrestrial environments and are hotspots for biogeochemical processing. The Judith River Watershed is located in a semi‐arid region of the northern Great Plains in central Montana, where stream corridors have spatial variation in hydrological connectivity among upland landscapes, riparian aquifers and stream channels, allowing for assessment of the role of riparian zone in corridor DIC processing. Upland groundwaters draining into stream corridors either contribute directly to the stream channel as surface flow (i.e., springs) or recharge biogeochemically active subsurface flow paths through riparian substrates. Here, we quantified DIC lateral inputs via springs versus riparian groundwater, carbon dioxide () emissions from channel waters, and estimated stream metabolism based on continuous two‐station monitoring of dissolved oxygen (DO) and at three corridor reaches across different seasons and years. We found that the three stream reaches received different proportions of riparian groundwater and springs. Reaches dominated by riparian groundwater inflows had and DIC concentrations that were typically two times greater compared to the reach dominated by spring inflows, and displayed larger seasonal variations in discharge (15–100 L ) and gas transfer velocities ( from 2 to 8 m ). values dictate fates (emission vs. export) of DIC generated not only from lateral inputs, but in‐stream metabolic processes with 0%–75% of Net Ecosystem Production exported downstream. This study demonstrates that DIC cycling in headwater streams is tightly linked to landscape patterns of stream corridors.",
+      "url": "https://www.semanticscholar.org/paper/d17042a2cedf286ebd84caac2b686cb6ba385c90",
+      "pdf_url": "https://doi.org/10.1029/2025jg009370",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 38,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river"
+      ],
+      "semantic_scholar": {
+        "paper_id": "d17042a2cedf286ebd84caac2b686cb6ba385c90",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1029/2025jg009370",
+          "CorpusId": 290197756
         }
       }
     },
