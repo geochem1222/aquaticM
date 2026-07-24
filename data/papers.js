@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-07-23T22:14:25.970197+00:00",
+  "updated_at": "2026-07-24T22:17:24.221536+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -145,7 +145,7 @@ window.PAPER_TRACKER_DATA = {
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": ""
+    "error": "HTTPError: HTTP Error 500: Internal Server Error"
   },
   "papers": [
     {
