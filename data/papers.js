@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-07-24T22:17:24.221536+00:00",
+  "updated_at": "2026-07-25T22:09:23.123330+00:00",
   "sources": [
     "Semantic Scholar"
   ],
