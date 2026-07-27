@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-07-26T22:14:16.212085+00:00",
+  "updated_at": "2026-07-27T22:20:34.775462+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 32,
     "existing_records_after_filter": 1057,
-    "total_records_after_merge": 1057,
+    "total_records_after_merge": 1058,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1057,
@@ -145,7 +145,7 @@ window.PAPER_TRACKER_DATA = {
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
     "search_mode": "Semantic Scholar paper/search/bulk",
     "batch_detail_fill": true,
-    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    "error": ""
   },
   "papers": [
     {
@@ -49217,6 +49217,32 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 268290466
         }
       }
+    },
+    {
+      "id": "ccffc443498e4530147024481e6c73a54b8cb673",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1016/j.jaridl.2026.04.010",
+      "title": "Performance-based assessment of gross primary production (GPP) products in a typical inland river basin of northwestern China",
+      "authors": [
+        "Jieyuan Hu",
+        "Xiaoge Chang",
+        "Linshan Yang",
+        "Tingting Ning"
+      ],
+      "journal": "Journal of Arid Land",
+      "publication_date": "2026-07-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/ccffc443498e4530147024481e6c73a54b8cb673",
+      "pdf_url": "https://doi.org/10.1016/j.jaridl.2026.04.010",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 60,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ]
     },
     {
       "id": "86f1c76d8cde614b93793a42b84e0998793cc961",
