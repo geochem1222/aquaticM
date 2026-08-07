@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-08-07T01:03:19.755406+00:00",
+  "updated_at": "2026-08-07T21:56:42.177311+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 18,
+    "fresh_records_before_merge": 24,
     "existing_records_after_filter": 1058,
-    "total_records_after_merge": 1058,
+    "total_records_after_merge": 1059,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1058,
@@ -30982,6 +30982,34 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 222874062
         }
       }
+    },
+    {
+      "id": "b33fd629058e4ba1662e646e74c2338679dbbf53",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/essd-18-5663-2026",
+      "title": "Extended global terrestrial evapotranspiration and gross primary production dataset from 1982 to near present",
+      "authors": [
+        "Zhenwu Xu",
+        "Yongqiang Zhang",
+        "Dongdong Kong",
+        "N. Ma",
+        "Xuanze Zhang"
+      ],
+      "journal": "Earth System Science Data",
+      "publication_date": "2026-07-31",
+      "abstract": "Abstract. The Penman–Monteith–Leuning (PML) model is a widely recognized diagnostic framework for estimating coupled terrestrial evapotranspiration (ET) and gross primary production (GPP). To address the critical need for high-fidelity, long-term, and near-present eco-hydrological records, we developed the PML-V2.2 dataset, spanning from 1982 to 2025. Driven by observation-constrained Multi-Source Weighted-Ensemble Precipitation (MSWEP) and Multi-Source Weather (MSWX) meteorological variables, the dataset comprises three complementary products: (1) PML-V2.2a, an 8 d 500 m MODIS/VIIRS satellite-based product (2000–2024 and 2012–2025) optimized for near-present monitoring (updated annually); (2) PML-V2.2b, a half-month 0.1° AVHRR-based product (1982–2020) anchoring long-term climate attribution; and (3) PML-V2.2c, a consolidated half-month 0.1° record integrating the above products for seamless 44-year continuity (1982–2025). Our methodological framework features an expanded bottom-up calibration using 208 flux sites (∼ 1400 site-years) across various plant functional types (PFTs) and a refined parameterization that explicitly distinguishes between irrigated and rainfed croplands. This distinction effectively mitigated systematic biases in agricultural regions, reducing ET and GPP estimation errors by 8.7 % and 16.2 %, respectively. Performance evaluation reveals high accuracy across PFTs (cross-validation Nash-Sutcliffe Efficiency, NSE > 0.60, absolute bias < 5 %), while top-down water-balance validation across 56 large river basins during 1982–2016 and 152 basins during 2003–2020 confirms high reliability (NSE: 0.89–0.91) as compared with other products. The MODIS- and VIIRS-based PML-V2.2a datasets are internally consistent, and exhibit high agreement with PML-V2.2b during their overlapping period (NSE = 0.90 and 0.79 for annual ET and GPP anomalies), ensuring a seamless transition across satellite epochs. Based on the consolidated PML-V2.2c dataset, global terrestrial ET and GPP during 1982–2025 are estimated at 65.8 × 103 km3 yr−1 (with 58.2 % from transpiration) and 143.4 PgC yr−1, respectively. Long-term analysis reveals significant (p < 0.05) increasing trends in GPP (0.343 PgC yr−2) and ET (0.019 × 103 km3 yr−2) during 1982–2025, where vegetation greening impact on ET is partially offset by physiological water saving under rising atmospheric CO2, consequently enhancing water use efficiency. By bridging the gap between satellite epochs, PML-V2.2 provides an internally consistent long-term global dataset for hydrology, ecology, and other Earth science studies. The dataset is freely accessible, with the 500 m resolution PML-V2.2a product hosted on Google Earth Engine, and all 0.1° PML-V2.2a/b/c versions archived at the National Tibetan Plateau Data Center under https://doi.org/10.11888/Terre.tpdc.303314 (Xu et al., 2026).",
+      "url": "https://www.semanticscholar.org/paper/b33fd629058e4ba1662e646e74c2338679dbbf53",
+      "pdf_url": "https://doi.org/10.5194/essd-18-5663-2026",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 129,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river"
+      ]
     },
     {
       "id": "d17042a2cedf286ebd84caac2b686cb6ba385c90",
