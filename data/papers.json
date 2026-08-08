@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T21:56:42.177311+00:00",
+  "updated_at": "2026-08-08T21:56:01.552372+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 24,
-    "existing_records_after_filter": 1058,
-    "total_records_after_merge": 1059,
+    "fresh_records_before_merge": 38,
+    "existing_records_after_filter": 1059,
+    "total_records_after_merge": 1063,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1058,
+    "existing_records_before_update": 1059,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
@@ -14828,6 +14828,62 @@
       }
     },
     {
+      "id": "c7f1576fbf26b24e6e2edba3cb3f9609e13774bc",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.64898/2026.08.03.742551",
+      "title": "Cyanobacterial cohorts structure the diversity, abundance, and metabolism of heterotrophic bacteria in Lake Erie",
+      "authors": [
+        "Augustus Pendleton",
+        "Sophia Aredas",
+        "Kailyn Hanke",
+        "Bofan Wei",
+        "Gregory L. Boyer",
+        "Marian L. Schmidt"
+      ],
+      "journal": "bioRxiv",
+      "publication_date": "2026-08-05",
+      "abstract": "Eutrophication and warming in Lake Erie create two microbial threats: cyanobacterial harmful algal blooms (cHABs) that can produce toxins, and seasonal hypoxia driven by microbial respiration. These phenomena are often studied separately, with cHABs research focused on the Western basin and hypoxia on the Central basin. We conducted lakewide microbial sampling at three time points in 2024 (May, August, and September), integrating physicochemical data, cyanotoxin quantification, amplicon sequencing, and flow cytometry. We demonstrate that cyanobacteria form spatially and seasonally distinct “cohorts” that act as hubs structuring abundant, diverse, and active communities across all basins. These cohorts display distinct relationships with heterotrophic communities, with colonial, bloom-forming cohorts (i.e., C1: Microcystis, C2: Pseudanabaena) associated with higher richness and evenness, the picocyanobacterium C3: Cyanobium with increased heterotrophic abundance, and C2: Pseudanabaena additionally associated with increased numbers of metabolically active cells. Neither temperature nor nutrient concentrations consistently explained these patterns, although total phosphorus correlated with bloom-forming C1 and C2 cohorts. The cohorts also formed structured “consortia” with heterotrophic taxa, with each cyanobacterial group associated with consistent sets of heterotrophic partners. Together, these results are consistent with a model in which cyanobacterial abundance increases heterotrophic growth and respiration, suggesting a lakewide pathway linking cHABs to oxygen demand and hypoxia. IMPORTANCE Cyanobacterial harmful algal blooms and hypoxia are two microbial processes shaping water quality in Lake Erie, yet they are typically studied separately and at basin-specific scales. We link cyanobacterial abundance to heterotrophic metabolism at a lakewide scale. We show that cyanobacterial abundance is associated with heterotrophic diversity, abundance, and metabolic activity, with contrasting patterns across cyanobacterial functional groups. These relationships were not explained by temperature nor consistently by nutrients, although cyanobacterial distribution in the Central basin is likely linked to nutrient availability as a result of upwellings and basin-wide gyres. Bloom-forming and picocyanobacterial cohorts play fundamentally different roles in structuring microbial diversity and biomass, with implications for how bloom management influences ecosystem metabolism. By identifying cyanobacteria as a major predictor of microbial biomass and activity, this work reveals a spatially-explicit pathway connecting cyanobacterial primary production to oxygen demand, suggesting that managing blooms may regulate oxygen depletion.",
+      "url": "https://www.semanticscholar.org/paper/c7f1576fbf26b24e6e2edba3cb3f9609e13774bc",
+      "pdf_url": "https://doi.org/10.64898/2026.08.03.742551",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 52,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "model"
+      ],
+      "semantic_scholar": {
+        "paper_id": "c7f1576fbf26b24e6e2edba3cb3f9609e13774bc",
+        "tldr": "It is shown that cyanobacterial abundance is associated with heterotrophic diversity, abundance, and metabolic activity, with contrasting patterns across cyanobacterial functional groups, which reveals a spatially-explicit pathway connecting cyanobacterial primary production to oxygen demand, suggesting that managing blooms may regulate oxygen depletion.",
+        "fields_of_study": [
+          "Biology"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Biology",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Biology",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "DOI": "10.64898/2026.08.03.742551",
+          "CorpusId": 290857720
+        }
+      }
+    },
+    {
       "id": "f802a617f9476edfdf256a61fe21ab9507956430",
       "source": "Semantic Scholar",
       "pmid": "41564526",
@@ -16073,6 +16129,60 @@
           "MAG": "2150671404",
           "DOI": "10.1899/09-040.1",
           "CorpusId": 86306191
+        }
+      }
+    },
+    {
+      "id": "6cf1545d3f40ff22981eaa234651d2bae97d9d71",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.2172/953627",
+      "title": "Technical Report: Investigation of Carbon Cycle Processes within a Managed Landscape: An Ecosystem Manipulation and Isotope Tracer Approach",
+      "authors": [
+        "T. Griffis",
+        "J. Baker",
+        "K. Billmark"
+      ],
+      "journal": "",
+      "publication_date": "2009-06-01",
+      "abstract": "The goal of this research is to provide a better scientific understanding of carbon cycle processes within an agricultural landscape characteristic of the Upper Midwest. This project recognizes the need to study processes at multiple spatial and temporal scales to reduce uncertainty in ecosystem and landscape-scale carbon budgets to provide a sound basis for shaping future policy related to carbon management. Specifically, this project has attempted to answer the following questions: 1. Would the use of cover crops result in a shift from carbon neutral to significant carbon gain in corn-soybean rotation ecosystems of the Upper Midwest? 2. Can stable carbon isotope analyses be used to partition ecosystem respiration into its autotrophic and heterotrophic components? 3. Can this partitioning be used to better understand the fate of crop residues to project changes in the soil carbon reservoir? 4. Are agricultural ecosystems of the Upper Midwest carbon neutral, sinks, or sources? Can the proposed measurement and modeling framework help address landscape-scale carbon budget uncertainties and help guide future carbon management policy?",
+      "url": "https://www.semanticscholar.org/paper/6cf1545d3f40ff22981eaa234651d2bae97d9d71",
+      "pdf_url": "https://www.osti.gov/servlets/purl/953627",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "isotope",
+        "lake",
+        "metabolism",
+        "model"
+      ],
+      "semantic_scholar": {
+        "paper_id": "6cf1545d3f40ff22981eaa234651d2bae97d9d71",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          },
+          {
+            "category": "Agricultural and Food Sciences",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2274991441",
+          "DOI": "10.2172/953627",
+          "CorpusId": 131241652
         }
       }
     },
@@ -31010,6 +31120,55 @@
         "model",
         "river"
       ]
+    },
+    {
+      "id": "cd5b00e49a4498aa25b54a2757e9e36134cf9442",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1088/2752-664X/ae8f50",
+      "title": "The effect of elevated dissolved methane concentrations on freshwater phytoplankton: a mesocosm study",
+      "authors": [
+        "D. P. Gedig",
+        "G. Fussmann"
+      ],
+      "journal": "Environmental Research: Ecology",
+      "publication_date": "2026-07-23",
+      "abstract": "Recent evidence indicates eutrophication will increase freshwater methane (CH4) production. Aerobic methane-oxidizing bacteria make methane-derived carbon (CH4-C) available to the aquatic food web, and multiple mechanisms by which phytoplankton may be influenced by the uptake of CH4-C have recently been proposed. This raises the question of whether lateral interactions within the microbial plankton community might impact freshwater ecosystems as a result of increased CH4 production. To investigate this, we deployed freshwater mesocosms (750 l polyethylene tanks, n = 16) in a temperate lake (Lac Hertel) in southern Quebec, Canada, over a period of thirty days. The mesocosms were aerated with either ambient or CH4-enriched air and received supplemental nutrients (PO43−, NO3−) or a control treatment (KCl) to disentangle the influence of increased dissolved CH4 concentration ([CH4]) and its interaction with nutrient addition. Here we show based on community-level responses that increases in [CH4] in nutrient-enriched environments may stimulate the growth of certain phytoplankton groups (notably cyanobacteria) and impact ecosystem functioning. Based on our results, we estimated a ∼10% increase in chlorophyll a concentration for implicated phytoplankton groups in a realistic scenario of increased [CH4]. Further, this approach provided unique insights into community-level functioning, such as an estimated 159% increase (33%–577% at 95% confidence) in gross primary production observed in the latter half of the experiment within mesocosms that were both nutrient-enriched and elevated in [CH4]. Although elevating [CH4] had minimal influence on the net balance of CH4 (i.e. oxidation versus production), it appeared to stimulate the release of dissolved organic carbon which could have an impact on carbon cycling more generally. Overall, these results suggest that CH4-C uptake in eutrophic ecosystems may influence phytoplankton community dynamics in the face of global change.",
+      "url": "https://www.semanticscholar.org/paper/cd5b00e49a4498aa25b54a2757e9e36134cf9442",
+      "pdf_url": "https://iopscience.iop.org/article/10.1088/2752-664X/ae8f50/pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 74,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe"
+      ],
+      "semantic_scholar": {
+        "paper_id": "cd5b00e49a4498aa25b54a2757e9e36134cf9442",
+        "tldr": "",
+        "fields_of_study": [
+          "Physics"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Physics",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.1088/2752-664X/ae8f50",
+          "CorpusId": 290567760
+        }
+      }
     },
     {
       "id": "d17042a2cedf286ebd84caac2b686cb6ba385c90",
@@ -49243,6 +49402,53 @@
         "publication_types": [],
         "external_ids": {
           "CorpusId": 268290466
+        }
+      }
+    },
+    {
+      "id": "1cfd74cbb13f86dc339ab2790141e92984ec4f25",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3389/fenvs.2026.1857576",
+      "title": "Temporal dynamics of carbon fluxes in a tropical montane forest ecosystem in Southern Ecuador",
+      "authors": [
+        "Charuta Murkute",
+        "F. Pucha-Cofrep",
+        "Galo Carrillo-Rojas",
+        "J. Homeier",
+        "Andreas Fries",
+        "J. Bendix",
+        "K. Trachte"
+      ],
+      "journal": "Frontiers in Environmental Science",
+      "publication_date": "2026-07-20",
+      "abstract": "\n Tropical rainforests represent major carbon reservoirs and play a critical role in regulating carbon dynamics and climate. Quantifying their carbon fluxes is essential for understanding ecosystem responses to climate variability and improving future climate change projections. In this study, we investigated interannual and seasonal variability in gross primary productivity (GPP), ecosystem respiration (Reco), and net ecosystem productivity (NEP) in a montane tropical rainforest in Southern Ecuador using eddy-covariance measurements from 2019 to 2024. GPP showed rather low interannual variability with a gradual increase from approximately 7.79–8.92\n \n \n \n \n \n gCm\n \n \n −\n 2\n \n \n \n \n \n \n \n \n \n \n day\n \n \n −\n 1\n \n \n \n \n \n over the study period. Seasonal differences were generally weak, although a more pronounced contrast was observed in 2024 with higher GPP during the wet phase (10.26\n \n \n \n \n \n gCm\n \n \n −\n 2\n \n \n \n \n \n \n \n \n \n \n day\n \n \n −\n 1\n \n \n \n \n \n ) and compared to the dry phase (7.38\n \n \n \n \n \n gCm\n \n \n −\n 2\n \n \n \n \n \n \n \n \n \n \n day\n \n \n −\n 1\n \n \n \n \n \n ). The ecosystem consistently functioned as a net carbon sink, with maximum carbon uptake occurring in 2024 (NEP approximately −3.97\n \n \n \n \n \n gCm\n \n \n −\n 2\n \n \n \n \n \n \n \n \n \n \n day\n \n \n −\n 1\n \n \n \n \n \n ). Despite the general stability of GPP, variability in net carbon exchange was primarily driven by changes in Reco, indicating a stronger sensitivity of respiration to environmental fluctuations. Principal component analysis (PCA) revealed that carbon flux variability reflects a combination of radiation and moisture controls. Incoming solar radiation (Rg) showed the strongest association with GPP, whereas soil temperature (Ts) and soil moisture (SM) appeared to influence variations in Reco. Furthermore, we assessed the influence of ENSO phases on carbon fluxes and found reduced productivity during El Niño conditions, associated with elevated Ts and slight reduced SM and Rg. These results highlight the sensitivity of tropical montane forests to both local environmental drivers and large-scale climate variability. Overall, our findings demonstrate that while short-term photosynthetic processes remain generally stable, respiration processes were identified as important correlates of interannual variability in carbon balance, highlighting their relevance to tropical carbon dynamics.\n",
+      "url": "https://www.semanticscholar.org/paper/1cfd74cbb13f86dc339ab2790141e92984ec4f25",
+      "pdf_url": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2026.1857576/pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 60,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ],
+      "semantic_scholar": {
+        "paper_id": "1cfd74cbb13f86dc339ab2790141e92984ec4f25",
+        "tldr": "",
+        "fields_of_study": [],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "DOI": "10.3389/fenvs.2026.1857576",
+          "CorpusId": 290379029
         }
       }
     },
