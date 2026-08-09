@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-08-08T21:56:01.552372+00:00",
+  "updated_at": "2026-08-09T21:47:48.795679+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 38,
-    "existing_records_after_filter": 1059,
+    "fresh_records_before_merge": 8,
+    "existing_records_after_filter": 1063,
     "total_records_after_merge": 1063,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1059,
+    "existing_records_before_update": 1063,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
