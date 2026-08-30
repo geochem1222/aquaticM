@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-08-29T23:19:19.834694+00:00",
+  "updated_at": "2026-08-30T23:32:59.861089+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 23,
     "existing_records_after_filter": 1063,
-    "total_records_after_merge": 1063,
+    "total_records_after_merge": 1064,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1063,
@@ -7068,6 +7068,40 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 85926955
         }
       }
+    },
+    {
+      "id": "b10892eb8e7642b5c63e72a3d7fef4c5c0856bc4",
+      "source": "Semantic Scholar",
+      "pmid": "42648145",
+      "doi": "10.1016/j.watres.2026.126687",
+      "title": "Water pCO2 and planktonic food web temporal variations and couplings in drainage ditches of organically managed freshwater wetlands.",
+      "authors": [
+        "Marie Anais Perdrau",
+        "P. Polsenaere",
+        "Lilia Mzali",
+        "Rozenn Raphalen",
+        "Vy Do Thi Khanh",
+        "Philippe Pineau",
+        "Claire Emery",
+        "Benjamin Musnier",
+        "Christine Dupuy"
+      ],
+      "journal": "Water Research",
+      "publication_date": "2026-08-01",
+      "abstract": "Agricultural freshwater wetlands and their drainage networks represent significant yet underrepresented components of the global carbon cycle. Across Europe, particularly in France, extensive marshlands are managed through seasonal water-level regulation combined with agricultural production, yet their carbon dynamics remain poorly constrained. This study investigates temporal water pCO₂ dynamics and planktonic food-web (PFW) structures in a drainage ditch within an organically managed coastal wetland in Charente-Maritime, representative of widespread agro-wetland management practices. Monthly discrete and high-frequency sampling carried out during a whole year (February 2024-2025) resolved seasonal and diel variations under operational water-level regimes. The system exhibited a biogeochemical inversion of intensive farming patterns, characterized by chronic nitrogen limitation (N:P < 10) and elevated dissolved organic carbon. Despite nutrient scarcity, high phytoplankton biomass and primary production were sustained. Five PFW structures were identified, ranging from multivorous to herbivorous and biological winter. Water pCO₂ remained persistently supersaturated (annual mean ∼5,000 ppmv), peaking at ∼15,600 ppmv during summer low-water confinement and declining to ∼1,700-3,000 ppmv under high-water conditions; temporal variability was mainly driven by non-temperature-dependent processes including ecosystem metabolism and hydrological forcings. Inverse relationships between pCO₂, water level, and dissolved oxygen identified hydrological confinement as a major regulating factor along with ecosystem metabolism. Multivorous PFW configurations were associated with the highest pCO₂ values and the largest diel amplitudes, whereas winter states exhibited lower pCO₂ values with reduced diel amplitudes. These results indicate that seasonal water-level regulation constitutes an operational lever influencing PFW organization, metabolic balance, and carbon dynamics in organically managed agricultural wetlands.",
+      "url": "https://www.semanticscholar.org/paper/b10892eb8e7642b5c63e72a3d7fef4c5c0856bc4",
+      "pdf_url": "https://archimer.ifremer.fr/doc/01081/119215/133375.pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 79,
+      "references": [],
+      "tags": [
+        "ditch",
+        "metabolism",
+        "oxygen",
+        "sensor",
+        "wetland"
+      ]
     },
     {
       "id": "f7cbe80efa0bfac0d0e520b0cdfaf9ecc724a12b",
