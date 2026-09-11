@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T23:10:44.070798+00:00",
+  "updated_at": "2026-09-11T23:19:10.819295+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 2,
+    "fresh_records_before_merge": 31,
     "existing_records_after_filter": 1064,
-    "total_records_after_merge": 1064,
+    "total_records_after_merge": 1065,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1064,
@@ -8529,6 +8529,30 @@
           "CorpusId": 271626317
         }
       }
+    },
+    {
+      "id": "fe49521baed5b18b958f8c26ff3076ff36e200a2",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/essd-18-6357-2026",
+      "title": "ABCFlux v2: Arctic–boreal CO\n 2\n and CH\n 4\n monthly flux observations and ancillary information across terrestrial and freshwater ecosystems",
+      "authors": [],
+      "journal": "Earth System Science Data",
+      "publication_date": "2026-09-03",
+      "abstract": "Abstract. Measurements of surface-atmosphere carbon dioxide (CO2) and methane (CH4) fluxes have been relatively sparse across the Arctic tundra and boreal biomes, causing significant uncertainties in carbon budget estimates from the region. While the availability of Arctic-boreal carbon flux data has increased substantially over the past decade, the data have remained spread across different repositories, scientific articles, and unpublished sources, making it difficult to leverage. Here we present a new dataset of monthly Arctic-boreal carbon fluxes (ABCFlux v2) across terrestrial (wetlands and uplands) and freshwater (lakes and rivers) ecosystems compiled from previous syntheses including the Arctic-boreal CO2 flux database (ABCFlux v1), the Boreal-Arctic Wetland and Lake Methane Dataset (BAWLD-CH4), and the Global River Methane Database (GRiMeDB). In addition, we consider data from general-purpose (e.g., Zenodo) and flux network repositories, literature, and site principal investigators. The dataset includes surface-atmosphere CO2 fluxes of gross primary production (GPP), ecosystem respiration (Reco), and net ecosystem exchange (NEE), alongside CH4 fluxes. For aquatic ecosystems, we split CH4 fluxes into diffusive and ebullitive flux pathways, and included potential emissions from transient storage in the water column (“storage fluxes”), alongside CO2 and CH4 concentrations dissolved in the surface water. Fluxes are measured through a variety of methods including chamber and eddy covariance techniques alongside bubble traps, ice-surveys, and concentration-based turbulence-driven modelling in aquatic ecosystems. The monthly flux data are reported together with supporting methodological and environmental metadata. The resulting ABCFlux v2 has 23 847 flux site-months, 8182 concentration site-months, and 199 seasonal observations from 1024 sites, and includes 56 139 reported fluxes (i.e. sum of GPP, Reco, NEE, and CH4 fluxes) from the years 1984 to 2024. The majority of monthly observations occurred after 1999. Wetlands had the highest number of site-month observations (8758), followed by boreal forest (6981), lotic ecosystems (6275), lentic ecosystems (3799) and upland tundra (3308). Measurements of CO2 dominated the dataset across most ecosystem types (25 222) except for lentic ecosystems, where CH4 flux site-months (3098) were more frequent than CO2 flux site-months (2915). Overall, ABCFlux v2 includes 160 % more site-months for terrestrial CO2 flux data compared to ABCFlux v1. Integrating and updating BAWLD-CH4 flux data from growing season averages to monthly fluxes resulted in 5671 site-months of chamber CH4 data compared to 762 site-years. This collaborative initiative, involving contributions from over 260 researchers, provides a comprehensive overview of the current state of the Arctic-boreal carbon flux network and its data, and serves as an important step in reducing uncertainties in Arctic-boreal carbon budgets and in enhancing our understanding of climate feedbacks. The data can be accessed at ORNL DAAC at https://doi.org/10.3334/ORNLDAAC/2448 (Virkkala et al., 2026).",
+      "url": "https://www.semanticscholar.org/paper/fe49521baed5b18b958f8c26ff3076ff36e200a2",
+      "pdf_url": "https://essd.copernicus.org/articles/18/6357/2026/essd-18-6357-2026.pdf",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 97,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model",
+        "river",
+        "wetland"
+      ]
     },
     {
       "id": "284d4fec4a1138e4904af7c726339b9ef73ab654",
