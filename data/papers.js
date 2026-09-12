@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-09-11T23:19:10.819295+00:00",
+  "updated_at": "2026-09-12T23:13:20.679099+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 31,
-    "existing_records_after_filter": 1064,
-    "total_records_after_merge": 1065,
+    "fresh_records_before_merge": 36,
+    "existing_records_after_filter": 1065,
+    "total_records_after_merge": 1066,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1064,
+    "existing_records_before_update": 1065,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
@@ -12006,6 +12006,71 @@ window.PAPER_TRACKER_DATA = {
           "MAG": "2330626927",
           "DOI": "10.3389/fenvs.2016.00014",
           "CorpusId": 18984955
+        }
+      }
+    },
+    {
+      "id": "30116843640d05a983251090b3df14f9c8820170",
+      "source": "Semantic Scholar",
+      "pmid": "23016881",
+      "doi": "10.1021/es302063v",
+      "title": "Ecosystem effects of a tropical cyclone on a network of lakes in northeastern North America.",
+      "authors": [
+        "Jennifer L. Klug",
+        "D. C. Richardson",
+        "H. Ewing",
+        "B. R. Hargreaves",
+        "N. Samal",
+        "D. Vachon",
+        "D. Pierson",
+        "Amanda M. Lindsey",
+        "D. O’Donnell",
+        "S. Effler",
+        "K. Weathers"
+      ],
+      "journal": "Environmental Science and Technology",
+      "publication_date": "2012-10-12",
+      "abstract": "Here we document the regional effects of Tropical Cyclone Irene on thermal structure and ecosystem metabolism in nine lakes and reservoirs in northeastern North America using a network of high-frequency, in situ, automated sensors. Thermal stability declined within hours in all systems following passage of Irene, and the magnitude of change was related to the volume of water falling on the lake and catchment relative to lake volume. Across systems, temperature change predicted the change in primary production, but changes in mixed-layer thickness did not affect metabolism. Instead, respiration became a driver of ecosystem metabolism that was decoupled from in-lake primary production, likely due to addition of terrestrially derived carbon. Regionally, energetic disturbance of thermal structure was shorter-lived than disturbance from inflows of terrestrial materials. Given predicted regional increases in intense rain events with climate change, the magnitude and longevity of ecological impacts of these storms will be greater in systems with large catchments relative to lake volume, particularly when significant material is available for transport from the catchment. This case illustrates the power of automated sensor networks and associated human networks in assessing both system response and the characteristics that mediate physical and ecological responses to extreme events.",
+      "url": "https://www.semanticscholar.org/paper/30116843640d05a983251090b3df14f9c8820170",
+      "pdf_url": "https://archive-ouverte.unige.ch/unige:78470",
+      "citation_count": 120,
+      "influential_citation_count": 8,
+      "reference_count": 32,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "sensor"
+      ],
+      "semantic_scholar": {
+        "paper_id": "30116843640d05a983251090b3df14f9c8820170",
+        "tldr": "Given predicted regional increases in intense rain events with climate change, the magnitude and longevity of ecological impacts of these storms will be greater in systems with large catchments relative to lake volume, particularly when significant material is available for transport from the catchment.",
+        "fields_of_study": [
+          "Medicine",
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Medicine",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [
+          "JournalArticle"
+        ],
+        "external_ids": {
+          "MAG": "2140862608",
+          "DOI": "10.1021/es302063v",
+          "CorpusId": 206960263,
+          "PubMed": "23016881"
         }
       }
     },
@@ -25131,7 +25196,7 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
-      "id": "1cff8cf11de069ae37aa085211893204140b25ea",
+      "id": "10de9f5cdc10c4a3334e738e075850357f782fee",
       "source": "Semantic Scholar",
       "pmid": "",
       "doi": "10.1007/s10021-014-9785-1",
@@ -25142,8 +25207,8 @@ window.PAPER_TRACKER_DATA = {
       ],
       "journal": "Ecosystems",
       "publication_date": "2014-06-19",
-      "abstract": "Animal excretion can be a significant nutrient flux within ecosystems, where it supports primary production and facilitates microbial decomposition of organic matter. The effects of excretory products on nutrient cycling have been documented for various species and ecosystems, but temporal variation in these processes is poorly understood. We examined variation in excretion rates of a dominant grazing snail, Elimia clavaeformis, and its contribution to nutrient cycling, over the course of 14 months in a well-studied, low-nutrient stream (Walker Branch, east Tennessee, USA). Biomass-specific excretion rates of ammonium varied over twofold during the study, coinciding with seasonal changes in food availability (measured as gross primary production) and water temperature (multiple linear regression, R2 = 0.57, P = 0.053). The contribution of ammonium excretion to nutrient cycling varied with seasonal changes in both biological (that is, nutrient uptake rate) and physical (that is, stream flow) variables. On average, ammonium excretion accounted for 58% of stream water ammonium concentrations, 26% of whole-stream nitrogen demand, and 66% of autotrophic nitrogen uptake. Phosphorus excretion by Elimia was contrastingly low throughout the year, supplying only 1% of total dissolved phosphorus concentrations. The high average N:P ratio (89:1) of snail excretion likely exacerbated phosphorus limitation in Walker Branch. To fully characterize animal excretion rates and effects on ecosystem processes, multiple measurements through time are necessary, especially in ecosystems that experience strong seasonality.",
-      "url": "https://www.semanticscholar.org/paper/1cff8cf11de069ae37aa085211893204140b25ea",
+      "abstract": "Animal excretion can be a significant nutrient flux within ecosystems, where it supports primary production and facilitates microbial decomposition of organic matter. The effects of excretory products on nutrient cycling have been documented for various species and ecosystems, but temporal variation in these processes is poorly understood. We examined variation in excretion rates of a dominant grazing snail, Elimia clavaeformis, and its contribution to nutrient cycling, over the course of 14 months in a well-studied, low-nutrient stream (Walker Branch, east Tennessee, USA). Biomass-specific excretion rates of ammonium varied over twofold during the study, coinciding with seasonal changes in food availability (measured as gross primary production) and water temperature (multiple linear regression, R2 = 0.57, P = 0.053). The contribution of ammonium excretion to nutrient cycling varied with seasonal changes in both biological (that is, nutrient uptake rate) and physical (that is, stream flow) variables. On average, ammonium excretion accounted for 58% of stream water ammonium concentrations, 26% of whole-stream nitrogen demand, and 66% of autotrophic nitrogen uptake. Phosphorus excretion by Elimia was contrastingly low throughout the year, supplying only 1% of total dissolved phosphorus concentrations. The high average N:P ratio (89:1) of snail excretion likely exacerbated phosphorus limitation in Walker Branch. To fully characterize animal excretion rates and effects on ecosystem processes, multiple measurements through time are necessary, especially in ecosystems that experience strong seasonality.",
+      "url": "https://www.semanticscholar.org/paper/10de9f5cdc10c4a3334e738e075850357f782fee",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10021-014-9785-1.pdf",
       "citation_count": 20,
       "influential_citation_count": 2,
@@ -25155,7 +25220,7 @@ window.PAPER_TRACKER_DATA = {
         "river"
       ],
       "semantic_scholar": {
-        "paper_id": "1cff8cf11de069ae37aa085211893204140b25ea",
+        "paper_id": "10de9f5cdc10c4a3334e738e075850357f782fee",
         "tldr": "",
         "fields_of_study": [
           "Biology"
@@ -34071,6 +34136,60 @@ window.PAPER_TRACKER_DATA = {
       }
     },
     {
+      "id": "3792090db334823ef785ccd17c6b99d3c518cff8",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/BG-10-437-2013",
+      "title": "Carbon dioxide balance of subarctic tundra from plot to regional scales",
+      "authors": [
+        "M. Marushchak",
+        "I. Kiepe",
+        "C. Biasi",
+        "V. Elsakov",
+        "T. Friborg",
+        "T. Johansson",
+        "H. Soegaard",
+        "T. Virtanen",
+        "P. Martikainen"
+      ],
+      "journal": "Biogeosciences",
+      "publication_date": "2012-08-01",
+      "abstract": "We report here the carbon dioxide (CO 2 ) budget of a 98.6 km 2 subarctic tundra area in northeast European Russia based on measurements at two different scales and two independent upscaling approaches. Plot-scale measurements (chambers on terrestrial surfaces, gas gradient method and bubble collectors on lakes) were carried out from July 2007 to October 2008. The landscape-scale eddy covariance (EC) measurements covered the snow-free period of 2008. The annual net ecosystem exchange (NEE) of different land cover types ranged from −251 to 84 g C m −2 . Leaf area index (LAI) was an excellent predictor of the spatial variability in gross photosynthesis (GP), NEE and ecosystem respiration (ER). The plot-scale CO 2 fluxes were first scaled up to the EC source area and then to the whole study area using two data sets: a land cover classification and a LAI map, both based on field data and a 2.4 m pixel-sized QuickBird satellite image. The good agreement of the CO 2 balances for the EC footprint based on the different measuring techniques (−105 to −81 g C m −2 vs. −79 g C m −2 ; growing season 2008) justified the integration of the plot-scale measurements over the larger area. The regional CO 2 balance based on area-integrated plot-scale measurements was −41 or −79 g C m −2 yr −1 according to the two upscaling methods, the land cover classification and the LAI map, respectively. Due to the heterogeneity of tundra, the effect of climate change on CO 2 uptake will vary strongly according to the land cover type and, moreover, likely changes in their relative coverage in the future will have great impact on the regional CO 2 balance.",
+      "url": "https://www.semanticscholar.org/paper/3792090db334823ef785ccd17c6b99d3c518cff8",
+      "pdf_url": "https://bg.copernicus.org/articles/10/437/2013/bg-10-437-2013.pdf",
+      "citation_count": 95,
+      "influential_citation_count": 7,
+      "reference_count": 73,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ],
+      "semantic_scholar": {
+        "paper_id": "3792090db334823ef785ccd17c6b99d3c518cff8",
+        "tldr": "",
+        "fields_of_study": [
+          "Environmental Science"
+        ],
+        "s2_fields_of_study": [
+          {
+            "category": "Environmental Science",
+            "source": "external"
+          },
+          {
+            "category": "Environmental Science",
+            "source": "s2-fos-model"
+          }
+        ],
+        "publication_types": [],
+        "external_ids": {
+          "MAG": "2148122631",
+          "DOI": "10.5194/BG-10-437-2013",
+          "CorpusId": 53633507
+        }
+      }
+    },
+    {
       "id": "faa69744a0ffa7fc12b77e079ea8a1b8a2c2957b",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -34115,60 +34234,6 @@ window.PAPER_TRACKER_DATA = {
           "MAG": "2128873866",
           "DOI": "10.1007/s10021-005-0086-6",
           "CorpusId": 39783870
-        }
-      }
-    },
-    {
-      "id": "cd0b2869543ae55af58d697c3c8c8da3dde3bc3d",
-      "source": "Semantic Scholar",
-      "pmid": "",
-      "doi": "10.5194/BG-10-437-2013",
-      "title": "Carbon dioxide balance of subarctic tundra from plot to regional scales",
-      "authors": [
-        "M. Marushchak",
-        "I. Kiepe",
-        "C. Biasi",
-        "V. Elsakov",
-        "T. Friborg",
-        "T. Johansson",
-        "H. Soegaard",
-        "T. Virtanen",
-        "P. Martikainen"
-      ],
-      "journal": "Biogeosciences",
-      "publication_date": "2012-08-01",
-      "abstract": "We report here the carbon dioxide (CO 2 ) budget of a 98.6 km 2 subarctic tundra area in northeast European Russia based on measurements at two different scales and two independent upscaling approaches. Plot-scale measurements (chambers on terrestrial surfaces, gas gradient method and bubble collectors on lakes) were carried out from July 2007 to October 2008. The landscape-scale eddy covariance (EC) measurements covered the snow-free period of 2008. The annual net ecosystem exchange (NEE) of different land cover types ranged from −251 to 84 g C m −2 . Leaf area index (LAI) was an excellent predictor of the spatial variability in gross photosynthesis (GP), NEE and ecosystem respiration (ER). The plot-scale CO 2 fluxes were first scaled up to the EC source area and then to the whole study area using two data sets: a land cover classification and a LAI map, both based on field data and a 2.4 m pixel-sized QuickBird satellite image. The good agreement of the CO 2 balances for the EC footprint based on the different measuring techniques (−105 to −81 g C m −2 vs. −79 g C m −2 ; growing season 2008) justified the integration of the plot-scale measurements over the larger area. The regional CO 2 balance based on area-integrated plot-scale measurements was −41 or −79 g C m −2 yr −1 according to the two upscaling methods, the land cover classification and the LAI map, respectively. Due to the heterogeneity of tundra, the effect of climate change on CO 2 uptake will vary strongly according to the land cover type and, moreover, likely changes in their relative coverage in the future will have great impact on the regional CO 2 balance.",
-      "url": "https://www.semanticscholar.org/paper/cd0b2869543ae55af58d697c3c8c8da3dde3bc3d",
-      "pdf_url": "https://bg.copernicus.org/articles/10/437/2013/bg-10-437-2013.pdf",
-      "citation_count": 94,
-      "influential_citation_count": 7,
-      "reference_count": 76,
-      "references": [],
-      "tags": [
-        "lake",
-        "metabolism"
-      ],
-      "semantic_scholar": {
-        "paper_id": "cd0b2869543ae55af58d697c3c8c8da3dde3bc3d",
-        "tldr": "",
-        "fields_of_study": [
-          "Environmental Science"
-        ],
-        "s2_fields_of_study": [
-          {
-            "category": "Environmental Science",
-            "source": "external"
-          },
-          {
-            "category": "Environmental Science",
-            "source": "s2-fos-model"
-          }
-        ],
-        "publication_types": [],
-        "external_ids": {
-          "MAG": "2148122631",
-          "DOI": "10.5194/BG-10-437-2013",
-          "CorpusId": 53633507
         }
       }
     },
