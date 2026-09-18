@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T23:34:18.591466+00:00",
+  "updated_at": "2026-09-18T23:19:02.164534+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 16,
+    "fresh_records_before_merge": 18,
     "existing_records_after_filter": 1066,
-    "total_records_after_merge": 1066,
+    "total_records_after_merge": 1067,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1066,
@@ -8760,6 +8760,34 @@
           "CorpusId": 84413344
         }
       }
+    },
+    {
+      "id": "f61ce93f6c7c58094fd5559841d33a0d3e4eaab7",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/bg-23-6317-2026",
+      "title": "A boost on the final stretch: intense river metabolism and wetland discharge increase aquatic CO\n 2\n dynamics in the Danube Delta",
+      "authors": [
+        "Marie-Sophie Maier",
+        "B. Wehrli",
+        "C. Teodoru"
+      ],
+      "journal": "Biogeosciences",
+      "publication_date": "2026-09-14",
+      "abstract": "\n Many river deltas are aquatic hot spots for carbon dioxide (CO\n 2\n ) emissions to the atmosphere. Their patchwork of wetlands, lakes, channels, and river reaches often complicates the analysis of CO\n 2\n sources such as ecosystem respiration or lateral water transfer. Sensing techniques offer the opportunity of measuring the CO\n 2\n , O\n 2\n and DIC concentrations at high temporal resolution for periods from days to months. Such time-series allow quantification of diurnal and seasonal cycles of river metabolism and lateral exchange. This study addresses the following general hypotheses: (1) Ecosystem metabolism intensifies when river water enters the slower flow paths through channels and lakes of a delta. (2) Wetland discharge from a delta significantly alters the oxygen and carbon dynamics in a river. (3) In such a case, average aquatic CO\n 2\n emissions increase on the final stretch before a river reaches the sea. We tested these hypotheses based on measurements of the oxygen and carbon dynamics at 15 min time resolution obtained from sensor packages. They were deployed for two years in the three main river reaches of the Danube Delta in Romania and for an additional year in three channels within the delta. By combining covariance analysis and monthly averaging of 24 h cycles we found a factor 100 difference in the amplitude of daily O\n 2\n and CO\n 2\n fluctuations across different stations and seasons. Channels with slow flow paths within the delta exhibited 4–8 times larger median amplitudes in daily metabolic cycles compared to the upstream river station. Correspondingly, metabolic intensity was on average 3–4 times more sensitive to changes in water temperature and cloud cover within the delta compared to the main river. Discharge of O\n 2\n -depleted and CO\n 2\n -rich wetland water into the downstream river sections was most pronounced during spring floods with apparent mixing rations of up to 13 %–25 % depending on the station. In a delta channel draining wetland waters, average CO\n 2\n supersaturation was almost an order of magnitude higher than in the Danube inflow. The combined effects of intense metabolism within the delta and wetland discharge doubled the CO\n 2\n emissions near the river mouth compared to an upstream Danube station. At the landscape level, however, carbon drawdown is likely five times larger than aquatic CO\n 2\n emissions. Based on a high-resolution timeseries spanning three years, this study demonstrates how connected wetlands enhance aquatic metabolism and associated CO\n 2\n dynamics in a large, lowland river.\n",
+      "url": "https://www.semanticscholar.org/paper/f61ce93f6c7c58094fd5559841d33a0d3e4eaab7",
+      "pdf_url": "https://bg.copernicus.org/articles/23/6317/2026/bg-23-6317-2026.pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 53,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "river",
+        "sensor",
+        "wetland"
+      ]
     },
     {
       "id": "ae8c86a0822a93e061d891d26a35af3832870f05",
