@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T23:42:08.884657+00:00",
+  "updated_at": "2026-09-24T23:53:24.876390+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 8,
+    "fresh_records_before_merge": 6,
     "existing_records_after_filter": 1067,
-    "total_records_after_merge": 1067,
+    "total_records_after_merge": 1068,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1067,
@@ -32634,6 +32634,43 @@
           "CorpusId": 245764046
         }
       }
+    },
+    {
+      "id": "aa3d8818294b25fb8308f88acd58864e46706957",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.17076/eco1334",
+      "title": "CIRCADIAN VARIABILITY OF DISSOLVED OXYGEN CONTENT AS AN INDICATOR OF THE METABOLISM OF AN ICE COVERED LAKE ECOSYSTEM",
+      "authors": [
+        "Николай Иннокентьевич Пальшин",
+        "Роман Эдуардович Здоровеннов",
+        "Галина Эдуардовна Здоровеннова",
+        "Сергей Рэмович Богданов",
+        "Галина Геннадиевна Гавриленко",
+        "Татьяна Владимировна Ефремова",
+        "Аркадий Юрьевич Тержевик",
+        "N. Palshin",
+        "R. Zdorovennov",
+        "G. Zdorovennova",
+        "S. Bogdanov",
+        "G. Gavrilenko",
+        "T. Efremova",
+        "A. Terzhevik"
+      ],
+      "journal": "Proceedings of the Karelian Research Centre of the Russian Academy of Sciences",
+      "publication_date": "2020-12-24",
+      "abstract": "Circadian variability of dissolved oxygen content is used as an indicator of the ecosystem metabolism in the small ice-covered Lake Vendyurskoe (southern Karelia). In the endof the ice season, before the onset of the spring under-ice convection, the vertical oxygen profile reflected its consumption due to organic matter destruction, which was the most intensive near the bottom. The anoxic zone was 1.5 m thick in the central deep-water part of the lake, and the dissolved oxygen concentration was 9–10.5 mg/L in the surface layer. As under-ice convection in March and April 2020 developed against the background of an increase in under-ice irradiation (up to 100 W/m2 in the daytime), dissolved oxygen oscillations with a circadian period and an amplitude of up to 0.5–0.9 mg/ L (with a minimum at night and a maximum during the daytime) were found within the convective layer. According to the working hypothesis, the decrease in dissolved oxygen concentration was due to respiration of aquatic organisms and destruction of organic matter, while the increase was due to intensification of photosynthesis of algae during the daytime. The concentration of chlorophyll “a” was the highest (up to 2.5 μg/L) in the 0.5 m under-ice water layer, reaching 1 μg/L in the convective layer, and declining to 0.1–0.3 μg/L below this layer. In the time interval from the 20s of March to the end of April, the thickness of the convective layer increased to 7.5 m, and oxygen concentration decreased by ~0.5 mg/L due to the entrainment of oxygen-depleted underlying waters. During the same period, the increase in the oxygen content of the whole water column was about 10 %, presumably due to photosynthesis of algae.",
+      "url": "https://www.semanticscholar.org/paper/aa3d8818294b25fb8308f88acd58864e46706957",
+      "pdf_url": "http://journals.krc.karelia.ru/index.php/ecology/article/download/1334/972",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 28,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "oxygen"
+      ]
     },
     {
       "id": "8dce3de86399dfa49deb3ddd6bf9ccf7f674cf53",
