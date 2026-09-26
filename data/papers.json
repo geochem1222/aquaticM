@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T23:53:24.876390+00:00",
+  "updated_at": "2026-09-26T00:00:29.067099+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 6,
-    "existing_records_after_filter": 1067,
-    "total_records_after_merge": 1068,
+    "fresh_records_before_merge": 31,
+    "existing_records_after_filter": 1068,
+    "total_records_after_merge": 1069,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1067,
+    "existing_records_before_update": 1068,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
@@ -8709,6 +8709,33 @@
           "CorpusId": 249138940
         }
       }
+    },
+    {
+      "id": "a33a2ac7875cf55ed7e42328f17c9cc8649212b2",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.17076/lim1085",
+      "title": "ONEGO LAKE CATCHMENT ECOSYSTEM GIS AS A TOOL FOR ESTIMATING COMPONENTS OF THE WATER AND CARBON BALANCE",
+      "authors": [
+        "Петр Юрьевич Литинский",
+        "P. Litinsky"
+      ],
+      "journal": "Proceedings of the Karelian Research Centre of the Russian Academy of Sciences",
+      "publication_date": "2019-10-01",
+      "abstract": "The GIS integrates data on the structure and dynamics of the terrestrial ecosystems in the catchments of Lake Onego tributary streams, as well as on the relief and hydrographic network based on a height model with a spatial resolution of 3”. The article provides a detailed description of the methodology for creating basic GIS layers, including scripts for open access packages (GDAL, GRASS, SAGA). The total flow of terrigenous organic matter into the lake is determined by the spatial structure of the biogeocenoses in the catchment area. The structure and dynamics of the catchment ecosystems are detected from Landsat images using an original spectral space modeling technique, whichenables the isolation of biogeocenotic complexes (Quaternary sediments + vegetation). Each type of Quaternary sediments is characterized by a certain degree of water permeability of soils and the magnitude of surface runoff; each type of biogeocenosis produces a certain amount of net ecosystem production, part of which in the form of humus substances is transferred with surface runoff to water bodies. A fundamentally new level of structuring of the earth’s surface allows to enhance the reliability of calculations, to clarify existing data on the flow of terrigenous carbon into the lake ecosystem. For the first time, spatial information was obtained on the structure of the catchment ecosystems for both the entire lake and all its tributaries, according to a comparable methodology. This makes it possible to more reasonably extrapolate the results of hydrochemical measurements from individual tributaries to the entire catchment. On the other hand, the use of GIS helps to identify gaps in hydrochemical data and provides for optimal planning of field studies.",
+      "url": "https://www.semanticscholar.org/paper/a33a2ac7875cf55ed7e42328f17c9cc8649212b2",
+      "pdf_url": "http://journals.krc.karelia.ru/index.php/limnology/article/download/1085/784",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 7,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model",
+        "river",
+        "sediment"
+      ]
     },
     {
       "id": "1651c69b49d47b4474ebd68bae51cdb86d76ceb7",
