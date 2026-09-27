@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T23:38:00.100879+00:00",
+  "updated_at": "2026-09-27T23:48:32.544401+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,7 +134,7 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 0,
+    "fresh_records_before_merge": 17,
     "existing_records_after_filter": 1069,
     "total_records_after_merge": 1069,
     "query_limit": null,
