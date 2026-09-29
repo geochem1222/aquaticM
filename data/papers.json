@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T23:48:32.544401+00:00",
+  "updated_at": "2026-09-29T01:00:26.471539+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 17,
+    "fresh_records_before_merge": 20,
     "existing_records_after_filter": 1069,
-    "total_records_after_merge": 1069,
+    "total_records_after_merge": 1070,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1069,
@@ -35320,6 +35320,30 @@
           "CorpusId": 214038093
         }
       }
+    },
+    {
+      "id": "17b7e943965f92cd210414bb43566362c8eb64db",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s10021-014-9799-8",
+      "title": "Whole-Lake CO2 Dynamics in Response to Storm Events in Two Morphologically Different Lakes",
+      "authors": [
+        "D. Vachon",
+        "P. D. del Giorgio"
+      ],
+      "journal": "Ecosystems",
+      "publication_date": "2014-07-24",
+      "abstract": "In lentic systems, hydrology can be dramatically altered after storm events, potentially modifying the carbon budget. In particular, rapid increases in the surface water carbon dioxide partial pressure (pCO2) have been observed following such events. Several processes may explain these shifts in lake CO2 dynamics, including vertical mixing, increases in metabolism, and increases in external loading. To evaluate the relative importance of these various processes, we reconstructed the whole-lake daily CO2 budget using concurrent estimates of lake metabolism and daily CO2 mass balance budgets in two lakes with distinct morphometries located in Québec, Canada. We found that storm events caused variable, but significant, changes in whole-lake CO2 mass. Such events influenced CO2 dynamics indirectly by inducing shifts in lake metabolism, and directly by importing CO2 by the inflowing storm waters. Storm intensity (in terms of total amount of precipitation) influences the balance between these two processes, but the final outcome depends on lake morphometry. Our results suggest that when storms are intense enough to drive lake water renewal rate beyond 1% day−1, external CO2 loadings became the dominant process, overwhelming internal CO2 production. Lakes with slower hydrological turnover, however, are more susceptible to internal regulation and may simply re-allocate CO2 from the hypolimnion to the epilimnion following a storm event. Our results thus suggest that this tightening of the watershed-lake-atmosphere linkage by climatic events is strongly modulated by lake morphometry. These features should be considered when predicting the impact of future climate change on regional C budgets and emissions.",
+      "url": "https://www.semanticscholar.org/paper/17b7e943965f92cd210414bb43566362c8eb64db",
+      "pdf_url": "https://archive-ouverte.unige.ch/unige:78471",
+      "citation_count": 97,
+      "influential_citation_count": 4,
+      "reference_count": 65,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism"
+      ]
     },
     {
       "id": "c22614fd429174d65a98a8e3a91b709646384cb4",
