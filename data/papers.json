@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T01:00:26.471539+00:00",
+  "updated_at": "2026-09-30T00:26:57.531429+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 20,
-    "existing_records_after_filter": 1069,
+    "fresh_records_before_merge": 0,
+    "existing_records_after_filter": 1070,
     "total_records_after_merge": 1070,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1069,
+    "existing_records_before_update": 1070,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
