@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-10-01T00:33:15.651154+00:00",
+  "updated_at": "2026-10-02T00:47:55.907148+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 5,
+    "fresh_records_before_merge": 19,
     "existing_records_after_filter": 1070,
-    "total_records_after_merge": 1070,
+    "total_records_after_merge": 1071,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1070,
@@ -7068,6 +7068,36 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 85926955
         }
       }
+    },
+    {
+      "id": "86d5301f5b2d201084ae4a0ee7340ebed6890f71",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.3389/frwa.2026.1954977",
+      "title": "A systematic review of the methods and magnitudes of dissolved oxygen exchanges in streams and rivers",
+      "authors": [
+        "Jasmine Krause",
+        "Cassandra Knutson",
+        "E. Hotchkiss",
+        "M. J. Cohen",
+        "A. Ward"
+      ],
+      "journal": "Frontiers in Water",
+      "publication_date": "2026-09-29",
+      "abstract": "Dissolved oxygen (DO) has been extensively studied in streams and rivers, and its diel dynamics have become the primary lens through which whole-stream metabolism—gross primary production (GPP) and ecosystem respiration (ER)—is inferred. Yet this integrated signal emerges from the interaction of oxygen exchanges across stream compartments, and how these exchanges contribute to whole-stream signals remains less understood. To characterize the extent and nature of this disconnect, we synthesize 230 empirical studies (1964–2024) documenting which oxygen exchanges have been measured, by what methods, and at what magnitudes across streams and rivers globally. Here, we define oxygen exchanges broadly as all quantified transfers of oxygen into or out of stream compartments, organizing them into whole-stream metabolism (GPP and ER) as an integrative signal of four underlying process domains: (1) water column, (2) benthic, (3) hyporheic zone and sediments, and (4) surface-atmosphere exchange. Across these groupings, whole-stream metabolism and surface-atmosphere exchange dominated the literature, accounting for 66 and 18% of reported measurements, respectively, while individual process domains were far less common (benthic ~7%; sediment oxygen demand ~5%; water column ~4%; hyporheic ~1%). Subsurface respiration was the most variable yet least frequently measured exchange, and in the small subset of studies with concurrent process domains and whole-stream measurements, dominant respiration pathways shifted from subsurface-dominated in small streams to water column-dominated in large rivers. While these concurrent studies offer rare mechanistic insight, they represent a small subset of the literature, and the methodological and disciplinary fragmentation documented across our synthesis limits our ability to attribute whole-stream oxygen signals to their underlying processes. We identify key challenges including methodological heterogeneity and scaling barriers across compartments, inconsistent terminology and disciplinary silos that hinder integration of subsurface exchanges. Addressing these gaps through concurrent multi-compartment measurements, standardized reporting, and cross-disciplinary integration is essential to advancing a mechanistic understanding of stream oxygen dynamics.",
+      "url": "https://www.semanticscholar.org/paper/86d5301f5b2d201084ae4a0ee7340ebed6890f71",
+      "pdf_url": "https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2026.1954977/pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 153,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river",
+        "sediment",
+        "sensor"
+      ]
     },
     {
       "id": "b10892eb8e7642b5c63e72a3d7fef4c5c0856bc4",
