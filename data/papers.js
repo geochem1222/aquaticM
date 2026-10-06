@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-10-05T00:00:09.179812+00:00",
+  "updated_at": "2026-10-06T01:48:08.082164+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,7 +134,7 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 24,
+    "fresh_records_before_merge": 23,
     "existing_records_after_filter": 1071,
     "total_records_after_merge": 1071,
     "query_limit": null,
