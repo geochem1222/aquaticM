@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-10-08T01:01:23.436416+00:00",
+  "updated_at": "2026-10-09T01:14:22.626259+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 9,
+    "fresh_records_before_merge": 20,
     "existing_records_after_filter": 1071,
-    "total_records_after_merge": 1071,
+    "total_records_after_merge": 1072,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1071,
@@ -31300,6 +31300,31 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 222874062
         }
       }
+    },
+    {
+      "id": "2061cb6bc0c0306059ed86a3697169a4505780d2",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1080/02705060.2026.2742439",
+      "title": "Geographically close nearshore sites exhibit contrasting dissolved oxygen dynamics and ecosystem metabolism in eastern Lake Taihu",
+      "authors": [
+        "Jun-Qing Wang",
+        "Ye-Hui Zhang"
+      ],
+      "journal": "Journal of Freshwater Ecology",
+      "publication_date": "2026-10-06",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/2061cb6bc0c0306059ed86a3697169a4505780d2",
+      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/02705060.2026.2742439?needAccess=true",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 41,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "oxygen"
+      ]
     },
     {
       "id": "b33fd629058e4ba1662e646e74c2338679dbbf53",
