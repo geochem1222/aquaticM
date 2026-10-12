@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-10-11T00:16:55.386914+00:00",
+  "updated_at": "2026-10-12T00:34:09.837432+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 23,
+    "fresh_records_before_merge": 26,
     "existing_records_after_filter": 1072,
-    "total_records_after_merge": 1072,
+    "total_records_after_merge": 1073,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1072,
@@ -37577,6 +37577,38 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 126530345
         }
       }
+    },
+    {
+      "id": "d7911e91c0cb58186aa9b59a89235aef79201cf6",
+      "source": "Semantic Scholar",
+      "pmid": "42845264",
+      "doi": "10.1111/gcb.71151",
+      "title": "Climate Warming Impaired the CO2 Sink Capacity and Efficiency in a Suaeda salsa-Dominated Salt Marsh.",
+      "authors": [
+        "Si-Yu Wei",
+        "Xiao-Jing Chu",
+        "Bao-Yu Sun",
+        "Rui-Feng Sun",
+        "Xiao-Shuai Zhang",
+        "Wei-Min Song",
+        "Xiao-Jie Wang",
+        "E. Pendall",
+        "Guang-Xuan Han"
+      ],
+      "journal": "Global Change Biology",
+      "publication_date": "2026-10-01",
+      "abstract": "Salt marshes are among the most valuable carbon sinks globally but are highly vulnerable to ongoing climate warming, which profoundly affects ecosystem photosynthesis and respiration and may therefore alter their CO2 sink capacity and efficiency. However, whether climate warming will enhance or reduce the function of salt marshes to act as CO2 sinks remains uncertain. Here, we investigated the interannual variations in salt marsh CO2 sink capacity (net ecosystem exchange, NEE) and efficiency (ecosystem carbon use efficiency, CUE) in response to climate warming, using a long-term eddy covariance dataset (2011-2024) from the Yellow River Delta, supplemented by a manipulative warming experiment (2017-2021) and a multi-site eddy covariance dataset spanning China and North America (68 site-years). At the study site, we quantified multiyear mean values for NEE as -107 ± 59 g C m-2 year-1 and for CUE as 0.41 ± 0.16, both of which showed strong interannual variability. Moreover, rising temperatures were primarily and negatively associated with yearly changes in CO2 sink capacity and efficiency, and these relationships were closely linked to lower gross primary production. The warming experiment further showed that the warming-induced reductions in CO2 sink capacity and efficiency were accompanied by increased soil salinity and reduced plant growth. Similar negative associations between temperature and both CO2 sink capacity and efficiency were also observed at several sites in the multi-site dataset. Overall, this study improves our understanding of the coupling between climate warming and the CO2 sink function of salt marshes and suggests that continued warming may reduce net atmospheric CO2 uptake across this biome in the future.",
+      "url": "https://www.semanticscholar.org/paper/d7911e91c0cb58186aa9b59a89235aef79201cf6",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 45,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river",
+        "wetland"
+      ]
     },
     {
       "id": "67a965217d582156aac42cfe44b518d6e4fddb13",
