@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-10-12T00:34:09.837432+00:00",
+  "updated_at": "2026-10-13T02:34:54.803591+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 26,
-    "existing_records_after_filter": 1072,
-    "total_records_after_merge": 1073,
+    "fresh_records_before_merge": 18,
+    "existing_records_after_filter": 1073,
+    "total_records_after_merge": 1074,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1072,
+    "existing_records_before_update": 1073,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
@@ -2632,6 +2632,42 @@ window.PAPER_TRACKER_DATA = {
           "PubMed": "34147993"
         }
       }
+    },
+    {
+      "id": "d39798259bd9981d2491bd832e0a8a1758589032",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1002/rra.1033",
+      "title": "Patterns of primary and heterotrophic productivity in an arid lowland river",
+      "authors": [
+        "B. Gawne",
+        "Chester J. Merrick",
+        "D. Williams",
+        "G. Rees",
+        "R. Oliver",
+        "P. Bowen",
+        "S. Treadwell",
+        "G. Beattie",
+        "Iain Ellis",
+        "J. Frankenberg",
+        "Z. Lorenz"
+      ],
+      "journal": "River Research and Applications",
+      "publication_date": "2007-12-01",
+      "abstract": "Three river conceptual models make differing predictions about the major source of primary production in lowland rivers, acknowledging the importance of primary productivity in the ecology and management of lowland rivers. Patterns of primary production in lowland rivers are still an area of considerable uncertainty. The objective of this study was to examine the major sources and transformations of organic matter in an Australian lowland river and compare them to the predictions of existing models. The broad approach adopted was to quantify the contribution from the major ecosystem components and compare these with estimates of system metabolism determined using open water measures of diel oxygen change. Three 4‐km river reaches were selected to represent the extent of variation found along the free‐flowing lowland sections of the Murray River, one of Australia's largest and most regulated rivers. Annual open water gross primary production (GPP) estimates for the Murray R. during this study ranged from 221 to 376 gC m−2 y−1 and were similar to other large rivers. Examination of the net contribution of organic matter to the channel indicates that primary productivity in the Murray R. is derived from a combination of phytoplankton, riparian vegetation and macrophytes, but that the major source varies both spatially and temporally. The present study confirms that the River Continuum Concept (RCC), the Flood Pulse Concept (FPC) and Riverine Productivity Model (RPM) all have some application to Australian lowland rivers, but that synthesis of the models will be difficult until we can incorporate the extent, causes and consequences of primary production variability. This study also highlights the importance of the microbial loop and macrophytes in the ecology of the Murray R. Copyright © 2007 John Wiley & Sons, Ltd.",
+      "url": "https://www.semanticscholar.org/paper/d39798259bd9981d2491bd832e0a8a1758589032",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Patterns_of_primary_and_heterotrophic_productivity_in_an_arid_lowland_river/22275727",
+      "citation_count": 59,
+      "influential_citation_count": 0,
+      "reference_count": 84,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "model",
+        "river",
+        "sensor"
+      ]
     },
     {
       "id": "2288601360b48b1036ba24706e89f0f096f2a6fa",
