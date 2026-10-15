@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T00:20:26.429622+00:00",
+  "updated_at": "2026-10-15T00:01:53.154795+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 23,
+    "fresh_records_before_merge": 36,
     "existing_records_after_filter": 1074,
-    "total_records_after_merge": 1074,
+    "total_records_after_merge": 1077,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1074,
@@ -23740,6 +23740,37 @@
       }
     },
     {
+      "id": "6a0c8661fff8cf5e0c80a7f4bb76c9bde88d4cb3",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2025jg009229",
+      "title": "Mountain Stream Ecosystem Metabolism and Nitrogen Cycling Responses to Hydroclimatic Volatility",
+      "authors": [
+        "Kelly A. Loria",
+        "H. Lowman",
+        "L. Genzoli",
+        "Jasmine Krause",
+        "A. Harpold",
+        "Sudeep Chandra",
+        "J. Blaszczak"
+      ],
+      "journal": "Journal of Geophysical Research - Biogeosciences",
+      "publication_date": "2026-10-01",
+      "abstract": "\n \n Changing hydroclimatic conditions increase streamflow variability and add uncertainty to predictions of watershed nutrient export and ecosystem function. Mountain headwater streams are especially sensitive to climate shifts due to their dependence on seasonal snowpack. We explored how changes in mountain precipitation affect the synchrony between hydrologic processes (peak flow and baseflow onset) and biological processes (metabolism and nutrient uptake) that control nitrogen dynamics. We monitored two mountain streams in the Lake Tahoe basin (California and Nevada, USA)—a larger open‐canopy stream and a smaller, shaded stream—over two dry water years and one substantially wetter water year. On average, the large stream received more annual light, was warmer, and had higher inorganic nitrogen demand compared to the small stream. From dry to wet years, the onset of baseflow was delayed by ∼40 days in both streams, shortening the optimal window for benthic algae growth by over a month and substantially reducing the potential for in stream nitrogen uptake. Concurrently, cumulative annual gross primary production declined by 86% (Δ −248 g O\n 2\n m\n −2\n  yr\n −1\n ) in the large stream and 93% (Δ −26 g O\n 2\n m\n −2\n  yr\n −1\n ) in the small stream. Mean daily ammonium supply increased by 47% (Δ + 0.01 g m\n −2\n  d\n −1\n ) in the large stream and by 112% (Δ + 0.16 g m\n −2\n  d\n −1\n ) in the small stream. These findings highlight the critical role of streams in regulating nutrient dynamics and show that even neighboring or hydrologically similar streams can exhibit distinct biogeochemical responses to hydroclimatic variability.\n",
+      "url": "https://www.semanticscholar.org/paper/6a0c8661fff8cf5e0c80a7f4bb76c9bde88d4cb3",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 60,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "river",
+        "sediment"
+      ]
+    },
+    {
       "id": "1da9b838d41a204ce22b52abacf406ff1c593db6",
       "source": "Semantic Scholar",
       "pmid": "41895575",
@@ -30769,6 +30800,31 @@
       }
     },
     {
+      "id": "e6ad1309fc915dcd9d580597773517ff43e6c01b",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.17076/lim1445",
+      "title": "CALCULATING EVAPOTRANSPIRATION FOR THE LAKE LADOGA CATCHMENT AREA",
+      "authors": [
+        "Анна Мурадовна Расулова",
+        "A. Rasulova"
+      ],
+      "journal": "Proceedings of the Karelian Research Centre of the Russian Academy of Sciences",
+      "publication_date": "2021-09-27",
+      "abstract": "The paper evaluates the possibility of calculating evapotranspiration and gross primary production using a coupled biophysical Penman-Monteith-Leuning model for large catchment areas. In particular, the paper considers the application of the Penman-Monteith-Leuning model for the Lake Ladoga catchment. The theoretical foundations of the model,its flowchart, and the possibility of accessing it through the interface of the cloud platform for the analysis and processing of geospatial data Google Earth Engine are outlined. The model uses MODIS satellite images as input data, from which it receives the properties of the underlying surface. For meteorological data, the model uses the reanalysis model GLDAS. The land cover is classified according to the IBCG classification. Based on the Penman-Monteith-Leuning model, maps of the geospatial distribution of evapotranspiration and its constituent components (vegetation transpiration, soil evaporation, interception from vegetation canopy) and gross primary production in the Lake Ladoga catchment were obtained. The results indicate that evapotranspiration and gross primary production were the greatest in the south of the Lake Ladoga catchment, in areas of mixed forests. For the period from July 2002 to December 2017, there was no significant change in gross primary production, evapotranspiration and its components. For all components of evapotranspiration and gross primary production, seasonality associated with the growing season in the region is observed. The model outputs are consistent with the data on evaporation reported by other authors. The Penman-Monteith-Leuning model is hence fit for application to the Lake Ladoga catchment. The results of the study can be used for efficient water management, in particular for the reclamation of agricultural land in the study area.",
+      "url": "https://www.semanticscholar.org/paper/e6ad1309fc915dcd9d580597773517ff43e6c01b",
+      "pdf_url": "http://journals.krc.karelia.ru/index.php/limnology/article/download/1445/1107",
+      "citation_count": 2,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model"
+      ]
+    },
+    {
       "id": "501f91a20233819e7ac6ac2b5ebda3dcfed9ca35",
       "source": "Semantic Scholar",
       "pmid": "",
@@ -33384,6 +33440,30 @@
           "CorpusId": 217034666
         }
       }
+    },
+    {
+      "id": "d2ebf2bfc5ae1b6f63628d10f987aac22e095a42",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "",
+      "title": "Determinación de patrones espacio-temporales del funcionamiento ecosistémico en ríos de la vertiente atlántica",
+      "authors": [
+        "T. Castillo"
+      ],
+      "journal": "Tesis Doctorals en Xarxa (Consorci de Serveis Universitaris de Catalunya)",
+      "publication_date": "2017-06-19",
+      "abstract": "Over the last few years, functional indicators have been proposed as a valuable tool to assess ecosystem health. In this sense, river ecosystem metabolism (REM), that fluctuate along river networks and along different time scales, is a promising cost-effective measure of ecosystem functioning, being affected by both rapid (primary productivity) and slow (organic matter decomposition) energy channels of the riverine food web. In this Thesis, we have investigated spatial and temporal patterns of REM estimating it by open-channel methods in temperate Atlantic rivers with different conservation status. We have also analysed the possible drivers that independently explained the observed patterns and their ability to predict the different metabolism rates. Our results have shown that taking into account the structural and functional components of the river ecosystems and their interactions throughout space and time is very important to improve our understanding and management capacity of these ecosystems in the medium/long term.",
+      "url": "https://www.semanticscholar.org/paper/d2ebf2bfc5ae1b6f63628d10f987aac22e095a42",
+      "pdf_url": "http://hdl.handle.net/10902/11387",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 90,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river"
+      ]
     },
     {
       "id": "83969063b460c0617689473f9fabdf08f28e2593",
