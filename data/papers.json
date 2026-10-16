@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T23:42:13.310240+00:00",
+  "updated_at": "2026-10-16T23:37:20.675820+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 21,
+    "fresh_records_before_merge": 22,
     "existing_records_after_filter": 1077,
-    "total_records_after_merge": 1077,
+    "total_records_after_merge": 1078,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1077,
@@ -4360,6 +4360,33 @@
           "CorpusId": 213333979
         }
       }
+    },
+    {
+      "id": "3aaae99c4f6b87131d075c057f43b02c0be39263",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1029/2026wr043491",
+      "title": "Arctic Lake Metabolism in Late Winter",
+      "authors": [
+        "Ezgi Aşırok",
+        "G. Kirillin"
+      ],
+      "journal": "Water Resources Research",
+      "publication_date": "2026-10-01",
+      "abstract": "\n Seasonally ice‐covered Arctic lakes experience pronounced changes in physical and biogeochemical dynamics during late winter, when increasing solar radiation initiates under‐ice primary production and convective mixing. Here we analyze high‐frequency observations of temperature, dissolved oxygen (DO), and photosynthetically active radiation (PAR) from ultra‐oligotrophic Arctic Lake Kilpisjärvi during the transition from the dark winter period to ice breakup. We quantify the evolution of the convectively mixed layer (CML), the associated entrainment of oxygen‐poor deep water, and their combined influence on under‐ice lake metabolism. To disentangle biological oxygen production and consumption from physically driven DO redistribution, we introduce a novel “Time‐Lagged Respiration” model that exploits the observed phase shift between diel PAR and DO cycles. The model enables sub‐daily separation of gross primary production and ecosystem respiration using only DO and PAR data. Our results show that photosynthesis begins immediately once light penetrates the ice, at irradiance levels near the detection limit of common radiation sensors. During the pre‐convective period, the photic layer is close to metabolic balance, while convective mixing enhances primary production during late winter, likely through nutrient transport into the upper water column. Entrainment at the base of the CML makes a substantial contribution to the DO budget and must be accounted for to avoid biased metabolism estimates. The findings highlight the tight coupling between physical mixing and biogeochemical processes under ice and provide a framework for improved estimation of winter lake metabolism.",
+      "url": "https://www.semanticscholar.org/paper/3aaae99c4f6b87131d075c057f43b02c0be39263",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2026WR043491",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 40,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "model",
+        "oxygen",
+        "sensor"
+      ]
     },
     {
       "id": "022e6b01053ce4e06657f990263c1a6f41883f5d",
