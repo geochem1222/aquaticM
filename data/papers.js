@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-10-16T23:37:20.675820+00:00",
+  "updated_at": "2026-10-17T23:14:35.731392+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,12 +134,12 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 22,
-    "existing_records_after_filter": 1077,
-    "total_records_after_merge": 1078,
+    "fresh_records_before_merge": 34,
+    "existing_records_after_filter": 1078,
+    "total_records_after_merge": 1079,
     "query_limit": null,
     "retmax": 5000,
-    "existing_records_before_update": 1077,
+    "existing_records_before_update": 1078,
     "fresh_fetch_target": 5000,
     "fetch_mode": "bulk backfill",
     "cache_mode": "merge existing papers; fetch only new candidates when cache is warm",
@@ -31443,6 +31443,35 @@ window.PAPER_TRACKER_DATA = {
         "lake",
         "metabolism",
         "oxygen"
+      ]
+    },
+    {
+      "id": "c5e584fdefc4006ad5a281937b1bdc79a5eafb31",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s12665-026-13158-y",
+      "title": "Extreme drought stress diminished soil carbon sequestration and restructured microbial communities at the Dajiuhu subalpine peatland, Central China",
+      "authors": [
+        "Nayab Ismaeel",
+        "Ji-Wen Ge",
+        "Zi-Wei Liu",
+        "Asma Ali",
+        "Shi-Yu Yang",
+        "Ye Liu"
+      ],
+      "journal": "Environmental Earth Sciences",
+      "publication_date": "2026-10-01",
+      "abstract": "Peatlands store approximately 30% of global terrestrial soil carbon, yet how subalpine peatlands respond to extreme drought remains poorly understood. In this study, we investigated the effects of the historically severe 2022 Yangtze River Basin drought by comparing carbon fluxes, soil nutrients, and soil bacterial communities with those of the pre-drought year (2021). The research was conducted in the Dajiuhu subalpine peatland (1,760 m a.s.l.), Shennongjia, Central China, using eddy covariance (EC) measurements, soil physicochemical analyses, and 16 S rRNA amplicon sequencing during 2021 (pre-drought) and 2022 (drought year). Annual carbon dioxide (CO2) uptake by 81.58% (from 1304 to 240.14 g·m− 2), while methane (CH4) emissions decreased by 20.59% (not statistically significant, P > 0.05), resulting in an 83.32% decline in net carbon sequestration (from 345 to 57.5 g·m− 2). Because net CO2 exchange was not partitioned into gross primary productivity and ecosystem respiration, this decline cannot be assigned directly to altered photosynthesis or respiration. Paired comparisons of the 24 soil samples showed lower TP and TS in 2022 (Holm-adjusted P < 0.001), whereas TOC and TN did not differ significantly. Microbial community composition differed between years (PERMANOVA, P < 0.01), with higher relative abundance of Chloroflexi and lower relative abundance of Acidobacteriota and Proteobacteria in 2022. FAPROTAX-based predictions indicated higher putative potential for methanotrophy and methylotrophy and lower putative potential for chemoheterotrophy; these predictions do not measure realized process rates. Mantel tests and variance partitioning showed associations between the measured environmental gradients and carbon-flux variation, whereas no single measured environmental variable was significantly associated with the community shift. The 2022 drought was therefore associated with a markedly weaker net carbon sink and concurrent microbial community restructuring at this site.",
+      "url": "https://www.semanticscholar.org/paper/c5e584fdefc4006ad5a281937b1bdc79a5eafb31",
+      "pdf_url": "https://doi.org/10.1007/s12665-026-13158-y",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 45,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river"
       ]
     },
     {
