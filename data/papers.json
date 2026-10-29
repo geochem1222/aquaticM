@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T00:32:19.604093+00:00",
+  "updated_at": "2026-10-29T01:03:30.366516+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 9,
+    "fresh_records_before_merge": 32,
     "existing_records_after_filter": 1079,
-    "total_records_after_merge": 1079,
+    "total_records_after_merge": 1081,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1079,
@@ -21023,6 +21023,32 @@
           "CorpusId": 3500533
         }
       }
+    },
+    {
+      "id": "784b48d77a2b7973017bc58a27f101a111aea1d9",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5194/bg-23-7493-2026",
+      "title": "Warming vs. browning: a dual mechanism behind net ecosystem production of shallow brown aquatic systems",
+      "authors": [
+        "A. Paltsev",
+        "I. Puts"
+      ],
+      "journal": "Biogeosciences",
+      "publication_date": "2026-10-26",
+      "abstract": "Northern lakes are warming and browning due to increased cDOM inputs, altering water column C:N:P ratios and temperatures that regulate microbial production. Yet the relative importance of warming versus browning, and their combined effects on nutrient stoichiometry and microbial dynamics remain unclear. We experimentally manipulated boreal ponds along a cDOM gradient under ambient and +2 °C warming to quantify impacts on nutrient conditions and microbial production. Browning shifted C:N:P stoichiometry in both total and dissolved pools, with increased C:N and C:P ratios in the total nutrient pools, while reducing inorganic nutrient availability. Despite declining N:P ratios, both pools were strongly carbon-rich and depleted in both N and P. Nutrient-addition assays confirmed NP co-limitation. Browning increased bacterial production, while browning and warming combined reduced primary production, lowering PP:BP ratios. We show that browning -not warming- drives boreal freshwaters toward carbon-rich, N- and P- colimited conditions, while warming and browning together modulate microbial production by amplifying cDOM-driven heterotrophy and suppressing photoautotrophic production. Our study reveals a dual mechanism behind the shifting of brown systems toward heterotrophy. As browning and warming are pervasive trends across Northern lakes, these findings have wide applicability and advance general understanding of how freshwaters respond to ongoing environmental change.",
+      "url": "https://www.semanticscholar.org/paper/784b48d77a2b7973017bc58a27f101a111aea1d9",
+      "pdf_url": "https://bg.copernicus.org/articles/23/7493/2026/bg-23-7493-2026.pdf",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 62,
+      "references": [],
+      "tags": [
+        "lake",
+        "metabolism",
+        "microbe",
+        "pond"
+      ]
     },
     {
       "id": "c4c286290588da0a45753d93c58f34985811ddc1",
@@ -49902,6 +49928,48 @@
           "CorpusId": 268290466
         }
       }
+    },
+    {
+      "id": "5309b16634d09c04c688ee2770d255714d87e2d3",
+      "source": "Semantic Scholar",
+      "pmid": "42908477",
+      "doi": "10.1111/gcb.71126",
+      "title": "Hydromorphological Restoration of Streams Does Not Ensure the Recovery of Ecosystem Functioning",
+      "authors": [
+        "U. Haase",
+        "Daniel C. Allen",
+        "C. Anlanger",
+        "I. Boëchat",
+        "C. Mendoza-Lera",
+        "W. Cross",
+        "Pia Ebeling",
+        "D. G. Fernandes Cunha",
+        "Patrick Fink",
+        "N. Finkler",
+        "B. Gücker",
+        "Andreas Lorke",
+        "Julia Pasqualini",
+        "C. Patrick",
+        "M. Peipoch",
+        "Oskar Schröder",
+        "R. Sponseller",
+        "D. von Schiller",
+        "Markus Weitere",
+        "M. Brauns"
+      ],
+      "journal": "Global Change Biology",
+      "publication_date": "2026-10-01",
+      "abstract": "ABSTRACT Ecological restoration is widely expected to recover multiple ecosystem attributes, yet biological structure and ecosystem functioning may respond differently to hydromorphological restoration. Interpreting functional change is further complicated because higher or lower process rates do not inherently indicate recovery; their ecological meaning depends on how degraded and restored conditions compare with an appropriate reference state. We synthesised 582 effect sizes from 66 studies to quantify responses of nine ecosystem functions to hydromorphological restoration of streams and to assess whether changes in biological structure coincided with functional responses. Ecosystem‐function responses varied substantially among processes and baselines. Gross primary production was significantly higher in degraded than in reference streams, illustrating that elevated functional rates do not necessarily indicate reference‐like ecological conditions. Restoration did not consistently reverse degradation‐associated functional differences: denitrification was significantly lower in restored than in degraded streams, whereas nitrate uptake remained significantly lower in restored than in reference streams. Other restored–reference differences were generally weak or uncertain. Functional responses did not differ systematically among broad restoration‐measure categories. Restoration age was associated with changes in gross primary production and denitrification relative to degraded conditions, but none of the functions showed detectable convergence towards or divergence from reference conditions through time. In studies measuring both biological structure and ecosystem functioning, biological responses to restoration were generally positive relative to degraded conditions, whereas functional responses were more variable. However, the available evidence was too uncertain to conclude that biological and functional responses systematically differed. Our synthesis shows that functional recovery cannot be inferred either from restoration‐associated change alone or from concurrent biological recovery. Assessing restoration success therefore requires direct measurements of ecosystem processes and ecologically meaningful reference conditions that reveal whether functional change represents movement towards a process‐specific restoration target.",
+      "url": "https://www.semanticscholar.org/paper/5309b16634d09c04c688ee2770d255714d87e2d3",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/gcb.71126",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 35,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "river"
+      ]
     },
     {
       "id": "1cfd74cbb13f86dc339ab2790141e92984ec4f25",
