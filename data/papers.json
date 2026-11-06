@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T01:29:57.342002+00:00",
+  "updated_at": "2026-11-06T01:36:25.259018+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 18,
+    "fresh_records_before_merge": 25,
     "existing_records_after_filter": 1081,
-    "total_records_after_merge": 1081,
+    "total_records_after_merge": 1082,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1081,
@@ -31872,6 +31872,37 @@
           "PubMed": "41548545"
         }
       }
+    },
+    {
+      "id": "62f7f0ef335003c1ccafbcea69e8932a6c4f9d15",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.46427/gold2026.34291",
+      "title": "Modelling flow-dependent CO\n 2\n emissions from stream metabolism in contiguous US rivers",
+      "authors": [
+        "T. Maavara",
+        "Zi-Min Yuan",
+        "A. Johnson",
+        "Shuang Zhang",
+        "K. Aho",
+        "C. Brinkerhoff",
+        "L. Logozzo",
+        "P. Raymond"
+      ],
+      "journal": "Goldschmidt 2026 abstracts",
+      "publication_date": "2026-01-01",
+      "abstract": "",
+      "url": "https://www.semanticscholar.org/paper/62f7f0ef335003c1ccafbcea69e8932a6c4f9d15",
+      "pdf_url": "",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "model",
+        "river"
+      ]
     },
     {
       "id": "1935e8ba26fd3219f90a8b52ba4700b3f06cf9cf",
