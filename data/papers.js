@@ -1,5 +1,5 @@
 window.PAPER_TRACKER_DATA = {
-  "updated_at": "2026-11-15T01:02:24.266106+00:00",
+  "updated_at": "2026-11-16T01:02:46.989466+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@ window.PAPER_TRACKER_DATA = {
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 2,
+    "fresh_records_before_merge": 17,
     "existing_records_after_filter": 1082,
-    "total_records_after_merge": 1082,
+    "total_records_after_merge": 1083,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1082,
@@ -16055,6 +16055,31 @@ window.PAPER_TRACKER_DATA = {
           "CorpusId": 226017808
         }
       }
+    },
+    {
+      "id": "5c503ad65d5c27f1a0a2eb0c0f0388740cf04fca",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.5075/EPFL-THESIS-7629",
+      "title": "Carbon fluxes and productivity regimes in Alpine streams",
+      "authors": [
+        "M. B. Canadell"
+      ],
+      "journal": "Infoscience (Ecole Polytechnique Fédérale de Lausanne)",
+      "publication_date": "2020-01-01",
+      "abstract": "High-altitude catchments have a major role in the transport of organic matter to streams due to the storage of dissolved organic carbon (DOC) in soils and glacier ice and the subsequent mobilization during the melting processes. Yet, stream function goes beyond the conveying downstream of the terrestrial and glacier derived DOC since they are also highly active in the mineralization, retention and production of organic matter. Stream ecosystem metabolism integrates the processes that regulate the conversion between the organic and inorganic forms of carbon in streams and is a fundamental measure to determine whether carbon accumulates or it is lost within the ecosystem. In a global warming scenario, high-mountain stream ecosystems are faced to modifications in their structure and function as a result of climate-driven hydrological changes. Thus far, despite the active role of alpine streams in the global carbon cycle, studies on the impacts from changes in snowmelt, glacier ice melt and groundwater contribution to streamflow have been largely focusing on alterations in hydrological regimes, water availability, geomorphology and biodiversity. To fill this gap, the aim of this thesis is to examine DOC fluxes dynamics and productivity regimes across a range of glacierized and non-glacierized alpine catchments to anticipate the possible consequences of projected hydrological changes on alpine stream biogeochemistry and ecosystem functioning. This thesis is supported by the collection and analysis of high-frequency time series of physicochemical parameters, geomorphological data and streamwater samples from different Alpine streams with contrasting glacier coverage. The first part of the thesis investigates the response across all the streams of the annual DOC export to runoff primarily driven by snowmelt and glacier melt. In the second part, with the use of dissolved oxygen time series, the ecosystem energetics regimes in a glacier-, groundwater- and snowmelt-fed stream are explored during two years and related to their physical template. The third and last part is focused on providing estimates of gross primary production (GPP) rates for the energetic regimes established in the three Alpine stream types. The obtained results show a varied response of DOC export to runoff across the catchments which was related to the degree of glaciation and vegetation cover. Our findings also reveal different stream ecosystem energetic regimes among the streams and highlight discharge as the major modulator of drivers, such as light, gas exchange rate or stability, on the seasonal and daily dissolved oxygen dynamics. Lastly, the magnitude and the temporal patterns of ecosystem GPP are the result of the light and streambed disturbance conditions that are largely determined by the hydrological and turbidity regime. I argue that glacier shrinkage together with changes in snowmelt hydrology will alter the response of DOC yield to discharge, with consequent impact on the timing and magnitude of the lateral DOC fluxes from terrestrial to stream ecosystems. Also, an eventual reduction in glacier runoff and snowpack duration and content will alter the physical template for primary producers, which may lead to a greater production of autochthonous organic matter across high-mountain streams. Overall, I assume a shift in the magnitude and temporal patterns of energetic inputs, with consequences for the stream biogeochemistry and function.",
+      "url": "https://www.semanticscholar.org/paper/5c503ad65d5c27f1a0a2eb0c0f0388740cf04fca",
+      "pdf_url": "http://infoscience.epfl.ch/record/277668",
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "reference_count": 0,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "oxygen",
+        "river",
+        "sensor"
+      ]
     },
     {
       "id": "b40a5281c0470a7fbc64fe85c0c88e58083235f6",
