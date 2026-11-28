@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T03:39:24.064049+00:00",
+  "updated_at": "2026-11-28T03:20:32.872083+00:00",
   "sources": [
     "Semantic Scholar"
   ],
@@ -134,9 +134,9 @@
   ],
   "update_status": {
     "semantic_api_key_detected": true,
-    "fresh_records_before_merge": 9,
+    "fresh_records_before_merge": 20,
     "existing_records_after_filter": 1084,
-    "total_records_after_merge": 1084,
+    "total_records_after_merge": 1086,
     "query_limit": null,
     "retmax": 5000,
     "existing_records_before_update": 1084,
@@ -885,6 +885,40 @@
           "CorpusId": 261158750
         }
       }
+    },
+    {
+      "id": "2ec4ba0f9486c1bbafb7506a18687f5644206ec4",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.1007/s12237-020-00757-6",
+      "title": "Oxygen and Triple Oxygen Isotope Measurements Provide Different Insights into Gross Oxygen Production in a Shallow Salt Marsh Pond",
+      "authors": [
+        "E. Howard",
+        "A. Spivak",
+        "J. Karolewski",
+        "K. Gosselin",
+        "Z. Sandwith",
+        "C. Manning",
+        "R. Stanley"
+      ],
+      "journal": "Estuaries and Coasts",
+      "publication_date": "2020-07-18",
+      "abstract": "The metabolism of estuarine environments is often estimated by measuring changes in dissolved oxygen concentrations. A central assumption of common oxygen-based approaches is that oxygen consumption rates (primarily respiration) are similar under light and dark conditions. Evaluating this assumption is critical, especially in benthic-dominated systems, because differences between daytime and nighttime respiration could result in underestimation or overestimation of ecosystem productivity. We evaluated rates of gross oxygen production over hourly to seasonal time scales in a shallow, temperate salt marsh pond. To assess whether a dissolved oxygen diel mass balance underestimated gross oxygen productivity, we compared rates using this traditional approach and using the triple oxygen isotope tracer of photosynthesis. This is a powerful combination because the triple oxygen isotope approach is theoretically insensitive to respiration. The methods agreed well over daily to seasonal time scales. However, during midday periods of peak light and productivity, the triple oxygen isotope approach resulted in higher hourly scale gross oxygen production rates. The timing and magnitude of this short-term difference is consistent with light-dependent oxygen uptake fluxes including photoreduction and/or light-stimulated community respiration. Finally, aquatic vegetation was associated with variability in productivity across the pond. Such small-scale environmental heterogeneity is evidence that this shallow pond was not laterally well mixed, and likely contributes to the dynamism of these common estuarine environments.",
+      "url": "https://www.semanticscholar.org/paper/2ec4ba0f9486c1bbafb7506a18687f5644206ec4",
+      "pdf_url": "http://hdl.handle.net/2429/77978",
+      "citation_count": 5,
+      "influential_citation_count": 0,
+      "reference_count": 74,
+      "references": [],
+      "tags": [
+        "isotope",
+        "metabolism",
+        "oxygen",
+        "pond",
+        "sediment",
+        "sensor",
+        "wetland"
+      ]
     },
     {
       "id": "9ce36136098622f41bfc710bca176a91871d31d4",
@@ -31412,6 +31446,31 @@
           "CorpusId": 234996430
         }
       }
+    },
+    {
+      "id": "1f654ca592794937458d8045ffb8f278b2dbcf5a",
+      "source": "Semantic Scholar",
+      "pmid": "",
+      "doi": "10.21256/zhaw-19840",
+      "title": "Stream biofilm response to an increasing number of non-flow periods",
+      "authors": [
+        "Ariane Etter",
+        "Selina Fischer"
+      ],
+      "journal": "Zürcher Hochschule für Angewandte Wissenschaften digital collection (Zurich University of Applied Sciences)",
+      "publication_date": "2020-01-01",
+      "abstract": "Anthropogenic impacts and climate change are considerably altering freshwater systems. Most significant consequences of this are changes to flow regimes as well as the transformation of permanent into temporary waterways. This is problematic, as despite their role in supporting biodiversity and ecosystem processes, temporary waterways are undervalued and poorly understood. In fact, although the effects of non-flow periods are known, there is a lack of knowledge regarding how changes in frequency and duration of non-flow periods influence temporary waterways. Therefore, the goal of further research is to extend the current knowledge surrounding the effects of temporal components on the aquatic ecosystem. This bachelor thesis aims to identify how the frequency of non-flow periods affects autotrophic and heterotrophic stream biofilm. With this objective, an experiment at the Experimental Stream Facility of Catalan Institute for Water Research (ICRA) was performed. The treatments consisted of one drought duration (28 days) and three frequencies (1 period of 28, 2 periods of 14, 4 periods of 7 non-flow days). The development of the autotrophic and heterotrophic stream biofilm was measured during flow periods by means of yield of photochemistry, aerobic respiration, ecosystem metabolism and ash free dry mass. The hypotheses were that with increasing frequency, the effects on stream biofilm are less because the number of subsequent non-flow days is smaller and thus the biofilm is less stressed, and that autotrophs in the epipsammic biofilm recover more slowly than in the epilithic biofilm, because the amount of water retained in sand is higher. Both hypotheses were partially confirmed, as an increasing frequency only lessened the effect on epipsammic biofilm and only autotrophic function recovered more slowly in sand than on cobbles. In addition, the majority of the variables experienced the most severe impact and thus the quickest recovery in the same treatment. Nevertheless, at the end of the experiment none of the differences persisted. Therefore, the frequency of non-flow periods only had an effect on a short-term but not on a long-term scale and consequently, both hypotheses were discarded.",
+      "url": "https://www.semanticscholar.org/paper/1f654ca592794937458d8045ffb8f278b2dbcf5a",
+      "pdf_url": "https://digitalcollection.zhaw.ch/handle/11475/19840",
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "reference_count": 130,
+      "references": [],
+      "tags": [
+        "metabolism",
+        "microbe",
+        "river"
+      ]
     },
     {
       "id": "0bc9be3725fd89e2843a705a7d4e7b5cff0a956b",
